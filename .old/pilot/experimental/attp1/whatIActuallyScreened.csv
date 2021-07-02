@@ -1,0 +1,65 @@
+,Item Name,CatalogNumber,SMILES,Rack Number,Plate Location
+23,Malotilate,S1137,CC(C)OC(=O)C(C(=O)OC(C)C)=C1SC=CS1 |c:15|,L1300-01,h3
+29,Valproic acid sodium salt (Sodium valproate),S1168,[Na+].CCCC(CCC)C([O-])=O,L1300-01,f4
+63,Methazolastone,S1237,"CN1N=NC2=C(N=CN2C1=O)C(N)=O |c:2,6,t:4|",L1300-01,h8
+80,Altretamine (Hexalen),S1278,"CN(C)C1=NC(=NC(=N1)N(C)C)N(C)C |c:5,7,t:3|",L1300-01,a11
+97,Mercaptopurine,S1305,"S=C1N=CNC2=C1NC=N2 |c:2,5,9|",L1300-02,b2
+115,Levetiracetam,S1356,CC[C@H](N1CCCC1=O)C(N)=O |r|,L1300-02,d4
+119,Acitretin,S1368,"COC1=CC(C)=C(\C=C\C(C)=C\C=C\C(C)=C\C(O)=O)C(C)=C1C |c:21,t:2,5|",L1300-02,h4
+151,Tianeptine sodium,S1436,"[Na+].CN1C2=C(C=CC=C2)C(NCCCCCCC([O-])=O)C2=CC=C(Cl)C=C2S1(=O)=O |c:4,6,25,t:2,20,22|",L1300-02,h8
+195,Rizatriptan Benzoate ,S1607,"OC(=O)C1=CC=CC=C1.CN(C)CCC1=CNC2=C1C=C(CN1C=NC=N1)C=C2 |c:5,7,17,24,26,29,t:3,14,20|",L1300-03,d3
+196,Pyridostigmine Bromide (Mestinon),S1608,"[Br-].CN(C)C(=O)OC1=C[N+](C)=CC=C1 |c:9,11,t:6|",L1300-03,e3
+200,Silodosin (Rapaflo),S1613,"C[C@H](CC1=CC2=C(N(CCCO)CC2)C(=C1)C(N)=O)NCCOC1=CC=CC=C1OCC(F)(F)F |r,c:15,27,29,t:3,5,25|",L1300-03,a4
+206,Prednisone (Adasone),S1622,"[H][C@@]12CC[C@](O)(C(=O)CO)[C@@]1(C)CC(=O)[C@@]1([H])[C@@]2([H])CCC2=CC(=O)C=C[C@]12C |r,c:27,t:23|",L1300-03,g4
+212,"Orlistat (Alli, Xenical)",S1629,CCCCCCCCCCC[C@@H](C[C@@H]1OC(=O)[C@H]1CCCCCC)OC(=O)[C@H](CC(C)C)NC=O |r|,L1300-03,e5
+216,Amphotericin B ,S1636,"[H][C@]12C[C@@H](O[C@]3([H])O[C@H](C)[C@@H](O)[C@H](N)[C@@H]3O)\C=C\C=C\C=C\C=C\C=C\C=C\C=C\[C@H](C)[C@@H](O)[C@@H](C)[C@H](C)OC(=O)C[C@H](O)C[C@H](O)CC[C@@H](O)[C@H](O)C[C@H](O)C[C@](O)(C[C@H](O)[C@H]1C(O)=O)O2 |r,t:17,19,21,23,25,27,29|",L1300-03,a6
+236,Flucytosine (Ancobon),S1666,"NC1=NC(=O)NC=C1F |c:6,t:1|",L1300-03,e8
+244,Flurbiprofen (Ansaid),S1679,"C[C@H](C(O)=O)C1=CC(F)=C(C=C1)C1=CC=CC=C1 |r,c:8,10,15,17,t:5,13|",L1300-03,e9
+251,Betamethasone valerate (Betnovate),S1690,"[H][C@@]12C[C@H](C)[C@](OC(=O)CCCC)(C(=O)CO)[C@@]1(C)C[C@H](O)[C@@]1(F)[C@@]2([H])CCC2=CC(=O)C=C[C@]12C |r,c:34,t:30|",L1300-03,d10
+273,"Terbinafine (Lamisil, Terbinex)",S1725,"CN(C\C=C\C#CC(C)(C)C)CC1=CC=CC2=CC=CC=C12 |c:14,18,t:12,16,20|",L1300-04,b2
+280,"Mesna (Uromitexan, Mesnex)",S1735,[Na+].[O-]S(=O)(=O)CCS,L1300-04,a3
+285,Guaifenesin (Guaiphenesin),S1740,"COC1=C(OCC(O)CO)C=CC=C1 |c:2,10,12|",L1300-04,f3
+297,Pyrazinamide (Pyrazinoic acid amide),S1762,"NC(=O)C1=NC=CN=C1 |c:5,7,t:3|",L1300-04,b5
+330,Pranlukast,S1829,"O=C(NC1=CC2=C(C=C1)C(=O)C=C(O2)C1=NN=NN1)C1=CC=C(OCCCCC2=CC=CC=C2)C=C1 |c:5,7,12,18,33,35,38,t:3,16,22,24,31|",L1300-04,c9
+364,Potassium iodide,S1897,[K+].[I-],L1300-05,e2
+371,Metronidazole (Flagyl),S1907,"CC1=NC=C(N1CCO)[N+]([O-])=O |c:3,t:1|",L1300-05,d3
+444,Orphenadrine citrate (Norflex),S2054,"OC(=O)CC(O)(CC(O)=O)C(O)=O.CN(C)CCOC(C1=CC=CC=C1)C1=CC=CC=C1C |c:21,23,28,30,t:19,26|",L1300-06,e1
+453,Lafutidine,S2065,"O=C(CS(=O)CC1=CC=CO1)NC\C=C/COC1=CC(CN2CCCCC2)=CC=N1 |c:8,28,30,t:6,18|",L1300-06,f2
+463,Adiphenine HCl,S2082,"Cl.CCN(CC)CCOC(=O)C(C1=CC=CC=C1)C1=CC=CC=C1 |c:13,15,20,22,t:11,18|",L1300-06,h3
+515,Sorbitol (Glucitol),S2393,OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO |r|,L1300-06,d10
+528,Bethanechol chloride,S2455,[Cl-].CC(C[N+](C)(C)C)OC(N)=O,L1300-07,a1
+569,Xylazine HCl,S2516,"Cl.CC1=CC=CC(C)=C1NC1=NCCCS1 |c:3,6,t:1,10|",L1300-07,b6
+576,Methacycline hydrochloride (Physiomycine),S2527,"Cl.[H][C@@]12[C@@H](O)[C@]3([H])C(=C)C4=CC=CC(O)=C4C(=O)C3=C(O)[C@]1(O)C(=O)C(C(N)=O)=C(O)[C@H]2N(C)C |r,c:10,13,t:8,19,30|",L1300-07,a7
+577,Ciclopirox (Penlac),S2528,"CC1=CC(=O)N(O)C(=C1)C1CCCCC1 |c:7,t:1|",L1300-07,b7
+588,Scopine,S2545,[H][C@]12O[C@@]1([H])[C@]1([H])C[C@H](O)C[C@@]2([H])N1C |r|,L1300-07,e8
+615,Brompheniramine,S2585,"OC(=O)\C=C/C(O)=O.CN(C)CCC(C1=CC=C(Br)C=C1)C1=CC=CC=N1 |c:18,23,25,t:13,15,21|",L1300-07,h11
+624,Acemetacin (Emflex),S2602,"COC1=CC2=C(C=C1)N(C(=O)C1=CC=C(Cl)C=C1)C(C)=C2CC(=O)OCC(O)=O |c:4,6,17,21,t:2,12,14|",L1300-08,a2
+632,Clorsulon,S2613,"NC1=CC(C(Cl)=C(Cl)Cl)=C(C=C1S(N)(=O)=O)S(N)(=O)=O |c:8,10,t:1|",L1300-08,a3
+654,Lamotrigine,S3024,"NC1=NC(N)=C(N=N1)C1=CC=CC(Cl)=C1Cl |c:4,6,11,14,t:1,9|",L1300-08,g5
+689,Sulfathiazole,S3116,"NC1=CC=C(C=C1)S(=O)(=O)NC1=NC=CS1 |c:3,5,14,t:1,12|",L1300-08,b10
+690,Oxybutynin chloride,S3117,"Cl.CCN(CC)CC#CCOC(=O)C(O)(C1CCCCC1)C1=CC=CC=C1 |c:23,25,t:21|",L1300-08,c10
+693,Trimethoprim,S3129,"COC1=CC(CC2=CN=C(N)N=C2N)=CC(OC)=C1OC |c:11,14,18,t:2,6,8|",L1300-08,f10
+716,Antipyrine,S3173,"CN1N(C(=O)C=C1C)C1=CC=CC=C1 |c:5,11,13,t:9|",L1300-09,e2
+718,Betahistine 2HCl,S3176,"Cl.Cl.CNCCC1=NC=CC=C1 |c:6,8,t:4|",L1300-09,g2
+722,Amitriptyline HCl,S3183,"Cl.CN(C)CCC=C1C2=CC=CC=C2CCC2=CC=CC=C12 |c:9,11,18,t:7,16,20|",L1300-09,c3
+746,Cyclamic  acid,S4015,OS(=O)(=O)NC1CCCCC1,L1300-09,c6
+791,Sodium nitrite,S4074,[Na+].[O-]N=O,L1300-09,h11
+819,Triclabendazole,S4114,"CSC1=NC2=C(N1)C=C(Cl)C(OC1=C(Cl)C(Cl)=CC=C1)=C2 |c:4,13,17,19,21,t:2,8|",L1300-10,d4
+836,Bezafibrate,S4159,"CC(C)(OC1=CC=C(CCNC(=O)C2=CC=C(Cl)C=C2)C=C1)C(O)=O |c:18,21,t:4,6,13,15|",L1300-10,e6
+837,Penicillin G Sodium,S4160,"[Na+].[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)CC1=CC=CC=C1)C([O-])=O |r,c:19,21,t:17|",L1300-10,f6
+841,Benzydamine Hydrochloride,S4165,"Cl.CN(C)CCCOC1=NN(CC2=CC=CC=C2)C2=CC=CC=C12 |c:13,15,20,t:7,11,18,22|",L1300-10,b7
+860,Sasapyrine,S4188,"OC(=O)C1=CC=CC=C1OC(=O)C1=CC=CC=C1O |c:5,7,15,17,t:3,13|",L1300-10,e9
+863,Betamipron,S4191,"OC(=O)CCNC(=O)C1=CC=CC=C1 |c:10,12,t:8|",L1300-10,h9
+865,Azaguanine-8,S4194,"NC1=NC2=C(N=NN2)C(=O)N1 |c:5,t:1,3|",L1300-10,b10
+866,Broxyquinoline,S4195,"OC1=C2N=CC=CC2=C(Br)C=C1Br |c:1,3,5,11,t:8|",L1300-10,c10
+867,Ethacridine lactate monohydrate,S4196,"O.CC(O)C(O)=O.CCOC1=CC2=C(N)C3=CC=C(N)C=C3N=C2C=C1 |c:10,18,21,24,t:8,13,15|",L1300-10,d10
+870,Antazoline HCl,S4199,"Cl.C(N(CC1=CC=CC=C1)C1=CC=CC=C1)C1=NCCN1 |c:5,7,12,14,t:3,10,17|",L1300-10,g10
+894,Oxybuprocaine HCl,S4229,"Cl.CCCCOC1=CC(=CC=C1N)C(=O)OCCN(CC)CC |c:7,9,t:5|",L1300-11,g2
+895,Oxaprozin,S4230,"OC(=O)CCC1=NC(=C(O1)C1=CC=CC=C1)C1=CC=CC=C1 |c:7,13,15,20,22,t:5,11,18|",L1300-11,h2
+896,Pilocarpine HCl,S4231,"Cl.CC[C@H]1[C@@H](CC2=CN=CN2C)COC1=O |r,c:7,t:5|",L1300-11,a3
+897,Nithiamide,S4232,"CC(=O)NC1=NC=C(S1)[N+]([O-])=O |c:6,t:4|",L1300-11,b3
+911,Ospemifene,S4285,"OCCOC1=CC=C(C=C1)C(=C(\CCCl)C1=CC=CC=C1)\C1=CC=CC=C1 |c:6,8,18,20,25,27,t:4,16,23|",L1300-11,h4
+913,Mupirocin,S4297,[H][C@]1(O[C@H]1C[C@@]1([H])CO[C@@H](C\C(C)=C\C(=O)OCCCCCCCCC(O)=O)[C@H](O)[C@@H]1O)[C@@H](C)[C@H](C)O |r|,L1300-11,b5
+919,Ceftazidime Pentahydrate,S4314,"O.O.O.O.O.[H][C@]12SCC(C[N+]3=CC=CC=C3)=C(N1C(=O)[C@H]2NC(=O)C(=N\OC(C)(C)C(O)=O)\C1=CSC(N)=N1)C([O-])=O |r,c:8,10,12,36,t:6,32|",L1300-11,h5
+924,Isoetharine Mesylate,S4330,"CS(O)(=O)=O.CCC(NC(C)C)C(O)C1=CC=C(O)C(O)=C1 |c:19,t:13,15|",L1300-11,e6
+970,Prochlorperazine Dimaleate,S4407,"OC(=O)\C=C/C(O)=O.OC(=O)\C=C/C(O)=O.CN1CCN(CCCN2C3=C(SC4=C2C=C(Cl)C=C4)C=CC=C3)CC1 |c:23,26,32,35,37,t:29|",L1300-12,c1

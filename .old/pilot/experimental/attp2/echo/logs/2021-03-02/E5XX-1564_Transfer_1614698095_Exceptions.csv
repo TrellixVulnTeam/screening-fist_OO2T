@@ -1,0 +1,13 @@
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Destination Plate Name,Destination Plate Barcode,Destination Plate Type,Destination Well,Destination Well X Offset,Destination Well Y Offset,Sample ID,Sample Name,Transfer Volume,Actual Volume,Current Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Transfer Status
+Source[1],,384LDV_DMSO,G5,Destination[1],,384PP_Dest,A23,0,0,,,655,600,2.144,96.618,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.6604 ft: 0.377954
+Source[1],,384LDV_DMSO,G7,Destination[1],,384PP_Dest,B7,0,0,,,655,600,2.05,99.265,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.63461 ft: 0.339799
+Source[1],,384LDV_DMSO,G9,Destination[1],,384PP_Dest,B15,0,0,,,655,600,2.168,99.453,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.63264 ft: 0.363368
+Source[1],,384LDV_DMSO,G11,Destination[1],,384PP_Dest,B23,0,0,,,655,600,2.253,99.701,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.63 ft: 0.379368
+Source[1],,384LDV_DMSO,G17,Destination[1],,384PP_Dest,C23,0,0,,,655,600,2.01,99.099,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.63633 ft: 0.332721
+Source[1],,384LDV_DMSO,H11,Destination[1],,384PP_Dest,F22,0,0,,,547.5,300,2.102,97.198,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.65503 ft: 0.365197
+Source[1],,384LDV_DMSO,H15,Destination[1],,384PP_Dest,G14,0,0,,,547.5,300,2.087,95.195,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.67302 ft: 0.377146
+Source[1],,384LDV_DMSO,H21,Destination[1],,384PP_Dest,H14,0,0,,,547.5,300,2.155,97.027,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.65662 ft: 0.377638
+Source[1],,384LDV_DMSO,H23,Destination[1],,384PP_Dest,H23,0,0,,,655,0,2.045,97.162,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.65536 ft: 0.353275
+Source[1],,384LDV_DMSO,I17,Destination[1],,384PP_Dest,K23,0,0,,,655,300,2.163,98.381,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.64361 ft: 0.370013
+Source[1],,384LDV_DMSO,I23,Destination[1],,384PP_Dest,L23,0,0,,,655,300,2.13,97.558,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.65162 ft: 0.368745
+

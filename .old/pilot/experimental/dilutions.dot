@@ -1,0 +1,14 @@
+digraph dilutions{
+	node [shape = record]
+	lib[label = "fda lib | lsss"]
+	holding[label = "holding plate |layout"]
+	herbicides[label = "herbicides | weigh out + calcs"]
+	master[label = "master plate| 10 mM"]
+	dilution[label = "dilution plates | 8"]
+	assay[label = "assay plates | 4?"]
+
+	lib -> holding[label = "selection"]
+
+	holding -> master  -> dilution  -> assay 
+	herbicides -> holding 
+	}
