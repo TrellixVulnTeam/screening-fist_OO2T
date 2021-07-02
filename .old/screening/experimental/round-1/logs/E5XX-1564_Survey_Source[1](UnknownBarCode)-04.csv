@@ -1,0 +1,39 @@
+Run ID,1615478076
+Run Date/Time,2021-03-11 15:51:04
+Application Name,Labcyte Echo Plate Reformat
+Application Version,1.6.4
+Protocol Name,b1dmso.epr
+User Name,Lab
+
+[DETAILS]
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Survey Fluid Height,Survey Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Survey Status
+Source[1],UnknownBarCode,384PP_DMSO2,A10,0.893,17.108,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A11,0.723,14.254,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A12,0.733,14.46,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A13,0.835,16.317,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A14,0.73,14.401,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A15,0.802,15.812,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A16,0.745,14.695,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A17,0.89,17.067,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A18,0.902,17.23,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A19,1.016,18.696,97.889,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A9,0.85,16.52,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A20,0.912,17.372,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B9,4.343,62.633,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B10,4.342,62.617,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B11,4.125,60.279,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B12,4.365,62.875,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B13,2.799,43.097,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B14,0.859,16.641,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B15,0.878,16.905,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B16,0.897,17.169,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B17,0.9,17.21,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B18,0.805,15.871,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B19,0.927,17.575,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B20,0.799,15.753,99.701,Percent,DMSO,
+
+Instrument Name,E5XX-1564
+Instrument Model,Echo 550
+Instrument Serial Number,E5XX-1564
+Instrument Software Version,2.5.15
+

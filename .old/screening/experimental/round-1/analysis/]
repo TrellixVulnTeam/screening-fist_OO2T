@@ -1,0 +1,12 @@
+import numpy as np
+import plates
+
+def main():
+    concs = np.linspace(0,1,8)**3 * 500
+    plate = plates.UV384m3('../data/a83f-a.CSV')
+    print(plate.meta)
+    print(plate.df)
+    print(concs)
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,25 @@
+,Item Name,CatalogNumber,SMILES,Rack Number,Plate Location
+557,Phenoxybenzamine HCl,S2499,"Cl.CC(COC1=CC=CC=C1)N(CCCl)CC1=CC=CC=C1 |c:6,8,18,20,t:4,16|",L1300-07,f4
+364,Potassium iodide,S1897,[K+].[I-],L1300-05,e2
+791,Sodium nitrite,S4074,[Na+].[O-]N=O,L1300-09,h11
+28,Cisplatin,S1166,N[Pt](N)(Cl)Cl,L1300-01,e4
+788,Guanidine HCl,S4070,Cl.NC(N)=N,L1300-09,e11
+280,Mesna (Uromitexan; Mesnex),S1735,[Na+].[O-]S(=O)(=O)CCS,L1300-04,a3
+848,1-Hexadecanol,S4173,CCCCCCCCCCCCCCCCO,L1300-10,a8
+869,Aminothiazole,S4198,"NC1=NC=CS1 |c:3,t:1|",L1300-10,f10
+781,Sodium Nitroprusside,S4059,[Na+].[Na+].O=N[Fe--](C#N)(C#N)(C#N)(C#N)C#N,L1300-09,f10
+300,Beta Carotene,S1767,"CC(\C=C\C=C(C)\C=C\C1=C(C)CCCC1(C)C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C1=C(C)CCCC1(C)C |c:9,32|",L1300-04,e5
+851,Uracil,S4177,O=C1NC=CC(=O)N1 |c:3|,L1300-10,d8
+584,Acetanilide (Antifebrin),S2538,"CC(=O)NC1=CC=CC=C1 |c:6,8,t:4|",L1300-07,a8
+245,Disulfiram (Antabuse),S1680,CCN(CC)C(=S)SSC(=S)N(CC)CC,L1300-03,f9
+80,Altretamine (Hexalen),S1278,"CN(C)C1=NC(=NC(=N1)N(C)C)N(C)C |c:5,7,t:3|",L1300-01,a11
+616,Dimethyl Fumarate,S2586,COC(=O)\C=C\C(=O)OC,L1300-08,a1
+875,Dibenzothiophene,S4205,"S1C2=CC=CC=C2C2=C1C=CC=C2 |c:3,5,8,11,13,t:1|",L1300-10,d11
+297,Pyrazinamide (Pyrazinoic acid amide),S1762,"NC(=O)C1=NC=CN=C1 |c:5,7,t:3|",L1300-04,b5
+746,Cyclamic  acid,S4015,OS(=O)(=O)NC1CCCCC1,L1300-09,c6
+959,Fosfomycin Tromethamine,S4385,C[C@H]1O[C@H]1P(O)(O)=O.NC(CO)(CO)CO |r|,L1300-11,h10
+699,Methenamine (Mandelamine),S3139,C1N2CN3CN1CN(C2)C3,L1300-08,d11
+907,Sodium ascorbate,S4245,[Na].[H][C@@]1(OC(=O)C(O)C1O)[C@@H](O)CO |r|,L1300-11,d4
+655,PMSF (Phenylmethylsulfonyl Fluoride),S3025,"FS(=O)(=O)CC1=CC=CC=C1 |c:7,9,t:5|",L1300-08,h5
+451,Tiopronin (Thiola),S2062,CC(S)C(=O)NCC(O)=O,L1300-06,d2
+925,Mepiroxol,S4333,"OCC1=C[N+]([O-])=CC=C1 |c:5,7,t:2|",L1300-11,f6

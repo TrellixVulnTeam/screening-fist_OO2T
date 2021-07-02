@@ -1,0 +1,40 @@
+Item Name,CatalogNumber,SMILES,Rack Number,Plate Location
+ Procaine (Novocaine) HCl,S4023,"Cl.CCN(CC)CCOC(=O)C1=CC=C(N)C=C1 |c:15,t:10,12|",L1300-09,b7
+Potassium iodide,S1897,[K+].[I-],L1300-05,e2
+Cysteamine HCl,S4206,Cl.NCCS,L1300-10,e11
+Methenamine (Mandelamine),S3139,C1N2CN3CN1CN(C2)C3,L1300-08,d11
+"Busulfan (Myleran, Busulfex)",S1692,CS(=O)(=O)OCCCCOS(C)(=O)=O,L1300-03,f10
+Aminothiazole,S4198,"NC1=NC=CS1 |c:3,t:1|",L1300-10,f10
+Adrucil (Fluorouracil),S1209,FC1=CNC(=O)NC1=O |t:1|,L1300-01,g6
+Memantine HCl (Namenda),S2043,Cl.CC12CC3CC(C)(C1)CC(N)(C3)C2,L1300-05,e11
+Dimethyl Fumarate,S2586,COC(=O)\C=C\C(=O)OC,L1300-08,a1
+Altretamine (Hexalen),S1278,"CN(C)C1=NC(=NC(=N1)N(C)C)N(C)C |c:5,7,t:3|",L1300-01,a11
+Mequinol,S4077,"COC1=CC=C(O)C=C1 |c:7,t:2,4|",L1300-10,c1
+Isosorbide,S4204,[H][C@]12OC[C@@H](O)[C@@]1([H])OC[C@@H]2O |r|,L1300-10,c11
+Coumarin,S4170,"O=C1OC2=C(C=CC=C2)C=C1 |c:5,7,10,t:3|",L1300-10,f7
+Disulfiram (Antabuse),S1680,CCN(CC)C(=S)SSC(=S)N(CC)CC,L1300-03,f9
+Ifosfamide,S1302,ClCCNP1(=O)OCCCN1CCCl,L1300-02,h1
+Pyrazinamide (Pyrazinoic acid amide),S1762,"NC(=O)C1=NC=CN=C1 |c:5,7,t:3|",L1300-04,b5
+Acetylcysteine,S1623,[H][C@@](CS)(NC(C)=O)C(O)=O |r|,L1300-03,h4
+Pyridostigmine Bromide (Mestinon),S1608,"[Br-].CN(C)C(=O)OC1=C[N+](C)=CC=C1 |c:9,11,t:6|",L1300-03,e3
+Protionamide (Prothionamide),S1881,"CCCC1=NC=CC(=C1)C(N)=S |c:5,7,t:3|",L1300-05,c1
+Chlorpropamide,S4166,"CCCNC(=O)NS(=O)(=O)C1=CC=C(Cl)C=C1 |c:15,t:10,12|",L1300-10,c7
+"Methimazole (Tapazole, Northyx)",S1609,CN1C=CNC1=S |c:2|,L1300-03,f3
+Malotilate,S1137,CC(C)OC(=O)C(C(=O)OC(C)C)=C1SC=CS1 |c:15|,L1300-01,h3
+Mercaptopurine,S1305,"S=C1N=CNC2=C1NC=N2 |c:2,5,9|",L1300-02,b2
+PMSF (Phenylmethylsulfonyl Fluoride),S3025,"FS(=O)(=O)CC1=CC=CC=C1 |c:7,9,t:5|",L1300-08,h5
+Dienogest,S1251,"[H][C@@]12CC[C@@](O)(CC#N)[C@@]1(C)CCC1=C3CCC(=O)C=C3CC[C@@]21[H] |r,c:14,20|",L1300-01,e9
+Dibenzothiophene,S4205,"S1C2=CC=CC=C2C2=C1C=CC=C2 |c:3,5,8,11,13,t:1|",L1300-10,d11
+Letrozole,S1235,"N#CC1=CC=C(C=C1)C(N1C=NC=N1)C1=CC=C(C=C1)C#N |c:4,6,11,13,18,20,t:2,16|",L1300-01,g8
+Lomustine (CeeNU),S1840,ClCCN(N=O)C(=O)NC1CCCCC1,L1300-04,c10
+9-Aminoacridine,S4303,"NC1=C2C=CC=CC2=NC2=CC=CC=C12 |c:1,3,5,8,12,t:10,14|",L1300-11,c5
+Ibuprofen (Advil),S1638,"CC(C)CC1=CC=C(C=C1)C(C)C(O)=O |c:6,8,t:4|",L1300-03,b6
+Valproic acid sodium salt (Sodium valproate),S1168,[Na+].CCCC(CCC)C([O-])=O,L1300-01,f4
+Clonidine hydrochloride (Catapres),S2458,"Cl.ClC1=CC=CC(Cl)=C1NC1=NCCN1 |c:3,6,t:1,10|",L1300-07,d1
+Metronidazole (Flagyl),S1907,"CC1=NC=C(N1CCO)[N+]([O-])=O |c:3,t:1|",L1300-05,d3
+Antipyrine,S3173,"CN1N(C(=O)C=C1C)C1=CC=CC=C1 |c:5,11,13,t:9|",L1300-09,e2
+Scopine,S2545,[H][C@]12O[C@@]1([H])[C@]1([H])C[C@H](O)C[C@@]2([H])N1C |r|,L1300-07,e8
+Zoxazolamine,S4233,"NC1=NC2=C(O1)C=CC(Cl)=C2 |c:3,7,10,t:1|",L1300-11,c3
+"Terbinafine (Lamisil, Terbinex)",S1725,"CN(C\C=C\C#CC(C)(C)C)CC1=CC=CC2=CC=CC=C12 |c:14,18,t:12,16,20|",L1300-04,b2
+Choline Chloride,S4171,[Cl-].C[N+](C)(C)CCO,L1300-10,g7
+Mepiroxol,S4333,"OCC1=C[N+]([O-])=CC=C1 |c:5,7,t:2|",L1300-11,f6

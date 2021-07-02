@@ -1,0 +1,111 @@
+Run ID,1615481578
+Run Date/Time,2021-03-11 16:49:27
+Application Name,Labcyte Echo Plate Reformat
+Application Version,1.6.4
+Protocol Name,b4dmso.epr
+User Name,Lab
+
+[DETAILS]
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Survey Fluid Height,Survey Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Survey Status
+Source[1],UnknownBarCode,384PP_DMSO2,C1,1.101,19.873,98.411,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C2,0.844,16.438,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C3,0.88,16.926,99.621,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C4,0.821,16.065,98.43,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C5,0.834,16.198,97.374,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C6,0.822,16.044,97.731,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C7,0.863,16.607,97.746,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C8,0.889,16.956,97.678,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C9,0.91,17.21,96.796,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C10,0.888,16.885,96.304,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C11,0.842,16.32,97.773,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C12,0.839,16.223,96.55,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C13,0.846,16.307,96.277,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C14,0.871,16.692,97.298,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C15,0.853,16.464,97.604,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C16,0.882,16.803,96.223,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C17,0.933,17.638,99.288,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C18,0.82,16.065,98.743,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C19,0.857,16.524,97.847,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C20,0.827,16.174,98.926,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C21,0.813,15.982,99.225,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C22,0.867,16.743,99.508,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C23,0.817,16.073,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,C24,1.565,26.246,99.149,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D1,1.773,28.987,96.948,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D2,4.063,59.55,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D3,4.355,62.762,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D4,4.499,64.322,97.656,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D5,4.393,63.174,97.303,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D6,4.482,64.132,97.627,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D7,4.446,63.74,96.768,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D8,4.488,64.198,98.396,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D9,4.407,63.325,99.011,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D10,4.547,64.841,98.274,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D11,4.431,63.578,97.788,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D12,4.516,64.504,96.399,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D13,4.392,63.164,97.35,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D14,4.524,64.591,97.074,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D15,4.41,63.359,97.509,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D16,4.534,64.699,97.947,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D17,4.497,64.296,98.627,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D18,4.467,63.968,97.948,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D19,4.504,64.376,98.553,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D20,4.447,63.756,97.87,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D21,4.481,64.125,98.359,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D22,4.456,63.853,99.189,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D23,4.457,63.87,98.881,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,D24,4.445,63.729,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B1,0.957,17.73,93.922,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B2,0.864,16.521,95.425,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B3,0.916,17.277,96.385,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B4,0.875,16.734,97.068,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B5,0.891,16.978,97.492,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B6,0.87,16.654,96.733,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B7,0.877,16.775,97.12,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B8,0.838,16.222,96.617,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B9,0.898,17.061,97.358,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B10,0.84,16.261,97.122,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B11,0.853,16.427,96.836,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B12,0.86,16.565,97.813,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B13,0.895,16.971,95.96,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B14,0.898,17.061,97.323,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B15,0.937,17.548,96.145,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B16,0.943,17.661,96.988,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B17,0.954,17.79,96.562,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B18,0.852,16.408,96.549,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B19,0.959,17.854,96.435,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B20,0.827,16.058,96.408,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B21,0.952,17.818,97.602,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B22,0.936,17.644,98.562,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B23,0.969,18.143,99.698,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B24,0.815,15.999,98.9,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,E1,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E2,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E3,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E4,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E5,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E6,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E7,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E8,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E9,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E10,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E11,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E12,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E13,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E14,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E15,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E16,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E17,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E18,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E19,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E20,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E21,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 21th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E22,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 22th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E23,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 23th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384PP_DMSO2,E24,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 24th column), defaulting to 0.0 percent DMSO"
+
+Instrument Name,E5XX-1564
+Instrument Model,Echo 550
+Instrument Serial Number,E5XX-1564
+Instrument Software Version,2.5.15
+

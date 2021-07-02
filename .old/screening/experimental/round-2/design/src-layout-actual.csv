@@ -1,0 +1,385 @@
+,Unnamed: 0,Item Name,CatalogNumber,Rack Number,Plate Location,Master Plate Well,src well
+0,0,Altretamine (Hexalen),S1278,L1300-01,a11,A1,A1
+1,1,Altretamine (Hexalen),S1278,L1300-01,a11,A1,A2
+2,2,Altretamine (Hexalen),S1278,L1300-01,a11,A1,A3
+3,3,Altretamine (Hexalen),S1278,L1300-01,a11,A1,A4
+4,4,Leflunomide,S1247,L1300-01,c9,A2,A5
+5,5,Leflunomide,S1247,L1300-01,c9,A2,A6
+6,6,Leflunomide,S1247,L1300-01,c9,A2,A7
+7,7,Leflunomide,S1247,L1300-01,c9,A2,A8
+8,8,Valproic acid sodium salt (Sodium valproate),S1168,L1300-01,f4,A3,A9
+9,9,Valproic acid sodium salt (Sodium valproate),S1168,L1300-01,f4,A3,A10
+10,10,Valproic acid sodium salt (Sodium valproate),S1168,L1300-01,f4,A3,A11
+11,11,Valproic acid sodium salt (Sodium valproate),S1168,L1300-01,f4,A3,A12
+12,12,Letrozole,S1235,L1300-01,g8,A4,A13
+13,13,Letrozole,S1235,L1300-01,g8,A4,A14
+14,14,Letrozole,S1235,L1300-01,g8,A4,A15
+15,15,Letrozole,S1235,L1300-01,g8,A4,A16
+16,16,Malotilate,S1137,L1300-01,h3,A5,A17
+17,17,Malotilate,S1137,L1300-01,h3,A5,A18
+18,18,Malotilate,S1137,L1300-01,h3,A5,A19
+19,19,Malotilate,S1137,L1300-01,h3,A5,A20
+20,20,Rufinamide (Banzel),S1256,L1300-01,h9,A6,A21
+21,21,Rufinamide (Banzel),S1256,L1300-01,h9,A6,A22
+22,22,Rufinamide (Banzel),S1256,L1300-01,h9,A6,A23
+23,23,Rufinamide (Banzel),S1256,L1300-01,h9,A6,A24
+24,24,Carmofur,S1289,L1300-02,b1,A7,B1
+25,25,Carmofur,S1289,L1300-02,b1,A7,B2
+26,26,Carmofur,S1289,L1300-02,b1,A7,B3
+27,27,Carmofur,S1289,L1300-02,b1,A7,B4
+28,28,Mercaptopurine,S1305,L1300-02,b2,A8,B5
+29,29,Mercaptopurine,S1305,L1300-02,b2,A8,B6
+30,30,Mercaptopurine,S1305,L1300-02,b2,A8,B7
+31,31,Mercaptopurine,S1305,L1300-02,b2,A8,B8
+32,32,Lansoprazole,S1354,L1300-02,c4,A9,B9
+33,33,Lansoprazole,S1354,L1300-02,c4,A9,B10
+34,34,Lansoprazole,S1354,L1300-02,c4,A9,B11
+35,35,Lansoprazole,S1354,L1300-02,c4,A9,B12
+36,36,Levetiracetam,S1356,L1300-02,d4,A10,B13
+37,37,Levetiracetam,S1356,L1300-02,d4,A10,B14
+38,38,Levetiracetam,S1356,L1300-02,d4,A10,B15
+39,39,Levetiracetam,S1356,L1300-02,d4,A10,B16
+40,40,Ifosfamide,S1302,L1300-02,h1,A11,B17
+41,41,Ifosfamide,S1302,L1300-02,h1,A11,B18
+42,42,Ifosfamide,S1302,L1300-02,h1,A11,B19
+43,43,Ifosfamide,S1302,L1300-02,h1,A11,B20
+44,44,Zonisamide,S1445,L1300-02,h9,A12,B21
+45,45,Zonisamide,S1445,L1300-02,h9,A12,B22
+46,46,Zonisamide,S1445,L1300-02,h9,A12,B23
+47,47,Zonisamide,S1445,L1300-02,h9,A12,B24
+48,48,Riluzole (Rilutek),S1614,L1300-03,b4,B1,C1
+49,49,Riluzole (Rilutek),S1614,L1300-03,b4,B1,C2
+50,50,Riluzole (Rilutek),S1614,L1300-03,b4,B1,C3
+51,51,Riluzole (Rilutek),S1614,L1300-03,b4,B1,C4
+52,52,Pyridostigmine Bromide (Mestinon),S1608,L1300-03,e3,B2,C5
+53,53,Pyridostigmine Bromide (Mestinon),S1608,L1300-03,e3,B2,C6
+54,54,Pyridostigmine Bromide (Mestinon),S1608,L1300-03,e3,B2,C7
+55,55,Pyridostigmine Bromide (Mestinon),S1608,L1300-03,e3,B2,C8
+56,56,"Busulfan (Myleran, Busulfex)",S1692,L1300-03,f10,B3,C9
+57,57,"Busulfan (Myleran, Busulfex)",S1692,L1300-03,f10,B3,C10
+58,58,"Busulfan (Myleran, Busulfex)",S1692,L1300-03,f10,B3,C11
+59,59,"Busulfan (Myleran, Busulfex)",S1692,L1300-03,f10,B3,C12
+60,60,"Methimazole (Tapazole, Northyx)",S1609,L1300-03,f3,B4,C13
+61,61,"Methimazole (Tapazole, Northyx)",S1609,L1300-03,f3,B4,C14
+62,62,"Methimazole (Tapazole, Northyx)",S1609,L1300-03,f3,B4,C15
+63,63,"Methimazole (Tapazole, Northyx)",S1609,L1300-03,f3,B4,C16
+64,64,Allopurinol (Zyloprim),S1630,L1300-03,f5,B5,C17
+65,65,Allopurinol (Zyloprim),S1630,L1300-03,f5,B5,C18
+66,66,Allopurinol (Zyloprim),S1630,L1300-03,f5,B5,C19
+67,67,Allopurinol (Zyloprim),S1630,L1300-03,f5,B5,C20
+68,68,Disulfiram (Antabuse),S1680,L1300-03,f9,B6,C21
+69,69,Disulfiram (Antabuse),S1680,L1300-03,f9,B6,C22
+70,70,Disulfiram (Antabuse),S1680,L1300-03,f9,B6,C23
+71,71,Disulfiram (Antabuse),S1680,L1300-03,f9,B6,C24
+72,72,Prednisone (Adasone),S1622,L1300-03,g4,B7,D1
+73,73,Prednisone (Adasone),S1622,L1300-03,g4,B7,D2
+74,74,Prednisone (Adasone),S1622,L1300-03,g4,B7,D3
+75,75,Prednisone (Adasone),S1622,L1300-03,g4,B7,D4
+76,76,Acetylcysteine,S1623,L1300-03,h4,B8,D5
+77,77,Acetylcysteine,S1623,L1300-03,h4,B8,D6
+78,78,Acetylcysteine,S1623,L1300-03,h4,B8,D7
+79,79,Acetylcysteine,S1623,L1300-03,h4,B8,D8
+80,80,"Mesna (Uromitexan, Mesnex)",S1735,L1300-04,a3,B9,D9
+81,81,"Mesna (Uromitexan, Mesnex)",S1735,L1300-04,a3,B9,D10
+82,82,"Mesna (Uromitexan, Mesnex)",S1735,L1300-04,a3,B9,D11
+83,83,"Mesna (Uromitexan, Mesnex)",S1735,L1300-04,a3,B9,D12
+84,84,"Terbinafine (Lamisil, Terbinex)",S1725,L1300-04,b2,B10,D13
+85,85,"Terbinafine (Lamisil, Terbinex)",S1725,L1300-04,b2,B10,D14
+86,86,"Terbinafine (Lamisil, Terbinex)",S1725,L1300-04,b2,B10,D15
+87,87,"Terbinafine (Lamisil, Terbinex)",S1725,L1300-04,b2,B10,D16
+88,88,Pyrazinamide (Pyrazinoic acid amide),S1762,L1300-04,b5,B11,D17
+89,89,Pyrazinamide (Pyrazinoic acid amide),S1762,L1300-04,b5,B11,D18
+90,90,Pyrazinamide (Pyrazinoic acid amide),S1762,L1300-04,b5,B11,D19
+91,91,Pyrazinamide (Pyrazinoic acid amide),S1762,L1300-04,b5,B11,D20
+92,92,Lomustine (CeeNU),S1840,L1300-04,c10,B12,D21
+93,93,Lomustine (CeeNU),S1840,L1300-04,c10,B12,D22
+94,94,Lomustine (CeeNU),S1840,L1300-04,c10,B12,D23
+95,95,Lomustine (CeeNU),S1840,L1300-04,c10,B12,D24
+96,96,Ethionamide,S1777,L1300-04,c6,C1,E1
+97,97,Ethionamide,S1777,L1300-04,c6,C1,E2
+98,98,Ethionamide,S1777,L1300-04,c6,C1,E3
+99,99,Ethionamide,S1777,L1300-04,c6,C1,E4
+100,100,Diethylstilbestrol (Stilbestrol),S1859,L1300-04,d11,C2,E5
+101,101,Diethylstilbestrol (Stilbestrol),S1859,L1300-04,d11,C2,E6
+102,102,Diethylstilbestrol (Stilbestrol),S1859,L1300-04,d11,C2,E7
+103,103,Diethylstilbestrol (Stilbestrol),S1859,L1300-04,d11,C2,E8
+104,104,Diphenhydramine HCl (Benadryl),S1866,L1300-04,f11,C3,E9
+105,105,Diphenhydramine HCl (Benadryl),S1866,L1300-04,f11,C3,E10
+106,106,Diphenhydramine HCl (Benadryl),S1866,L1300-04,f11,C3,E11
+107,107,Diphenhydramine HCl (Benadryl),S1866,L1300-04,f11,C3,E12
+108,108,Mitotane (Lysodren),S1732,L1300-04,f2,C4,E13
+109,109,Mitotane (Lysodren),S1732,L1300-04,f2,C4,E14
+110,110,Mitotane (Lysodren),S1732,L1300-04,f2,C4,E15
+111,111,Mitotane (Lysodren),S1732,L1300-04,f2,C4,E16
+112,112,Propylthiouracil,S1988,L1300-05,a8,C5,E17
+113,113,Propylthiouracil,S1988,L1300-05,a8,C5,E18
+114,114,Propylthiouracil,S1988,L1300-05,a8,C5,E19
+115,115,Propylthiouracil,S1988,L1300-05,a8,C5,E20
+116,116,Metronidazole (Flagyl),S1907,L1300-05,d3,C6,E21
+117,117,Metronidazole (Flagyl),S1907,L1300-05,d3,C6,E22
+118,118,Metronidazole (Flagyl),S1907,L1300-05,d3,C6,E23
+119,119,Metronidazole (Flagyl),S1907,L1300-05,d3,C6,E24
+120,120,Potassium iodide,S1897,L1300-05,e2,C7,F1
+121,121,Potassium iodide,S1897,L1300-05,e2,C7,F2
+122,122,Potassium iodide,S1897,L1300-05,e2,C7,F3
+123,123,Potassium iodide,S1897,L1300-05,e2,C7,F4
+124,124,Menadione,S1949,L1300-05,f5,C8,F5
+125,125,Menadione,S1949,L1300-05,f5,C8,F6
+126,126,Menadione,S1949,L1300-05,f5,C8,F7
+127,127,Menadione,S1949,L1300-05,f5,C8,F8
+128,128,Chlormezanone (Trancopal),S2021,L1300-05,f9,C9,F9
+129,129,Chlormezanone (Trancopal),S2021,L1300-05,f9,C9,F10
+130,130,Chlormezanone (Trancopal),S2021,L1300-05,f9,C9,F11
+131,131,Chlormezanone (Trancopal),S2021,L1300-05,f9,C9,F12
+132,132,Tioconazole,S1910,L1300-05,g3,C10,F13
+133,133,Tioconazole,S1910,L1300-05,g3,C10,F14
+134,134,Tioconazole,S1910,L1300-05,g3,C10,F15
+135,135,Tioconazole,S1910,L1300-05,g3,C10,F16
+136,136,Bromhexine HCl,S2060,L1300-06,b2,C11,F17
+137,137,Bromhexine HCl,S2060,L1300-06,b2,C11,F18
+138,138,Bromhexine HCl,S2060,L1300-06,b2,C11,F19
+139,139,Bromhexine HCl,S2060,L1300-06,b2,C11,F20
+140,140,Amantadine hydrochloride (Symmetrel),S2451,L1300-06,e11,C12,F21
+141,141,Amantadine hydrochloride (Symmetrel),S2451,L1300-06,e11,C12,F22
+142,142,Amantadine hydrochloride (Symmetrel),S2451,L1300-06,e11,C12,F23
+143,143,Amantadine hydrochloride (Symmetrel),S2451,L1300-06,e11,C12,F24
+144,144,Rasagiline mesylate,S2102,L1300-06,e5,D1,G1
+145,145,Rasagiline mesylate,S2102,L1300-06,e5,D1,G2
+146,146,Rasagiline mesylate,S2102,L1300-06,e5,D1,G3
+147,147,Rasagiline mesylate,S2102,L1300-06,e5,D1,G4
+148,148,Gimeracil,S2055,L1300-06,f1,D2,G5
+149,149,Gimeracil,S2055,L1300-06,f1,D2,G6
+150,150,Gimeracil,S2055,L1300-06,f1,D2,G7
+151,151,Gimeracil,S2055,L1300-06,f1,D2,G8
+152,152,Detomidine HCl,S2092,L1300-06,g4,D3,G9
+153,153,Detomidine HCl,S2092,L1300-06,g4,D3,G10
+154,154,Detomidine HCl,S2092,L1300-06,g4,D3,G11
+155,155,Detomidine HCl,S2092,L1300-06,g4,D3,G12
+156,156,Tolnaftate,S2058,L1300-06,h1,D4,G13
+157,157,Tolnaftate,S2058,L1300-06,h1,D4,G14
+158,158,Tolnaftate,S2058,L1300-06,h1,D4,G15
+159,159,Tolnaftate,S2058,L1300-06,h1,D4,G16
+160,160,Bethanechol chloride,S2455,L1300-07,a1,D5,G17
+161,161,Bethanechol chloride,S2455,L1300-07,a1,D5,G18
+162,162,Bethanechol chloride,S2455,L1300-07,a1,D5,G19
+163,163,Bethanechol chloride,S2455,L1300-07,a1,D5,G20
+164,164,Acetanilide (Antifebrin),S2538,L1300-07,a8,D6,G21
+165,165,Acetanilide (Antifebrin),S2538,L1300-07,a8,D6,G22
+166,166,Acetanilide (Antifebrin),S2538,L1300-07,a8,D6,G23
+167,167,Acetanilide (Antifebrin),S2538,L1300-07,a8,D6,G24
+168,168,Chlorpromazine (Sonazine),S2456,L1300-07,b1,D7,H1
+169,169,Chlorpromazine (Sonazine),S2456,L1300-07,b1,D7,H2
+170,170,Chlorpromazine (Sonazine),S2456,L1300-07,b1,D7,H3
+171,171,Chlorpromazine (Sonazine),S2456,L1300-07,b1,D7,H4
+172,172,Xylometazoline HCl,S2576,L1300-07,b11,D8,H5
+173,173,Xylometazoline HCl,S2576,L1300-07,b11,D8,H6
+174,174,Xylometazoline HCl,S2576,L1300-07,b11,D8,H7
+175,175,Xylometazoline HCl,S2576,L1300-07,b11,D8,H8
+176,176,Milrinone (Primacor),S2484,L1300-07,b3,D9,H9
+177,177,Milrinone (Primacor),S2484,L1300-07,b3,D9,H10
+178,178,Milrinone (Primacor),S2484,L1300-07,b3,D9,H11
+179,179,Milrinone (Primacor),S2484,L1300-07,b3,D9,H12
+180,180,Xylazine HCl,S2516,L1300-07,b6,D10,H13
+181,181,Xylazine HCl,S2516,L1300-07,b6,D10,H14
+182,182,Xylazine HCl,S2516,L1300-07,b6,D10,H15
+183,183,Xylazine HCl,S2516,L1300-07,b6,D10,H16
+184,184,Maprotiline hydrochloride,S2517,L1300-07,c6,D11,H17
+185,185,Maprotiline hydrochloride,S2517,L1300-07,c6,D11,H18
+186,186,Maprotiline hydrochloride,S2517,L1300-07,c6,D11,H19
+187,187,Maprotiline hydrochloride,S2517,L1300-07,c6,D11,H20
+188,188,Clonidine hydrochloride (Catapres),S2458,L1300-07,d1,D12,H21
+189,189,Clonidine hydrochloride (Catapres),S2458,L1300-07,d1,D12,H22
+190,190,Clonidine hydrochloride (Catapres),S2458,L1300-07,d1,D12,H23
+191,191,Clonidine hydrochloride (Catapres),S2458,L1300-07,d1,D12,H24
+192,192,Scopine,S2545,L1300-07,e8,E1,I1
+193,193,Scopine,S2545,L1300-07,e8,E1,I2
+194,194,Scopine,S2545,L1300-07,e8,E1,I3
+195,195,Scopine,S2545,L1300-07,e8,E1,I4
+196,196,Phenytoin sodium (Dilantin),S2524,L1300-07,g6,E2,I5
+197,197,Phenytoin sodium (Dilantin),S2524,L1300-07,g6,E2,I6
+198,198,Phenytoin sodium (Dilantin),S2524,L1300-07,g6,E2,I7
+199,199,Phenytoin sodium (Dilantin),S2524,L1300-07,g6,E2,I8
+200,200,Dimethyl Fumarate,S2586,L1300-08,a1,E3,I9
+201,201,Dimethyl Fumarate,S2586,L1300-08,a1,E3,I10
+202,202,Dimethyl Fumarate,S2586,L1300-08,a1,E3,I11
+203,203,Dimethyl Fumarate,S2586,L1300-08,a1,E3,I12
+204,204,Aspirin (Acetylsalicylic acid),S3017,L1300-08,a5,E4,I13
+205,205,Aspirin (Acetylsalicylic acid),S3017,L1300-08,a5,E4,I14
+206,206,Aspirin (Acetylsalicylic acid),S3017,L1300-08,a5,E4,I15
+207,207,Aspirin (Acetylsalicylic acid),S3017,L1300-08,a5,E4,I16
+208,208,Tioxolone,S2603,L1300-08,b2,E5,I17
+209,209,Tioxolone,S2603,L1300-08,b2,E5,I18
+210,210,Tioxolone,S2603,L1300-08,b2,E5,I19
+211,211,Tioxolone,S2603,L1300-08,b2,E5,I20
+212,212,Arecoline,S2614,L1300-08,b3,E6,I21
+213,213,Arecoline,S2614,L1300-08,b3,E6,I22
+214,214,Arecoline,S2614,L1300-08,b3,E6,I23
+215,215,Arecoline,S2614,L1300-08,b3,E6,I24
+216,216,Methenamine (Mandelamine),S3139,L1300-08,d11,E7,J1
+217,217,Methenamine (Mandelamine),S3139,L1300-08,d11,E7,J2
+218,218,Methenamine (Mandelamine),S3139,L1300-08,d11,E7,J3
+219,219,Methenamine (Mandelamine),S3139,L1300-08,d11,E7,J4
+220,220,Paroxetine HCl,S3005,L1300-08,d4,E8,J5
+221,221,Paroxetine HCl,S3005,L1300-08,d4,E8,J6
+222,222,Paroxetine HCl,S3005,L1300-08,d4,E8,J7
+223,223,Paroxetine HCl,S3005,L1300-08,d4,E8,J8
+224,224,Moguisteine,S3104,L1300-08,e9,E9,J9
+225,225,Moguisteine,S3104,L1300-08,e9,E9,J10
+226,226,Moguisteine,S3104,L1300-08,e9,E9,J11
+227,227,Moguisteine,S3104,L1300-08,e9,E9,J12
+228,228,Zaltoprofen,S3008,L1300-08,f4,E10,J13
+229,229,Zaltoprofen,S3008,L1300-08,f4,E10,J14
+230,230,Zaltoprofen,S3008,L1300-08,f4,E10,J15
+231,231,Zaltoprofen,S3008,L1300-08,f4,E10,J16
+232,232,PMSF (Phenylmethylsulfonyl Fluoride),S3025,L1300-08,h5,E11,J17
+233,233,PMSF (Phenylmethylsulfonyl Fluoride),S3025,L1300-08,h5,E11,J18
+234,234,PMSF (Phenylmethylsulfonyl Fluoride),S3025,L1300-08,h5,E11,J19
+235,235,PMSF (Phenylmethylsulfonyl Fluoride),S3025,L1300-08,h5,E11,J20
+236,236,Moclobemide,S3212,L1300-09,a5,E12,J21
+237,237,Moclobemide,S3212,L1300-09,a5,E12,J22
+238,238,Moclobemide,S3212,L1300-09,a5,E12,J23
+239,239,Moclobemide,S3212,L1300-09,a5,E12,J24
+240,240,Cyclamic  acid,S4015,L1300-09,c6,F1,K1
+241,241,Cyclamic  acid,S4015,L1300-09,c6,F1,K2
+242,242,Cyclamic  acid,S4015,L1300-09,c6,F1,K3
+243,243,Cyclamic  acid,S4015,L1300-09,c6,F1,K4
+244,244,Antipyrine,S3173,L1300-09,e2,F2,K5
+245,245,Antipyrine,S3173,L1300-09,e2,F2,K6
+246,246,Antipyrine,S3173,L1300-09,e2,F2,K7
+247,247,Antipyrine,S3173,L1300-09,e2,F2,K8
+248,248,Carbimazole,S4048,L1300-09,e9,F3,K9
+249,249,Carbimazole,S4048,L1300-09,e9,F3,K10
+250,250,Carbimazole,S4048,L1300-09,e9,F3,K11
+251,251,Carbimazole,S4048,L1300-09,e9,F3,K12
+252,252,Tolcapone,S4021,L1300-09,h6,F4,K13
+253,253,Tolcapone,S4021,L1300-09,h6,F4,K14
+254,254,Tolcapone,S4021,L1300-09,h6,F4,K15
+255,255,Tolcapone,S4021,L1300-09,h6,F4,K16
+256,256,Diphemanil methylsulfate,S4034,L1300-09,h7,F5,K17
+257,257,Diphemanil methylsulfate,S4034,L1300-09,h7,F5,K18
+258,258,Diphemanil methylsulfate,S4034,L1300-09,h7,F5,K19
+259,259,Diphemanil methylsulfate,S4034,L1300-09,h7,F5,K20
+260,260,Pyrithione zinc,S4075,L1300-10,a1,F6,K21
+261,261,Pyrithione zinc,S4075,L1300-10,a1,F6,K22
+262,262,Pyrithione zinc,S4075,L1300-10,a1,F6,K23
+263,263,Pyrithione zinc,S4075,L1300-10,a1,F6,K24
+264,264,Florfenicol,S4201,L1300-10,a11,F7,L1
+265,265,Florfenicol,S4201,L1300-10,a11,F7,L2
+266,266,Florfenicol,S4201,L1300-10,a11,F7,L3
+267,267,Florfenicol,S4201,L1300-10,a11,F7,L4
+268,268,Propranolol HCl,S4076,L1300-10,b1,F8,L5
+269,269,Propranolol HCl,S4076,L1300-10,b1,F8,L6
+270,270,Propranolol HCl,S4076,L1300-10,b1,F8,L7
+271,271,Propranolol HCl,S4076,L1300-10,b1,F8,L8
+272,272,Benzydamine Hydrochloride,S4165,L1300-10,b7,F9,L9
+273,273,Benzydamine Hydrochloride,S4165,L1300-10,b7,F9,L10
+274,274,Benzydamine Hydrochloride,S4165,L1300-10,b7,F9,L11
+275,275,Benzydamine Hydrochloride,S4165,L1300-10,b7,F9,L12
+276,276,Mequinol,S4077,L1300-10,c1,F10,L13
+277,277,Mequinol,S4077,L1300-10,c1,F10,L14
+278,278,Mequinol,S4077,L1300-10,c1,F10,L15
+279,279,Mequinol,S4077,L1300-10,c1,F10,L16
+280,280,Broxyquinoline,S4195,L1300-10,c10,F11,L17
+281,281,Broxyquinoline,S4195,L1300-10,c10,F11,L18
+282,282,Broxyquinoline,S4195,L1300-10,c10,F11,L19
+283,283,Broxyquinoline,S4195,L1300-10,c10,F11,L20
+284,284,Isosorbide,S4204,L1300-10,c11,F12,L21
+285,285,Isosorbide,S4204,L1300-10,c11,F12,L22
+286,286,Isosorbide,S4204,L1300-10,c11,F12,L23
+287,287,Isosorbide,S4204,L1300-10,c11,F12,L24
+288,288,Chlorpropamide,S4166,L1300-10,c7,G1,M1
+289,289,Chlorpropamide,S4166,L1300-10,c7,G1,M2
+290,290,Chlorpropamide,S4166,L1300-10,c7,G1,M3
+291,291,Chlorpropamide,S4166,L1300-10,c7,G1,M4
+292,292,Mefenamic acid,S4078,L1300-10,d1,G2,M5
+293,293,Mefenamic acid,S4078,L1300-10,d1,G2,M6
+294,294,Mefenamic acid,S4078,L1300-10,d1,G2,M7
+295,295,Mefenamic acid,S4078,L1300-10,d1,G2,M8
+296,296,Dibenzothiophene,S4205,L1300-10,d11,G3,M9
+297,297,Dibenzothiophene,S4205,L1300-10,d11,G3,M10
+298,298,Dibenzothiophene,S4205,L1300-10,d11,G3,M11
+299,299,Dibenzothiophene,S4205,L1300-10,d11,G3,M12
+300,300,Uracil,S4177,L1300-10,d8,G4,M13
+301,301,Uracil,S4177,L1300-10,d8,G4,M14
+302,302,Uracil,S4177,L1300-10,d8,G4,M15
+303,303,Uracil,S4177,L1300-10,d8,G4,M16
+304,304,Bemegride,S4197,L1300-10,e10,G5,M17
+305,305,Bemegride,S4197,L1300-10,e10,G5,M18
+306,306,Bemegride,S4197,L1300-10,e10,G5,M19
+307,307,Bemegride,S4197,L1300-10,e10,G5,M20
+308,308,Cysteamine HCl,S4206,L1300-10,e11,G6,M21
+309,309,Cysteamine HCl,S4206,L1300-10,e11,G6,M22
+310,310,Cysteamine HCl,S4206,L1300-10,e11,G6,M23
+311,311,Cysteamine HCl,S4206,L1300-10,e11,G6,M24
+312,312,Isovaleramide,S4116,L1300-10,e4,G7,N1
+313,313,Isovaleramide,S4116,L1300-10,e4,G7,N2
+314,314,Isovaleramide,S4116,L1300-10,e4,G7,N3
+315,315,Isovaleramide,S4116,L1300-10,e4,G7,N4
+316,316,Amprolium HCl,S4144,L1300-10,e5,G8,N5
+317,317,Amprolium HCl,S4144,L1300-10,e5,G8,N6
+318,318,Amprolium HCl,S4144,L1300-10,e5,G8,N7
+319,319,Amprolium HCl,S4144,L1300-10,e5,G8,N8
+320,320,Climbazole,S4178,L1300-10,e8,G9,N9
+321,321,Climbazole,S4178,L1300-10,e8,G9,N10
+322,322,Climbazole,S4178,L1300-10,e8,G9,N11
+323,323,Climbazole,S4178,L1300-10,e8,G9,N12
+324,324,Aminothiazole,S4198,L1300-10,f10,G10,N13
+325,325,Aminothiazole,S4198,L1300-10,f10,G10,N14
+326,326,Aminothiazole,S4198,L1300-10,f10,G10,N15
+327,327,Aminothiazole,S4198,L1300-10,f10,G10,N16
+328,328,Fenspiride HCl,S4090,L1300-10,f2,G11,N17
+329,329,Fenspiride HCl,S4090,L1300-10,f2,G11,N18
+330,330,Fenspiride HCl,S4090,L1300-10,f2,G11,N19
+331,331,Fenspiride HCl,S4090,L1300-10,f2,G11,N20
+332,332,Coumarin,S4170,L1300-10,f7,G12,N21
+333,333,Coumarin,S4170,L1300-10,f7,G12,N22
+334,334,Coumarin,S4170,L1300-10,f7,G12,N23
+335,335,Coumarin,S4170,L1300-10,f7,G12,N24
+336,336,Cyclandelate,S4189,L1300-10,f9,H1,O1
+337,337,Cyclandelate,S4189,L1300-10,f9,H1,O2
+338,338,Cyclandelate,S4189,L1300-10,f9,H1,O3
+339,339,Cyclandelate,S4189,L1300-10,f9,H1,O4
+340,340,Antazoline HCl,S4199,L1300-10,g10,H2,O5
+341,341,Antazoline HCl,S4199,L1300-10,g10,H2,O6
+342,342,Antazoline HCl,S4199,L1300-10,g10,H2,O7
+343,343,Antazoline HCl,S4199,L1300-10,g10,H2,O8
+344,344,Choline Chloride,S4171,L1300-10,g7,H3,O9
+345,345,Choline Chloride,S4171,L1300-10,g7,H3,O10
+346,346,Choline Chloride,S4171,L1300-10,g7,H3,O11
+347,347,Choline Chloride,S4171,L1300-10,g7,H3,O12
+348,348,Chlorocresol,S4209,L1300-10,h11,H4,O13
+349,349,Chlorocresol,S4209,L1300-10,h11,H4,O14
+350,350,Chlorocresol,S4209,L1300-10,h11,H4,O15
+351,351,Chlorocresol,S4209,L1300-10,h11,H4,O16
+352,352,Pilocarpine HCl,S4231,L1300-11,a3,H5,O17
+353,353,Pilocarpine HCl,S4231,L1300-11,a3,H5,O18
+354,354,Pilocarpine HCl,S4231,L1300-11,a3,H5,O19
+355,355,Pilocarpine HCl,S4231,L1300-11,a3,H5,O20
+356,356,Nithiamide,S4232,L1300-11,b3,H6,O21
+357,357,Nithiamide,S4232,L1300-11,b3,H6,O22
+358,358,Nithiamide,S4232,L1300-11,b3,H6,O23
+359,359,Nithiamide,S4232,L1300-11,b3,H6,O24
+360,360,Zoxazolamine,S4233,L1300-11,c3,H7,P1
+361,361,Zoxazolamine,S4233,L1300-11,c3,H7,P2
+362,362,Zoxazolamine,S4233,L1300-11,c3,H7,P3
+363,363,Zoxazolamine,S4233,L1300-11,c3,H7,P4
+364,364,Mepiroxol,S4333,L1300-11,f6,H8,P5
+365,365,Mepiroxol,S4333,L1300-11,f6,H8,P6
+366,366,Mepiroxol,S4333,L1300-11,f6,H8,P7
+367,367,Mepiroxol,S4333,L1300-11,f6,H8,P8
+368,368,Azaperone,S4219,L1300-11,g1,H9,P9
+369,369,Azaperone,S4219,L1300-11,g1,H9,P10
+370,370,Azaperone,S4219,L1300-11,g1,H9,P11
+371,371,Azaperone,S4219,L1300-11,g1,H9,P12
+372,372,Oxaprozin,S4230,L1300-11,h2,H10,P13
+373,373,Oxaprozin,S4230,L1300-11,h2,H10,P14
+374,374,Oxaprozin,S4230,L1300-11,h2,H10,P15
+375,375,Oxaprozin,S4230,L1300-11,h2,H10,P16
+376,376,Dicyclomine HCl,S4373,L1300-11,h9,H11,P17
+377,377,Dicyclomine HCl,S4373,L1300-11,h9,H11,P18
+378,378,Dicyclomine HCl,S4373,L1300-11,h9,H11,P19
+379,379,Dicyclomine HCl,S4373,L1300-11,h9,H11,P20
+380,380,Procodazole,S4408,L1300-12,d1,H12,P21
+381,381,Procodazole,S4408,L1300-12,d1,H12,P22
+382,382,Procodazole,S4408,L1300-12,d1,H12,P23
+383,383,Procodazole,S4408,L1300-12,d1,H12,P24

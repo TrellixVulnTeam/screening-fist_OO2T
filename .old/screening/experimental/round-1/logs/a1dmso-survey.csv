@@ -1,0 +1,37 @@
+Run ID,1615473019
+Run Date/Time,2021-03-11 14:26:47
+Application Name,Labcyte Echo Plate Reformat
+Application Version,1.6.4
+Protocol Name,a1dmso.epr
+User Name,Lab
+
+[DETAILS]
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Survey Fluid Height,Survey Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Survey Status
+Source[1],UnknownBarCode,384PP_DMSO2,A1,0.774,15.254,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A2,0.783,15.43,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A3,0.726,14.313,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A4,0.78,15.371,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A5,0.768,15.136,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A6,0.798,15.724,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A7,0.617,12.168,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A8,0.742,14.636,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A9,1.553,26.095,99.345,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A10,4.3,62.165,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,A11,4.239,61.504,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B1,4.307,62.246,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B2,4.282,61.972,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B3,4.289,62.052,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B4,4.269,61.827,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B5,4.269,61.827,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B6,4.312,62.294,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B7,4.285,62.004,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B8,4.327,62.455,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B9,4.327,62.455,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B10,4.348,62.681,99.701,Percent,DMSO,
+Source[1],UnknownBarCode,384PP_DMSO2,B11,4.156,60.607,99.671,Percent,DMSO,
+
+Instrument Name,E5XX-1564
+Instrument Model,Echo 550
+Instrument Serial Number,E5XX-1564
+Instrument Software Version,2.5.15
+

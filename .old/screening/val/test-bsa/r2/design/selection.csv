@@ -1,0 +1,49 @@
+CatalogNumber,Item Name,CatalogNumber,SMILES,Rack Number,Plate Location,spin shift
+S4159,Bezafibrate,S4159,"CC(C)(OC1=CC=C(CCNC(=O)C2=CC=C(Cl)C=C2)C=C1)C(O)=O |c:18,21,t:4,6,13,15|",L1300-10,e6,0.91
+S1829,Pranlukast,S1829,"O=C(NC1=CC2=C(C=C1)C(=O)C=C(O2)C1=NN=NN1)C1=CC=C(OCCCCC2=CC=CC=C2)C=C1 |c:5,7,12,18,33,35,38,t:3,16,22,24,31|",L1300-04,c9,0.87
+S4189,Cyclandelate,S4189,"CC1CC(CC(C)(C)C1)OC(=O)C(O)C1=CC=CC=C1 |c:17,19,t:15|",L1300-10,f9,0.84
+S4040,norethindrone,S4040,"[H][C@@]12CC[C@@](O)(C#C)[C@@]1(C)CC[C@]1([H])[C@@]3([H])CCC(=O)C=C3CC[C@@]21[H] |r,c:21|",L1300-09,e8,0.8
+S1743,Esomeprazole magnesium (Nexium),S1743,"[Mg++].COC1=CC2=C([N-]C(=N2)S(=O)CC2=C(C)C(OC)=C(C)C=N2)C=C1.COC1=CC2=C([N-]C(=N2)S(=O)CC2=C(C)C(OC)=C(C)C=N2)C=C1 |c:7,13,21,24,33,39,47,50,t:2,4,18,28,30,44|",L1300-04,a4,0.76
+S2461,Domperidone (Motilium),S2461,"ClC1=CC2=C(C=C1)N(C1CCN(CCCN3C(=O)NC4=C3C=CC=C4)CC1)C(=O)N2 |c:3,5,20,23,25,t:1|",L1300-07,g1,0.74
+S1690,Betamethasone valerate (Betnovate),S1690,"[H][C@@]12C[C@H](C)[C@](OC(=O)CCCC)(C(=O)CO)[C@@]1(C)C[C@H](O)[C@@]1(F)[C@@]2([H])CCC2=CC(=O)C=C[C@]12C |r,c:34,t:30|",L1300-03,d10,0.73
+S1289,Carmofur,S1289,CCCCCCNC(=O)N1C=C(F)C(=O)NC1=O |t:10|,L1300-02,b1,0.72
+S2233,Esomeprazole sodium (Nexium),S2233,"[Na+].COC1=CC=C2[N-]C(=NC2=C1)S(=O)CC1=NC=C(C)C(OC)=C1C |c:7,10,23,t:2,4,16,18|",L1300-06,e9,0.66
+S1843,Chenodeoxycholic acid,S1843,[H][C@@]1(CC[C@@]2([H])[C@]3([H])[C@H](O)C[C@]4([H])C[C@H](O)CC[C@]4(C)[C@@]3([H])CC[C@]12C)[C@H](C)CCC(O)=O |r|,L1300-04,d10,0.65
+S2264,Artemether (SM-224),S2264,[H][C@@]12CC[C@@H](C)[C@]3([H])CC[C@]4(C)OO[C@@]13[C@]([H])(O[C@H](OC)[C@@H]2C)O4 |r|,L1300-06,g9,0.65
+S2503,Racecadotril (Acetorphan),S2503,"CC(=O)SCC(CC1=CC=CC=C1)C(=O)NCC(=O)OCC1=CC=CC=C1 |c:9,11,24,26,t:7,22|",L1300-07,a5,0.65
+S1324,Doxazosin mesylate,S1324,"CS(O)(=O)=O.COC1=C(OC)C=C2C(N)=NC(=NC2=C1)N1CCN(CC1)C(=O)C1COC2=C(O1)C=CC=C2 |c:6,13,15,18,33,37,39,t:10|",L1300-02,e2,0.64
+S1550,Pimobendan (Vetmedin),S1550,"COC1=CC=C(C=C1)C1=NC2=CC(=CC=C2N1)C1=NNC(=O)CC1C |c:4,6,13,15,t:2,9,11,20|",L1300-03,a2,0.63
+S1907,Metronidazole (Flagyl),S1907,"CC1=NC=C(N1CCO)[N+]([O-])=O |c:3,t:1|",L1300-05,d3,0.63
+S1840,Lomustine (CeeNU),S1840,ClCCN(N=O)C(=O)NC1CCCCC1,L1300-04,c10,0.6
+S2556,Rosiglitazone (Avandia),S2556,"CN(CCOC1=CC=C(CC2SC(=O)NC2=O)C=C1)C1=CC=CC=N1 |c:18,23,25,t:5,7,21|",L1300-07,e9,0.59
+S2505,Rosiglitazone maleate,S2505,"OC(=O)\C=C/C(O)=O.CN(CCOC1=CC=C(CC2SC(=O)NC2=O)C=C1)C1=NC=CC=C1 |c:25,30,32,t:12,14,28|",L1300-07,c5,0.58
+S1727,Levonorgestrel (Levonelle),S1727,"[H][C@@]12CC[C@@](O)(C#C)[C@@]1(CC)CC[C@]1([H])[C@@]3([H])CCC(=O)C=C3CC[C@@]21[H] |r,c:22|",L1300-04,c2,0.57
+S2075,Rosiglitazone HCl,S2075,"Cl.CN(CCOC1=CC=C(CC2SC(=O)NC2=O)C=C1)C1=CC=CC=N1 |c:18,23,25,t:5,7,21|",L1300-06,c3,0.57
+S2046,Pioglitazone hydrochloride (Actos),S2046,"Cl.CCC1=CC=C(CCOC2=CC=C(CC3SC(=O)NC3=O)C=C2)N=C1 |c:22,25,t:2,4,9,11|",L1300-05,h11,0.56
+S1883,Idoxuridine,S1883,"OC[C@H]1O[C@H](C[C@@H]1O)N1C=C(I)C(=O)NC1=O |r,t:10|",L1300-05,d1,0.54
+S1261,Celecoxib,S1261,"CC1=CC=C(C=C1)C1=CC(=NN1C1=CC=C(C=C1)S(N)(=O)=O)C(F)(F)F |c:3,5,10,16,18,t:1,8,14|",L1300-01,e10,0.53
+S2590,Pioglitazone (Actos),S2590,"CCC1=CC=C(CCOC2=CC=C(CC3SC(=O)NC3=O)C=C2)N=C1 |c:22,25,t:2,4,9,11|",L1300-08,c1,0.53
+S1376,Gestodene,S1376,"[H][C@@]12C=C[C@@](O)(C#C)[C@@]1(CC)CC[C@]1([H])[C@@]3([H])CCC(=O)C=C3CC[C@@]21[H] |r,c:2,22|",L1300-02,b5,0.51
+S2525,Phenytoin (Lepitoin),S2525,"O=C1NC(=O)C(N1)(C1=CC=CC=C1)C1=CC=CC=C1 |c:10,12,17,19,t:8,15|",L1300-07,h6,0.51
+S1426,Repaglinide,S1426,"CCOC1=C(C=CC(CC(=O)N[C@@H](CC(C)C)C2=CC=CC=C2N2CCCCC2)=C1)C(O)=O |r,c:5,19,21,30,t:3,17|",L1300-02,d8,0.5
+S1377,Drospirenone,S1377,"[H][C@@]12C[C@]1([H])[C@@]1([H])[C@]3([H])[C@]4([H])C[C@]4([H])[C@@]4(CCC(=O)O4)[C@@]3(C)CC[C@]1([H])[C@@]1(C)CCC(=O)C=C21 |r,t:37|",L1300-02,c5,0.49
+S1383,,,,,,0.49
+S1404,Trilostane,S1404,"[H][C@]12O[C@]11CC[C@@]3([H])[C@]4([H])CC[C@H](O)[C@@]4(C)CC[C@]3([H])[C@@]1(C)CC(C#N)=C2O |r,c:29|",L1300-02,e7,0.47
+S2127,S-(+)-Rolipram,S2127,"COC1=C(OC2CCCC2)C=C(C=C1)[C@H]1CNC(=O)C1 |r,c:2,11,13|",L1300-06,f7,0.46
+S1282,Artemisinin,S1282,[H][C@@]12CC[C@@H](C)[C@]3([H])CC[C@@]4(C)OO[C@@]13[C@]([H])(OC(=O)[C@@H]2C)O4 |r|,L1300-01,d11,0.44
+S1959,Tolfenamic acid,S1959,"CC1=C(Cl)C=CC=C1NC1=C(C=CC=C1)C(O)=O |c:1,4,6,12,14,t:10|",L1300-05,c6,0.43
+S1625,Ethinyl Estradiol,S1625,"[H][C@@]12CC[C@@](O)(C#C)[C@@]1(C)CC[C@]1([H])C3=CC=C(O)C=C3CC[C@@]21[H] |r,c:20,t:15,17|",L1300-03,a5,0.41
+S1705,Progesterone (Prometrium),S1705,"[H][C@@]12CC[C@H](C(C)=O)[C@@]1(C)CC[C@@]1([H])[C@@]2([H])CCC2=CC(=O)CC[C@]12C |r,t:20|",L1300-03,e11,0.41
+S1736,Methocarbamol (Robaxin),S1736,"COC1=C(OCC(O)COC(N)=O)C=CC=C1 |c:2,13,15|",L1300-04,b3,0.41
+S4162,Benzethonium chloride,S4162,"[Cl-].CC(C)(C)CC(C)(C)C1=CC=C(OCCOCC[N+](C)(C)CC2=CC=CC=C2)C=C1 |c:24,26,29,t:8,10,22|",L1300-10,h6,0.41
+S4384,Difloxacin HCl,S4384,"Cl.CN1CCN(CC1)C1=CC2=C(C=C1F)C(=O)C(=CN2C1=CC=C(F)C=C1)C(O)=O |c:10,12,18,27,t:8,22,24|",L1300-11,g10,0.4
+S4343,Oxethazaine,S4343,"CN(C(=O)CN(CCO)CC(=O)N(C)C(C)(C)CC1=CC=CC=C1)C(C)(C)CC1=CC=CC=C1 |c:20,22,31,33,t:18,29|",L1300-11,f7,0.39
+S2524,Phenytoin sodium (Dilantin),S2524,"[Na+].[O-]C1=NC(=O)C(N1)(C1=CC=CC=C1)C1=CC=CC=C1 |c:10,12,17,19,t:1,8,15|",L1300-07,g6,0.38
+S4022,Probenecid (Benemid),S4022,"CCCN(CCC)S(=O)(=O)C1=CC=C(C=C1)C(O)=O |c:12,14,t:10|",L1300-09,a7,0.38
+S4368,Carbenoxolone Sodium,S4368,"[Na+].[Na+].[H][C@@]12CC(C)(CC[C@]1(C)CC[C@]1(C)C2=CC(=O)[C@]2([H])[C@@]3(C)CC[C@H](OC(=O)CCC([O-])=O)C(C)(C)C3CC[C@@]12C)C([O-])=O |r,t:15|",L1300-11,d9,0.38
+S1430,Rolipram,S1430,"COC1=C(OC2CCCC2)C=C(C=C1)C1CNC(=O)C1 |c:2,11,13|",L1300-02,e8,0.37
+S4099,Dexlansoprazole,S4099,"CC1=C(C[S@@](=O)C2=NC3=C(N2)C=CC=C3)N=CC=C1OCC(F)(F)F |r,c:1,8,12,14,17,19,t:6|",L1300-10,c3,0.36
+S4132,Deoxyarbutin,S4132,"OC1=CC=C(OC2CCCCO2)C=C1 |c:13,t:1,3|",L1300-10,a5,0.36
+S1233,2-Methoxyestradiol,S1233,"[H][C@@]12CC[C@H](O)[C@@]1(C)CC[C@]1([H])C3=CC(OC)=C(O)C=C3CC[C@@]21[H] |r,c:20,t:13,17|",L1300-01,f8,0.35
+S1646,Ketorolac (Toradol),S1646,"OC(=O)C1CCN2C1=CC=C2C(=O)C1=CC=CC=C1 |c:10,17,19,t:8,15|",L1300-03,a7,0.35
+S4208,Chromocarb,S4208,"OC(=O)C1=CC(=O)C2=CC=CC=C2O1 |c:9,11,t:3,7|",L1300-10,g11,0.35

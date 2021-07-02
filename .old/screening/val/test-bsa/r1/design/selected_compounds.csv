@@ -1,0 +1,26 @@
+Item Name,CatalogNumber,SMILES,Rack Number,Plate Location
+Dutasteride,S1202,"[H][C@@]12CC[C@H](C(=O)NC3=CC(=CC=C3C(F)(F)F)C(F)(F)F)[C@@]1(C)CC[C@@]1([H])[C@@]2([H])CC[C@@]2([H])NC(=O)C=C[C@]12C |r,c:10,12,40,t:8|",L1300-01,c6
+Potassium iodide,S1897,[K+].[I-],L1300-05,e2
+Guanidine HCl,S4070,Cl.NC(N)=N,L1300-09,e11
+Sodium nitrite,S4074,[Na+].[O-]N=O,L1300-09,h11
+Cisplatin,S1166,N[Pt](N)(Cl)Cl,L1300-01,e4
+1-Hexadecanol,S4173,CCCCCCCCCCCCCCCCO,L1300-10,a8
+Mesna (Uromitexan; Mesnex),S1735,[Na+].[O-]S(=O)(=O)CCS,L1300-04,a3
+Aminothiazole,S4198,"NC1=NC=CS1 |c:3,t:1|",L1300-10,f10
+Sodium Nitroprusside,S4059,[Na+].[Na+].O=N[Fe--](C#N)(C#N)(C#N)(C#N)C#N,L1300-09,f10
+Mequinol,S4077,"COC1=CC=C(O)C=C1 |c:7,t:2,4|",L1300-10,c1
+Disulfiram (Antabuse),S1680,CCN(CC)C(=S)SSC(=S)N(CC)CC,L1300-03,f9
+Uracil,S4177,O=C1NC=CC(=O)N1 |c:3|,L1300-10,d8
+Bethanechol chloride,S2455,[Cl-].CC(C[N+](C)(C)C)OC(N)=O,L1300-07,a1
+Altretamine (Hexalen),S1278,"CN(C)C1=NC(=NC(=N1)N(C)C)N(C)C |c:5,7,t:3|",L1300-01,a11
+PMSF (Phenylmethylsulfonyl Fluoride),S3025,"FS(=O)(=O)CC1=CC=CC=C1 |c:7,9,t:5|",L1300-08,h5
+Pyrazinamide (Pyrazinoic acid amide),S1762,"NC(=O)C1=NC=CN=C1 |c:5,7,t:3|",L1300-04,b5
+Cyclamic  acid,S4015,OS(=O)(=O)NC1CCCCC1,L1300-09,c6
+Methenamine (Mandelamine),S3139,C1N2CN3CN1CN(C2)C3,L1300-08,d11
+Dibenzothiophene,S4205,"S1C2=CC=CC=C2C2=C1C=CC=C2 |c:3,5,8,11,13,t:1|",L1300-10,d11
+Fosfomycin Tromethamine,S4385,C[C@H]1O[C@H]1P(O)(O)=O.NC(CO)(CO)CO |r|,L1300-11,h10
+Isovaleramide,S4116,CC(C)CC(N)=O,L1300-10,e4
+Mepiroxol,S4333,"OCC1=C[N+]([O-])=CC=C1 |c:5,7,t:2|",L1300-11,f6
+Isosorbide,S4204,[H][C@]12OC[C@@H](O)[C@@]1([H])OC[C@@H]2O |r|,L1300-10,c11
+Sulfanilamide,S1685,"NC1=CC=C(C=C1)S(N)(=O)=O |c:3,5,t:1|",L1300-03,a10
+Allylthiourea,S4017,NC(=S)NCC=C,L1300-09,e6
