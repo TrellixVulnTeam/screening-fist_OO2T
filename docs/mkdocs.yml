@@ -14,13 +14,18 @@ theme:
 
 nav:
   - index.md
-  - protocol.md
-  - model.md
-  - assay-development.md
+  - enzymes.md
+  - compounds.md
+  - assay-dev.md     
+  - protocol.md 
+  - assay-design.md  
+  - data.md  
+  - nn.md
+  - al.md
 
 
 markdown_extensions:
-  - mdx_math
+>>>>>>> 910728078274cedde0666362b049a392529a1720
   - footnotes
   - attr_list
   - md_in_html
