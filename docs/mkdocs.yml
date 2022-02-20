@@ -7,25 +7,25 @@ theme:
     text: Noto Sans
     code: Noto Sans Mono
   palette:
-    primary: teal
-    accent: amber
-  favicon: img/selfprotrait.svg
-  logo : img/selfprotrait.svg
+    theme: slate
+    primary: pink
+    accent: cyan
+  favicon: img/logo.svg
+  logo : img/logo.svg
 
 nav:
   - index.md
   - enzymes.md
   - compounds.md
-  - assay-dev.md     
+  - assay-development.md     
   - protocol.md 
-  - assay-design.md  
+  - screen-design.md  
   - data.md  
   - nn.md
   - al.md
 
 
 markdown_extensions:
->>>>>>> 910728078274cedde0666362b049a392529a1720
   - footnotes
   - attr_list
   - md_in_html

@@ -11,7 +11,7 @@ Binding data generated here is used to train a predictive binding model which it
 - [Enzymes Screening Panel](enzymes.md)
 - [Compounds Screening Panel](compounds.md)
 - [Protocol](protocol.md)
-- [Assay Design](assay-design.md)
+- [Screen Design](screen-design.md)
 - [Data Processing and Analysis](data.md)
 - [Model Training](nn.md)
 - [Model-based Experimental Design](al.md)
