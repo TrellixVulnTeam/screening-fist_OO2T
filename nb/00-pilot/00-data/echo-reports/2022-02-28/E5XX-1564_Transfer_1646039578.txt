@@ -1,0 +1,402 @@
+Run ID	1646039578
+Run Date/Time	2022-02-28 09:12:36
+Application Name	Labcyte Echo Plate Reformat
+Application Version	1.6.4
+Protocol Name	2022-02-28-00-echo-protocol.epr
+User Name	Lab
+
+[EXCEPTIONS]
+Source Plate Name	Source Plate Barcode	Source Plate Type	Source Well	Destination Plate Name	Destination Plate Barcode	Destination Plate Type	Destination Well	Destination Well X Offset	Destination Well Y Offset	Sample ID	Sample Name	Transfer Volume	Actual Volume	Current Fluid Volume	Fluid Composition	Fluid Units	Fluid Type	Transfer Status
+Source[1]		384LDV_DMSO	C3	Destination[1]		384PP_Dest	C3	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	G3	Destination[1]		384PP_Dest	G3	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	B11	Destination[1]		384PP_Dest	B11	0	0			1500	300	1.605	77.758	Percent	DMSO	MM0202006: Problem calc. eo fc: 1.79144 ft: 0.370289
+Source[1]		384LDV_DMSO	M15	Destination[1]		384PP_Dest	M15	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	F20	Destination[1]		384PP_Dest	F20	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	A21	Destination[1]		384PP_Dest	A21	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	A23	Destination[1]		384PP_Dest	A23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	B23	Destination[1]		384PP_Dest	B23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	C23	Destination[1]		384PP_Dest	C23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	D23	Destination[1]		384PP_Dest	D23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	E23	Destination[1]		384PP_Dest	E23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	F23	Destination[1]		384PP_Dest	F23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	G23	Destination[1]		384PP_Dest	G23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	H23	Destination[1]		384PP_Dest	H23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	I23	Destination[1]		384PP_Dest	I23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	J23	Destination[1]		384PP_Dest	J23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	K23	Destination[1]		384PP_Dest	K23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	L23	Destination[1]		384PP_Dest	L23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	M23	Destination[1]		384PP_Dest	M23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	N23	Destination[1]		384PP_Dest	N23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	O23	Destination[1]		384PP_Dest	O23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	P23	Destination[1]		384PP_Dest	P23	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	P24	Destination[1]		384PP_Dest	P24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	O24	Destination[1]		384PP_Dest	O24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	N24	Destination[1]		384PP_Dest	N24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	M24	Destination[1]		384PP_Dest	M24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	L24	Destination[1]		384PP_Dest	L24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	K24	Destination[1]		384PP_Dest	K24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	J24	Destination[1]		384PP_Dest	J24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	I24	Destination[1]		384PP_Dest	I24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	H24	Destination[1]		384PP_Dest	H24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	G24	Destination[1]		384PP_Dest	G24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	F24	Destination[1]		384PP_Dest	F24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	E24	Destination[1]		384PP_Dest	E24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	D24	Destination[1]		384PP_Dest	D24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	C24	Destination[1]		384PP_Dest	C24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	B24	Destination[1]		384PP_Dest	B24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1]		384LDV_DMSO	A24	Destination[1]		384PP_Dest	A24	0	0			1500	0	0	0	Percent	DMSO	MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+
+[DETAILS]
+Source Plate Name	Source Plate Barcode	Source Plate Type	Source Well	Destination Plate Name	Destination Plate Barcode	Destination Plate Type	Destination Well	Destination Well X Offset	Destination Well Y Offset	Sample ID	Sample Name	Transfer Volume	Actual Volume	Current Fluid Volume	Fluid Composition	Fluid Units	Fluid Type	Transfer Status
+Source[1]		384LDV_DMSO	A1	Destination[1]		384PP_Dest	A1	0	0			1500	1500	5.834	86.029	Percent	DMSO	
+Source[1]		384LDV_DMSO	B1	Destination[1]		384PP_Dest	B1	0	0			1500	1500	6.969	94.857	Percent	DMSO	
+Source[1]		384LDV_DMSO	C1	Destination[1]		384PP_Dest	C1	0	0			1500	1500	7.037	94.332	Percent	DMSO	
+Source[1]		384LDV_DMSO	D1	Destination[1]		384PP_Dest	D1	0	0			1500	1500	7.84	94.18	Percent	DMSO	
+Source[1]		384LDV_DMSO	E1	Destination[1]		384PP_Dest	E1	0	0			1500	1500	7.24	94.332	Percent	DMSO	
+Source[1]		384LDV_DMSO	F1	Destination[1]		384PP_Dest	F1	0	0			1500	1500	7.99	96.349	Percent	DMSO	
+Source[1]		384LDV_DMSO	G1	Destination[1]		384PP_Dest	G1	0	0			1500	1500	7.408	94.781	Percent	DMSO	
+Source[1]		384LDV_DMSO	H1	Destination[1]		384PP_Dest	H1	0	0			1500	1500	8.063	94.791	Percent	DMSO	
+Source[1]		384LDV_DMSO	I1	Destination[1]		384PP_Dest	I1	0	0			1500	1500	7.459	95.065	Percent	DMSO	
+Source[1]		384LDV_DMSO	J1	Destination[1]		384PP_Dest	J1	0	0			1500	1500	8.295	96.071	Percent	DMSO	
+Source[1]		384LDV_DMSO	K1	Destination[1]		384PP_Dest	K1	0	0			1500	1500	6.953	91.863	Percent	DMSO	
+Source[1]		384LDV_DMSO	L1	Destination[1]		384PP_Dest	L1	0	0			1500	1500	7.708	95.973	Percent	DMSO	
+Source[1]		384LDV_DMSO	M1	Destination[1]		384PP_Dest	M1	0	0			1500	1500	6.778	81.308	Percent	DMSO	
+Source[1]		384LDV_DMSO	N1	Destination[1]		384PP_Dest	N1	0	0			1500	1500	4.4	77.733	Percent	DMSO	
+Source[1]		384LDV_DMSO	O1	Destination[1]		384PP_Dest	O1	0	0			1500	1500	6.525	71.298	Percent	DMSO	
+Source[1]		384LDV_DMSO	P1	Destination[1]		384PP_Dest	P1	0	0			1500	1500	7.207	72.705	Percent	DMSO	
+Source[1]		384LDV_DMSO	P2	Destination[1]		384PP_Dest	P2	0	0			1500	1500	5.313	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	O2	Destination[1]		384PP_Dest	O2	0	0			1500	1500	6.174	74.1	Percent	DMSO	
+Source[1]		384LDV_DMSO	N2	Destination[1]		384PP_Dest	N2	0	0			1500	1500	6.654	72.971	Percent	DMSO	
+Source[1]		384LDV_DMSO	M2	Destination[1]		384PP_Dest	M2	0	0			1500	1500	7.117	92.818	Percent	DMSO	
+Source[1]		384LDV_DMSO	L2	Destination[1]		384PP_Dest	L2	0	0			1500	1500	7.482	96.385	Percent	DMSO	
+Source[1]		384LDV_DMSO	K2	Destination[1]		384PP_Dest	K2	0	0			1500	1500	7.251	96.119	Percent	DMSO	
+Source[1]		384LDV_DMSO	J2	Destination[1]		384PP_Dest	J2	0	0			1500	1500	7.883	95.011	Percent	DMSO	
+Source[1]		384LDV_DMSO	I2	Destination[1]		384PP_Dest	I2	0	0			1500	1500	8.243	95.406	Percent	DMSO	
+Source[1]		384LDV_DMSO	H2	Destination[1]		384PP_Dest	H2	0	0			1500	1500	7.607	92.677	Percent	DMSO	
+Source[1]		384LDV_DMSO	G2	Destination[1]		384PP_Dest	G2	0	0			1500	1500	7.334	95.702	Percent	DMSO	
+Source[1]		384LDV_DMSO	F2	Destination[1]		384PP_Dest	F2	0	0			1500	1500	7.782	93.813	Percent	DMSO	
+Source[1]		384LDV_DMSO	E2	Destination[1]		384PP_Dest	E2	0	0			1500	1500	7.695	93.56	Percent	DMSO	
+Source[1]		384LDV_DMSO	D2	Destination[1]		384PP_Dest	D2	0	0			1500	1500	7.724	93.021	Percent	DMSO	
+Source[1]		384LDV_DMSO	C2	Destination[1]		384PP_Dest	C2	0	0			1500	1500	6.291	75.734	Percent	DMSO	
+Source[1]		384LDV_DMSO	B2	Destination[1]		384PP_Dest	B2	0	0			1500	1500	7.368	93.826	Percent	DMSO	
+Source[1]		384LDV_DMSO	A2	Destination[1]		384PP_Dest	A2	0	0			1500	1500	1.855	90.304	Percent	DMSO	
+Source[1]		384LDV_DMSO	A3	Destination[1]		384PP_Dest	A3	0	0			1500	1500	5.381	75.849	Percent	DMSO	
+Source[1]		384LDV_DMSO	B3	Destination[1]		384PP_Dest	B3	0	0			1500	1500	5.984	88.44	Percent	DMSO	
+Source[1]		384LDV_DMSO	D3	Destination[1]		384PP_Dest	D3	0	0			1500	1500	6.904	87.477	Percent	DMSO	
+Source[1]		384LDV_DMSO	E3	Destination[1]		384PP_Dest	E3	0	0			1500	1500	7.549	91.96	Percent	DMSO	
+Source[1]		384LDV_DMSO	F3	Destination[1]		384PP_Dest	F3	0	0			1500	1500	7.572	96.911	Percent	DMSO	
+Source[1]		384LDV_DMSO	H3	Destination[1]		384PP_Dest	H3	0	0			1500	1500	7.477	96.602	Percent	DMSO	
+Source[1]		384LDV_DMSO	I3	Destination[1]		384PP_Dest	I3	0	0			1500	1500	7.247	94.382	Percent	DMSO	
+Source[1]		384LDV_DMSO	J3	Destination[1]		384PP_Dest	J3	0	0			1500	1500	7.496	95.196	Percent	DMSO	
+Source[1]		384LDV_DMSO	K3	Destination[1]		384PP_Dest	K3	0	0			1500	1500	7.119	94.641	Percent	DMSO	
+Source[1]		384LDV_DMSO	L3	Destination[1]		384PP_Dest	L3	0	0			1500	1500	7.475	96.32	Percent	DMSO	
+Source[1]		384LDV_DMSO	M3	Destination[1]		384PP_Dest	M3	0	0			1500	1500	6.625	84.003	Percent	DMSO	
+Source[1]		384LDV_DMSO	N3	Destination[1]		384PP_Dest	N3	0	0			1500	1500	7.208	86.977	Percent	DMSO	
+Source[1]		384LDV_DMSO	O3	Destination[1]		384PP_Dest	O3	0	0			1500	1500	7.255	90.942	Percent	DMSO	
+Source[1]		384LDV_DMSO	P3	Destination[1]		384PP_Dest	P3	0	0			1500	1500	6.477	77.287	Percent	DMSO	
+Source[1]		384LDV_DMSO	P4	Destination[1]		384PP_Dest	P4	0	0			1500	1500	7.402	92.439	Percent	DMSO	
+Source[1]		384LDV_DMSO	O4	Destination[1]		384PP_Dest	O4	0	0			1500	1500	6.794	78.862	Percent	DMSO	
+Source[1]		384LDV_DMSO	N4	Destination[1]		384PP_Dest	N4	0	0			1500	1500	7.458	79.173	Percent	DMSO	
+Source[1]		384LDV_DMSO	M4	Destination[1]		384PP_Dest	M4	0	0			1500	1500	7.116	82.622	Percent	DMSO	
+Source[1]		384LDV_DMSO	L4	Destination[1]		384PP_Dest	L4	0	0			1500	1500	7.485	94.112	Percent	DMSO	
+Source[1]		384LDV_DMSO	K4	Destination[1]		384PP_Dest	K4	0	0			1500	1500	7.819	96.461	Percent	DMSO	
+Source[1]		384LDV_DMSO	J4	Destination[1]		384PP_Dest	J4	0	0			1500	1500	8.19	96.394	Percent	DMSO	
+Source[1]		384LDV_DMSO	I4	Destination[1]		384PP_Dest	I4	0	0			1500	1500	7.203	94.114	Percent	DMSO	
+Source[1]		384LDV_DMSO	H4	Destination[1]		384PP_Dest	H4	0	0			1500	1500	7.829	96.791	Percent	DMSO	
+Source[1]		384LDV_DMSO	G4	Destination[1]		384PP_Dest	G4	0	0			1500	1500	7.684	95.537	Percent	DMSO	
+Source[1]		384LDV_DMSO	F4	Destination[1]		384PP_Dest	F4	0	0			1500	1500	7.747	94.93	Percent	DMSO	
+Source[1]		384LDV_DMSO	E4	Destination[1]		384PP_Dest	E4	0	0			1500	1500	8.092	94.624	Percent	DMSO	
+Source[1]		384LDV_DMSO	D4	Destination[1]		384PP_Dest	D4	0	0			1500	1500	6.592	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	C4	Destination[1]		384PP_Dest	C4	0	0			1500	1500	6.12	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	B4	Destination[1]		384PP_Dest	B4	0	0			1500	1500	7.461	91.423	Percent	DMSO	
+Source[1]		384LDV_DMSO	A4	Destination[1]		384PP_Dest	A4	0	0			1500	1500	6	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	A5	Destination[1]		384PP_Dest	A5	0	0			1500	1500	5.523	73.395	Percent	DMSO	
+Source[1]		384LDV_DMSO	B5	Destination[1]		384PP_Dest	B5	0	0			1500	1500	7.338	84.759	Percent	DMSO	
+Source[1]		384LDV_DMSO	C5	Destination[1]		384PP_Dest	C5	0	0			1500	1500	6.073	76.359	Percent	DMSO	
+Source[1]		384LDV_DMSO	D5	Destination[1]		384PP_Dest	D5	0	0			1500	1500	6.583	88.727	Percent	DMSO	
+Source[1]		384LDV_DMSO	E5	Destination[1]		384PP_Dest	E5	0	0			1500	1500	7.149	94.945	Percent	DMSO	
+Source[1]		384LDV_DMSO	F5	Destination[1]		384PP_Dest	F5	0	0			1500	1500	7.766	96.932	Percent	DMSO	
+Source[1]		384LDV_DMSO	G5	Destination[1]		384PP_Dest	G5	0	0			1500	1500	7.179	96.027	Percent	DMSO	
+Source[1]		384LDV_DMSO	H5	Destination[1]		384PP_Dest	H5	0	0			1500	1500	7.533	95.563	Percent	DMSO	
+Source[1]		384LDV_DMSO	I5	Destination[1]		384PP_Dest	I5	0	0			1500	1500	7.389	93.419	Percent	DMSO	
+Source[1]		384LDV_DMSO	J5	Destination[1]		384PP_Dest	J5	0	0			1500	1500	6.855	88.887	Percent	DMSO	
+Source[1]		384LDV_DMSO	K5	Destination[1]		384PP_Dest	K5	0	0			1500	1500	6.984	93.873	Percent	DMSO	
+Source[1]		384LDV_DMSO	L5	Destination[1]		384PP_Dest	L5	0	0			1500	1500	2.554	83.983	Percent	DMSO	
+Source[1]		384LDV_DMSO	M5	Destination[1]		384PP_Dest	M5	0	0			1500	1500	6.462	87.473	Percent	DMSO	
+Source[1]		384LDV_DMSO	N5	Destination[1]		384PP_Dest	N5	0	0			1500	1500	7.321	94.66	Percent	DMSO	
+Source[1]		384LDV_DMSO	O5	Destination[1]		384PP_Dest	O5	0	0			1500	1500	3.706	72.162	Percent	DMSO	
+Source[1]		384LDV_DMSO	P5	Destination[1]		384PP_Dest	P5	0	0			1500	1500	7.494	94.748	Percent	DMSO	
+Source[1]		384LDV_DMSO	P6	Destination[1]		384PP_Dest	P6	0	0			1500	1500	7.09	94.601	Percent	DMSO	
+Source[1]		384LDV_DMSO	O6	Destination[1]		384PP_Dest	O6	0	0			1500	1500	7.58	94.433	Percent	DMSO	
+Source[1]		384LDV_DMSO	N6	Destination[1]		384PP_Dest	N6	0	0			1500	1500	6.793	89.313	Percent	DMSO	
+Source[1]		384LDV_DMSO	M6	Destination[1]		384PP_Dest	M6	0	0			1500	1500	7.663	95.599	Percent	DMSO	
+Source[1]		384LDV_DMSO	L6	Destination[1]		384PP_Dest	L6	0	0			1500	1500	7.235	94.859	Percent	DMSO	
+Source[1]		384LDV_DMSO	K6	Destination[1]		384PP_Dest	K6	0	0			1500	1500	7.271	92.558	Percent	DMSO	
+Source[1]		384LDV_DMSO	J6	Destination[1]		384PP_Dest	J6	0	0			1500	1500	6.757	90.667	Percent	DMSO	
+Source[1]		384LDV_DMSO	I6	Destination[1]		384PP_Dest	I6	0	0			1500	1500	7.385	95.78	Percent	DMSO	
+Source[1]		384LDV_DMSO	H6	Destination[1]		384PP_Dest	H6	0	0			1500	1500	7.434	84.851	Percent	DMSO	
+Source[1]		384LDV_DMSO	G6	Destination[1]		384PP_Dest	G6	0	0			1500	1500	7.499	96.631	Percent	DMSO	
+Source[1]		384LDV_DMSO	F6	Destination[1]		384PP_Dest	F6	0	0			1500	1500	7.923	96.011	Percent	DMSO	
+Source[1]		384LDV_DMSO	E6	Destination[1]		384PP_Dest	E6	0	0			1500	1500	7.393	94.592	Percent	DMSO	
+Source[1]		384LDV_DMSO	D6	Destination[1]		384PP_Dest	D6	0	0			1500	1500	7.237	77.212	Percent	DMSO	
+Source[1]		384LDV_DMSO	C6	Destination[1]		384PP_Dest	C6	0	0			1500	1500	6.508	76.636	Percent	DMSO	
+Source[1]		384LDV_DMSO	B6	Destination[1]		384PP_Dest	B6	0	0			1500	1500	6.756	83.278	Percent	DMSO	
+Source[1]		384LDV_DMSO	A6	Destination[1]		384PP_Dest	A6	0	0			1500	1500	5.849	70.921	Percent	DMSO	
+Source[1]		384LDV_DMSO	A7	Destination[1]		384PP_Dest	A7	0	0			1500	1500	6.65	85.187	Percent	DMSO	
+Source[1]		384LDV_DMSO	B7	Destination[1]		384PP_Dest	B7	0	0			1500	1500	7.198	85.552	Percent	DMSO	
+Source[1]		384LDV_DMSO	C7	Destination[1]		384PP_Dest	C7	0	0			1500	1500	6.214	78.253	Percent	DMSO	
+Source[1]		384LDV_DMSO	D7	Destination[1]		384PP_Dest	D7	0	0			1500	1500	7.485	84.919	Percent	DMSO	
+Source[1]		384LDV_DMSO	E7	Destination[1]		384PP_Dest	E7	0	0			1500	1500	7.406	94.249	Percent	DMSO	
+Source[1]		384LDV_DMSO	F7	Destination[1]		384PP_Dest	F7	0	0			1500	1500	8.245	95.932	Percent	DMSO	
+Source[1]		384LDV_DMSO	G7	Destination[1]		384PP_Dest	G7	0	0			1500	1500	7.465	94.581	Percent	DMSO	
+Source[1]		384LDV_DMSO	H7	Destination[1]		384PP_Dest	H7	0	0			1500	1500	7.772	96.868	Percent	DMSO	
+Source[1]		384LDV_DMSO	I7	Destination[1]		384PP_Dest	I7	0	0			1500	1500	6.244	77.051	Percent	DMSO	
+Source[1]		384LDV_DMSO	J7	Destination[1]		384PP_Dest	J7	0	0			1500	1500	7.642	96.709	Percent	DMSO	
+Source[1]		384LDV_DMSO	K7	Destination[1]		384PP_Dest	K7	0	0			1500	1500	6.759	89.174	Percent	DMSO	
+Source[1]		384LDV_DMSO	L7	Destination[1]		384PP_Dest	L7	0	0			1500	1500	7.53	94.633	Percent	DMSO	
+Source[1]		384LDV_DMSO	M7	Destination[1]		384PP_Dest	M7	0	0			1500	1500	7.369	94.109	Percent	DMSO	
+Source[1]		384LDV_DMSO	N7	Destination[1]		384PP_Dest	N7	0	0			1500	1500	7.029	92.673	Percent	DMSO	
+Source[1]		384LDV_DMSO	O7	Destination[1]		384PP_Dest	O7	0	0			1500	1500	5.63	81.345	Percent	DMSO	
+Source[1]		384LDV_DMSO	P7	Destination[1]		384PP_Dest	P7	0	0			1500	1500	5.776	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	P8	Destination[1]		384PP_Dest	P8	0	0			1500	1500	7.445	94.988	Percent	DMSO	
+Source[1]		384LDV_DMSO	O8	Destination[1]		384PP_Dest	O8	0	0			1500	1500	5.721	90.943	Percent	DMSO	
+Source[1]		384LDV_DMSO	N8	Destination[1]		384PP_Dest	N8	0	0			1500	1500	7.11	95.468	Percent	DMSO	
+Source[1]		384LDV_DMSO	M8	Destination[1]		384PP_Dest	M8	0	0			1500	1500	7.331	95.34	Percent	DMSO	
+Source[1]		384LDV_DMSO	L8	Destination[1]		384PP_Dest	L8	0	0			1500	1500	7.383	96.513	Percent	DMSO	
+Source[1]		384LDV_DMSO	K8	Destination[1]		384PP_Dest	K8	0	0			1500	1500	7.329	96.032	Percent	DMSO	
+Source[1]		384LDV_DMSO	J8	Destination[1]		384PP_Dest	J8	0	0			1500	1500	7.123	92.233	Percent	DMSO	
+Source[1]		384LDV_DMSO	I8	Destination[1]		384PP_Dest	I8	0	0			1500	1500	7.434	95.748	Percent	DMSO	
+Source[1]		384LDV_DMSO	H8	Destination[1]		384PP_Dest	H8	0	0			1500	1500	8.007	96.794	Percent	DMSO	
+Source[1]		384LDV_DMSO	G8	Destination[1]		384PP_Dest	G8	0	0			1500	1500	7.73	90.535	Percent	DMSO	
+Source[1]		384LDV_DMSO	F8	Destination[1]		384PP_Dest	F8	0	0			1500	1500	7.96	92.317	Percent	DMSO	
+Source[1]		384LDV_DMSO	E8	Destination[1]		384PP_Dest	E8	0	0			1500	1500	7.789	94.034	Percent	DMSO	
+Source[1]		384LDV_DMSO	D8	Destination[1]		384PP_Dest	D8	0	0			1500	1500	7.143	89.63	Percent	DMSO	
+Source[1]		384LDV_DMSO	C8	Destination[1]		384PP_Dest	C8	0	0			1500	1500	6.843	75.863	Percent	DMSO	
+Source[1]		384LDV_DMSO	B8	Destination[1]		384PP_Dest	B8	0	0			1500	1500	6.073	74.738	Percent	DMSO	
+Source[1]		384LDV_DMSO	A8	Destination[1]		384PP_Dest	A8	0	0			1500	1500	7.32	94.586	Percent	DMSO	
+Source[1]		384LDV_DMSO	A9	Destination[1]		384PP_Dest	A9	0	0			1500	1500	7.761	92.934	Percent	DMSO	
+Source[1]		384LDV_DMSO	B9	Destination[1]		384PP_Dest	B9	0	0			1500	1500	6.93	89.833	Percent	DMSO	
+Source[1]		384LDV_DMSO	C9	Destination[1]		384PP_Dest	C9	0	0			1500	1500	7.276	94.245	Percent	DMSO	
+Source[1]		384LDV_DMSO	D9	Destination[1]		384PP_Dest	D9	0	0			1500	1500	7.632	96.317	Percent	DMSO	
+Source[1]		384LDV_DMSO	E9	Destination[1]		384PP_Dest	E9	0	0			1500	1500	7.417	95.141	Percent	DMSO	
+Source[1]		384LDV_DMSO	F9	Destination[1]		384PP_Dest	F9	0	0			1500	1500	7.269	97.319	Percent	DMSO	
+Source[1]		384LDV_DMSO	G9	Destination[1]		384PP_Dest	G9	0	0			1500	1500	7.345	93.311	Percent	DMSO	
+Source[1]		384LDV_DMSO	H9	Destination[1]		384PP_Dest	H9	0	0			1500	1500	7.688	96.187	Percent	DMSO	
+Source[1]		384LDV_DMSO	I9	Destination[1]		384PP_Dest	I9	0	0			1500	1500	7.787	95.993	Percent	DMSO	
+Source[1]		384LDV_DMSO	J9	Destination[1]		384PP_Dest	J9	0	0			1500	1500	7.374	97.103	Percent	DMSO	
+Source[1]		384LDV_DMSO	K9	Destination[1]		384PP_Dest	K9	0	0			1500	1500	7.481	95.097	Percent	DMSO	
+Source[1]		384LDV_DMSO	L9	Destination[1]		384PP_Dest	L9	0	0			1500	1500	7.606	95.674	Percent	DMSO	
+Source[1]		384LDV_DMSO	M9	Destination[1]		384PP_Dest	M9	0	0			1500	1500	7.034	93.81	Percent	DMSO	
+Source[1]		384LDV_DMSO	N9	Destination[1]		384PP_Dest	N9	0	0			1500	1500	7.409	96.992	Percent	DMSO	
+Source[1]		384LDV_DMSO	O9	Destination[1]		384PP_Dest	O9	0	0			1500	1500	6.156	83.993	Percent	DMSO	
+Source[1]		384LDV_DMSO	P9	Destination[1]		384PP_Dest	P9	0	0			1500	1500	7.101	95.244	Percent	DMSO	
+Source[1]		384LDV_DMSO	P10	Destination[1]		384PP_Dest	P10	0	0			1500	1500	7.756	96.671	Percent	DMSO	
+Source[1]		384LDV_DMSO	O10	Destination[1]		384PP_Dest	O10	0	0			1500	1500	7.851	95.942	Percent	DMSO	
+Source[1]		384LDV_DMSO	N10	Destination[1]		384PP_Dest	N10	0	0			1500	1500	7.676	95.367	Percent	DMSO	
+Source[1]		384LDV_DMSO	M10	Destination[1]		384PP_Dest	M10	0	0			1500	1500	7.482	97.196	Percent	DMSO	
+Source[1]		384LDV_DMSO	L10	Destination[1]		384PP_Dest	L10	0	0			1500	1500	7.748	96.502	Percent	DMSO	
+Source[1]		384LDV_DMSO	K10	Destination[1]		384PP_Dest	K10	0	0			1500	1500	7.355	97.281	Percent	DMSO	
+Source[1]		384LDV_DMSO	J10	Destination[1]		384PP_Dest	J10	0	0			1500	1500	7.53	96.934	Percent	DMSO	
+Source[1]		384LDV_DMSO	I10	Destination[1]		384PP_Dest	I10	0	0			1500	1500	7.661	95.146	Percent	DMSO	
+Source[1]		384LDV_DMSO	H10	Destination[1]		384PP_Dest	H10	0	0			1500	1500	7.992	97.567	Percent	DMSO	
+Source[1]		384LDV_DMSO	G10	Destination[1]		384PP_Dest	G10	0	0			1500	1500	7.769	97.272	Percent	DMSO	
+Source[1]		384LDV_DMSO	F10	Destination[1]		384PP_Dest	F10	0	0			1500	1500	7.844	95.974	Percent	DMSO	
+Source[1]		384LDV_DMSO	E10	Destination[1]		384PP_Dest	E10	0	0			1500	1500	7.705	91.5	Percent	DMSO	
+Source[1]		384LDV_DMSO	D10	Destination[1]		384PP_Dest	D10	0	0			1500	1500	6.986	92.793	Percent	DMSO	
+Source[1]		384LDV_DMSO	C10	Destination[1]		384PP_Dest	C10	0	0			1500	1500	7.77	91.931	Percent	DMSO	
+Source[1]		384LDV_DMSO	B10	Destination[1]		384PP_Dest	B10	0	0			1500	1500	7.955	96.511	Percent	DMSO	
+Source[1]		384LDV_DMSO	A10	Destination[1]		384PP_Dest	A10	0	0			1500	1500	7.636	93.01	Percent	DMSO	
+Source[1]		384LDV_DMSO	A11	Destination[1]		384PP_Dest	A11	0	0			1500	1500	6.197	75.722	Percent	DMSO	
+Source[1]		384LDV_DMSO	C11	Destination[1]		384PP_Dest	C11	0	0			1500	1500	6.33	84.559	Percent	DMSO	
+Source[1]		384LDV_DMSO	D11	Destination[1]		384PP_Dest	D11	0	0			1500	1500	5.279	94.227	Percent	DMSO	
+Source[1]		384LDV_DMSO	E11	Destination[1]		384PP_Dest	E11	0	0			1500	1500	7.374	89.316	Percent	DMSO	
+Source[1]		384LDV_DMSO	F11	Destination[1]		384PP_Dest	F11	0	0			1500	1500	4.934	97.646	Percent	DMSO	
+Source[1]		384LDV_DMSO	G11	Destination[1]		384PP_Dest	G11	0	0			1500	1500	7.371	95.872	Percent	DMSO	
+Source[1]		384LDV_DMSO	H11	Destination[1]		384PP_Dest	H11	0	0			1500	1500	5.728	96.796	Percent	DMSO	
+Source[1]		384LDV_DMSO	I11	Destination[1]		384PP_Dest	I11	0	0			1500	1500	7.418	95.405	Percent	DMSO	
+Source[1]		384LDV_DMSO	J11	Destination[1]		384PP_Dest	J11	0	0			1500	1500	5.519	96.603	Percent	DMSO	
+Source[1]		384LDV_DMSO	K11	Destination[1]		384PP_Dest	K11	0	0			1500	1500	6.516	91.424	Percent	DMSO	
+Source[1]		384LDV_DMSO	L11	Destination[1]		384PP_Dest	L11	0	0			1500	1500	5.804	97.171	Percent	DMSO	
+Source[1]		384LDV_DMSO	M11	Destination[1]		384PP_Dest	M11	0	0			1500	1500	7.216	95.274	Percent	DMSO	
+Source[1]		384LDV_DMSO	N11	Destination[1]		384PP_Dest	N11	0	0			1500	1500	5.786	96.804	Percent	DMSO	
+Source[1]		384LDV_DMSO	O11	Destination[1]		384PP_Dest	O11	0	0			1500	1500	6.324	85.939	Percent	DMSO	
+Source[1]		384LDV_DMSO	P11	Destination[1]		384PP_Dest	P11	0	0			1500	1500	4.42	97.202	Percent	DMSO	
+Source[1]		384LDV_DMSO	P12	Destination[1]		384PP_Dest	P12	0	0			1500	1500	6.811	91.31	Percent	DMSO	
+Source[1]		384LDV_DMSO	O12	Destination[1]		384PP_Dest	O12	0	0			1500	1500	6.284	96.643	Percent	DMSO	
+Source[1]		384LDV_DMSO	N12	Destination[1]		384PP_Dest	N12	0	0			1500	1500	7.092	89.896	Percent	DMSO	
+Source[1]		384LDV_DMSO	M12	Destination[1]		384PP_Dest	M12	0	0			1500	1500	7.163	96.625	Percent	DMSO	
+Source[1]		384LDV_DMSO	L12	Destination[1]		384PP_Dest	L12	0	0			1500	1500	7.194	96.111	Percent	DMSO	
+Source[1]		384LDV_DMSO	K12	Destination[1]		384PP_Dest	K12	0	0			1500	1500	7.167	97.11	Percent	DMSO	
+Source[1]		384LDV_DMSO	J12	Destination[1]		384PP_Dest	J12	0	0			1500	1500	7.835	95.696	Percent	DMSO	
+Source[1]		384LDV_DMSO	I12	Destination[1]		384PP_Dest	I12	0	0			1500	1500	7.33	95.136	Percent	DMSO	
+Source[1]		384LDV_DMSO	H12	Destination[1]		384PP_Dest	H12	0	0			1500	1500	8.01	96.127	Percent	DMSO	
+Source[1]		384LDV_DMSO	G12	Destination[1]		384PP_Dest	G12	0	0			1500	1500	7.242	93.055	Percent	DMSO	
+Source[1]		384LDV_DMSO	F12	Destination[1]		384PP_Dest	F12	0	0			1500	1500	7.731	93.96	Percent	DMSO	
+Source[1]		384LDV_DMSO	E12	Destination[1]		384PP_Dest	E12	0	0			1500	1500	7.316	96.95	Percent	DMSO	
+Source[1]		384LDV_DMSO	D12	Destination[1]		384PP_Dest	D12	0	0			1500	1500	7.538	83.139	Percent	DMSO	
+Source[1]		384LDV_DMSO	C12	Destination[1]		384PP_Dest	C12	0	0			1500	1500	6.79	87.841	Percent	DMSO	
+Source[1]		384LDV_DMSO	B12	Destination[1]		384PP_Dest	B12	0	0			1500	1500	6.663	81.556	Percent	DMSO	
+Source[1]		384LDV_DMSO	A12	Destination[1]		384PP_Dest	A12	0	0			1500	1500	6.19	77.816	Percent	DMSO	
+Source[1]		384LDV_DMSO	A13	Destination[1]		384PP_Dest	A13	0	0			1500	1500	7.501	86.086	Percent	DMSO	
+Source[1]		384LDV_DMSO	B13	Destination[1]		384PP_Dest	B13	0	0			1500	1500	6.95	88.066	Percent	DMSO	
+Source[1]		384LDV_DMSO	C13	Destination[1]		384PP_Dest	C13	0	0			1500	1500	7.556	85.955	Percent	DMSO	
+Source[1]		384LDV_DMSO	D13	Destination[1]		384PP_Dest	D13	0	0			1500	1500	7.579	87.413	Percent	DMSO	
+Source[1]		384LDV_DMSO	E13	Destination[1]		384PP_Dest	E13	0	0			1500	1500	8.064	94.068	Percent	DMSO	
+Source[1]		384LDV_DMSO	F13	Destination[1]		384PP_Dest	F13	0	0			1500	1500	7.921	96.711	Percent	DMSO	
+Source[1]		384LDV_DMSO	G13	Destination[1]		384PP_Dest	G13	0	0			1500	1500	8.253	96.207	Percent	DMSO	
+Source[1]		384LDV_DMSO	H13	Destination[1]		384PP_Dest	H13	0	0			1500	1500	7.875	97.208	Percent	DMSO	
+Source[1]		384LDV_DMSO	I13	Destination[1]		384PP_Dest	I13	0	0			1500	1500	7.287	89.536	Percent	DMSO	
+Source[1]		384LDV_DMSO	J13	Destination[1]		384PP_Dest	J13	0	0			1500	1500	7.544	90.784	Percent	DMSO	
+Source[1]		384LDV_DMSO	K13	Destination[1]		384PP_Dest	K13	0	0			1500	1500	7.704	96.455	Percent	DMSO	
+Source[1]		384LDV_DMSO	L13	Destination[1]		384PP_Dest	L13	0	0			1500	1500	7.662	95.547	Percent	DMSO	
+Source[1]		384LDV_DMSO	M13	Destination[1]		384PP_Dest	M13	0	0			1500	1500	7.884	95.391	Percent	DMSO	
+Source[1]		384LDV_DMSO	N13	Destination[1]		384PP_Dest	N13	0	0			1500	1500	7.449	97.421	Percent	DMSO	
+Source[1]		384LDV_DMSO	O13	Destination[1]		384PP_Dest	O13	0	0			1500	1500	7.602	94.651	Percent	DMSO	
+Source[1]		384LDV_DMSO	P13	Destination[1]		384PP_Dest	P13	0	0			1500	1500	7.04	95.675	Percent	DMSO	
+Source[1]		384LDV_DMSO	P14	Destination[1]		384PP_Dest	P14	0	0			1500	1500	7.16	94.314	Percent	DMSO	
+Source[1]		384LDV_DMSO	O14	Destination[1]		384PP_Dest	O14	0	0			1500	1500	7.245	86.681	Percent	DMSO	
+Source[1]		384LDV_DMSO	N14	Destination[1]		384PP_Dest	N14	0	0			1500	1500	7.129	96.827	Percent	DMSO	
+Source[1]		384LDV_DMSO	M14	Destination[1]		384PP_Dest	M14	0	0			1500	1500	7.923	97.793	Percent	DMSO	
+Source[1]		384LDV_DMSO	L14	Destination[1]		384PP_Dest	L14	0	0			1500	1500	7.124	96.291	Percent	DMSO	
+Source[1]		384LDV_DMSO	K14	Destination[1]		384PP_Dest	K14	0	0			1500	1500	7.456	96.626	Percent	DMSO	
+Source[1]		384LDV_DMSO	J14	Destination[1]		384PP_Dest	J14	0	0			1500	1500	7.263	97.386	Percent	DMSO	
+Source[1]		384LDV_DMSO	I14	Destination[1]		384PP_Dest	I14	0	0			1500	1500	6.736	89.526	Percent	DMSO	
+Source[1]		384LDV_DMSO	H14	Destination[1]		384PP_Dest	H14	0	0			1500	1500	7.228	95.944	Percent	DMSO	
+Source[1]		384LDV_DMSO	G14	Destination[1]		384PP_Dest	G14	0	0			1500	1500	7.247	94.266	Percent	DMSO	
+Source[1]		384LDV_DMSO	F14	Destination[1]		384PP_Dest	F14	0	0			1500	1500	7.094	94.147	Percent	DMSO	
+Source[1]		384LDV_DMSO	E14	Destination[1]		384PP_Dest	E14	0	0			1500	1500	7.274	95.365	Percent	DMSO	
+Source[1]		384LDV_DMSO	D14	Destination[1]		384PP_Dest	D14	0	0			1500	1500	7.557	94.143	Percent	DMSO	
+Source[1]		384LDV_DMSO	C14	Destination[1]		384PP_Dest	C14	0	0			1500	1500	6.713	89.882	Percent	DMSO	
+Source[1]		384LDV_DMSO	B14	Destination[1]		384PP_Dest	B14	0	0			1500	1500	7.461	93.047	Percent	DMSO	
+Source[1]		384LDV_DMSO	A14	Destination[1]		384PP_Dest	A14	0	0			1500	1500	6.522	85.507	Percent	DMSO	
+Source[1]		384LDV_DMSO	A15	Destination[1]		384PP_Dest	A15	0	0			1500	1500	6.356	81.918	Percent	DMSO	
+Source[1]		384LDV_DMSO	B15	Destination[1]		384PP_Dest	B15	0	0			1500	1500	7.308	93.155	Percent	DMSO	
+Source[1]		384LDV_DMSO	C15	Destination[1]		384PP_Dest	C15	0	0			1500	1500	6.47	82.189	Percent	DMSO	
+Source[1]		384LDV_DMSO	D15	Destination[1]		384PP_Dest	D15	0	0			1500	1500	7.612	97.373	Percent	DMSO	
+Source[1]		384LDV_DMSO	E15	Destination[1]		384PP_Dest	E15	0	0			1500	1500	7.666	96.126	Percent	DMSO	
+Source[1]		384LDV_DMSO	F15	Destination[1]		384PP_Dest	F15	0	0			1500	1500	7.76	94.536	Percent	DMSO	
+Source[1]		384LDV_DMSO	G15	Destination[1]		384PP_Dest	G15	0	0			1500	1500	7.869	94.58	Percent	DMSO	
+Source[1]		384LDV_DMSO	H15	Destination[1]		384PP_Dest	H15	0	0			1500	1500	7.715	97.688	Percent	DMSO	
+Source[1]		384LDV_DMSO	I15	Destination[1]		384PP_Dest	I15	0	0			1500	1500	7.331	93.458	Percent	DMSO	
+Source[1]		384LDV_DMSO	J15	Destination[1]		384PP_Dest	J15	0	0			1500	1500	7.671	96.747	Percent	DMSO	
+Source[1]		384LDV_DMSO	K15	Destination[1]		384PP_Dest	K15	0	0			1500	1500	7.284	90.858	Percent	DMSO	
+Source[1]		384LDV_DMSO	L15	Destination[1]		384PP_Dest	L15	0	0			1500	1500	7.794	97.685	Percent	DMSO	
+Source[1]		384LDV_DMSO	N15	Destination[1]		384PP_Dest	N15	0	0			1500	1500	7.743	96.799	Percent	DMSO	
+Source[1]		384LDV_DMSO	O15	Destination[1]		384PP_Dest	O15	0	0			1500	1500	6.2	91.638	Percent	DMSO	
+Source[1]		384LDV_DMSO	P15	Destination[1]		384PP_Dest	P15	0	0			1500	1500	7.474	96.236	Percent	DMSO	
+Source[1]		384LDV_DMSO	P16	Destination[1]		384PP_Dest	P16	0	0			1500	1500	6.77	92.149	Percent	DMSO	
+Source[1]		384LDV_DMSO	O16	Destination[1]		384PP_Dest	O16	0	0			1500	1500	7.356	95.761	Percent	DMSO	
+Source[1]		384LDV_DMSO	N16	Destination[1]		384PP_Dest	N16	0	0			1500	1500	7.104	95.665	Percent	DMSO	
+Source[1]		384LDV_DMSO	M16	Destination[1]		384PP_Dest	M16	0	0			1500	1500	7.135	97.426	Percent	DMSO	
+Source[1]		384LDV_DMSO	L16	Destination[1]		384PP_Dest	L16	0	0			1500	1500	7.663	96.69	Percent	DMSO	
+Source[1]		384LDV_DMSO	K16	Destination[1]		384PP_Dest	K16	0	0			1500	1500	7.036	96.013	Percent	DMSO	
+Source[1]		384LDV_DMSO	J16	Destination[1]		384PP_Dest	J16	0	0			1500	1500	7.478	86.374	Percent	DMSO	
+Source[1]		384LDV_DMSO	I16	Destination[1]		384PP_Dest	I16	0	0			1500	1500	6.712	93.381	Percent	DMSO	
+Source[1]		384LDV_DMSO	H16	Destination[1]		384PP_Dest	H16	0	0			1500	1500	8.022	97.677	Percent	DMSO	
+Source[1]		384LDV_DMSO	G16	Destination[1]		384PP_Dest	G16	0	0			1500	1500	6.767	97.048	Percent	DMSO	
+Source[1]		384LDV_DMSO	F16	Destination[1]		384PP_Dest	F16	0	0			1500	1500	7.783	98.041	Percent	DMSO	
+Source[1]		384LDV_DMSO	E16	Destination[1]		384PP_Dest	E16	0	0			1500	1500	7.071	95.966	Percent	DMSO	
+Source[1]		384LDV_DMSO	D16	Destination[1]		384PP_Dest	D16	0	0			1500	1500	7.696	97.198	Percent	DMSO	
+Source[1]		384LDV_DMSO	C16	Destination[1]		384PP_Dest	C16	0	0			1500	1500	6.433	86.768	Percent	DMSO	
+Source[1]		384LDV_DMSO	B16	Destination[1]		384PP_Dest	B16	0	0			1500	1500	7.203	91.431	Percent	DMSO	
+Source[1]		384LDV_DMSO	A16	Destination[1]		384PP_Dest	A16	0	0			1500	1500	6.819	91.461	Percent	DMSO	
+Source[1]		384LDV_DMSO	A17	Destination[1]		384PP_Dest	A17	0	0			1500	1500	7.104	94.609	Percent	DMSO	
+Source[1]		384LDV_DMSO	B17	Destination[1]		384PP_Dest	B17	0	0			1500	1500	7.099	91.193	Percent	DMSO	
+Source[1]		384LDV_DMSO	C17	Destination[1]		384PP_Dest	C17	0	0			1500	1500	6.556	81.384	Percent	DMSO	
+Source[1]		384LDV_DMSO	D17	Destination[1]		384PP_Dest	D17	0	0			1500	1500	7.703	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	E17	Destination[1]		384PP_Dest	E17	0	0			1500	1500	8.093	95.675	Percent	DMSO	
+Source[1]		384LDV_DMSO	F17	Destination[1]		384PP_Dest	F17	0	0			1500	1500	7.721	96.775	Percent	DMSO	
+Source[1]		384LDV_DMSO	G17	Destination[1]		384PP_Dest	G17	0	0			1500	1500	7.635	97.508	Percent	DMSO	
+Source[1]		384LDV_DMSO	H17	Destination[1]		384PP_Dest	H17	0	0			1500	1500	7.722	96.913	Percent	DMSO	
+Source[1]		384LDV_DMSO	I17	Destination[1]		384PP_Dest	I17	0	0			1500	1500	3.608	78.612	Percent	DMSO	
+Source[1]		384LDV_DMSO	J17	Destination[1]		384PP_Dest	J17	0	0			1500	1500	7.522	95.988	Percent	DMSO	
+Source[1]		384LDV_DMSO	K17	Destination[1]		384PP_Dest	K17	0	0			1500	1500	7.684	96.587	Percent	DMSO	
+Source[1]		384LDV_DMSO	L17	Destination[1]		384PP_Dest	L17	0	0			1500	1500	6.842	87.859	Percent	DMSO	
+Source[1]		384LDV_DMSO	M17	Destination[1]		384PP_Dest	M17	0	0			1500	1500	7.797	94.768	Percent	DMSO	
+Source[1]		384LDV_DMSO	N17	Destination[1]		384PP_Dest	N17	0	0			1500	1500	7.224	95.324	Percent	DMSO	
+Source[1]		384LDV_DMSO	O17	Destination[1]		384PP_Dest	O17	0	0			1500	1500	7.671	95.858	Percent	DMSO	
+Source[1]		384LDV_DMSO	P17	Destination[1]		384PP_Dest	P17	0	0			1500	1500	7.063	96.704	Percent	DMSO	
+Source[1]		384LDV_DMSO	P18	Destination[1]		384PP_Dest	P18	0	0			1500	1500	7.766	96.049	Percent	DMSO	
+Source[1]		384LDV_DMSO	O18	Destination[1]		384PP_Dest	O18	0	0			1500	1500	7.04	94.776	Percent	DMSO	
+Source[1]		384LDV_DMSO	N18	Destination[1]		384PP_Dest	N18	0	0			1500	1500	7.703	96.247	Percent	DMSO	
+Source[1]		384LDV_DMSO	M18	Destination[1]		384PP_Dest	M18	0	0			1500	1500	8.016	96.993	Percent	DMSO	
+Source[1]		384LDV_DMSO	L18	Destination[1]		384PP_Dest	L18	0	0			1500	1500	7.641	95.504	Percent	DMSO	
+Source[1]		384LDV_DMSO	K18	Destination[1]		384PP_Dest	K18	0	0			1500	1500	7.684	95.514	Percent	DMSO	
+Source[1]		384LDV_DMSO	J18	Destination[1]		384PP_Dest	J18	0	0			1500	1500	7.841	95.327	Percent	DMSO	
+Source[1]		384LDV_DMSO	I18	Destination[1]		384PP_Dest	I18	0	0			1500	1500	8.215	94.547	Percent	DMSO	
+Source[1]		384LDV_DMSO	H18	Destination[1]		384PP_Dest	H18	0	0			1500	1500	7.916	96.953	Percent	DMSO	
+Source[1]		384LDV_DMSO	G18	Destination[1]		384PP_Dest	G18	0	0			1500	1500	7.871	97.539	Percent	DMSO	
+Source[1]		384LDV_DMSO	F18	Destination[1]		384PP_Dest	F18	0	0			1500	1500	7.498	92.677	Percent	DMSO	
+Source[1]		384LDV_DMSO	E18	Destination[1]		384PP_Dest	E18	0	0			1500	1500	7.867	97.134	Percent	DMSO	
+Source[1]		384LDV_DMSO	D18	Destination[1]		384PP_Dest	D18	0	0			1500	1500	7.898	93.678	Percent	DMSO	
+Source[1]		384LDV_DMSO	C18	Destination[1]		384PP_Dest	C18	0	0			1500	1500	7.528	95.822	Percent	DMSO	
+Source[1]		384LDV_DMSO	B18	Destination[1]		384PP_Dest	B18	0	0			1500	1500	6.966	85.832	Percent	DMSO	
+Source[1]		384LDV_DMSO	A18	Destination[1]		384PP_Dest	A18	0	0			1500	1500	7.464	94.484	Percent	DMSO	
+Source[1]		384LDV_DMSO	A19	Destination[1]		384PP_Dest	A19	0	0			1500	1500	1.746	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	B19	Destination[1]		384PP_Dest	B19	0	0			1500	1500	7.356	88.841	Percent	DMSO	
+Source[1]		384LDV_DMSO	C19	Destination[1]		384PP_Dest	C19	0	0			1500	1500	6.096	75.491	Percent	DMSO	
+Source[1]		384LDV_DMSO	D19	Destination[1]		384PP_Dest	D19	0	0			1500	1500	7.475	81.379	Percent	DMSO	
+Source[1]		384LDV_DMSO	E19	Destination[1]		384PP_Dest	E19	0	0			1500	1500	7.844	95.974	Percent	DMSO	
+Source[1]		384LDV_DMSO	F19	Destination[1]		384PP_Dest	F19	0	0			1500	1500	8.204	97.279	Percent	DMSO	
+Source[1]		384LDV_DMSO	G19	Destination[1]		384PP_Dest	G19	0	0			1500	1500	7.541	96.539	Percent	DMSO	
+Source[1]		384LDV_DMSO	H19	Destination[1]		384PP_Dest	H19	0	0			1500	1500	7.502	88.999	Percent	DMSO	
+Source[1]		384LDV_DMSO	I19	Destination[1]		384PP_Dest	I19	0	0			1500	1500	7.464	94.296	Percent	DMSO	
+Source[1]		384LDV_DMSO	J19	Destination[1]		384PP_Dest	J19	0	0			1500	1500	8.304	98.726	Percent	DMSO	
+Source[1]		384LDV_DMSO	K19	Destination[1]		384PP_Dest	K19	0	0			1500	1500	6.685	79.453	Percent	DMSO	
+Source[1]		384LDV_DMSO	L19	Destination[1]		384PP_Dest	L19	0	0			1500	1500	7.585	92.711	Percent	DMSO	
+Source[1]		384LDV_DMSO	M19	Destination[1]		384PP_Dest	M19	0	0			1500	1500	7.24	82.153	Percent	DMSO	
+Source[1]		384LDV_DMSO	N19	Destination[1]		384PP_Dest	N19	0	0			1500	1500	7.784	96.531	Percent	DMSO	
+Source[1]		384LDV_DMSO	O19	Destination[1]		384PP_Dest	O19	0	0			1500	1500	7.161	94.442	Percent	DMSO	
+Source[1]		384LDV_DMSO	P19	Destination[1]		384PP_Dest	P19	0	0			1500	1500	7.467	95.064	Percent	DMSO	
+Source[1]		384LDV_DMSO	P20	Destination[1]		384PP_Dest	P20	0	0			1500	1500	6.602	75.739	Percent	DMSO	
+Source[1]		384LDV_DMSO	O20	Destination[1]		384PP_Dest	O20	0	0			1500	1500	7.075	94.594	Percent	DMSO	
+Source[1]		384LDV_DMSO	N20	Destination[1]		384PP_Dest	N20	0	0			1500	1500	7.366	90.987	Percent	DMSO	
+Source[1]		384LDV_DMSO	M20	Destination[1]		384PP_Dest	M20	0	0			1500	1500	7.129	96.022	Percent	DMSO	
+Source[1]		384LDV_DMSO	L20	Destination[1]		384PP_Dest	L20	0	0			1500	1500	7.494	93.799	Percent	DMSO	
+Source[1]		384LDV_DMSO	K20	Destination[1]		384PP_Dest	K20	0	0			1500	1500	5.997	89.956	Percent	DMSO	
+Source[1]		384LDV_DMSO	J20	Destination[1]		384PP_Dest	J20	0	0			1500	1500	7.857	96.811	Percent	DMSO	
+Source[1]		384LDV_DMSO	I20	Destination[1]		384PP_Dest	I20	0	0			1500	1500	6.862	97.3	Percent	DMSO	
+Source[1]		384LDV_DMSO	H20	Destination[1]		384PP_Dest	H20	0	0			1500	1500	7.796	97.122	Percent	DMSO	
+Source[1]		384LDV_DMSO	G20	Destination[1]		384PP_Dest	G20	0	0			1500	1500	7.019	96.514	Percent	DMSO	
+Source[1]		384LDV_DMSO	E20	Destination[1]		384PP_Dest	E20	0	0			1500	1500	7.028	92.218	Percent	DMSO	
+Source[1]		384LDV_DMSO	D20	Destination[1]		384PP_Dest	D20	0	0			1500	1500	6.087	72.187	Percent	DMSO	
+Source[1]		384LDV_DMSO	C20	Destination[1]		384PP_Dest	C20	0	0			1500	1500	6.54	75.327	Percent	DMSO	
+Source[1]		384LDV_DMSO	B20	Destination[1]		384PP_Dest	B20	0	0			1500	1500	6.18	81.766	Percent	DMSO	
+Source[1]		384LDV_DMSO	A20	Destination[1]		384PP_Dest	A20	0	0			1500	1500	3.914	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	B21	Destination[1]		384PP_Dest	B21	0	0			1500	1500	7.494	80.821	Percent	DMSO	
+Source[1]		384LDV_DMSO	C21	Destination[1]		384PP_Dest	C21	0	0			1500	1500	6.632	72.671	Percent	DMSO	
+Source[1]		384LDV_DMSO	D21	Destination[1]		384PP_Dest	D21	0	0			1500	1500	6.74	77.263	Percent	DMSO	
+Source[1]		384LDV_DMSO	E21	Destination[1]		384PP_Dest	E21	0	0			1500	1500	8.035	94.52	Percent	DMSO	
+Source[1]		384LDV_DMSO	F21	Destination[1]		384PP_Dest	F21	0	0			1500	1500	8.094	96.929	Percent	DMSO	
+Source[1]		384LDV_DMSO	G21	Destination[1]		384PP_Dest	G21	0	0			1500	1500	7.355	86.806	Percent	DMSO	
+Source[1]		384LDV_DMSO	H21	Destination[1]		384PP_Dest	H21	0	0			1500	1500	7.755	96.523	Percent	DMSO	
+Source[1]		384LDV_DMSO	I21	Destination[1]		384PP_Dest	I21	0	0			1500	1500	7.617	91.031	Percent	DMSO	
+Source[1]		384LDV_DMSO	J21	Destination[1]		384PP_Dest	J21	0	0			1500	1500	7.654	95.16	Percent	DMSO	
+Source[1]		384LDV_DMSO	K21	Destination[1]		384PP_Dest	K21	0	0			1500	1500	7.421	85.057	Percent	DMSO	
+Source[1]		384LDV_DMSO	L21	Destination[1]		384PP_Dest	L21	0	0			1500	1500	7.62	95.722	Percent	DMSO	
+Source[1]		384LDV_DMSO	M21	Destination[1]		384PP_Dest	M21	0	0			1500	1500	7.053	80.249	Percent	DMSO	
+Source[1]		384LDV_DMSO	N21	Destination[1]		384PP_Dest	N21	0	0			1500	1500	7.041	87.388	Percent	DMSO	
+Source[1]		384LDV_DMSO	O21	Destination[1]		384PP_Dest	O21	0	0			1500	1500	6.3	79.754	Percent	DMSO	
+Source[1]		384LDV_DMSO	P21	Destination[1]		384PP_Dest	P21	0	0			1500	1500	7.267	93.854	Percent	DMSO	
+Source[1]		384LDV_DMSO	P22	Destination[1]		384PP_Dest	P22	0	0			1500	1500	6.456	70.487	Percent	DMSO	
+Source[1]		384LDV_DMSO	O22	Destination[1]		384PP_Dest	O22	0	0			1500	1500	6.773	90.812	Percent	DMSO	
+Source[1]		384LDV_DMSO	N22	Destination[1]		384PP_Dest	N22	0	0			1500	1500	7.342	83.02	Percent	DMSO	
+Source[1]		384LDV_DMSO	M22	Destination[1]		384PP_Dest	M22	0	0			1500	1500	6.968	83.372	Percent	DMSO	
+Source[1]		384LDV_DMSO	L22	Destination[1]		384PP_Dest	L22	0	0			1500	1500	7.559	94.831	Percent	DMSO	
+Source[1]		384LDV_DMSO	K22	Destination[1]		384PP_Dest	K22	0	0			1500	1500	7.315	96.07	Percent	DMSO	
+Source[1]		384LDV_DMSO	J22	Destination[1]		384PP_Dest	J22	0	0			1500	1500	7.869	96.536	Percent	DMSO	
+Source[1]		384LDV_DMSO	I22	Destination[1]		384PP_Dest	I22	0	0			1500	1500	7.688	92.289	Percent	DMSO	
+Source[1]		384LDV_DMSO	H22	Destination[1]		384PP_Dest	H22	0	0			1500	1500	7.561	87.551	Percent	DMSO	
+Source[1]		384LDV_DMSO	G22	Destination[1]		384PP_Dest	G22	0	0			1500	1500	7.823	96.059	Percent	DMSO	
+Source[1]		384LDV_DMSO	F22	Destination[1]		384PP_Dest	F22	0	0			1500	1500	7.854	88.06	Percent	DMSO	
+Source[1]		384LDV_DMSO	E22	Destination[1]		384PP_Dest	E22	0	0			1500	1500	8.217	93.896	Percent	DMSO	
+Source[1]		384LDV_DMSO	D22	Destination[1]		384PP_Dest	D22	0	0			1500	1500	6.983	71.838	Percent	DMSO	
+Source[1]		384LDV_DMSO	C22	Destination[1]		384PP_Dest	C22	0	0			1500	1500	7.534	74.204	Percent	DMSO	
+Source[1]		384LDV_DMSO	B22	Destination[1]		384PP_Dest	B22	0	0			1500	1500	6.716	79.401	Percent	DMSO	
+Source[1]		384LDV_DMSO	A22	Destination[1]		384PP_Dest	A22	0	0			1500	1500	6.32	70.487	Percent	DMSO	
+
+Instrument Name	E5XX-1564
+Instrument Model	Echo 550
+Instrument Serial Number	E5XX-1564
+Instrument Software Version	2.5.15
+
