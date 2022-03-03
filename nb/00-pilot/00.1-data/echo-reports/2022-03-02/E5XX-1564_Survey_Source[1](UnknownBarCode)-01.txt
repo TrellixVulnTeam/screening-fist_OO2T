@@ -1,0 +1,399 @@
+Run ID	1646208709
+Run Date/Time	2022-03-02 08:11:22
+Application Name	Labcyte Echo Plate Reformat
+Application Version	1.6.4
+Protocol Name	2022-02-28-00-echo-protocol.epr
+User Name	Lab
+
+[DETAILS]
+Source Plate Name	Source Plate Barcode	Source Plate Type	Source Well	Survey Fluid Height	Survey Fluid Volume	Fluid Composition	Fluid Units	Fluid Type	Survey Status
+Source[1]	UnknownBarCode	384LDV_DMSO	A1	0.532	2.35	78.25	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A2	0.337	1.539	81.482	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A3	0.403	1.787	79.893	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A4	0.449	2.004	80.225	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A5	0.44	1.982	80.749	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A6	0.447	2.097	83.127	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A7	0.762	3.608	83.623	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A8	0.78	3.653	82.458	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A9	1.08	5.078	82.5	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A10	1.065	4.984	81.676	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A11	0.605	2.805	82.001	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A12	0.585	2.778	82.283	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A13	0.985	4.616	82.177	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A14	0.703	3.327	83.572	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A15	0.663	3.115	82.909	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A16	0.842	3.952	82.549	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A17	0.917	4.298	82.278	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A18	1.028	4.745	79.675	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A19	0.315	1.295	73.079	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A20	0.308	1.38	80.414	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A21	0	0	0	Percent	DMSO	Data missing for well (1th row, 21th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	A22	0.533	2.403	80.251	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	A23	0	0	0	Percent	DMSO	Data missing for well (1th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	A24	0	0	0	Percent	DMSO	Data missing for well (1th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	B1	0.852	3.935	80.688	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B2	1.02	4.756	81.259	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B3	0.65	2.996	81.337	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B4	1.001	4.639	80.506	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B5	0.936	4.403	82.687	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B6	0.798	3.734	82.307	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B7	0.884	4.148	82.423	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B8	0.589	2.746	82.404	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B9	0.88	4.154	83.227	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B10	1.124	5.29	82.48	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B11	0.944	4.427	82.253	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B12	0.73	3.478	84.227	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B13	0.884	4.166	83.056	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B14	0.984	4.658	83.458	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B15	0.973	4.578	82.671	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B16	0.93	4.4	83.417	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B17	0.92	4.343	83.177	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B18	0.833	3.887	81.927	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B19	0.938	4.383	81.861	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B20	0.639	2.963	81.915	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B21	0.914	4.172	78.535	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B22	0.725	3.341	80.998	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	B23	0	0	0	Percent	DMSO	Data missing for well (2th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	B24	0	0	0	Percent	DMSO	Data missing for well (2th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	C1	0.865	4.057	82.46	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C2	0.621	2.876	81.79	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C3	0	0	0	Percent	DMSO	Data missing for well (3th row, 3th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	C4	0.476	2.199	82.143	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C5	0.583	2.735	82.888	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C6	0.664	3.15	83.745	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C7	0.617	2.898	83.049	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C8	0.71	3.353	83.348	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C9	0.932	4.451	84.757	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C10	1.089	5.159	83.538	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C11	0.681	3.217	83.39	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C12	0.758	3.598	83.842	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C13	0.963	4.601	84.746	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C14	0.797	3.811	84.799	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C15	0.715	3.392	83.763	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C16	0.728	3.486	84.872	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C17	0.709	3.363	83.821	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C18	1.047	4.939	82.972	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C19	0.563	2.663	83.621	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C20	0.65	3.035	82.417	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C21	0.582	2.705	82.293	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C22	0.785	3.673	82.312	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	C23	0	0	0	Percent	DMSO	Data missing for well (3th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	C24	0	0	0	Percent	DMSO	Data missing for well (3th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	D1	1.099	5.097	80.208	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D2	1.092	5.104	81.539	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D3	0.823	3.877	83.001	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D4	0.536	2.53	83.474	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D5	0.792	3.735	83.131	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D6	0.813	3.867	84.078	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D7	0.937	4.456	84.063	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D8	0.9	4.272	83.944	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D9	1.039	4.962	85.269	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D10	0.839	4.02	86.653	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D11	0.451	2.174	86.076	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D12	0.927	4.431	85.104	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D13	0.998	4.728	83.617	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D14	1.021	4.846	83.889	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D15	1.03	4.916	84.853	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D16	1.009	4.82	85.209	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D17	0.678	3.181	82.815	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D18	1.107	5.283	84.973	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D19	0.906	4.288	83.548	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D20	0.51	2.407	83.409	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D21	0.712	3.337	82.615	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D22	0.662	3.063	81.624	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	D23	0	0	0	Percent	DMSO	Data missing for well (4th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	D24	0	0	0	Percent	DMSO	Data missing for well (4th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	E1	0.929	4.333	81.594	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E2	1.072	5.064	83.219	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E3	1.008	4.761	83.262	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E4	1.148	5.43	83.377	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E5	0.934	4.443	84.213	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E6	0.974	4.59	82.97	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E7	0.932	4.455	84.957	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E8	0.974	4.658	86.01	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E9	0.941	4.5	86.589	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E10	1.038	4.962	86.252	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E11	0.776	3.717	86.299	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E12	0.93	4.45	86.401	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E13	1.047	4.997	84.968	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E14	0.921	4.402	85.567	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E15	1.017	4.866	87.613	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E16	0.882	4.208	84.559	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E17	1.156	5.52	85.594	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E18	1.079	5.151	85.221	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E19	1.074	5.127	84.819	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E20	0.91	4.299	83.275	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E21	1.138	5.361	82.625	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E22	1.213	5.708	82.315	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	E23	0	0	0	Percent	DMSO	Data missing for well (5th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	E24	0	0	0	Percent	DMSO	Data missing for well (5th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	F1	0.931	4.367	82.349	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F2	1.077	5.062	82.439	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F3	1.03	4.894	84.046	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F4	1.049	4.985	84.093	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F5	1.028	4.909	84.834	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F6	1.05	5.011	85.016	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F7	1.181	5.637	85.371	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F8	1.081	5.168	86.485	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F9	0.88	4.211	86.317	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F10	1.006	4.812	86.759	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F11	0.297	1.435	88	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F12	1.011	4.837	86.607	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F13	1.051	5.023	86.653	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F14	0.865	4.135	85.253	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F15	1.041	4.978	86.217	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F16	1.025	4.902	87.229	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F17	1.047	5.002	86.114	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F18	0.986	4.71	85.041	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F19	1.176	5.6	84.404	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F20	0	0	0	Percent	DMSO	Data missing for well (6th row, 20th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	F21	1.166	5.5	82.879	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F22	1.049	4.957	83.204	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	F23	0	0	0	Percent	DMSO	Data missing for well (6th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	F24	0	0	0	Percent	DMSO	Data missing for well (6th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	G1	0.951	4.47	82.597	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G2	0.973	4.566	82.379	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G3	0	0	0	Percent	DMSO	Data missing for well (7th row, 3th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	G4	1.035	4.946	85.842	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G5	0.861	4.116	85.019	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G6	0.98	4.693	87.247	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G7	0.92	4.406	86.9	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G8	1.037	4.928	85.759	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G9	0.909	4.351	87.059	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G10	0.999	4.782	87.264	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G11	0.897	4.295	86.757	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G12	0.882	4.216	85.434	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G13	1.153	5.507	85.926	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G14	0.865	4.087	83.292	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G15	1.049	5.013	86.328	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G16	0.754	3.615	86.685	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G17	0.962	4.608	87.91	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G18	0.97	4.645	87.45	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G19	0.954	4.563	86.392	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G20	0.855	4.092	85.732	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G21	0.92	4.395	84.957	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G22	1.091	5.167	83.611	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	G23	0	0	0	Percent	DMSO	Data missing for well (7th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	G24	0	0	0	Percent	DMSO	Data missing for well (7th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	H1	1.133	5.282	80.979	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H2	1.058	5.044	84.538	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H3	0.951	4.514	83.932	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H4	1.04	4.963	84.743	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H5	0.976	4.66	84.833	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H6	0.972	4.19	70.487	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H7	1.027	4.908	86.358	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H8	1.087	5.195	86.209	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H9	1.057	5.055	86.535	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H10	1.072	5.124	86.437	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H11	0.504	2.425	86.571	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H12	1.039	4.977	88.206	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H13	1.041	4.981	87.472	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H14	0.887	4.248	87.47	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H15	1.01	4.834	87.319	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H16	1.063	5.086	86.984	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H17	1.032	4.935	86.533	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H18	1.027	4.914	87.44	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H19	0.967	4.625	86.208	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H20	1.052	5.031	86.671	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H21	1.056	5.011	83.816	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H22	0.957	4.544	83.938	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	H23	0	0	0	Percent	DMSO	Data missing for well (8th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	H24	0	0	0	Percent	DMSO	Data missing for well (8th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	I1	0.954	4.474	82.32	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I2	0.863	4.101	84.054	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I3	0.909	4.305	83.617	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I4	0.94	4.493	84.974	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I5	0.954	4.56	86.073	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I6	0.928	4.44	87.097	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I7	0.585	2.811	86.175	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I8	0.972	4.65	86.586	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I9	1.03	4.933	88.128	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I10	0.996	4.768	88.18	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I11	0.906	4.336	87.037	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I12	0.912	4.363	86.714	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I13	0.897	4.296	87.822	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I14	0.76	3.646	87.21	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I15	0.932	4.465	87.976	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I16	0.771	3.7	88.231	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I17	0.351	1.696	86.292	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I18	1.124	5.371	86.017	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I19	0.951	4.545	84.97	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I20	0.67	3.214	85.708	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I21	1.031	4.904	84.249	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I22	1.049	4.983	83.994	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	I23	0	0	0	Percent	DMSO	Data missing for well (9th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	I24	0	0	0	Percent	DMSO	Data missing for well (9th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	J1	1.227	5.778	82.55	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J2	1.088	5.176	84.273	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J3	1.004	4.734	82.963	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J4	1.149	5.471	84.373	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J5	0.8	3.825	84.605	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J6	0.797	3.814	85.151	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J7	0.954	4.565	87.278	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J8	0.867	4.152	86.862	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J9	0.573	2.753	87.434	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J10	0.93	4.451	87.383	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J11	0.462	2.219	84.529	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J12	0.99	4.739	87.106	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J13	0.965	4.62	87.573	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J14	0.882	4.225	87.489	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J15	0.963	4.618	88.756	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J16	0.907	4.345	88.037	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J17	0.962	4.607	87.479	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J18	1.059	5.064	86.123	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J19	1.166	5.561	84.972	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J20	1.037	4.933	84.196	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J21	1.022	4.882	85.092	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J22	1.096	5.2	83.77	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	J23	0	0	0	Percent	DMSO	Data missing for well (10th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	J24	0	0	0	Percent	DMSO	Data missing for well (10th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	K1	0.854	3.986	81.88	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K2	0.934	4.412	83.257	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K3	0.889	4.218	83.881	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K4	1.082	5.12	83.438	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K5	0.789	3.759	84.322	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K6	0.965	4.553	83.044	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K7	0.784	3.756	86.194	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K8	0.921	4.403	86.004	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K9	0.948	4.537	87.164	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K10	0.885	4.24	87.532	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K11	0.719	3.451	87.85	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K12	0.867	4.149	85.916	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K13	0.986	4.721	87.842	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K14	0.967	4.627	87.146	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K15	0.903	4.325	87.282	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K16	0.854	4.088	85.985	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K17	0.985	4.713	87.384	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K18	1.007	4.814	86.596	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K19	0.717	3.435	85.428	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K20	0.491	2.349	84.334	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K21	0.915	4.35	84.065	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K22	0.98	4.592	82.118	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	K23	0	0	0	Percent	DMSO	Data missing for well (11th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	K24	0	0	0	Percent	DMSO	Data missing for well (11th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	L1	1.077	5.024	81.218	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L2	1.02	4.797	82.55	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L3	0.989	4.652	82.574	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L4	1.007	4.71	81.824	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L5	0.315	1.494	83.649	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L6	0.896	4.246	83.751	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L7	0.979	4.667	84.504	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L8	0.945	4.509	84.563	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L9	0.99	4.731	85.656	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L10	0.99	4.727	84.87	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L11	0.484	2.331	85.358	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L12	0.872	4.171	85.947	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L13	0.994	4.752	85.784	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L14	0.82	3.921	84.972	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L15	1.008	4.819	86.786	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L16	0.988	4.722	86.268	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L17	0.8	3.828	85.195	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L18	0.99	4.728	84.867	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L19	1.021	4.875	85.079	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L20	0.988	4.722	85.754	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L21	1.013	4.794	83.418	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L22	0.983	4.595	81.731	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	L23	0	0	0	Percent	DMSO	Data missing for well (12th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	L24	0	0	0	Percent	DMSO	Data missing for well (12th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	M1	0.738	3.4	80.876	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M2	0.948	4.397	80.763	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M3	0.738	3.4	80.858	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M4	0.855	4.013	82.568	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M5	0.676	3.217	84.029	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M6	1.013	4.768	82.702	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M7	0.874	4.154	84.068	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M8	0.995	4.725	83.882	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M9	0.865	4.135	85.282	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M10	0.964	4.608	85.84	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M11	0.859	4.112	85.881	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M12	0.883	4.223	85.447	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M13	1.018	4.861	85.482	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M14	1.078	5.151	86.626	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M15	0	0	0	Percent	DMSO	Data missing for well (13th row, 15th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	M16	0.897	4.285	84.781	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M17	1.031	4.915	84.477	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M18	1.109	5.284	84.493	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M19	0.834	3.966	84.109	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M20	0.91	4.35	84.961	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M21	0.722	3.417	83.514	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M22	0.793	3.696	81.93	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	M23	0	0	0	Percent	DMSO	Data missing for well (13th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	M24	0	0	0	Percent	DMSO	Data missing for well (13th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	N1	0.348	1.522	78.496	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N2	0.69	3.205	81.821	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N3	0.901	4.19	81.306	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N4	0.887	4.134	81.603	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N5	0.954	4.474	82.328	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N6	0.696	3.106	77.26	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N7	0.834	3.934	83.226	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N8	0.869	4.052	81.709	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N9	0.96	4.56	83.945	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N10	1.042	4.957	84.247	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N11	0.526	2.527	85.301	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N12	0.906	4.2	80.966	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N13	0.941	4.497	85.238	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N14	0.852	4.073	84.885	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N15	1.004	4.788	84.581	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N16	0.879	4.202	84.785	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N17	0.937	4.416	82.99	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N18	1.055	4.965	82.592	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N19	1.012	4.8	83.842	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N20	1.005	4.719	82.42	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N21	0.851	3.971	81.915	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N22	0.88	4.107	81.803	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	N23	0	0	0	Percent	DMSO	Data missing for well (14th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	N24	0	0	0	Percent	DMSO	Data missing for well (14th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	O1	0.636	2.788	75.811	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O2	0.588	2.66	80.069	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O3	0.977	4.511	80.108	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O4	0.717	3.28	80.261	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O5	0.364	1.616	79.956	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O6	1.074	5.007	81.104	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O7	0.508	2.321	81.278	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O8	0.579	2.687	82.176	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O9	0.665	3.058	81.051	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O10	1.118	5.26	82.455	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O11	0.663	3.121	83.157	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O12	0.699	3.281	82.838	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O13	0.984	4.632	82.727	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O14	0.898	4.234	83.013	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O15	0.686	3.199	82.217	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O16	0.971	4.573	82.883	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O17	1.06	4.974	82.112	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O18	0.906	4.274	83.167	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O19	0.937	4.202	75.513	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O20	0.891	4.19	82.665	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O21	0.63	2.913	81.74	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O22	0.88	4.063	80.523	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	O23	0	0	0	Percent	DMSO	Data missing for well (15th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	O24	0	0	0	Percent	DMSO	Data missing for well (15th row, 24th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	P1	0.83	3.684	74.963	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P2	0.363	1.552	76.191	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P3	0.675	3.018	77.806	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P4	1.048	4.837	79.638	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P5	1.026	4.728	79.518	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P6	0.944	4.299	77.973	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P7	0.343	1.518	79.693	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P8	0.991	4.594	80.571	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P9	0.877	4.06	80.793	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P10	1.124	5.246	81.253	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P11	0.367	1.625	79.616	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P12	0.782	3.571	79.694	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P13	0.897	4.196	82.118	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P14	0.925	4.279	80.556	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P15	0.989	4.602	81.182	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P16	0.821	3.791	80.817	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P17	0.942	4.224	75.305	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P18	0.881	4.1	81.42	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P19	1.003	4.632	79.916	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P20	0.65	2.948	79.874	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P21	0.982	4.557	80.684	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P22	0.617	2.765	78.795	Percent	DMSO	
+Source[1]	UnknownBarCode	384LDV_DMSO	P23	0	0	0	Percent	DMSO	Data missing for well (16th row, 23th column), defaulting to 0.0 percent DMSO
+Source[1]	UnknownBarCode	384LDV_DMSO	P24	0	0	0	Percent	DMSO	Data missing for well (16th row, 24th column), defaulting to 0.0 percent DMSO
+
+Instrument Name	E5XX-1564
+Instrument Model	Echo 550
+Instrument Serial Number	E5XX-1564
+Instrument Software Version	2.5.15
+
