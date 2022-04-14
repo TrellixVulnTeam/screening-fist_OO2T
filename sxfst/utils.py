@@ -328,6 +328,7 @@ def plot_report(*,
             p.plot(traces.loc[well_,:], 
                    c=plt.cm.cool(conc_/max(x.values())))
         p.set_xlim(280,800)
+        p.set_ylim(-0.1,0.5)
         p.set_title(name)
         p.set_xlabel('Wavelength (nm)')
         #p.axis('off')
@@ -337,8 +338,9 @@ def plot_report(*,
                                        x.values(),
                                        x.keys()):
             p.plot(diff.loc[well_,:], 
-                   c=plt.cm.cool(conc_/max(x.values())))
-        p.legend(x.values())
+                   c=plt.cm.cool(conc_/max(x.values())),
+                   label=f"{conc_} uM")
+        p.legend()
         p.set_xlim(280,800)
         p.set_title(name)
         p.set_xlabel('Wavelength (nm)')
@@ -347,7 +349,9 @@ def plot_report(*,
         p=ax[1,0]
         p.scatter(x.values(), y.values())
         if mm is not None:
-            x_ = np.linspace(min(x), max(x), 32)
+            x_ = np.linspace(min(x.values()), 
+                             max(x.values()), 
+                             32)
             from pipeline import michaelis_menten
             y_ = michaelis_menten(x_, mm['km'], mm['vmax'])
     if smiles is not None:
@@ -360,18 +364,12 @@ def plot_report(*,
         p.imshow(im)
         p.axis('off')
 
+    plt.tight_layout()
+
     if save_path is not None:
-        if name is not None:
-            path=os.path.join(save_path, name)
-        else:
-            path=os.path.join('img','noname')
-        if not os.path.exists(os.path.dirname(save_path)):
-            os.makedirs(save_path)
-        else:
-            if name is not None:
-                path=name
-            else:
-                path = 'noname'
-        plt.savefig(path)
+        directory = os.path.dirname(save_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        plt.savefig(save_path)
 
     plt.close()

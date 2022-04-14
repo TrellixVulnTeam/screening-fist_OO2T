@@ -337,14 +337,19 @@ def proc(cpd, # Cpd()
     smth = smooth(norm, sigma)
     
     if not is_anomaly(smth):
-        change = diff(smth, smth[list(smth.keys())[0]])
+        change = diff(smth, 
+                      smth[list(smth.keys())[0]])
         y = dict(response(change))
         mm = fit_michaelis_menten(x,y) # {'km':km, 'vmax':vmax, 'rsq':rsq}
         o['y'] = y
         o['michaelis_menten'] = mm
         if plot:
             utils.plot_report(traces=smth,
-                              diff=change,
+                              #diff=change,
+                              name=name,
+                              x=x,
+                              y=y,
+                              mm=mm,
                               save_path=os.path.join('img', name),
                               smiles=smiles,
                               )
@@ -364,6 +369,13 @@ def proc(cpd, # Cpd()
 def main(args):
     for path in args:
         screen = Screen(path)
+        #from multiprocessing.pool import ThreadPool
+        #def helper(cpd):
+        #    return proc(cpd, plot=True)
+        #with ThreadPool(32) as pool:
+        #    pool.map(helper, 
+        #             screen)
+        #    pool.join()
         #for cpd in screen:
         for cpd in tqdm(screen):
             proc(cpd, plot=True)
