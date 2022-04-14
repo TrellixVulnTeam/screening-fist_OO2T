@@ -94,3 +94,5 @@ nb:
         - ./platereader
         - ./lab.ipynb
         - ./inventory.ipynb
+lib:
+        - layouts.csv

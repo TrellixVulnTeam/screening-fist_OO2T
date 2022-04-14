@@ -1,5 +1,5 @@
 #!/bin/bash
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate base
+conda activate sxfst # rdkit 
 
-./pipeline.py ../nb/00-pilot/00.3
+python pipeline.py ../nb/00-pilot/00.3

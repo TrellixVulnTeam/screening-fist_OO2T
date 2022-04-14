@@ -234,7 +234,7 @@ def plotTraces(x,     # df
                size=(12,8),
                **kwargs,
                ):
-    if save or save_path is not None:
+    if save_path is not None:
         if not os.path.exists('img'):
             os.mkdir('img')
     plt.figure(figsize=size)
@@ -242,7 +242,7 @@ def plotTraces(x,     # df
         for row_, vol_ in zip(x.index, vols):
             plt.plot(x.loc[row_,:], 
                      c=plt.cm.cool(vol_/2000), 
-                     label=f'{row_} {vol_} ul')
+                     label=f'{row_} {vol_} uM')
     else:
         for row_ in x.index:
             plt.plot(x.loc[row_,:],
@@ -277,9 +277,13 @@ def plot_set(wells, title=''):
                                1, 
                                figsize=(6,16))
     else:
-        fig, ax = plt.subplots(len(wells)//(nRows:=8), 
+        nRows=8
+        fig, ax = plt.subplots(len(wells)//nRows, 
                                nRows, 
                                figsize=(16,128*(len(wells) / len(wells))))
+        #fig, ax = plt.subplots(len(wells)//(nRows:=8), 
+        #                       nRows, 
+        #                       figsize=(16,128*(len(wells) / len(wells))))
 
     for cpd, ax_ in zip(wells, ax.flatten()):
         _plate = list(set(wells[cpd]['Destination Plate Name']))[0]
@@ -301,3 +305,73 @@ def plot_set(wells, title=''):
     plt.title(title)
     plt.tight_layout()
     plt.show()
+
+def plot_report(*,
+                traces=None,
+                diff=None,
+                name=None,
+                smiles=None,
+                x=None,
+                y=None,
+                mm=None,
+                save_path=None,
+                **kwargs,
+                ):
+    fig, ax = plt.subplots(2,2, figsize=(6,6))
+    if traces is not None:
+        if x is None:
+            x = dict(zip(traces.index, range(len(traces)))) # problem later it .T
+        p = ax[0,0]
+        for trace_, conc_, well_ in zip(traces.index, 
+                                        x.values(),
+                                        x.keys()):
+            p.plot(traces.loc[well_,:], 
+                   c=plt.cm.cool(conc_/max(x.values())))
+        p.set_xlim(280,800)
+        p.set_title(name)
+        p.set_xlabel('Wavelength (nm)')
+        #p.axis('off')
+    if diff is not None:
+        p = ax[0,1]
+        for diff_, conc_, well_ in zip(diff.index, 
+                                       x.values(),
+                                       x.keys()):
+            p.plot(diff.loc[well_,:], 
+                   c=plt.cm.cool(conc_/max(x.values())))
+        p.legend(x.values())
+        p.set_xlim(280,800)
+        p.set_title(name)
+        p.set_xlabel('Wavelength (nm)')
+        #p.axis('off')
+    if x is not None and y is not None:
+        p=ax[1,0]
+        p.scatter(x.values(), y.values())
+        if mm is not None:
+            x_ = np.linspace(min(x), max(x), 32)
+            from pipeline import michaelis_menten
+            y_ = michaelis_menten(x_, mm['km'], mm['vmax'])
+    if smiles is not None:
+        assert isinstance(smiles, str)
+        from rdkit import Chem
+        from rdkit.Chem import Draw
+        p=ax[1,1]
+        m = Chem.MolFromSmiles(smiles)
+        im = Draw.MolToImage(m)
+        p.imshow(im)
+        p.axis('off')
+
+    if save_path is not None:
+        if name is not None:
+            path=os.path.join(save_path, name)
+        else:
+            path=os.path.join('img','noname')
+        if not os.path.exists(os.path.dirname(save_path)):
+            os.makedirs(save_path)
+        else:
+            if name is not None:
+                path=name
+            else:
+                path = 'noname'
+        plt.savefig(path)
+
+    plt.close()
