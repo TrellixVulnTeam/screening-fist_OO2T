@@ -1,6 +1,7 @@
 import sys
 import os
 import re
+import json
 import yaml
 from pprint import pprint, pformat
 import ast
@@ -99,6 +100,10 @@ class Screen:
     ''' Container for screening data.
         Maps compounds to plate wells.
         Processes platereader data on a by compound basis.
+
+        todo: 
+            - echo exceptions report
+            - get baselines
     '''
     def __init__(self,
                  path,
@@ -111,8 +116,9 @@ class Screen:
         self.map_wells()
     def __getitem__(self, idx):
         assert hasattr(self, 'cpd_map')
-        assert idx in self.cpd_map.keys()
-        return self.cpd_map[idx]
+        if idx in self.cpd_map.keys():
+            return self.cpd_map[idx]
+        #elif idx in self.plates
     def __iter__(self):
         assert hasattr(self, 'cpd_map')
         for i in self.cpd_map:
@@ -169,31 +175,36 @@ class Screen:
             assert os.path.exists(picklist_path), \
                     f"path not found: {picklist_path}"
             picklist = proc_picklist(picklist_path)
-            cpd_map = {}
-            for cpd in set(picklist['Cpd']):
-                o = {}
-                chunk = picklist.loc[picklist['Cpd']==cpd, :]
-                o['df'] = chunk
-                echo_name_ = list(set(chunk['Destination Plate Name']))
-                assert len(echo_name_) == 1
-                echo_name = echo_name_[0]
-                wells = list(chunk['DestWell'])
-                m = map_echo_name_2path(echo_name, 
-                                        self.config,
-                                        self.root,
-                                       )
-                if m is not None:
-                   ctrl = read_plate_csv(m['ctrl'])[wells] if 'ctrl' in m.keys() else None
-                   test = read_plate_csv(m['test'])[wells] if 'test' in m.keys() else None
-                   echo_map = m['echo_map'] if 'echo_map' in m.keys() else None
-                   smiles = self.lib.loc[cpd, 'SMILES'] # use case-specific
-                   cpd_map[cpd] = Cpd(name=cpd,
-                                      test=test,
-                                      ctrl=ctrl,
-                                      echo_map=chunk,
-                                      smiles=smiles,
-                                      )
-            self.cpd_map = cpd_map
+        # else concat
+        else:
+            raise Warning('time to make a concat picklists thing')
+        cpd_map = {}
+        for cpd in set(picklist['Cpd']):
+            o = {}
+            chunk = picklist.loc[picklist['Cpd']==cpd, :]
+            o['df'] = chunk
+            echo_name_ = list(set(chunk['Destination Plate Name']))
+            assert len(echo_name_) == 1
+            echo_name = echo_name_[0]
+            wells = list(chunk['DestWell'])
+            m = map_echo_name_2path(echo_name, 
+                                    self.config,
+                                    self.root,
+                                   )
+            if m is not None:
+               ctrl = read_plate_csv(m['ctrl'])[wells] if 'ctrl' in m.keys() else None
+               test = read_plate_csv(m['test'])[wells] if 'test' in m.keys() else None
+               echo_map = m['echo_map'] if 'echo_map' in m.keys() else None
+               smiles = self.lib.loc[cpd, 'SMILES'] # use case-specific
+               cpd_map[cpd] = Cpd(name=cpd,
+                                  test=test,
+                                  test_path=m['test'] if 'test' in m.keys() else None,
+                                  ctrl=ctrl,
+                                  ctrl_path=m['ctrl'] if 'ctrl' in m.keys() else None,
+                                  echo_map=chunk,
+                                  smiles=smiles,
+                                  )
+        self.cpd_map = cpd_map
 
 
 @lru_cache(128)
@@ -298,7 +309,9 @@ def fit_michaelis_menten(x,y):
         y_ = np.array(list(y.values()))
     try:
         (km, vmax), covariance = curve_fit(michaelis_menten, x_, y_, 
-                bounds=((0, 0),(1e2,0.2)))
+                bounds=((0, 0),
+                        (1e4, max(x.values())*1.5),
+                        ))
     except RuntimeError:
         km, vmax = np.inf, np.inf
     yh = michaelis_menten(x_, km, vmax)
@@ -328,9 +341,13 @@ def proc(cpd, # Cpd()
                  3)                            # round to 3 places
               for i in vol_well_map}
     o['name'] = name
-    o['test'] = test
-    o['ctrl'] = ctrl
-    o['echo_map'] = echo_map
+    o['test'] = {'path':cpd.test_path,
+                 'data':test.to_json() if test is not None else test,
+                 }
+    o['ctrl'] = {'path':cpd.ctrl_path,
+                 'data':ctrl.to_json() if ctrl is not None else ctrl,
+                 }
+    o['echo_map'] = echo_map.to_json() if echo_map is not None else echo_map
     o['x'] = x
     o['smiles'] = smiles
     norm = norm_traces(test, ctrl)
@@ -353,16 +370,6 @@ def proc(cpd, # Cpd()
                               save_path=os.path.join('img', name),
                               smiles=smiles,
                               )
-                              #**o)
-    #if plot:
-    #    utils.plotTraces(smth,
-    #                     save_path=name,
-    #                     cpd=name,
-    #                     vols=x.values(),  
-    #                     save=True,
-    #                     )
-    #    o['plot'] = save_path
-
     return o 
 
 
@@ -376,9 +383,10 @@ def main(args):
         #    pool.map(helper, 
         #             screen)
         #    pool.join()
-        #for cpd in screen:
-        for cpd in tqdm(screen):
-            proc(cpd, plot=True)
+        for cpd in screen:
+        #for cpd in tqdm(screen):
+            data = proc(cpd, plot=False)
+            pprint(data)
 
 if __name__ == '__main__':
     main(sys.argv[1:])
