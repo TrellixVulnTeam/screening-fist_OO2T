@@ -20,6 +20,10 @@ class TestPlateData(TestCase):
         for path_ in paths:
             data = PlateData(path_)
             df = data.df
+    def testTimestamp(self):
+        for path_ in paths:
+            data = PlateData(path_)
+            _ = data.timestamp
     def testIter(self):
         for path_ in paths:
             data = PlateData(path_)
@@ -31,6 +35,7 @@ class TestPlateData(TestCase):
             data[0]
             data[3:10]
             data['A1']
+            data[['A1', 'A2','A4']]
     def testRepr(self):
         for path_ in paths:
             data = PlateData(path_)
@@ -60,7 +65,7 @@ class TestScreen(TestCase):
     def testGetitem(self):
         scrn = Screen(picklist=picklist,
                       files=paths)
-        print(scrn['S4206'])
+        #print(scrn['S4206'])
         scrn[9]
         scrn[-1]
         scrn[100:200]

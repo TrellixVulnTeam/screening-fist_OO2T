@@ -37,9 +37,20 @@ class PlateData:
         if isinstance(idx, str):
             assert idx in self.df.index
             return self.df.loc[idx, :]
-        elif isinstance(idx, (slice, float)):
+        elif isinstance(idx, list):
+            return pd.concat([self[i] for i in idx],
+                             axis=1,
+                             ).T
+        elif isinstance(idx, (slice, int)):
             keys = list(self.df.index)[idx]
-            return pd.concat([self.df.loc[i, :] for i in keys])
+            if isinstance(keys, list):
+                return pd.concat([self.df.loc[i, :] for i in keys],
+                                 axis=1,
+                                 ).T
+            else:
+                return self.df.loc[keys, :]
+        else: 
+            raise Warning(f'PlateData.__getitem__: issue parsind index {idx}')
     @property
     def df(self):
         if self._df is None:
@@ -55,6 +66,7 @@ class PlateData:
                                                             '%d%m%Y,%H%M%S')
         timestamp_j = lambda s : datetime.datetime.strptime(s.split('_')[0].replace('.CSV',''),
                                                             '%d%m%Y,%H%M%S')
+        s = os.path.basename(self.path)
         if '_' in s:
             return timestamp_j(s)
         else:
@@ -219,7 +231,8 @@ def plotTraces(x,     # df
                cpd=None,   # name
                vols=None,  #
                save=False,
-               size=(12,8)
+               size=(12,8),
+               **kwargs,
                ):
     if save or save_path is not None:
         if not os.path.exists('img'):
@@ -234,13 +247,16 @@ def plotTraces(x,     # df
         for row_ in x.index:
             plt.plot(x.loc[row_,:],
                      alpha=0.5,
-                     lw=0.5,
-                     label=f'{row_}')
+                     lw=1,
+                     label=f'{row_}',
+                     **kwargs,
+                     )
     plt.xlim(280,800)
     plt.ylim(0, 1)
     if cpd is not None:
         plt.title(cpd)
     plt.xlabel('Wavelength (nm)')
+    plt.ylabel('Absorbance')
     if len(x.index) < 10:
         plt.legend()
     if save or save_path is not None:
@@ -267,9 +283,9 @@ def plot_set(wells, title=''):
 
     for cpd, ax_ in zip(wells, ax.flatten()):
         _plate = list(set(wells[cpd]['Destination Plate Name']))[0]
-        _wells = self.wells[cpd]['DestWell'].to_list()
-        _vols = self.wells[cpd]['Transfer Volume /nl'].to_list()
-        data_ = self.data[next(filter(lambda item : data[item]['pname'] == _plate, data))]
+        _wells = wells[cpd]['DestWell'].to_list()
+        _vols = wells[cpd]['Transfer Volume /nl'].to_list()
+        data_ = data[next(filter(lambda item : data[item]['pname'] == _plate, data))]
         data_cpd = data_['x'].loc[_wells,:]
 
         x = proc(data_cpd) 
