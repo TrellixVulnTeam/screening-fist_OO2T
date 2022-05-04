@@ -1,0 +1,993 @@
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Destination Plate Name,Destination Plate Barcode,Destination Plate Type,Destination Well,Destination Well X Offset,Destination Well Y Offset,Sample ID,Sample Name,Transfer Volume,Actual Volume,Current Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Transfer Status
+Source[2],,384LDV_DMSO,A1,Destination[2],,384PP_Dest,A4,0,0,,,1202.5,300,1.343,71.091,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82695 ft: 0.340347
+Source[2],,384LDV_DMSO,A1,Destination[2],,384PP_Dest,A5,0,0,,,2000,0,1.343,71.091,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82695 ft: 0.340347
+Source[2],,384LDV_DMSO,C1,Destination[2],,384PP_Dest,A10,0,0,,,1202.5,900,1.262,72.79,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81823 ft: 0.309911
+Source[2],,384LDV_DMSO,C1,Destination[2],,384PP_Dest,A11,0,0,,,2000,0,1.262,72.79,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81823 ft: 0.309911
+Source[2],,384LDV_DMSO,E1,Destination[2],,384PP_Dest,A17,0,0,,,2000,300,1.238,71.328,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82574 ft: 0.312418
+Source[2],,384LDV_DMSO,G1,Destination[2],,384PP_Dest,A21,0,0,,,605,0,1.558,73.755,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81318 ft: 0.37542
+Source[2],,384LDV_DMSO,G1,Destination[2],,384PP_Dest,A22,0,0,,,1202.5,0,1.558,73.755,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81318 ft: 0.37542
+Source[2],,384LDV_DMSO,G1,Destination[2],,384PP_Dest,A23,0,0,,,2000,0,1.558,73.755,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81318 ft: 0.37542
+Source[2],,384LDV_DMSO,O1,Destination[2],,384PP_Dest,B23,0,0,,,2000,300,1.273,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.326136
+Source[2],,384LDV_DMSO,O1,Destination[2],,384PP_Dest,B22,0,0,,,1202.5,0,1.273,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.326136
+Source[2],,384LDV_DMSO,O1,Destination[2],,384PP_Dest,B21,0,0,,,605,0,1.273,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.326136
+Source[2],,384LDV_DMSO,O1,Destination[2],,384PP_Dest,B20,0,0,,,212.5,0,1.273,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.326136
+Source[2],,384LDV_DMSO,O1,Destination[2],,384PP_Dest,B19,0,0,,,20,0,1.273,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.326136
+Source[2],,384LDV_DMSO,M1,Destination[2],,384PP_Dest,B17,0,0,,,2000,0,1.168,70.913,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82785 ft: 0.296687
+Source[2],,384LDV_DMSO,M1,Destination[2],,384PP_Dest,B16,0,0,,,1202.5,0,1.168,70.913,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82785 ft: 0.296687
+Source[2],,384LDV_DMSO,M1,Destination[2],,384PP_Dest,B15,0,0,,,605,0,1.168,70.913,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82785 ft: 0.296687
+Source[2],,384LDV_DMSO,M1,Destination[2],,384PP_Dest,B14,0,0,,,212.5,0,1.168,70.913,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82785 ft: 0.296687
+Source[2],,384LDV_DMSO,M1,Destination[2],,384PP_Dest,B13,0,0,,,20,0,1.168,70.913,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82785 ft: 0.296687
+Source[2],,384LDV_DMSO,K1,Destination[2],,384PP_Dest,B11,0,0,,,2000,900,1.371,72.889,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81771 ft: 0.335917
+Source[2],,384LDV_DMSO,K1,Destination[2],,384PP_Dest,B10,0,0,,,1202.5,0,1.371,72.889,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81771 ft: 0.335917
+Source[2],,384LDV_DMSO,K1,Destination[2],,384PP_Dest,B9,0,0,,,605,0,1.371,72.889,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81771 ft: 0.335917
+Source[2],,384LDV_DMSO,K1,Destination[2],,384PP_Dest,B8,0,0,,,212.5,0,1.371,72.889,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81771 ft: 0.335917
+Source[2],,384LDV_DMSO,K1,Destination[2],,384PP_Dest,B7,0,0,,,20,0,1.371,72.889,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81771 ft: 0.335917
+Source[2],,384LDV_DMSO,I1,Destination[2],,384PP_Dest,B5,0,0,,,2000,1500,1.549,73.382,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81514 ft: 0.375945
+Source[2],,384LDV_DMSO,I1,Destination[2],,384PP_Dest,B4,0,0,,,1202.5,0,1.549,73.382,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81514 ft: 0.375945
+Source[2],,384LDV_DMSO,I1,Destination[2],,384PP_Dest,B3,0,0,,,605,0,1.549,73.382,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81514 ft: 0.375945
+Source[2],,384LDV_DMSO,I1,Destination[2],,384PP_Dest,B2,0,0,,,212.5,0,1.549,73.382,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81514 ft: 0.375945
+Source[2],,384LDV_DMSO,I1,Destination[2],,384PP_Dest,B1,0,0,,,20,0,1.549,73.382,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81514 ft: 0.375945
+Source[2],,384LDV_DMSO,I3,Destination[2],,384PP_Dest,D3,0,0,,,605,0,1.516,75.51,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80381 ft: 0.357163
+Source[2],,384LDV_DMSO,I3,Destination[2],,384PP_Dest,D4,0,0,,,1202.5,0,1.516,75.51,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80381 ft: 0.357163
+Source[2],,384LDV_DMSO,I3,Destination[2],,384PP_Dest,D5,0,0,,,2000,0,1.516,75.51,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80381 ft: 0.357163
+Source[2],,384LDV_DMSO,K3,Destination[2],,384PP_Dest,D10,0,0,,,1202.5,600,1.489,74.799,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80764 ft: 0.353099
+Source[2],,384LDV_DMSO,K3,Destination[2],,384PP_Dest,D11,0,0,,,2000,0,1.489,74.799,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80764 ft: 0.353099
+Source[2],,384LDV_DMSO,M3,Destination[2],,384PP_Dest,D13,0,0,,,20,0,1.221,73.513,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81445 ft: 0.295422
+Source[2],,384LDV_DMSO,M3,Destination[2],,384PP_Dest,D14,0,0,,,212.5,0,1.221,73.513,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81445 ft: 0.295422
+Source[2],,384LDV_DMSO,M3,Destination[2],,384PP_Dest,D15,0,0,,,605,0,1.221,73.513,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81445 ft: 0.295422
+Source[2],,384LDV_DMSO,M3,Destination[2],,384PP_Dest,D16,0,0,,,1202.5,0,1.221,73.513,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81445 ft: 0.295422
+Source[2],,384LDV_DMSO,M3,Destination[2],,384PP_Dest,D17,0,0,,,2000,0,1.221,73.513,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81445 ft: 0.295422
+Source[2],,384LDV_DMSO,O3,Destination[2],,384PP_Dest,D19,0,0,,,20,0,1.505,73.91,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81236 ft: 0.361258
+Source[2],,384LDV_DMSO,O3,Destination[2],,384PP_Dest,D20,0,0,,,212.5,0,1.505,73.91,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81236 ft: 0.361258
+Source[2],,384LDV_DMSO,O3,Destination[2],,384PP_Dest,D21,0,0,,,605,0,1.505,73.91,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81236 ft: 0.361258
+Source[2],,384LDV_DMSO,O3,Destination[2],,384PP_Dest,D22,0,0,,,1202.5,0,1.505,73.91,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81236 ft: 0.361258
+Source[2],,384LDV_DMSO,O3,Destination[2],,384PP_Dest,D23,0,0,,,2000,0,1.505,73.91,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81236 ft: 0.361258
+Source[2],,384LDV_DMSO,G3,Destination[2],,384PP_Dest,C22,0,0,,,1202.5,0,1.549,73.852,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81267 ft: 0.372407
+Source[2],,384LDV_DMSO,G3,Destination[2],,384PP_Dest,C21,0,0,,,605,0,1.549,73.852,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81267 ft: 0.372407
+Source[2],,384LDV_DMSO,G3,Destination[2],,384PP_Dest,C20,0,0,,,212.5,0,1.549,73.852,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81267 ft: 0.372407
+Source[2],,384LDV_DMSO,G3,Destination[2],,384PP_Dest,C19,0,0,,,20,0,1.549,73.852,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81267 ft: 0.372407
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C16,0,0,,,1202.5,600,1.288,73.958,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81211 ft: 0.30909
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C15,0,0,,,605,0,1.288,73.958,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81211 ft: 0.30909
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C14,0,0,,,212.5,0,1.288,73.958,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81211 ft: 0.30909
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C13,0,0,,,20,0,1.288,73.958,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81211 ft: 0.30909
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A5,Destination[2],,384PP_Dest,E4,0,0,,,1202.5,600,1.45,73.248,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81584 ft: 0.3529
+Source[2],,384LDV_DMSO,A5,Destination[2],,384PP_Dest,E5,0,0,,,2000,0,1.45,73.248,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81584 ft: 0.3529
+Source[2],,384LDV_DMSO,C5,Destination[2],,384PP_Dest,E10,0,0,,,1202.5,900,1.5,71.969,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82246 ft: 0.373934
+Source[2],,384LDV_DMSO,C5,Destination[2],,384PP_Dest,E11,0,0,,,2000,0,1.5,71.969,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82246 ft: 0.373934
+Source[2],,384LDV_DMSO,E5,Destination[2],,384PP_Dest,E17,0,0,,,2000,300,1.458,73.191,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81614 ft: 0.35528
+Source[2],,384LDV_DMSO,G5,Destination[2],,384PP_Dest,E23,0,0,,,2000,1200,1.346,75.765,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80243 ft: 0.316276
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M5,Destination[2],,384PP_Dest,F17,0,0,,,2000,0,1.566,73.88,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81252 ft: 0.376215
+Source[2],,384LDV_DMSO,M5,Destination[2],,384PP_Dest,F16,0,0,,,1202.5,0,1.566,73.88,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81252 ft: 0.376215
+Source[2],,384LDV_DMSO,M5,Destination[2],,384PP_Dest,F15,0,0,,,605,0,1.566,73.88,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81252 ft: 0.376215
+Source[2],,384LDV_DMSO,M5,Destination[2],,384PP_Dest,F14,0,0,,,212.5,0,1.566,73.88,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81252 ft: 0.376215
+Source[2],,384LDV_DMSO,M5,Destination[2],,384PP_Dest,F13,0,0,,,20,0,1.566,73.88,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81252 ft: 0.376215
+Source[2],,384LDV_DMSO,K5,Destination[2],,384PP_Dest,F10,0,0,,,1202.5,0,1.551,74.934,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80691 ft: 0.367439
+Source[2],,384LDV_DMSO,K5,Destination[2],,384PP_Dest,F9,0,0,,,605,0,1.551,74.934,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80691 ft: 0.367439
+Source[2],,384LDV_DMSO,K5,Destination[2],,384PP_Dest,F8,0,0,,,212.5,0,1.551,74.934,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80691 ft: 0.367439
+Source[2],,384LDV_DMSO,K5,Destination[2],,384PP_Dest,F7,0,0,,,20,0,1.551,74.934,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80691 ft: 0.367439
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F5,0,0,,,2000,1800,1.519,75.074,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80616 ft: 0.359258
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F4,0,0,,,1202.5,0,1.519,75.074,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80616 ft: 0.359258
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F3,0,0,,,605,0,1.519,75.074,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80616 ft: 0.359258
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F2,0,0,,,212.5,0,1.519,75.074,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80616 ft: 0.359258
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F1,0,0,,,20,0,1.519,75.074,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80616 ft: 0.359258
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M7,Destination[2],,384PP_Dest,H16,0,0,,,1202.5,900,1.485,75.649,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80306 ft: 0.349468
+Source[2],,384LDV_DMSO,M7,Destination[2],,384PP_Dest,H17,0,0,,,2000,0,1.485,75.649,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80306 ft: 0.349468
+Source[2],,384LDV_DMSO,O7,Destination[2],,384PP_Dest,H23,0,0,,,2000,600,1.457,70.975,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82754 ft: 0.369785
+Source[2],,384LDV_DMSO,G7,Destination[2],,384PP_Dest,G21,0,0,,,605,600,1.534,76.675,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79746 ft: 0.357615
+Source[2],,384LDV_DMSO,G7,Destination[2],,384PP_Dest,G20,0,0,,,212.5,0,1.534,76.675,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79746 ft: 0.357615
+Source[2],,384LDV_DMSO,G7,Destination[2],,384PP_Dest,G19,0,0,,,20,0,1.534,76.675,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79746 ft: 0.357615
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G15,0,0,,,605,600,1.236,71.579,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82446 ft: 0.310367
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G14,0,0,,,212.5,0,1.236,71.579,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82446 ft: 0.310367
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G13,0,0,,,20,0,1.236,71.579,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82446 ft: 0.310367
+Source[2],,384LDV_DMSO,C7,Destination[2],,384PP_Dest,G11,0,0,,,2000,1800,1.26,72.951,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81739 ft: 0.308334
+Source[2],,384LDV_DMSO,C7,Destination[2],,384PP_Dest,G10,0,0,,,1202.5,0,1.26,72.951,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81739 ft: 0.308334
+Source[2],,384LDV_DMSO,C7,Destination[2],,384PP_Dest,G9,0,0,,,605,0,1.26,72.951,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81739 ft: 0.308334
+Source[2],,384LDV_DMSO,C7,Destination[2],,384PP_Dest,G8,0,0,,,212.5,0,1.26,72.951,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81739 ft: 0.308334
+Source[2],,384LDV_DMSO,C7,Destination[2],,384PP_Dest,G7,0,0,,,20,0,1.26,72.951,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81739 ft: 0.308334
+Source[2],,384LDV_DMSO,A7,Destination[2],,384PP_Dest,G5,0,0,,,2000,600,1.512,72.845,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81794 ft: 0.370799
+Source[2],,384LDV_DMSO,A7,Destination[2],,384PP_Dest,G4,0,0,,,1202.5,0,1.512,72.845,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81794 ft: 0.370799
+Source[2],,384LDV_DMSO,A7,Destination[2],,384PP_Dest,G3,0,0,,,605,0,1.512,72.845,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81794 ft: 0.370799
+Source[2],,384LDV_DMSO,A7,Destination[2],,384PP_Dest,G2,0,0,,,212.5,0,1.512,72.845,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81794 ft: 0.370799
+Source[2],,384LDV_DMSO,A7,Destination[2],,384PP_Dest,G1,0,0,,,20,0,1.512,72.845,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81794 ft: 0.370799
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C9,Destination[2],,384PP_Dest,I7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C9,Destination[2],,384PP_Dest,I8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C9,Destination[2],,384PP_Dest,I9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C9,Destination[2],,384PP_Dest,I10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C9,Destination[2],,384PP_Dest,I11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G9,Destination[2],,384PP_Dest,I22,0,0,,,1202.5,600,1.598,77.206,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79452 ft: 0.370523
+Source[2],,384LDV_DMSO,G9,Destination[2],,384PP_Dest,I23,0,0,,,2000,0,1.598,77.206,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79452 ft: 0.370523
+Source[2],,384LDV_DMSO,O9,Destination[2],,384PP_Dest,J23,0,0,,,2000,900,1.349,71.272,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82603 ft: 0.340527
+Source[2],,384LDV_DMSO,O9,Destination[2],,384PP_Dest,J22,0,0,,,1202.5,0,1.349,71.272,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82603 ft: 0.340527
+Source[2],,384LDV_DMSO,O9,Destination[2],,384PP_Dest,J21,0,0,,,605,0,1.349,71.272,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82603 ft: 0.340527
+Source[2],,384LDV_DMSO,O9,Destination[2],,384PP_Dest,J20,0,0,,,212.5,0,1.349,71.272,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82603 ft: 0.340527
+Source[2],,384LDV_DMSO,O9,Destination[2],,384PP_Dest,J19,0,0,,,20,0,1.349,71.272,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82603 ft: 0.340527
+Source[2],,384LDV_DMSO,M9,Destination[2],,384PP_Dest,J16,0,0,,,1202.5,900,1.346,76.197,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80008 ft: 0.315206
+Source[2],,384LDV_DMSO,M9,Destination[2],,384PP_Dest,J15,0,0,,,605,0,1.346,76.197,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80008 ft: 0.315206
+Source[2],,384LDV_DMSO,M9,Destination[2],,384PP_Dest,J14,0,0,,,212.5,0,1.346,76.197,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80008 ft: 0.315206
+Source[2],,384LDV_DMSO,M9,Destination[2],,384PP_Dest,J13,0,0,,,20,0,1.346,76.197,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80008 ft: 0.315206
+Source[2],,384LDV_DMSO,K9,Destination[2],,384PP_Dest,J10,0,0,,,1202.5,1200,1.583,77.521,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79277 ft: 0.366052
+Source[2],,384LDV_DMSO,K9,Destination[2],,384PP_Dest,J9,0,0,,,605,0,1.583,77.521,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79277 ft: 0.366052
+Source[2],,384LDV_DMSO,K9,Destination[2],,384PP_Dest,J8,0,0,,,212.5,0,1.583,77.521,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79277 ft: 0.366052
+Source[2],,384LDV_DMSO,K9,Destination[2],,384PP_Dest,J7,0,0,,,20,0,1.583,77.521,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79277 ft: 0.366052
+Source[2],,384LDV_DMSO,I9,Destination[2],,384PP_Dest,J3,0,0,,,605,300,1.459,76.259,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79974 ft: 0.341438
+Source[2],,384LDV_DMSO,I9,Destination[2],,384PP_Dest,J2,0,0,,,212.5,0,1.459,76.259,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79974 ft: 0.341438
+Source[2],,384LDV_DMSO,I9,Destination[2],,384PP_Dest,J1,0,0,,,20,0,1.459,76.259,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79974 ft: 0.341438
+Source[2],,384LDV_DMSO,I11,Destination[2],,384PP_Dest,L5,0,0,,,2000,1800,1.533,77.682,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79186 ft: 0.353923
+Source[2],,384LDV_DMSO,K11,Destination[2],,384PP_Dest,L11,0,0,,,2000,300,1.513,77.438,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79323 ft: 0.349953
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L21,0,0,,,605,600,1.392,72.907,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81762 ft: 0.340923
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L22,0,0,,,1202.5,0,1.392,72.907,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81762 ft: 0.340923
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L23,0,0,,,2000,0,1.392,72.907,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81762 ft: 0.340923
+Source[2],,384LDV_DMSO,G11,Destination[2],,384PP_Dest,K19,0,0,,,20,0,1.508,77.584,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79241 ft: 0.34836
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K16,0,0,,,1202.5,900,1.354,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.346837
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K15,0,0,,,605,0,1.354,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.346837
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K14,0,0,,,212.5,0,1.354,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.346837
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K13,0,0,,,20,0,1.354,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.346837
+Source[2],,384LDV_DMSO,C11,Destination[2],,384PP_Dest,K10,0,0,,,1202.5,300,1.435,72.193,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82131 ft: 0.356159
+Source[2],,384LDV_DMSO,C11,Destination[2],,384PP_Dest,K9,0,0,,,605,0,1.435,72.193,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82131 ft: 0.356159
+Source[2],,384LDV_DMSO,C11,Destination[2],,384PP_Dest,K8,0,0,,,212.5,0,1.435,72.193,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82131 ft: 0.356159
+Source[2],,384LDV_DMSO,C11,Destination[2],,384PP_Dest,K7,0,0,,,20,0,1.435,72.193,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82131 ft: 0.356159
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A13,Destination[2],,384PP_Dest,M4,0,0,,,1202.5,1200,1.342,71.926,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82269 ft: 0.334731
+Source[2],,384LDV_DMSO,A13,Destination[2],,384PP_Dest,M5,0,0,,,2000,0,1.342,71.926,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82269 ft: 0.334731
+Source[2],,384LDV_DMSO,C13,Destination[2],,384PP_Dest,M11,0,0,,,2000,600,1.468,72.262,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82096 ft: 0.364044
+Source[2],,384LDV_DMSO,G13,Destination[2],,384PP_Dest,M23,0,0,,,2000,1800,1.432,74.522,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80912 ft: 0.340416
+Source[2],,384LDV_DMSO,O13,Destination[2],,384PP_Dest,N23,0,0,,,2000,900,1.419,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.363286
+Source[2],,384LDV_DMSO,O13,Destination[2],,384PP_Dest,N22,0,0,,,1202.5,0,1.419,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.363286
+Source[2],,384LDV_DMSO,O13,Destination[2],,384PP_Dest,N21,0,0,,,605,0,1.419,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.363286
+Source[2],,384LDV_DMSO,O13,Destination[2],,384PP_Dest,N20,0,0,,,212.5,0,1.419,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.363286
+Source[2],,384LDV_DMSO,O13,Destination[2],,384PP_Dest,N19,0,0,,,20,0,1.419,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.363286
+Source[2],,384LDV_DMSO,M13,Destination[2],,384PP_Dest,N15,0,0,,,605,300,1.444,74.961,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80677 ft: 0.341968
+Source[2],,384LDV_DMSO,M13,Destination[2],,384PP_Dest,N14,0,0,,,212.5,0,1.444,74.961,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80677 ft: 0.341968
+Source[2],,384LDV_DMSO,M13,Destination[2],,384PP_Dest,N13,0,0,,,20,0,1.444,74.961,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80677 ft: 0.341968
+Source[2],,384LDV_DMSO,K13,Destination[2],,384PP_Dest,N11,0,0,,,2000,1500,1.49,73.514,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81444 ft: 0.360742
+Source[2],,384LDV_DMSO,K13,Destination[2],,384PP_Dest,N10,0,0,,,1202.5,0,1.49,73.514,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81444 ft: 0.360742
+Source[2],,384LDV_DMSO,K13,Destination[2],,384PP_Dest,N9,0,0,,,605,0,1.49,73.514,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81444 ft: 0.360742
+Source[2],,384LDV_DMSO,K13,Destination[2],,384PP_Dest,N8,0,0,,,212.5,0,1.49,73.514,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81444 ft: 0.360742
+Source[2],,384LDV_DMSO,K13,Destination[2],,384PP_Dest,N7,0,0,,,20,0,1.49,73.514,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81444 ft: 0.360742
+Source[2],,384LDV_DMSO,I13,Destination[2],,384PP_Dest,N4,0,0,,,1202.5,600,1.343,77.116,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79502 ft: 0.311693
+Source[2],,384LDV_DMSO,I13,Destination[2],,384PP_Dest,N3,0,0,,,605,0,1.343,77.116,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79502 ft: 0.311693
+Source[2],,384LDV_DMSO,I13,Destination[2],,384PP_Dest,N2,0,0,,,212.5,0,1.343,77.116,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79502 ft: 0.311693
+Source[2],,384LDV_DMSO,I13,Destination[2],,384PP_Dest,N1,0,0,,,20,0,1.343,77.116,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79502 ft: 0.311693
+Source[2],,384LDV_DMSO,I15,Destination[2],,384PP_Dest,P5,0,0,,,2000,300,1.415,77.87,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79081 ft: 0.326132
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P7,0,0,,,20,0,1.563,74.316,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81021 ft: 0.372278
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P8,0,0,,,212.5,0,1.563,74.316,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81021 ft: 0.372278
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P9,0,0,,,605,0,1.563,74.316,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81021 ft: 0.372278
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P10,0,0,,,1202.5,0,1.563,74.316,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81021 ft: 0.372278
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P11,0,0,,,2000,0,1.563,74.316,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81021 ft: 0.372278
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O15,Destination[2],,384PP_Dest,P19,0,0,,,20,0,1.245,71.146,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82667 ft: 0.314847
+Source[2],,384LDV_DMSO,O15,Destination[2],,384PP_Dest,P20,0,0,,,212.5,0,1.245,71.146,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82667 ft: 0.314847
+Source[2],,384LDV_DMSO,O15,Destination[2],,384PP_Dest,P21,0,0,,,605,0,1.245,71.146,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82667 ft: 0.314847
+Source[2],,384LDV_DMSO,O15,Destination[2],,384PP_Dest,P22,0,0,,,1202.5,0,1.245,71.146,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82667 ft: 0.314847
+Source[2],,384LDV_DMSO,O15,Destination[2],,384PP_Dest,P23,0,0,,,2000,0,1.245,71.146,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82667 ft: 0.314847
+Source[2],,384LDV_DMSO,G15,Destination[2],,384PP_Dest,O22,0,0,,,1202.5,1200,1.576,75.067,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8062 ft: 0.372777
+Source[2],,384LDV_DMSO,G15,Destination[2],,384PP_Dest,O21,0,0,,,605,0,1.576,75.067,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8062 ft: 0.372777
+Source[2],,384LDV_DMSO,G15,Destination[2],,384PP_Dest,O20,0,0,,,212.5,0,1.576,75.067,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8062 ft: 0.372777
+Source[2],,384LDV_DMSO,G15,Destination[2],,384PP_Dest,O19,0,0,,,20,0,1.576,75.067,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8062 ft: 0.372777
+Source[2],,384LDV_DMSO,E15,Destination[2],,384PP_Dest,O16,0,0,,,1202.5,900,1.536,73.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81405 ft: 0.37122
+Source[2],,384LDV_DMSO,E15,Destination[2],,384PP_Dest,O15,0,0,,,605,0,1.536,73.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81405 ft: 0.37122
+Source[2],,384LDV_DMSO,E15,Destination[2],,384PP_Dest,O14,0,0,,,212.5,0,1.536,73.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81405 ft: 0.37122
+Source[2],,384LDV_DMSO,E15,Destination[2],,384PP_Dest,O13,0,0,,,20,0,1.536,73.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81405 ft: 0.37122
+Source[2],,384LDV_DMSO,C15,Destination[2],,384PP_Dest,O10,0,0,,,1202.5,300,1.484,71.932,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82266 ft: 0.370169
+Source[2],,384LDV_DMSO,C15,Destination[2],,384PP_Dest,O9,0,0,,,605,0,1.484,71.932,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82266 ft: 0.370169
+Source[2],,384LDV_DMSO,C15,Destination[2],,384PP_Dest,O8,0,0,,,212.5,0,1.484,71.932,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82266 ft: 0.370169
+Source[2],,384LDV_DMSO,C15,Destination[2],,384PP_Dest,O7,0,0,,,20,0,1.484,71.932,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82266 ft: 0.370169
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A10,Destination[3],,384PP_Dest,O4,0,0,,,1202.5,1200,1.328,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.340149
+Source[2],,384LDV_DMSO,A10,Destination[3],,384PP_Dest,O5,0,0,,,2000,0,1.328,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.340149
+Source[2],,384LDV_DMSO,E10,Destination[3],,384PP_Dest,O17,0,0,,,2000,1800,1.513,74.709,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80812 ft: 0.342843
+Source[2],,384LDV_DMSO,G10,Destination[3],,384PP_Dest,O23,0,0,,,2000,1200,1.358,76.489,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79848 ft: 0.317076
+Source[2],,384LDV_DMSO,O10,Destination[3],,384PP_Dest,P21,0,0,,,605,600,1.506,72.134,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82162 ft: 0.374248
+Source[2],,384LDV_DMSO,O10,Destination[3],,384PP_Dest,P20,0,0,,,212.5,0,1.506,72.134,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82162 ft: 0.374248
+Source[2],,384LDV_DMSO,O10,Destination[3],,384PP_Dest,P19,0,0,,,20,0,1.506,72.134,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82162 ft: 0.374248
+Source[2],,384LDV_DMSO,M10,Destination[3],,384PP_Dest,P15,0,0,,,605,300,1.548,75.492,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80391 ft: 0.364845
+Source[2],,384LDV_DMSO,M10,Destination[3],,384PP_Dest,P14,0,0,,,212.5,0,1.548,75.492,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80391 ft: 0.364845
+Source[2],,384LDV_DMSO,M10,Destination[3],,384PP_Dest,P13,0,0,,,20,0,1.548,75.492,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80391 ft: 0.364845
+Source[2],,384LDV_DMSO,K10,Destination[3],,384PP_Dest,P10,0,0,,,1202.5,600,1.497,76.04,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80093 ft: 0.351087
+Source[2],,384LDV_DMSO,K10,Destination[3],,384PP_Dest,P9,0,0,,,605,0,1.497,76.04,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80093 ft: 0.351087
+Source[2],,384LDV_DMSO,K10,Destination[3],,384PP_Dest,P8,0,0,,,212.5,0,1.497,76.04,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80093 ft: 0.351087
+Source[2],,384LDV_DMSO,K10,Destination[3],,384PP_Dest,P7,0,0,,,20,0,1.497,76.04,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80093 ft: 0.351087
+Source[2],,384LDV_DMSO,I10,Destination[3],,384PP_Dest,P4,0,0,,,1202.5,300,1.574,78.948,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7847 ft: 0.358709
+Source[2],,384LDV_DMSO,I10,Destination[3],,384PP_Dest,P3,0,0,,,605,0,1.574,78.948,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7847 ft: 0.358709
+Source[2],,384LDV_DMSO,I10,Destination[3],,384PP_Dest,P2,0,0,,,212.5,0,1.574,78.948,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7847 ft: 0.358709
+Source[2],,384LDV_DMSO,I10,Destination[3],,384PP_Dest,P1,0,0,,,20,0,1.574,78.948,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7847 ft: 0.358709
+Source[2],,384LDV_DMSO,I8,Destination[3],,384PP_Dest,N5,0,0,,,2000,1800,1.536,76.68,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79743 ft: 0.357913
+Source[2],,384LDV_DMSO,K8,Destination[3],,384PP_Dest,N11,0,0,,,2000,1200,1.478,79.276,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78282 ft: 0.335913
+Source[2],,384LDV_DMSO,O8,Destination[3],,384PP_Dest,N23,0,0,,,2000,1200,1.34,71.707,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82381 ft: 0.335755
+Source[2],,384LDV_DMSO,G8,Destination[3],,384PP_Dest,M22,0,0,,,1202.5,300,1.389,75.611,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80327 ft: 0.327069
+Source[2],,384LDV_DMSO,G8,Destination[3],,384PP_Dest,M21,0,0,,,605,0,1.389,75.611,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80327 ft: 0.327069
+Source[2],,384LDV_DMSO,G8,Destination[3],,384PP_Dest,M20,0,0,,,212.5,0,1.389,75.611,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80327 ft: 0.327069
+Source[2],,384LDV_DMSO,G8,Destination[3],,384PP_Dest,M19,0,0,,,20,0,1.389,75.611,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80327 ft: 0.327069
+Source[2],,384LDV_DMSO,E8,Destination[3],,384PP_Dest,M15,0,0,,,605,600,1.376,72.944,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81743 ft: 0.336756
+Source[2],,384LDV_DMSO,E8,Destination[3],,384PP_Dest,M14,0,0,,,212.5,0,1.376,72.944,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81743 ft: 0.336756
+Source[2],,384LDV_DMSO,E8,Destination[3],,384PP_Dest,M13,0,0,,,20,0,1.376,72.944,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81743 ft: 0.336756
+Source[2],,384LDV_DMSO,A8,Destination[3],,384PP_Dest,M5,0,0,,,2000,1500,1.369,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.350614
+Source[2],,384LDV_DMSO,A8,Destination[3],,384PP_Dest,M4,0,0,,,1202.5,0,1.369,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.350614
+Source[2],,384LDV_DMSO,A8,Destination[3],,384PP_Dest,M3,0,0,,,605,0,1.369,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.350614
+Source[2],,384LDV_DMSO,A8,Destination[3],,384PP_Dest,M2,0,0,,,212.5,0,1.369,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.350614
+Source[2],,384LDV_DMSO,A8,Destination[3],,384PP_Dest,M1,0,0,,,20,0,1.369,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.350614
+Source[2],,384LDV_DMSO,A6,Destination[3],,384PP_Dest,K4,0,0,,,1202.5,300,1.413,72.303,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82075 ft: 0.350207
+Source[2],,384LDV_DMSO,A6,Destination[3],,384PP_Dest,K5,0,0,,,2000,0,1.413,72.303,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82075 ft: 0.350207
+Source[2],,384LDV_DMSO,E6,Destination[3],,384PP_Dest,K16,0,0,,,1202.5,900,1.294,73.062,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81681 ft: 0.316047
+Source[2],,384LDV_DMSO,E6,Destination[3],,384PP_Dest,K17,0,0,,,2000,0,1.294,73.062,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81681 ft: 0.316047
+Source[2],,384LDV_DMSO,G6,Destination[3],,384PP_Dest,K23,0,0,,,2000,300,1.55,77.264,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7942 ft: 0.359187
+Source[2],,384LDV_DMSO,O6,Destination[3],,384PP_Dest,L22,0,0,,,1202.5,300,1.483,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81269 ft: 0.356765
+Source[2],,384LDV_DMSO,O6,Destination[3],,384PP_Dest,L21,0,0,,,605,0,1.483,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81269 ft: 0.356765
+Source[2],,384LDV_DMSO,O6,Destination[3],,384PP_Dest,L20,0,0,,,212.5,0,1.483,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81269 ft: 0.356765
+Source[2],,384LDV_DMSO,O6,Destination[3],,384PP_Dest,L19,0,0,,,20,0,1.483,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81269 ft: 0.356765
+Source[2],,384LDV_DMSO,M6,Destination[3],,384PP_Dest,L16,0,0,,,1202.5,0,1.531,72.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81927 ft: 0.377266
+Source[2],,384LDV_DMSO,M6,Destination[3],,384PP_Dest,L15,0,0,,,605,0,1.531,72.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81927 ft: 0.377266
+Source[2],,384LDV_DMSO,M6,Destination[3],,384PP_Dest,L14,0,0,,,212.5,0,1.531,72.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81927 ft: 0.377266
+Source[2],,384LDV_DMSO,M6,Destination[3],,384PP_Dest,L13,0,0,,,20,0,1.531,72.589,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81927 ft: 0.377266
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L10,0,0,,,1202.5,1200,1.59,74.759,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80785 ft: 0.377091
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L9,0,0,,,605,0,1.59,74.759,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80785 ft: 0.377091
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L8,0,0,,,212.5,0,1.59,74.759,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80785 ft: 0.377091
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L7,0,0,,,20,0,1.59,74.759,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80785 ft: 0.377091
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L3,0,0,,,605,600,1.336,74.437,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80957 ft: 0.317957
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L2,0,0,,,212.5,0,1.336,74.437,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80957 ft: 0.317957
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L1,0,0,,,20,0,1.336,74.437,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80957 ft: 0.317957
+Source[2],,384LDV_DMSO,I4,Destination[3],,384PP_Dest,J5,0,0,,,2000,300,1.422,74.234,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81065 ft: 0.339382
+Source[2],,384LDV_DMSO,K4,Destination[3],,384PP_Dest,J11,0,0,,,2000,600,1.278,73.591,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81404 ft: 0.308968
+Source[2],,384LDV_DMSO,M4,Destination[3],,384PP_Dest,J17,0,0,,,2000,300,1.296,73.585,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81407 ft: 0.31322
+Source[2],,384LDV_DMSO,O4,Destination[3],,384PP_Dest,J23,0,0,,,2000,300,1.415,73.007,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8171 ft: 0.345813
+Source[2],,384LDV_DMSO,G4,Destination[3],,384PP_Dest,I23,0,0,,,2000,0,1.392,76.445,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79872 ft: 0.324922
+Source[2],,384LDV_DMSO,G4,Destination[3],,384PP_Dest,I22,0,0,,,1202.5,0,1.392,76.445,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79872 ft: 0.324922
+Source[2],,384LDV_DMSO,G4,Destination[3],,384PP_Dest,I21,0,0,,,605,0,1.392,76.445,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79872 ft: 0.324922
+Source[2],,384LDV_DMSO,G4,Destination[3],,384PP_Dest,I20,0,0,,,212.5,0,1.392,76.445,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79872 ft: 0.324922
+Source[2],,384LDV_DMSO,G4,Destination[3],,384PP_Dest,I19,0,0,,,20,0,1.392,76.445,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79872 ft: 0.324922
+Source[2],,384LDV_DMSO,E4,Destination[3],,384PP_Dest,I16,0,0,,,1202.5,1200,1.298,72.357,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82047 ft: 0.321159
+Source[2],,384LDV_DMSO,E4,Destination[3],,384PP_Dest,I15,0,0,,,605,0,1.298,72.357,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82047 ft: 0.321159
+Source[2],,384LDV_DMSO,E4,Destination[3],,384PP_Dest,I14,0,0,,,212.5,0,1.298,72.357,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82047 ft: 0.321159
+Source[2],,384LDV_DMSO,E4,Destination[3],,384PP_Dest,I13,0,0,,,20,0,1.298,72.357,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82047 ft: 0.321159
+Source[2],,384LDV_DMSO,A4,Destination[3],,384PP_Dest,I5,0,0,,,2000,300,1.277,71.172,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82654 ft: 0.322981
+Source[2],,384LDV_DMSO,A4,Destination[3],,384PP_Dest,I4,0,0,,,1202.5,0,1.277,71.172,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82654 ft: 0.322981
+Source[2],,384LDV_DMSO,A4,Destination[3],,384PP_Dest,I3,0,0,,,605,0,1.277,71.172,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82654 ft: 0.322981
+Source[2],,384LDV_DMSO,A4,Destination[3],,384PP_Dest,I2,0,0,,,212.5,0,1.277,71.172,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82654 ft: 0.322981
+Source[2],,384LDV_DMSO,A4,Destination[3],,384PP_Dest,I1,0,0,,,20,0,1.277,71.172,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82654 ft: 0.322981
+Source[2],,384LDV_DMSO,A2,Destination[3],,384PP_Dest,G4,0,0,,,1202.5,600,1.238,70.968,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82757 ft: 0.314417
+Source[2],,384LDV_DMSO,A2,Destination[3],,384PP_Dest,G5,0,0,,,2000,0,1.238,70.968,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82757 ft: 0.314417
+Source[2],,384LDV_DMSO,C2,Destination[3],,384PP_Dest,G10,0,0,,,1202.5,1200,1.362,71.781,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82343 ft: 0.34063
+Source[2],,384LDV_DMSO,C2,Destination[3],,384PP_Dest,G11,0,0,,,2000,0,1.362,71.781,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82343 ft: 0.34063
+Source[2],,384LDV_DMSO,E2,Destination[3],,384PP_Dest,G17,0,0,,,2000,600,1.344,72.474,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81986 ft: 0.311129
+Source[2],,384LDV_DMSO,G2,Destination[3],,384PP_Dest,G21,0,0,,,605,300,1.731,73.556,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81423 ft: 0.359203
+Source[2],,384LDV_DMSO,G2,Destination[3],,384PP_Dest,G22,0,0,,,1202.5,0,1.731,73.556,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81423 ft: 0.359203
+Source[2],,384LDV_DMSO,G2,Destination[3],,384PP_Dest,G23,0,0,,,2000,0,1.731,73.556,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81423 ft: 0.359203
+Source[2],,384LDV_DMSO,O2,Destination[3],,384PP_Dest,H23,0,0,,,2000,900,1.325,72.242,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82106 ft: 0.32876
+Source[2],,384LDV_DMSO,O2,Destination[3],,384PP_Dest,H22,0,0,,,1202.5,0,1.325,72.242,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82106 ft: 0.32876
+Source[2],,384LDV_DMSO,O2,Destination[3],,384PP_Dest,H21,0,0,,,605,0,1.325,72.242,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82106 ft: 0.32876
+Source[2],,384LDV_DMSO,O2,Destination[3],,384PP_Dest,H20,0,0,,,212.5,0,1.325,72.242,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82106 ft: 0.32876
+Source[2],,384LDV_DMSO,O2,Destination[3],,384PP_Dest,H19,0,0,,,20,0,1.325,72.242,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82106 ft: 0.32876
+Source[2],,384LDV_DMSO,M2,Destination[3],,384PP_Dest,H17,0,0,,,2000,600,1.377,74.608,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80866 ft: 0.327004
+Source[2],,384LDV_DMSO,M2,Destination[3],,384PP_Dest,H16,0,0,,,1202.5,0,1.377,74.608,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80866 ft: 0.327004
+Source[2],,384LDV_DMSO,M2,Destination[3],,384PP_Dest,H15,0,0,,,605,0,1.377,74.608,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80866 ft: 0.327004
+Source[2],,384LDV_DMSO,M2,Destination[3],,384PP_Dest,H14,0,0,,,212.5,0,1.377,74.608,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80866 ft: 0.327004
+Source[2],,384LDV_DMSO,M2,Destination[3],,384PP_Dest,H13,0,0,,,20,0,1.377,74.608,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80866 ft: 0.327004
+Source[2],,384LDV_DMSO,K2,Destination[3],,384PP_Dest,H10,0,0,,,1202.5,0,1.603,75.484,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80395 ft: 0.377697
+Source[2],,384LDV_DMSO,K2,Destination[3],,384PP_Dest,H9,0,0,,,605,0,1.603,75.484,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80395 ft: 0.377697
+Source[2],,384LDV_DMSO,K2,Destination[3],,384PP_Dest,H8,0,0,,,212.5,0,1.603,75.484,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80395 ft: 0.377697
+Source[2],,384LDV_DMSO,K2,Destination[3],,384PP_Dest,H7,0,0,,,20,0,1.603,75.484,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80395 ft: 0.377697
+Source[2],,384LDV_DMSO,I2,Destination[3],,384PP_Dest,H4,0,0,,,1202.5,300,1.521,74.576,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80883 ft: 0.361512
+Source[2],,384LDV_DMSO,I2,Destination[3],,384PP_Dest,H3,0,0,,,605,0,1.521,74.576,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80883 ft: 0.361512
+Source[2],,384LDV_DMSO,I2,Destination[3],,384PP_Dest,H2,0,0,,,212.5,0,1.521,74.576,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80883 ft: 0.361512
+Source[2],,384LDV_DMSO,I2,Destination[3],,384PP_Dest,H1,0,0,,,20,0,1.521,74.576,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80883 ft: 0.361512
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K17,Destination[3],,384PP_Dest,B11,0,0,,,2000,300,1.509,73.978,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.812 ft: 0.362054
+Source[2],,384LDV_DMSO,M17,Destination[3],,384PP_Dest,B16,0,0,,,1202.5,600,1.281,71.581,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82446 ft: 0.321591
+Source[2],,384LDV_DMSO,M17,Destination[3],,384PP_Dest,B17,0,0,,,2000,0,1.281,71.581,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82446 ft: 0.321591
+Source[2],,384LDV_DMSO,O17,Destination[3],,384PP_Dest,B23,0,0,,,2000,300,1.308,71.235,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82622 ft: 0.330487
+Source[2],,384LDV_DMSO,G17,Destination[3],,384PP_Dest,A19,0,0,,,20,0,1.445,75.859,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80192 ft: 0.339371
+Source[2],,384LDV_DMSO,E17,Destination[3],,384PP_Dest,A16,0,0,,,1202.5,300,1.313,73.628,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81385 ft: 0.317205
+Source[2],,384LDV_DMSO,E17,Destination[3],,384PP_Dest,A15,0,0,,,605,0,1.313,73.628,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81385 ft: 0.317205
+Source[2],,384LDV_DMSO,E17,Destination[3],,384PP_Dest,A14,0,0,,,212.5,0,1.313,73.628,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81385 ft: 0.317205
+Source[2],,384LDV_DMSO,E17,Destination[3],,384PP_Dest,A13,0,0,,,20,0,1.313,73.628,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81385 ft: 0.317205
+Source[2],,384LDV_DMSO,C17,Destination[3],,384PP_Dest,A11,0,0,,,2000,1800,1.292,72.981,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81723 ft: 0.316077
+Source[2],,384LDV_DMSO,C17,Destination[3],,384PP_Dest,A10,0,0,,,1202.5,0,1.292,72.981,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81723 ft: 0.316077
+Source[2],,384LDV_DMSO,C17,Destination[3],,384PP_Dest,A9,0,0,,,605,0,1.292,72.981,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81723 ft: 0.316077
+Source[2],,384LDV_DMSO,C17,Destination[3],,384PP_Dest,A8,0,0,,,212.5,0,1.292,72.981,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81723 ft: 0.316077
+Source[2],,384LDV_DMSO,C17,Destination[3],,384PP_Dest,A7,0,0,,,20,0,1.292,72.981,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81723 ft: 0.316077
+Source[2],,384LDV_DMSO,A17,Destination[3],,384PP_Dest,A5,0,0,,,2000,1200,1.38,73.444,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81481 ft: 0.334557
+Source[2],,384LDV_DMSO,A17,Destination[3],,384PP_Dest,A4,0,0,,,1202.5,0,1.38,73.444,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81481 ft: 0.334557
+Source[2],,384LDV_DMSO,A17,Destination[3],,384PP_Dest,A3,0,0,,,605,0,1.38,73.444,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81481 ft: 0.334557
+Source[2],,384LDV_DMSO,A17,Destination[3],,384PP_Dest,A2,0,0,,,212.5,0,1.38,73.444,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81481 ft: 0.334557
+Source[2],,384LDV_DMSO,A17,Destination[3],,384PP_Dest,A1,0,0,,,20,0,1.38,73.444,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81481 ft: 0.334557
+Source[2],,384LDV_DMSO,A19,Destination[3],,384PP_Dest,C4,0,0,,,1202.5,300,1.396,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.357571
+Source[2],,384LDV_DMSO,A19,Destination[3],,384PP_Dest,C5,0,0,,,2000,0,1.396,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.357571
+Source[2],,384LDV_DMSO,C19,Destination[3],,384PP_Dest,C9,0,0,,,605,600,1.515,74.592,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80874 ft: 0.359913
+Source[2],,384LDV_DMSO,C19,Destination[3],,384PP_Dest,C10,0,0,,,1202.5,0,1.515,74.592,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80874 ft: 0.359913
+Source[2],,384LDV_DMSO,C19,Destination[3],,384PP_Dest,C11,0,0,,,2000,0,1.515,74.592,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80874 ft: 0.359913
+Source[2],,384LDV_DMSO,E19,Destination[3],,384PP_Dest,C16,0,0,,,1202.5,300,1.529,74.167,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.811 ft: 0.365386
+Source[2],,384LDV_DMSO,E19,Destination[3],,384PP_Dest,C17,0,0,,,2000,0,1.529,74.167,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.811 ft: 0.365386
+Source[2],,384LDV_DMSO,G19,Destination[3],,384PP_Dest,C23,0,0,,,2000,1500,1.366,72.215,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8212 ft: 0.339019
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D23,0,0,,,2000,900,2.986,70.487,Percent,DMSO,MM0203001: DFA didn't converge.
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D21,0,0,,,605,300,1.484,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.379995
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D20,0,0,,,212.5,0,1.484,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.379995
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D19,0,0,,,20,0,1.484,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.379995
+Source[2],,384LDV_DMSO,M19,Destination[3],,384PP_Dest,D16,0,0,,,1202.5,900,1.37,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35093
+Source[2],,384LDV_DMSO,M19,Destination[3],,384PP_Dest,D15,0,0,,,605,0,1.37,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35093
+Source[2],,384LDV_DMSO,M19,Destination[3],,384PP_Dest,D14,0,0,,,212.5,0,1.37,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35093
+Source[2],,384LDV_DMSO,M19,Destination[3],,384PP_Dest,D13,0,0,,,20,0,1.37,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35093
+Source[2],,384LDV_DMSO,K19,Destination[3],,384PP_Dest,D11,0,0,,,2000,0,0.929,70.821,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82831 ft: 0.236425
+Source[2],,384LDV_DMSO,K19,Destination[3],,384PP_Dest,D10,0,0,,,1202.5,0,0.929,70.821,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82831 ft: 0.236425
+Source[2],,384LDV_DMSO,K19,Destination[3],,384PP_Dest,D9,0,0,,,605,0,0.929,70.821,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82831 ft: 0.236425
+Source[2],,384LDV_DMSO,K19,Destination[3],,384PP_Dest,D8,0,0,,,212.5,0,0.929,70.821,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82831 ft: 0.236425
+Source[2],,384LDV_DMSO,K19,Destination[3],,384PP_Dest,D7,0,0,,,20,0,0.929,70.821,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82831 ft: 0.236425
+Source[2],,384LDV_DMSO,I19,Destination[3],,384PP_Dest,D4,0,0,,,1202.5,600,1.548,74.491,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80928 ft: 0.368205
+Source[2],,384LDV_DMSO,I19,Destination[3],,384PP_Dest,D3,0,0,,,605,0,1.548,74.491,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80928 ft: 0.368205
+Source[2],,384LDV_DMSO,I19,Destination[3],,384PP_Dest,D2,0,0,,,212.5,0,1.548,74.491,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80928 ft: 0.368205
+Source[2],,384LDV_DMSO,I19,Destination[3],,384PP_Dest,D1,0,0,,,20,0,1.548,74.491,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80928 ft: 0.368205
+Source[2],,384LDV_DMSO,I21,Destination[3],,384PP_Dest,F5,0,0,,,2000,600,1.273,72.011,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82225 ft: 0.317017
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F9,0,0,,,605,0,1.466,72.046,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82207 ft: 0.364933
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F10,0,0,,,1202.5,0,1.466,72.046,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82207 ft: 0.364933
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F11,0,0,,,2000,0,1.466,72.046,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82207 ft: 0.364933
+Source[2],,384LDV_DMSO,M21,Destination[3],,384PP_Dest,F16,0,0,,,1202.5,900,1.299,71.333,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82572 ft: 0.32777
+Source[2],,384LDV_DMSO,M21,Destination[3],,384PP_Dest,F17,0,0,,,2000,0,1.299,71.333,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82572 ft: 0.32777
+Source[2],,384LDV_DMSO,O21,Destination[3],,384PP_Dest,F22,0,0,,,1202.5,600,1.448,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.370715
+Source[2],,384LDV_DMSO,O21,Destination[3],,384PP_Dest,F23,0,0,,,2000,0,1.448,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.370715
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E21,Destination[3],,384PP_Dest,E17,0,0,,,2000,600,1.516,74.831,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80747 ft: 0.359438
+Source[2],,384LDV_DMSO,E21,Destination[3],,384PP_Dest,E16,0,0,,,1202.5,0,1.516,74.831,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80747 ft: 0.359438
+Source[2],,384LDV_DMSO,E21,Destination[3],,384PP_Dest,E15,0,0,,,605,0,1.516,74.831,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80747 ft: 0.359438
+Source[2],,384LDV_DMSO,E21,Destination[3],,384PP_Dest,E14,0,0,,,212.5,0,1.516,74.831,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80747 ft: 0.359438
+Source[2],,384LDV_DMSO,E21,Destination[3],,384PP_Dest,E13,0,0,,,20,0,1.516,74.831,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80747 ft: 0.359438
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E11,0,0,,,2000,900,1.516,72.042,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82209 ft: 0.377484
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E10,0,0,,,1202.5,0,1.516,72.042,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82209 ft: 0.377484
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E9,0,0,,,605,0,1.516,72.042,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82209 ft: 0.377484
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E8,0,0,,,212.5,0,1.516,72.042,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82209 ft: 0.377484
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E7,0,0,,,20,0,1.516,72.042,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82209 ft: 0.377484
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A12,Destination[4],,384PP_Dest,A4,0,0,,,1202.5,1200,1.416,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.362705
+Source[2],,384LDV_DMSO,A12,Destination[4],,384PP_Dest,A5,0,0,,,2000,0,1.416,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.362705
+Source[2],,384LDV_DMSO,E12,Destination[4],,384PP_Dest,A17,0,0,,,2000,300,1.446,75.962,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80136 ft: 0.339213
+Source[2],,384LDV_DMSO,G12,Destination[4],,384PP_Dest,A21,0,0,,,605,0,1.594,74.888,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80716 ft: 0.377571
+Source[2],,384LDV_DMSO,G12,Destination[4],,384PP_Dest,A22,0,0,,,1202.5,0,1.594,74.888,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80716 ft: 0.377571
+Source[2],,384LDV_DMSO,G12,Destination[4],,384PP_Dest,A23,0,0,,,2000,0,1.594,74.888,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80716 ft: 0.377571
+Source[2],,384LDV_DMSO,O12,Destination[4],,384PP_Dest,B21,0,0,,,605,600,1.315,71.548,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82462 ft: 0.330372
+Source[2],,384LDV_DMSO,O12,Destination[4],,384PP_Dest,B20,0,0,,,212.5,0,1.315,71.548,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82462 ft: 0.330372
+Source[2],,384LDV_DMSO,O12,Destination[4],,384PP_Dest,B19,0,0,,,20,0,1.315,71.548,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82462 ft: 0.330372
+Source[2],,384LDV_DMSO,M12,Destination[4],,384PP_Dest,B15,0,0,,,605,600,1.54,73.906,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81238 ft: 0.369891
+Source[2],,384LDV_DMSO,M12,Destination[4],,384PP_Dest,B14,0,0,,,212.5,0,1.54,73.906,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81238 ft: 0.369891
+Source[2],,384LDV_DMSO,M12,Destination[4],,384PP_Dest,B13,0,0,,,20,0,1.54,73.906,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81238 ft: 0.369891
+Source[2],,384LDV_DMSO,K12,Destination[4],,384PP_Dest,B10,0,0,,,1202.5,900,1.558,75.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80528 ft: 0.367868
+Source[2],,384LDV_DMSO,K12,Destination[4],,384PP_Dest,B9,0,0,,,605,0,1.558,75.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80528 ft: 0.367868
+Source[2],,384LDV_DMSO,K12,Destination[4],,384PP_Dest,B8,0,0,,,212.5,0,1.558,75.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80528 ft: 0.367868
+Source[2],,384LDV_DMSO,K12,Destination[4],,384PP_Dest,B7,0,0,,,20,0,1.558,75.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80528 ft: 0.367868
+Source[2],,384LDV_DMSO,I14,Destination[4],,384PP_Dest,D5,0,0,,,2000,1500,1.423,77.666,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79196 ft: 0.328424
+Source[2],,384LDV_DMSO,K14,Destination[4],,384PP_Dest,D11,0,0,,,2000,600,1.418,74.864,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80729 ft: 0.335958
+Source[2],,384LDV_DMSO,O14,Destination[4],,384PP_Dest,D23,0,0,,,2000,900,1.186,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.30385
+Source[2],,384LDV_DMSO,G14,Destination[4],,384PP_Dest,C22,0,0,,,1202.5,1200,1.436,75.19,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80554 ft: 0.33941
+Source[2],,384LDV_DMSO,G14,Destination[4],,384PP_Dest,C21,0,0,,,605,0,1.436,75.19,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80554 ft: 0.33941
+Source[2],,384LDV_DMSO,G14,Destination[4],,384PP_Dest,C20,0,0,,,212.5,0,1.436,75.19,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80554 ft: 0.33941
+Source[2],,384LDV_DMSO,G14,Destination[4],,384PP_Dest,C19,0,0,,,20,0,1.436,75.19,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80554 ft: 0.33941
+Source[2],,384LDV_DMSO,A14,Destination[4],,384PP_Dest,C4,0,0,,,1202.5,900,1.394,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35707
+Source[2],,384LDV_DMSO,A14,Destination[4],,384PP_Dest,C3,0,0,,,605,0,1.394,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35707
+Source[2],,384LDV_DMSO,A14,Destination[4],,384PP_Dest,C2,0,0,,,212.5,0,1.394,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35707
+Source[2],,384LDV_DMSO,A14,Destination[4],,384PP_Dest,C1,0,0,,,20,0,1.394,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.35707
+Source[2],,384LDV_DMSO,A16,Destination[4],,384PP_Dest,E5,0,0,,,2000,1200,1.486,73.618,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8139 ft: 0.3591
+Source[2],,384LDV_DMSO,E16,Destination[4],,384PP_Dest,E16,0,0,,,1202.5,900,1.51,73.718,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81337 ft: 0.364009
+Source[2],,384LDV_DMSO,E16,Destination[4],,384PP_Dest,E17,0,0,,,2000,0,1.51,73.718,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81337 ft: 0.364009
+Source[2],,384LDV_DMSO,G16,Destination[4],,384PP_Dest,E23,0,0,,,2000,1200,1.444,74.251,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81056 ft: 0.344483
+Source[2],,384LDV_DMSO,O16,Destination[4],,384PP_Dest,F22,0,0,,,1202.5,900,1.35,71.832,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82317 ft: 0.337312
+Source[2],,384LDV_DMSO,O16,Destination[4],,384PP_Dest,F21,0,0,,,605,0,1.35,71.832,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82317 ft: 0.337312
+Source[2],,384LDV_DMSO,O16,Destination[4],,384PP_Dest,F20,0,0,,,212.5,0,1.35,71.832,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82317 ft: 0.337312
+Source[2],,384LDV_DMSO,O16,Destination[4],,384PP_Dest,F19,0,0,,,20,0,1.35,71.832,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82317 ft: 0.337312
+Source[2],,384LDV_DMSO,M16,Destination[4],,384PP_Dest,F13,0,0,,,20,0,1.444,73.141,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8164 ft: 0.352224
+Source[2],,384LDV_DMSO,K16,Destination[4],,384PP_Dest,F9,0,0,,,605,300,1.284,73.062,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81681 ft: 0.313648
+Source[2],,384LDV_DMSO,K16,Destination[4],,384PP_Dest,F8,0,0,,,212.5,0,1.284,73.062,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81681 ft: 0.313648
+Source[2],,384LDV_DMSO,K16,Destination[4],,384PP_Dest,F7,0,0,,,20,0,1.284,73.062,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81681 ft: 0.313648
+Source[2],,384LDV_DMSO,I16,Destination[4],,384PP_Dest,F3,0,0,,,605,300,1.359,75.026,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80642 ft: 0.321573
+Source[2],,384LDV_DMSO,I16,Destination[4],,384PP_Dest,F2,0,0,,,212.5,0,1.359,75.026,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80642 ft: 0.321573
+Source[2],,384LDV_DMSO,I16,Destination[4],,384PP_Dest,F1,0,0,,,20,0,1.359,75.026,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80642 ft: 0.321573
+Source[2],,384LDV_DMSO,I18,Destination[4],,384PP_Dest,H5,0,0,,,2000,1500,1.396,73.021,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81702 ft: 0.341082
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H7,0,0,,,20,0,1.287,72.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81719 ft: 0.314308
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H8,0,0,,,212.5,0,1.287,72.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81719 ft: 0.314308
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H9,0,0,,,605,0,1.287,72.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81719 ft: 0.314308
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H10,0,0,,,1202.5,0,1.287,72.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81719 ft: 0.314308
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H11,0,0,,,2000,0,1.287,72.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81719 ft: 0.314308
+Source[2],,384LDV_DMSO,M18,Destination[4],,384PP_Dest,H17,0,0,,,2000,300,1.433,71.813,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82326 ft: 0.358297
+Source[2],,384LDV_DMSO,O18,Destination[4],,384PP_Dest,H22,0,0,,,1202.5,900,1.399,73.418,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81495 ft: 0.339306
+Source[2],,384LDV_DMSO,O18,Destination[4],,384PP_Dest,H23,0,0,,,2000,0,1.399,73.418,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81495 ft: 0.339306
+Source[2],,384LDV_DMSO,G18,Destination[4],,384PP_Dest,G19,0,0,,,20,0,1.544,75.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80433 ft: 0.364147
+Source[2],,384LDV_DMSO,E18,Destination[4],,384PP_Dest,G16,0,0,,,1202.5,1200,1.291,73.586,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81407 ft: 0.311994
+Source[2],,384LDV_DMSO,E18,Destination[4],,384PP_Dest,G15,0,0,,,605,0,1.291,73.586,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81407 ft: 0.311994
+Source[2],,384LDV_DMSO,E18,Destination[4],,384PP_Dest,G14,0,0,,,212.5,0,1.291,73.586,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81407 ft: 0.311994
+Source[2],,384LDV_DMSO,E18,Destination[4],,384PP_Dest,G13,0,0,,,20,0,1.291,73.586,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81407 ft: 0.311994
+Source[2],,384LDV_DMSO,A18,Destination[4],,384PP_Dest,G5,0,0,,,2000,900,4.13,70.487,Percent,DMSO,MM0203001: DFA didn't converge.
+Source[2],,384LDV_DMSO,A20,Destination[4],,384PP_Dest,I1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A20,Destination[4],,384PP_Dest,I2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A20,Destination[4],,384PP_Dest,I3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A20,Destination[4],,384PP_Dest,I4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A20,Destination[4],,384PP_Dest,I5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E20,Destination[4],,384PP_Dest,I16,0,0,,,1202.5,300,1.311,74.204,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81081 ft: 0.313203
+Source[2],,384LDV_DMSO,E20,Destination[4],,384PP_Dest,I17,0,0,,,2000,0,1.311,74.204,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81081 ft: 0.313203
+Source[2],,384LDV_DMSO,G20,Destination[4],,384PP_Dest,I23,0,0,,,2000,1800,1.575,74.079,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81147 ft: 0.37712
+Source[2],,384LDV_DMSO,O20,Destination[4],,384PP_Dest,J23,0,0,,,2000,1800,1.462,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.374291
+Source[2],,384LDV_DMSO,O20,Destination[4],,384PP_Dest,J22,0,0,,,1202.5,0,1.462,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.374291
+Source[2],,384LDV_DMSO,O20,Destination[4],,384PP_Dest,J21,0,0,,,605,0,1.462,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.374291
+Source[2],,384LDV_DMSO,O20,Destination[4],,384PP_Dest,J20,0,0,,,212.5,0,1.462,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.374291
+Source[2],,384LDV_DMSO,O20,Destination[4],,384PP_Dest,J19,0,0,,,20,0,1.462,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.374291
+Source[2],,384LDV_DMSO,M20,Destination[4],,384PP_Dest,J17,0,0,,,2000,1800,1.278,71.65,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8241 ft: 0.320432
+Source[2],,384LDV_DMSO,M20,Destination[4],,384PP_Dest,J16,0,0,,,1202.5,0,1.278,71.65,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8241 ft: 0.320432
+Source[2],,384LDV_DMSO,M20,Destination[4],,384PP_Dest,J15,0,0,,,605,0,1.278,71.65,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8241 ft: 0.320432
+Source[2],,384LDV_DMSO,M20,Destination[4],,384PP_Dest,J14,0,0,,,212.5,0,1.278,71.65,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8241 ft: 0.320432
+Source[2],,384LDV_DMSO,M20,Destination[4],,384PP_Dest,J13,0,0,,,20,0,1.278,71.65,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8241 ft: 0.320432
+Source[2],,384LDV_DMSO,K20,Destination[4],,384PP_Dest,J11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K20,Destination[4],,384PP_Dest,J10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K20,Destination[4],,384PP_Dest,J9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K20,Destination[4],,384PP_Dest,J8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K20,Destination[4],,384PP_Dest,J7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I20,Destination[4],,384PP_Dest,J4,0,0,,,1202.5,0,1.405,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.353971
+Source[2],,384LDV_DMSO,I20,Destination[4],,384PP_Dest,J3,0,0,,,605,0,1.405,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.353971
+Source[2],,384LDV_DMSO,I20,Destination[4],,384PP_Dest,J2,0,0,,,212.5,0,1.405,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.353971
+Source[2],,384LDV_DMSO,I20,Destination[4],,384PP_Dest,J1,0,0,,,20,0,1.405,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.353971
+Source[2],,384LDV_DMSO,I22,Destination[4],,384PP_Dest,L5,0,0,,,2000,1200,1.401,72.009,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82226 ft: 0.349089
+Source[2],,384LDV_DMSO,K22,Destination[4],,384PP_Dest,L9,0,0,,,605,0,1.377,72.544,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8195 ft: 0.33967
+Source[2],,384LDV_DMSO,K22,Destination[4],,384PP_Dest,L10,0,0,,,1202.5,0,1.377,72.544,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8195 ft: 0.33967
+Source[2],,384LDV_DMSO,K22,Destination[4],,384PP_Dest,L11,0,0,,,2000,0,1.377,72.544,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8195 ft: 0.33967
+Source[2],,384LDV_DMSO,M22,Destination[4],,384PP_Dest,L16,0,0,,,1202.5,1200,1.249,70.529,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82979 ft: 0.319683
+Source[2],,384LDV_DMSO,M22,Destination[4],,384PP_Dest,L17,0,0,,,2000,0,1.249,70.529,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82979 ft: 0.319683
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L19,0,0,,,20,0,0.846,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.216578
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L20,0,0,,,212.5,0,0.846,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.216578
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L21,0,0,,,605,0,0.846,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.216578
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L22,0,0,,,1202.5,0,0.846,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.216578
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L23,0,0,,,2000,0,0.846,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.216578
+Source[2],,384LDV_DMSO,G22,Destination[4],,384PP_Dest,K22,0,0,,,1202.5,1200,1.285,72.921,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81754 ft: 0.314671
+Source[2],,384LDV_DMSO,G22,Destination[4],,384PP_Dest,K21,0,0,,,605,0,1.285,72.921,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81754 ft: 0.314671
+Source[2],,384LDV_DMSO,G22,Destination[4],,384PP_Dest,K20,0,0,,,212.5,0,1.285,72.921,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81754 ft: 0.314671
+Source[2],,384LDV_DMSO,G22,Destination[4],,384PP_Dest,K19,0,0,,,20,0,1.285,72.921,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81754 ft: 0.314671
+Source[2],,384LDV_DMSO,E22,Destination[4],,384PP_Dest,K17,0,0,,,2000,1200,1.445,73.269,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81573 ft: 0.351483
+Source[2],,384LDV_DMSO,E22,Destination[4],,384PP_Dest,K16,0,0,,,1202.5,0,1.445,73.269,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81573 ft: 0.351483
+Source[2],,384LDV_DMSO,E22,Destination[4],,384PP_Dest,K15,0,0,,,605,0,1.445,73.269,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81573 ft: 0.351483
+Source[2],,384LDV_DMSO,E22,Destination[4],,384PP_Dest,K14,0,0,,,212.5,0,1.445,73.269,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81573 ft: 0.351483
+Source[2],,384LDV_DMSO,E22,Destination[4],,384PP_Dest,K13,0,0,,,20,0,1.445,73.269,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81573 ft: 0.351483
+Source[2],,384LDV_DMSO,A22,Destination[4],,384PP_Dest,K5,0,0,,,2000,1800,1.284,71.007,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82737 ft: 0.325702
+Source[2],,384LDV_DMSO,A22,Destination[4],,384PP_Dest,K4,0,0,,,1202.5,0,1.284,71.007,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82737 ft: 0.325702
+Source[2],,384LDV_DMSO,A22,Destination[4],,384PP_Dest,K3,0,0,,,605,0,1.284,71.007,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82737 ft: 0.325702
+Source[2],,384LDV_DMSO,A22,Destination[4],,384PP_Dest,K2,0,0,,,212.5,0,1.284,71.007,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82737 ft: 0.325702
+Source[2],,384LDV_DMSO,A22,Destination[4],,384PP_Dest,K1,0,0,,,20,0,1.284,71.007,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82737 ft: 0.325702
+Source[2],,384LDV_DMSO,B3,Destination[4],,384PP_Dest,O4,0,0,,,1202.5,900,1.24,72.026,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82217 ft: 0.308795
+Source[2],,384LDV_DMSO,B3,Destination[4],,384PP_Dest,O5,0,0,,,2000,0,1.24,72.026,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82217 ft: 0.308795
+Source[2],,384LDV_DMSO,D3,Destination[4],,384PP_Dest,O11,0,0,,,2000,300,1.509,73.02,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81703 ft: 0.368894
+Source[2],,384LDV_DMSO,F3,Destination[4],,384PP_Dest,O16,0,0,,,1202.5,600,1.471,73.147,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81637 ft: 0.358583
+Source[2],,384LDV_DMSO,F3,Destination[4],,384PP_Dest,O17,0,0,,,2000,0,1.471,73.147,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81637 ft: 0.358583
+Source[2],,384LDV_DMSO,H3,Destination[4],,384PP_Dest,O23,0,0,,,2000,1200,1.421,73.471,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81467 ft: 0.344254
+Source[2],,384LDV_DMSO,P3,Destination[4],,384PP_Dest,P23,0,0,,,2000,300,1.281,70.52,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82983 ft: 0.327827
+Source[2],,384LDV_DMSO,P3,Destination[4],,384PP_Dest,P22,0,0,,,1202.5,0,1.281,70.52,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82983 ft: 0.327827
+Source[2],,384LDV_DMSO,P3,Destination[4],,384PP_Dest,P21,0,0,,,605,0,1.281,70.52,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82983 ft: 0.327827
+Source[2],,384LDV_DMSO,P3,Destination[4],,384PP_Dest,P20,0,0,,,212.5,0,1.281,70.52,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82983 ft: 0.327827
+Source[2],,384LDV_DMSO,P3,Destination[4],,384PP_Dest,P19,0,0,,,20,0,1.281,70.52,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82983 ft: 0.327827
+Source[2],,384LDV_DMSO,N3,Destination[4],,384PP_Dest,P17,0,0,,,2000,900,1.271,71.567,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82452 ft: 0.319257
+Source[2],,384LDV_DMSO,N3,Destination[4],,384PP_Dest,P16,0,0,,,1202.5,0,1.271,71.567,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82452 ft: 0.319257
+Source[2],,384LDV_DMSO,N3,Destination[4],,384PP_Dest,P15,0,0,,,605,0,1.271,71.567,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82452 ft: 0.319257
+Source[2],,384LDV_DMSO,N3,Destination[4],,384PP_Dest,P14,0,0,,,212.5,0,1.271,71.567,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82452 ft: 0.319257
+Source[2],,384LDV_DMSO,N3,Destination[4],,384PP_Dest,P13,0,0,,,20,0,1.271,71.567,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82452 ft: 0.319257
+Source[2],,384LDV_DMSO,L3,Destination[4],,384PP_Dest,P10,0,0,,,1202.5,300,1.542,74.323,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81018 ft: 0.367439
+Source[2],,384LDV_DMSO,L3,Destination[4],,384PP_Dest,P9,0,0,,,605,0,1.542,74.323,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81018 ft: 0.367439
+Source[2],,384LDV_DMSO,L3,Destination[4],,384PP_Dest,P8,0,0,,,212.5,0,1.542,74.323,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81018 ft: 0.367439
+Source[2],,384LDV_DMSO,L3,Destination[4],,384PP_Dest,P7,0,0,,,20,0,1.542,74.323,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81018 ft: 0.367439
+Source[2],,384LDV_DMSO,J3,Destination[4],,384PP_Dest,P4,0,0,,,1202.5,0,1.488,72.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8199 ft: 0.367597
+Source[2],,384LDV_DMSO,J3,Destination[4],,384PP_Dest,P3,0,0,,,605,0,1.488,72.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8199 ft: 0.367597
+Source[2],,384LDV_DMSO,J3,Destination[4],,384PP_Dest,P2,0,0,,,212.5,0,1.488,72.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8199 ft: 0.367597
+Source[2],,384LDV_DMSO,J3,Destination[4],,384PP_Dest,P1,0,0,,,20,0,1.488,72.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8199 ft: 0.367597
+Source[2],,384LDV_DMSO,J1,Destination[4],,384PP_Dest,N4,0,0,,,1202.5,300,1.3,73.638,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8138 ft: 0.313982
+Source[2],,384LDV_DMSO,J1,Destination[4],,384PP_Dest,N5,0,0,,,2000,0,1.3,73.638,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8138 ft: 0.313982
+Source[2],,384LDV_DMSO,L1,Destination[4],,384PP_Dest,N9,0,0,,,605,600,1.482,74.397,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80978 ft: 0.352624
+Source[2],,384LDV_DMSO,L1,Destination[4],,384PP_Dest,N10,0,0,,,1202.5,0,1.482,74.397,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80978 ft: 0.352624
+Source[2],,384LDV_DMSO,L1,Destination[4],,384PP_Dest,N11,0,0,,,2000,0,1.482,74.397,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80978 ft: 0.352624
+Source[2],,384LDV_DMSO,N1,Destination[4],,384PP_Dest,N13,0,0,,,20,0,1.213,70.87,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82807 ft: 0.30847
+Source[2],,384LDV_DMSO,N1,Destination[4],,384PP_Dest,N14,0,0,,,212.5,0,1.213,70.87,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82807 ft: 0.30847
+Source[2],,384LDV_DMSO,N1,Destination[4],,384PP_Dest,N15,0,0,,,605,0,1.213,70.87,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82807 ft: 0.30847
+Source[2],,384LDV_DMSO,N1,Destination[4],,384PP_Dest,N16,0,0,,,1202.5,0,1.213,70.87,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82807 ft: 0.30847
+Source[2],,384LDV_DMSO,N1,Destination[4],,384PP_Dest,N17,0,0,,,2000,0,1.213,70.87,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82807 ft: 0.30847
+Source[2],,384LDV_DMSO,P1,Destination[4],,384PP_Dest,N20,0,0,,,212.5,0,1.468,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37599
+Source[2],,384LDV_DMSO,P1,Destination[4],,384PP_Dest,N21,0,0,,,605,0,1.468,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37599
+Source[2],,384LDV_DMSO,P1,Destination[4],,384PP_Dest,N22,0,0,,,1202.5,0,1.468,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37599
+Source[2],,384LDV_DMSO,P1,Destination[4],,384PP_Dest,N23,0,0,,,2000,0,1.468,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37599
+Source[2],,384LDV_DMSO,H1,Destination[4],,384PP_Dest,M22,0,0,,,1202.5,300,1.518,73.663,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81367 ft: 0.366399
+Source[2],,384LDV_DMSO,H1,Destination[4],,384PP_Dest,M21,0,0,,,605,0,1.518,73.663,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81367 ft: 0.366399
+Source[2],,384LDV_DMSO,H1,Destination[4],,384PP_Dest,M20,0,0,,,212.5,0,1.518,73.663,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81367 ft: 0.366399
+Source[2],,384LDV_DMSO,H1,Destination[4],,384PP_Dest,M19,0,0,,,20,0,1.518,73.663,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81367 ft: 0.366399
+Source[2],,384LDV_DMSO,F1,Destination[4],,384PP_Dest,M17,0,0,,,2000,900,1.235,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.316362
+Source[2],,384LDV_DMSO,F1,Destination[4],,384PP_Dest,M16,0,0,,,1202.5,0,1.235,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.316362
+Source[2],,384LDV_DMSO,F1,Destination[4],,384PP_Dest,M15,0,0,,,605,0,1.235,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.316362
+Source[2],,384LDV_DMSO,F1,Destination[4],,384PP_Dest,M14,0,0,,,212.5,0,1.235,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.316362
+Source[2],,384LDV_DMSO,F1,Destination[4],,384PP_Dest,M13,0,0,,,20,0,1.235,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.316362
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M10,0,0,,,1202.5,300,1.364,71.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82276 ft: 0.340496
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M9,0,0,,,605,0,1.364,71.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82276 ft: 0.340496
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M8,0,0,,,212.5,0,1.364,71.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82276 ft: 0.340496
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M7,0,0,,,20,0,1.364,71.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82276 ft: 0.340496
+Source[2],,384LDV_DMSO,B1,Destination[4],,384PP_Dest,M5,0,0,,,2000,1500,1.386,71.895,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82284 ft: 0.34608
+Source[2],,384LDV_DMSO,B1,Destination[4],,384PP_Dest,M4,0,0,,,1202.5,0,1.386,71.895,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82284 ft: 0.34608
+Source[2],,384LDV_DMSO,B1,Destination[4],,384PP_Dest,M3,0,0,,,605,0,1.386,71.895,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82284 ft: 0.34608
+Source[2],,384LDV_DMSO,B1,Destination[4],,384PP_Dest,M2,0,0,,,212.5,0,1.386,71.895,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82284 ft: 0.34608
+Source[2],,384LDV_DMSO,B1,Destination[4],,384PP_Dest,M1,0,0,,,20,0,1.386,71.895,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82284 ft: 0.34608
+Source[2],,384LDV_DMSO,B11,Destination[5],,384PP_Dest,G4,0,0,,,1202.5,900,1.313,72.353,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82049 ft: 0.324946
+Source[2],,384LDV_DMSO,B11,Destination[5],,384PP_Dest,G5,0,0,,,2000,0,1.313,72.353,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82049 ft: 0.324946
+Source[2],,384LDV_DMSO,D11,Destination[5],,384PP_Dest,G11,0,0,,,2000,1200,1.495,72.823,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81806 ft: 0.36681
+Source[2],,384LDV_DMSO,F11,Destination[5],,384PP_Dest,G17,0,0,,,2000,1800,1.55,74.764,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80782 ft: 0.367673
+Source[2],,384LDV_DMSO,H11,Destination[5],,384PP_Dest,G23,0,0,,,2000,600,1.36,76.478,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79854 ft: 0.317531
+Source[2],,384LDV_DMSO,P11,Destination[5],,384PP_Dest,H23,0,0,,,2000,900,1.351,71.815,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82326 ft: 0.337681
+Source[2],,384LDV_DMSO,P11,Destination[5],,384PP_Dest,H22,0,0,,,1202.5,0,1.351,71.815,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82326 ft: 0.337681
+Source[2],,384LDV_DMSO,P11,Destination[5],,384PP_Dest,H21,0,0,,,605,0,1.351,71.815,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82326 ft: 0.337681
+Source[2],,384LDV_DMSO,P11,Destination[5],,384PP_Dest,H20,0,0,,,212.5,0,1.351,71.815,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82326 ft: 0.337681
+Source[2],,384LDV_DMSO,P11,Destination[5],,384PP_Dest,H19,0,0,,,20,0,1.351,71.815,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82326 ft: 0.337681
+Source[2],,384LDV_DMSO,N11,Destination[5],,384PP_Dest,H16,0,0,,,1202.5,1200,1.351,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8127 ft: 0.324861
+Source[2],,384LDV_DMSO,N11,Destination[5],,384PP_Dest,H15,0,0,,,605,0,1.351,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8127 ft: 0.324861
+Source[2],,384LDV_DMSO,N11,Destination[5],,384PP_Dest,H14,0,0,,,212.5,0,1.351,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8127 ft: 0.324861
+Source[2],,384LDV_DMSO,N11,Destination[5],,384PP_Dest,H13,0,0,,,20,0,1.351,73.847,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8127 ft: 0.324861
+Source[2],,384LDV_DMSO,L11,Destination[5],,384PP_Dest,H10,0,0,,,1202.5,1200,1.367,76.531,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79825 ft: 0.3191
+Source[2],,384LDV_DMSO,L11,Destination[5],,384PP_Dest,H9,0,0,,,605,0,1.367,76.531,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79825 ft: 0.3191
+Source[2],,384LDV_DMSO,L11,Destination[5],,384PP_Dest,H8,0,0,,,212.5,0,1.367,76.531,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79825 ft: 0.3191
+Source[2],,384LDV_DMSO,L11,Destination[5],,384PP_Dest,H7,0,0,,,20,0,1.367,76.531,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79825 ft: 0.3191
+Source[2],,384LDV_DMSO,J11,Destination[5],,384PP_Dest,H4,0,0,,,1202.5,900,1.609,77.039,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79545 ft: 0.373619
+Source[2],,384LDV_DMSO,J11,Destination[5],,384PP_Dest,H3,0,0,,,605,0,1.609,77.039,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79545 ft: 0.373619
+Source[2],,384LDV_DMSO,J11,Destination[5],,384PP_Dest,H2,0,0,,,212.5,0,1.609,77.039,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79545 ft: 0.373619
+Source[2],,384LDV_DMSO,J11,Destination[5],,384PP_Dest,H1,0,0,,,20,0,1.609,77.039,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79545 ft: 0.373619
+Source[2],,384LDV_DMSO,J13,Destination[5],,384PP_Dest,J5,0,0,,,2000,1500,1.419,75.751,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80251 ft: 0.333554
+Source[2],,384LDV_DMSO,L13,Destination[5],,384PP_Dest,J11,0,0,,,2000,900,1.595,75.199,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80549 ft: 0.376889
+Source[2],,384LDV_DMSO,N13,Destination[5],,384PP_Dest,J17,0,0,,,2000,1800,1.366,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.349749
+Source[2],,384LDV_DMSO,P13,Destination[5],,384PP_Dest,J23,0,0,,,2000,900,1.255,71.886,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82289 ft: 0.313421
+Source[2],,384LDV_DMSO,F13,Destination[5],,384PP_Dest,I15,0,0,,,605,300,1.629,72.377,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82036 ft: 0.36789
+Source[2],,384LDV_DMSO,F13,Destination[5],,384PP_Dest,I14,0,0,,,212.5,0,1.629,72.377,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82036 ft: 0.36789
+Source[2],,384LDV_DMSO,F13,Destination[5],,384PP_Dest,I13,0,0,,,20,0,1.629,72.377,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82036 ft: 0.36789
+Source[2],,384LDV_DMSO,D13,Destination[5],,384PP_Dest,I10,0,0,,,1202.5,1200,1.419,71.648,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82411 ft: 0.355824
+Source[2],,384LDV_DMSO,D13,Destination[5],,384PP_Dest,I9,0,0,,,605,0,1.419,71.648,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82411 ft: 0.355824
+Source[2],,384LDV_DMSO,D13,Destination[5],,384PP_Dest,I8,0,0,,,212.5,0,1.419,71.648,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82411 ft: 0.355824
+Source[2],,384LDV_DMSO,D13,Destination[5],,384PP_Dest,I7,0,0,,,20,0,1.419,71.648,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82411 ft: 0.355824
+Source[2],,384LDV_DMSO,B13,Destination[5],,384PP_Dest,I4,0,0,,,1202.5,900,1.258,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.322277
+Source[2],,384LDV_DMSO,B13,Destination[5],,384PP_Dest,I3,0,0,,,605,0,1.258,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.322277
+Source[2],,384LDV_DMSO,B13,Destination[5],,384PP_Dest,I2,0,0,,,212.5,0,1.258,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.322277
+Source[2],,384LDV_DMSO,B13,Destination[5],,384PP_Dest,I1,0,0,,,20,0,1.258,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.322277
+Source[2],,384LDV_DMSO,B15,Destination[5],,384PP_Dest,K5,0,0,,,2000,600,1.356,72.185,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82136 ft: 0.336641
+Source[2],,384LDV_DMSO,D15,Destination[5],,384PP_Dest,K11,0,0,,,2000,1500,1.366,74.584,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80878 ft: 0.324481
+Source[2],,384LDV_DMSO,F15,Destination[5],,384PP_Dest,K17,0,0,,,2000,1500,1.386,75.375,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80454 ft: 0.326868
+Source[2],,384LDV_DMSO,H15,Destination[5],,384PP_Dest,K23,0,0,,,2000,1500,1.594,76.413,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7989 ft: 0.372317
+Source[2],,384LDV_DMSO,P15,Destination[5],,384PP_Dest,L23,0,0,,,2000,1800,1.293,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.331229
+Source[2],,384LDV_DMSO,P15,Destination[5],,384PP_Dest,L22,0,0,,,1202.5,0,1.293,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.331229
+Source[2],,384LDV_DMSO,P15,Destination[5],,384PP_Dest,L21,0,0,,,605,0,1.293,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.331229
+Source[2],,384LDV_DMSO,P15,Destination[5],,384PP_Dest,L20,0,0,,,212.5,0,1.293,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.331229
+Source[2],,384LDV_DMSO,P15,Destination[5],,384PP_Dest,L19,0,0,,,20,0,1.293,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.331229
+Source[2],,384LDV_DMSO,N15,Destination[5],,384PP_Dest,L16,0,0,,,1202.5,1200,1.498,73.336,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81538 ft: 0.36378
+Source[2],,384LDV_DMSO,N15,Destination[5],,384PP_Dest,L15,0,0,,,605,0,1.498,73.336,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81538 ft: 0.36378
+Source[2],,384LDV_DMSO,N15,Destination[5],,384PP_Dest,L14,0,0,,,212.5,0,1.498,73.336,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81538 ft: 0.36378
+Source[2],,384LDV_DMSO,N15,Destination[5],,384PP_Dest,L13,0,0,,,20,0,1.498,73.336,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81538 ft: 0.36378
+Source[2],,384LDV_DMSO,L15,Destination[5],,384PP_Dest,L11,0,0,,,2000,1800,1.521,72.691,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81874 ft: 0.373968
+Source[2],,384LDV_DMSO,L15,Destination[5],,384PP_Dest,L10,0,0,,,1202.5,0,1.521,72.691,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81874 ft: 0.373968
+Source[2],,384LDV_DMSO,L15,Destination[5],,384PP_Dest,L9,0,0,,,605,0,1.521,72.691,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81874 ft: 0.373968
+Source[2],,384LDV_DMSO,L15,Destination[5],,384PP_Dest,L8,0,0,,,212.5,0,1.521,72.691,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81874 ft: 0.373968
+Source[2],,384LDV_DMSO,L15,Destination[5],,384PP_Dest,L7,0,0,,,20,0,1.521,72.691,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81874 ft: 0.373968
+Source[2],,384LDV_DMSO,J15,Destination[5],,384PP_Dest,L4,0,0,,,1202.5,1200,1.401,76.955,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79591 ft: 0.32571
+Source[2],,384LDV_DMSO,J15,Destination[5],,384PP_Dest,L3,0,0,,,605,0,1.401,76.955,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79591 ft: 0.32571
+Source[2],,384LDV_DMSO,J15,Destination[5],,384PP_Dest,L2,0,0,,,212.5,0,1.401,76.955,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79591 ft: 0.32571
+Source[2],,384LDV_DMSO,J15,Destination[5],,384PP_Dest,L1,0,0,,,20,0,1.401,76.955,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79591 ft: 0.32571
+Source[2],,384LDV_DMSO,J17,Destination[5],,384PP_Dest,N5,0,0,,,2000,900,1.325,74.031,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81172 ft: 0.317549
+Source[2],,384LDV_DMSO,L17,Destination[5],,384PP_Dest,N7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L17,Destination[5],,384PP_Dest,N8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L17,Destination[5],,384PP_Dest,N9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L17,Destination[5],,384PP_Dest,N10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L17,Destination[5],,384PP_Dest,N11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,N17,Destination[5],,384PP_Dest,N17,0,0,,,2000,900,1.234,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.31613
+Source[2],,384LDV_DMSO,P17,Destination[5],,384PP_Dest,N23,0,0,,,2000,900,1.25,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.320224
+Source[2],,384LDV_DMSO,H17,Destination[5],,384PP_Dest,M19,0,0,,,20,0,1.552,75.42,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8043 ft: 0.365968
+Source[2],,384LDV_DMSO,F17,Destination[5],,384PP_Dest,M15,0,0,,,605,300,1.285,73.961,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81209 ft: 0.308417
+Source[2],,384LDV_DMSO,F17,Destination[5],,384PP_Dest,M14,0,0,,,212.5,0,1.285,73.961,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81209 ft: 0.308417
+Source[2],,384LDV_DMSO,F17,Destination[5],,384PP_Dest,M13,0,0,,,20,0,1.285,73.961,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81209 ft: 0.308417
+Source[2],,384LDV_DMSO,D17,Destination[5],,384PP_Dest,M10,0,0,,,1202.5,600,1.546,73.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81589 ft: 0.376153
+Source[2],,384LDV_DMSO,D17,Destination[5],,384PP_Dest,M9,0,0,,,605,0,1.546,73.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81589 ft: 0.376153
+Source[2],,384LDV_DMSO,D17,Destination[5],,384PP_Dest,M8,0,0,,,212.5,0,1.546,73.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81589 ft: 0.376153
+Source[2],,384LDV_DMSO,D17,Destination[5],,384PP_Dest,M7,0,0,,,20,0,1.546,73.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81589 ft: 0.376153
+Source[2],,384LDV_DMSO,B17,Destination[5],,384PP_Dest,M4,0,0,,,1202.5,300,1.399,71.054,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82713 ft: 0.35476
+Source[2],,384LDV_DMSO,B17,Destination[5],,384PP_Dest,M3,0,0,,,605,0,1.399,71.054,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82713 ft: 0.35476
+Source[2],,384LDV_DMSO,B17,Destination[5],,384PP_Dest,M2,0,0,,,212.5,0,1.399,71.054,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82713 ft: 0.35476
+Source[2],,384LDV_DMSO,B17,Destination[5],,384PP_Dest,M1,0,0,,,20,0,1.399,71.054,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82713 ft: 0.35476
+Source[2],,384LDV_DMSO,B19,Destination[5],,384PP_Dest,O4,0,0,,,1202.5,1200,1.513,72.134,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82162 ft: 0.376144
+Source[2],,384LDV_DMSO,B19,Destination[5],,384PP_Dest,O5,0,0,,,2000,0,1.513,72.134,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82162 ft: 0.376144
+Source[2],,384LDV_DMSO,D19,Destination[5],,384PP_Dest,O11,0,0,,,2000,600,1.29,73.443,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81482 ft: 0.312804
+Source[2],,384LDV_DMSO,F19,Destination[5],,384PP_Dest,O17,0,0,,,2000,900,1.328,74.793,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80767 ft: 0.314831
+Source[2],,384LDV_DMSO,H19,Destination[5],,384PP_Dest,O23,0,0,,,2000,900,1.473,74.405,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80974 ft: 0.350571
+Source[2],,384LDV_DMSO,P19,Destination[5],,384PP_Dest,P23,0,0,,,2000,1800,1.261,71.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82722 ft: 0.319669
+Source[2],,384LDV_DMSO,P19,Destination[5],,384PP_Dest,P22,0,0,,,1202.5,0,1.261,71.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82722 ft: 0.319669
+Source[2],,384LDV_DMSO,P19,Destination[5],,384PP_Dest,P21,0,0,,,605,0,1.261,71.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82722 ft: 0.319669
+Source[2],,384LDV_DMSO,P19,Destination[5],,384PP_Dest,P20,0,0,,,212.5,0,1.261,71.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82722 ft: 0.319669
+Source[2],,384LDV_DMSO,P19,Destination[5],,384PP_Dest,P19,0,0,,,20,0,1.261,71.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82722 ft: 0.319669
+Source[2],,384LDV_DMSO,N19,Destination[5],,384PP_Dest,P17,0,0,,,2000,1800,1.475,70.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82747 ft: 0.374294
+Source[2],,384LDV_DMSO,N19,Destination[5],,384PP_Dest,P16,0,0,,,1202.5,0,1.475,70.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82747 ft: 0.374294
+Source[2],,384LDV_DMSO,N19,Destination[5],,384PP_Dest,P15,0,0,,,605,0,1.475,70.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82747 ft: 0.374294
+Source[2],,384LDV_DMSO,N19,Destination[5],,384PP_Dest,P14,0,0,,,212.5,0,1.475,70.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82747 ft: 0.374294
+Source[2],,384LDV_DMSO,N19,Destination[5],,384PP_Dest,P13,0,0,,,20,0,1.475,70.989,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82747 ft: 0.374294
+Source[2],,384LDV_DMSO,L19,Destination[5],,384PP_Dest,P10,0,0,,,1202.5,900,1.389,73.349,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81531 ft: 0.337435
+Source[2],,384LDV_DMSO,L19,Destination[5],,384PP_Dest,P9,0,0,,,605,0,1.389,73.349,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81531 ft: 0.337435
+Source[2],,384LDV_DMSO,L19,Destination[5],,384PP_Dest,P8,0,0,,,212.5,0,1.389,73.349,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81531 ft: 0.337435
+Source[2],,384LDV_DMSO,L19,Destination[5],,384PP_Dest,P7,0,0,,,20,0,1.389,73.349,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81531 ft: 0.337435
+Source[2],,384LDV_DMSO,J19,Destination[5],,384PP_Dest,P3,0,0,,,605,600,1.513,73.674,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8136 ft: 0.365063
+Source[2],,384LDV_DMSO,J19,Destination[5],,384PP_Dest,P2,0,0,,,212.5,0,1.513,73.674,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8136 ft: 0.365063
+Source[2],,384LDV_DMSO,J19,Destination[5],,384PP_Dest,P1,0,0,,,20,0,1.513,73.674,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8136 ft: 0.365063
+Source[2],,384LDV_DMSO,J9,Destination[5],,384PP_Dest,F5,0,0,,,2000,1500,1.462,80.682,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77463 ft: 0.325772
+Source[2],,384LDV_DMSO,N9,Destination[5],,384PP_Dest,F17,0,0,,,2000,600,1.372,73.228,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81594 ft: 0.333912
+Source[2],,384LDV_DMSO,P9,Destination[5],,384PP_Dest,F21,0,0,,,605,600,1.367,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.349963
+Source[2],,384LDV_DMSO,P9,Destination[5],,384PP_Dest,F22,0,0,,,1202.5,0,1.367,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.349963
+Source[2],,384LDV_DMSO,P9,Destination[5],,384PP_Dest,F23,0,0,,,2000,0,1.367,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.349963
+Source[2],,384LDV_DMSO,H9,Destination[5],,384PP_Dest,E19,0,0,,,20,0,1.496,78.294,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78842 ft: 0.343254
+Source[2],,384LDV_DMSO,F9,Destination[5],,384PP_Dest,E16,0,0,,,1202.5,900,1.507,77.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79057 ft: 0.346977
+Source[2],,384LDV_DMSO,F9,Destination[5],,384PP_Dest,E15,0,0,,,605,0,1.507,77.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79057 ft: 0.346977
+Source[2],,384LDV_DMSO,F9,Destination[5],,384PP_Dest,E14,0,0,,,212.5,0,1.507,77.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79057 ft: 0.346977
+Source[2],,384LDV_DMSO,F9,Destination[5],,384PP_Dest,E13,0,0,,,20,0,1.507,77.912,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79057 ft: 0.346977
+Source[2],,384LDV_DMSO,D9,Destination[5],,384PP_Dest,E10,0,0,,,1202.5,900,1.274,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.32637
+Source[2],,384LDV_DMSO,D9,Destination[5],,384PP_Dest,E9,0,0,,,605,0,1.274,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.32637
+Source[2],,384LDV_DMSO,D9,Destination[5],,384PP_Dest,E8,0,0,,,212.5,0,1.274,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.32637
+Source[2],,384LDV_DMSO,D9,Destination[5],,384PP_Dest,E7,0,0,,,20,0,1.274,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.32637
+Source[2],,384LDV_DMSO,B9,Destination[5],,384PP_Dest,E4,0,0,,,1202.5,300,1.328,71.397,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82539 ft: 0.334559
+Source[2],,384LDV_DMSO,B9,Destination[5],,384PP_Dest,E3,0,0,,,605,0,1.328,71.397,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82539 ft: 0.334559
+Source[2],,384LDV_DMSO,B9,Destination[5],,384PP_Dest,E2,0,0,,,212.5,0,1.328,71.397,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82539 ft: 0.334559
+Source[2],,384LDV_DMSO,B9,Destination[5],,384PP_Dest,E1,0,0,,,20,0,1.328,71.397,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82539 ft: 0.334559
+Source[2],,384LDV_DMSO,B7,Destination[5],,384PP_Dest,C4,0,0,,,1202.5,600,1.311,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.335856
+Source[2],,384LDV_DMSO,B7,Destination[5],,384PP_Dest,C5,0,0,,,2000,0,1.311,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.335856
+Source[2],,384LDV_DMSO,D7,Destination[5],,384PP_Dest,C11,0,0,,,2000,1200,1.533,73.197,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81611 ft: 0.373521
+Source[2],,384LDV_DMSO,F7,Destination[5],,384PP_Dest,C17,0,0,,,2000,1800,1.438,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.368169
+Source[2],,384LDV_DMSO,H7,Destination[5],,384PP_Dest,C23,0,0,,,2000,1800,1.341,75.147,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80577 ft: 0.317103
+Source[2],,384LDV_DMSO,P7,Destination[5],,384PP_Dest,D22,0,0,,,1202.5,0,1.354,72.454,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81997 ft: 0.334413
+Source[2],,384LDV_DMSO,P7,Destination[5],,384PP_Dest,D21,0,0,,,605,0,1.354,72.454,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81997 ft: 0.334413
+Source[2],,384LDV_DMSO,P7,Destination[5],,384PP_Dest,D20,0,0,,,212.5,0,1.354,72.454,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81997 ft: 0.334413
+Source[2],,384LDV_DMSO,P7,Destination[5],,384PP_Dest,D19,0,0,,,20,0,1.354,72.454,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81997 ft: 0.334413
+Source[2],,384LDV_DMSO,N7,Destination[5],,384PP_Dest,D16,0,0,,,1202.5,1200,1.338,75.696,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80281 ft: 0.314802
+Source[2],,384LDV_DMSO,N7,Destination[5],,384PP_Dest,D15,0,0,,,605,0,1.338,75.696,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80281 ft: 0.314802
+Source[2],,384LDV_DMSO,N7,Destination[5],,384PP_Dest,D14,0,0,,,212.5,0,1.338,75.696,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80281 ft: 0.314802
+Source[2],,384LDV_DMSO,N7,Destination[5],,384PP_Dest,D13,0,0,,,20,0,1.338,75.696,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80281 ft: 0.314802
+Source[2],,384LDV_DMSO,L7,Destination[5],,384PP_Dest,D10,0,0,,,1202.5,600,1.563,75.386,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80448 ft: 0.368577
+Source[2],,384LDV_DMSO,L7,Destination[5],,384PP_Dest,D9,0,0,,,605,0,1.563,75.386,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80448 ft: 0.368577
+Source[2],,384LDV_DMSO,L7,Destination[5],,384PP_Dest,D8,0,0,,,212.5,0,1.563,75.386,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80448 ft: 0.368577
+Source[2],,384LDV_DMSO,L7,Destination[5],,384PP_Dest,D7,0,0,,,20,0,1.563,75.386,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80448 ft: 0.368577
+Source[2],,384LDV_DMSO,J7,Destination[5],,384PP_Dest,D4,0,0,,,1202.5,600,1.612,77.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79125 ft: 0.371687
+Source[2],,384LDV_DMSO,J7,Destination[5],,384PP_Dest,D3,0,0,,,605,0,1.612,77.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79125 ft: 0.371687
+Source[2],,384LDV_DMSO,J7,Destination[5],,384PP_Dest,D2,0,0,,,212.5,0,1.612,77.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79125 ft: 0.371687
+Source[2],,384LDV_DMSO,J7,Destination[5],,384PP_Dest,D1,0,0,,,20,0,1.612,77.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79125 ft: 0.371687
+Source[2],,384LDV_DMSO,J5,Destination[5],,384PP_Dest,B1,0,0,,,20,0,1.237,74.352,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81002 ft: 0.294472
+Source[2],,384LDV_DMSO,J5,Destination[5],,384PP_Dest,B2,0,0,,,212.5,0,1.237,74.352,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81002 ft: 0.294472
+Source[2],,384LDV_DMSO,J5,Destination[5],,384PP_Dest,B3,0,0,,,605,0,1.237,74.352,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81002 ft: 0.294472
+Source[2],,384LDV_DMSO,J5,Destination[5],,384PP_Dest,B4,0,0,,,1202.5,0,1.237,74.352,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81002 ft: 0.294472
+Source[2],,384LDV_DMSO,J5,Destination[5],,384PP_Dest,B5,0,0,,,2000,0,1.237,74.352,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81002 ft: 0.294472
+Source[2],,384LDV_DMSO,L5,Destination[5],,384PP_Dest,B7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L5,Destination[5],,384PP_Dest,B8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L5,Destination[5],,384PP_Dest,B9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L5,Destination[5],,384PP_Dest,B10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L5,Destination[5],,384PP_Dest,B11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,N5,Destination[5],,384PP_Dest,B16,0,0,,,1202.5,600,1.316,73.22,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81599 ft: 0.320383
+Source[2],,384LDV_DMSO,N5,Destination[5],,384PP_Dest,B17,0,0,,,2000,0,1.316,73.22,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81599 ft: 0.320383
+Source[2],,384LDV_DMSO,P5,Destination[5],,384PP_Dest,B22,0,0,,,1202.5,300,1.402,71.945,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82259 ft: 0.349706
+Source[2],,384LDV_DMSO,P5,Destination[5],,384PP_Dest,B23,0,0,,,2000,0,1.402,71.945,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82259 ft: 0.349706
+Source[2],,384LDV_DMSO,H5,Destination[5],,384PP_Dest,A21,0,0,,,605,300,1.543,74.525,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8091 ft: 0.366857
+Source[2],,384LDV_DMSO,H5,Destination[5],,384PP_Dest,A20,0,0,,,212.5,0,1.543,74.525,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8091 ft: 0.366857
+Source[2],,384LDV_DMSO,H5,Destination[5],,384PP_Dest,A19,0,0,,,20,0,1.543,74.525,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8091 ft: 0.366857
+Source[2],,384LDV_DMSO,F5,Destination[5],,384PP_Dest,A16,0,0,,,1202.5,900,1.546,74.731,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.808 ft: 0.366933
+Source[2],,384LDV_DMSO,F5,Destination[5],,384PP_Dest,A15,0,0,,,605,0,1.546,74.731,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.808 ft: 0.366933
+Source[2],,384LDV_DMSO,F5,Destination[5],,384PP_Dest,A14,0,0,,,212.5,0,1.546,74.731,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.808 ft: 0.366933
+Source[2],,384LDV_DMSO,F5,Destination[5],,384PP_Dest,A13,0,0,,,20,0,1.546,74.731,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.808 ft: 0.366933
+Source[2],,384LDV_DMSO,D5,Destination[5],,384PP_Dest,A10,0,0,,,1202.5,900,1.252,71.723,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82373 ft: 0.313592
+Source[2],,384LDV_DMSO,D5,Destination[5],,384PP_Dest,A9,0,0,,,605,0,1.252,71.723,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82373 ft: 0.313592
+Source[2],,384LDV_DMSO,D5,Destination[5],,384PP_Dest,A8,0,0,,,212.5,0,1.252,71.723,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82373 ft: 0.313592
+Source[2],,384LDV_DMSO,D5,Destination[5],,384PP_Dest,A7,0,0,,,20,0,1.252,71.723,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82373 ft: 0.313592
+Source[2],,384LDV_DMSO,B5,Destination[5],,384PP_Dest,A4,0,0,,,1202.5,0,1.466,70.652,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82917 ft: 0.374305
+Source[2],,384LDV_DMSO,B5,Destination[5],,384PP_Dest,A3,0,0,,,605,0,1.466,70.652,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82917 ft: 0.374305
+Source[2],,384LDV_DMSO,B5,Destination[5],,384PP_Dest,A2,0,0,,,212.5,0,1.466,70.652,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82917 ft: 0.374305
+Source[2],,384LDV_DMSO,B5,Destination[5],,384PP_Dest,A1,0,0,,,20,0,1.466,70.652,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82917 ft: 0.374305
+Source[2],,384LDV_DMSO,B2,Destination[6],,384PP_Dest,C3,0,0,,,605,600,1.344,72.208,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82124 ft: 0.333676
+Source[2],,384LDV_DMSO,B2,Destination[6],,384PP_Dest,C4,0,0,,,1202.5,0,1.344,72.208,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82124 ft: 0.333676
+Source[2],,384LDV_DMSO,B2,Destination[6],,384PP_Dest,C5,0,0,,,2000,0,1.344,72.208,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82124 ft: 0.333676
+Source[2],,384LDV_DMSO,D2,Destination[6],,384PP_Dest,C11,0,0,,,2000,1200,1.242,70.695,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82895 ft: 0.316906
+Source[2],,384LDV_DMSO,F2,Destination[6],,384PP_Dest,C13,0,0,,,20,0,1.47,74.207,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81079 ft: 0.350914
+Source[2],,384LDV_DMSO,F2,Destination[6],,384PP_Dest,C14,0,0,,,212.5,0,1.47,74.207,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81079 ft: 0.350914
+Source[2],,384LDV_DMSO,F2,Destination[6],,384PP_Dest,C15,0,0,,,605,0,1.47,74.207,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81079 ft: 0.350914
+Source[2],,384LDV_DMSO,F2,Destination[6],,384PP_Dest,C16,0,0,,,1202.5,0,1.47,74.207,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81079 ft: 0.350914
+Source[2],,384LDV_DMSO,F2,Destination[6],,384PP_Dest,C17,0,0,,,2000,0,1.47,74.207,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81079 ft: 0.350914
+Source[2],,384LDV_DMSO,H2,Destination[6],,384PP_Dest,C22,0,0,,,1202.5,600,1.476,73.586,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81407 ft: 0.35691
+Source[2],,384LDV_DMSO,H2,Destination[6],,384PP_Dest,C23,0,0,,,2000,0,1.476,73.586,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81407 ft: 0.35691
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D23,0,0,,,2000,600,1.48,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37888
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D22,0,0,,,1202.5,0,1.48,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37888
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D21,0,0,,,605,0,1.48,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37888
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D20,0,0,,,212.5,0,1.48,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37888
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D19,0,0,,,20,0,1.48,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.37888
+Source[2],,384LDV_DMSO,N2,Destination[6],,384PP_Dest,D16,0,0,,,1202.5,1200,1.388,73.368,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81521 ft: 0.33702
+Source[2],,384LDV_DMSO,N2,Destination[6],,384PP_Dest,D15,0,0,,,605,0,1.388,73.368,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81521 ft: 0.33702
+Source[2],,384LDV_DMSO,N2,Destination[6],,384PP_Dest,D14,0,0,,,212.5,0,1.388,73.368,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81521 ft: 0.33702
+Source[2],,384LDV_DMSO,N2,Destination[6],,384PP_Dest,D13,0,0,,,20,0,1.388,73.368,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81521 ft: 0.33702
+Source[2],,384LDV_DMSO,L2,Destination[6],,384PP_Dest,D11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L2,Destination[6],,384PP_Dest,D10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L2,Destination[6],,384PP_Dest,D9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L2,Destination[6],,384PP_Dest,D8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,L2,Destination[6],,384PP_Dest,D7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,J2,Destination[6],,384PP_Dest,D4,0,0,,,1202.5,900,1.498,74.553,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80895 ft: 0.35613
+Source[2],,384LDV_DMSO,J2,Destination[6],,384PP_Dest,D3,0,0,,,605,0,1.498,74.553,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80895 ft: 0.35613
+Source[2],,384LDV_DMSO,J2,Destination[6],,384PP_Dest,D2,0,0,,,212.5,0,1.498,74.553,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80895 ft: 0.35613
+Source[2],,384LDV_DMSO,J2,Destination[6],,384PP_Dest,D1,0,0,,,20,0,1.498,74.553,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80895 ft: 0.35613
+Source[2],,384LDV_DMSO,B4,Destination[6],,384PP_Dest,E4,0,0,,,1202.5,1200,1.46,72.525,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8196 ft: 0.360269
+Source[2],,384LDV_DMSO,B4,Destination[6],,384PP_Dest,E5,0,0,,,2000,0,1.46,72.525,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8196 ft: 0.360269
+Source[2],,384LDV_DMSO,D4,Destination[6],,384PP_Dest,E11,0,0,,,2000,900,1.509,74.225,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81069 ft: 0.360218
+Source[2],,384LDV_DMSO,D21,Destination[6],,384PP_Dest,A11,0,0,,,2000,1200,1.481,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.373104
+Source[2],,384LDV_DMSO,D21,Destination[6],,384PP_Dest,A10,0,0,,,1202.5,0,1.481,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.373104
+Source[2],,384LDV_DMSO,D21,Destination[6],,384PP_Dest,A9,0,0,,,605,0,1.481,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.373104
+Source[2],,384LDV_DMSO,D21,Destination[6],,384PP_Dest,A8,0,0,,,212.5,0,1.481,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.373104
+Source[2],,384LDV_DMSO,D21,Destination[6],,384PP_Dest,A7,0,0,,,20,0,1.481,71.414,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82531 ft: 0.373104
+Source[2],,384LDV_DMSO,B21,Destination[6],,384PP_Dest,A5,0,0,,,2000,1800,1.213,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.310724
+Source[2],,384LDV_DMSO,B21,Destination[6],,384PP_Dest,A4,0,0,,,1202.5,0,1.213,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.310724
+Source[2],,384LDV_DMSO,B21,Destination[6],,384PP_Dest,A3,0,0,,,605,0,1.213,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.310724
+Source[2],,384LDV_DMSO,B21,Destination[6],,384PP_Dest,A2,0,0,,,212.5,0,1.213,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.310724
+Source[2],,384LDV_DMSO,B21,Destination[6],,384PP_Dest,A1,0,0,,,20,0,1.213,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.310724
+Source[2],,384LDV_DMSO,J21,Destination[6],,384PP_Dest,B5,0,0,,,2000,900,1.539,72.608,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81917 ft: 0.379047
+Source[2],,384LDV_DMSO,L21,Destination[6],,384PP_Dest,B10,0,0,,,1202.5,900,1.264,71.193,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82643 ft: 0.319545
+Source[2],,384LDV_DMSO,L21,Destination[6],,384PP_Dest,B11,0,0,,,2000,0,1.264,71.193,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82643 ft: 0.319545
+Source[2],,384LDV_DMSO,N21,Destination[6],,384PP_Dest,B17,0,0,,,2000,300,1.282,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.328327
+Source[2],,384LDV_DMSO,P21,Destination[6],,384PP_Dest,B21,0,0,,,605,600,1.279,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.327521
+Source[2],,384LDV_DMSO,P21,Destination[6],,384PP_Dest,B22,0,0,,,1202.5,0,1.279,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.327521
+Source[2],,384LDV_DMSO,P21,Destination[6],,384PP_Dest,B23,0,0,,,2000,0,1.279,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.327521
+Source[2],,384LDV_DMSO,H21,Destination[6],,384PP_Dest,A22,0,0,,,1202.5,0,1.392,71.822,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82322 ft: 0.348028
+Source[2],,384LDV_DMSO,H21,Destination[6],,384PP_Dest,A21,0,0,,,605,0,1.392,71.822,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82322 ft: 0.348028
+Source[2],,384LDV_DMSO,H21,Destination[6],,384PP_Dest,A20,0,0,,,212.5,0,1.392,71.822,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82322 ft: 0.348028
+Source[2],,384LDV_DMSO,H21,Destination[6],,384PP_Dest,A19,0,0,,,20,0,1.392,71.822,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82322 ft: 0.348028
+Source[2],,384LDV_DMSO,F21,Destination[6],,384PP_Dest,A16,0,0,,,1202.5,0,1.531,73.785,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81302 ft: 0.368695
+Source[2],,384LDV_DMSO,F21,Destination[6],,384PP_Dest,A15,0,0,,,605,0,1.531,73.785,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81302 ft: 0.368695
+Source[2],,384LDV_DMSO,F21,Destination[6],,384PP_Dest,A14,0,0,,,212.5,0,1.531,73.785,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81302 ft: 0.368695
+Source[2],,384LDV_DMSO,F21,Destination[6],,384PP_Dest,A13,0,0,,,20,0,1.531,73.785,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81302 ft: 0.368695
+Source[3],,384LDV_DMSO,A1,Destination[7],,384PP_Dest,A5,0,0,,,2000,1500,1.533,80.815,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77385 ft: 0.34075
+Source[3],,384LDV_DMSO,O1,Destination[7],,384PP_Dest,B21,0,0,,,605,600,1.629,78.365,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78802 ft: 0.37345
+Source[3],,384LDV_DMSO,O1,Destination[7],,384PP_Dest,B20,0,0,,,212.5,0,1.629,78.365,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78802 ft: 0.37345
+Source[3],,384LDV_DMSO,O1,Destination[7],,384PP_Dest,B19,0,0,,,20,0,1.629,78.365,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78802 ft: 0.37345
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A3,Destination[7],,384PP_Dest,C1,0,0,,,20,0,1.528,81.537,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76955 ft: 0.335529
+Source[3],,384LDV_DMSO,C5,Destination[7],,384PP_Dest,E11,0,0,,,2000,1800,1.612,85.219,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74667 ft: 0.334509
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C11,Destination[7],,384PP_Dest,K9,0,0,,,605,600,1.719,85.979,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74171 ft: 0.356808
+Source[3],,384LDV_DMSO,C11,Destination[7],,384PP_Dest,K8,0,0,,,212.5,0,1.719,85.979,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74171 ft: 0.356808
+Source[3],,384LDV_DMSO,C11,Destination[7],,384PP_Dest,K7,0,0,,,20,0,1.719,85.979,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74171 ft: 0.356808
+Source[3],,384LDV_DMSO,C13,Destination[7],,384PP_Dest,M11,0,0,,,2000,1500,1.751,87.253,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.73322 ft: 0.363403
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N7,0,0,,,20,0,1.261,89.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71782 ft: 0.261712
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N8,0,0,,,212.5,0,1.261,89.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71782 ft: 0.261712
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N9,0,0,,,605,0,1.261,89.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71782 ft: 0.261712
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N10,0,0,,,1202.5,0,1.261,89.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71782 ft: 0.261712
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N11,0,0,,,2000,0,1.261,89.467,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71782 ft: 0.261712
+Source[3],,384LDV_DMSO,C8,Destination[8],,384PP_Dest,M7,0,0,,,20,0,1.621,85.162,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74703 ft: 0.33636
+Source[3],,384LDV_DMSO,A8,Destination[8],,384PP_Dest,M3,0,0,,,605,300,1.598,85.093,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74747 ft: 0.331628
+Source[3],,384LDV_DMSO,A8,Destination[8],,384PP_Dest,M2,0,0,,,212.5,0,1.598,85.093,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74747 ft: 0.331628
+Source[3],,384LDV_DMSO,A8,Destination[8],,384PP_Dest,M1,0,0,,,20,0,1.598,85.093,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74747 ft: 0.331628
+Source[3],,384LDV_DMSO,A6,Destination[8],,384PP_Dest,K5,0,0,,,2000,900,1.551,82.485,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76382 ft: 0.335214
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M6,Destination[8],,384PP_Dest,L16,0,0,,,1202.5,1200,1.736,89.433,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71806 ft: 0.360278
+Source[3],,384LDV_DMSO,M6,Destination[8],,384PP_Dest,L15,0,0,,,605,0,1.736,89.433,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71806 ft: 0.360278
+Source[3],,384LDV_DMSO,M6,Destination[8],,384PP_Dest,L14,0,0,,,212.5,0,1.736,89.433,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71806 ft: 0.360278
+Source[3],,384LDV_DMSO,M6,Destination[8],,384PP_Dest,L13,0,0,,,20,0,1.736,89.433,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71806 ft: 0.360278
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L11,0,0,,,2000,0,1.257,90.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71223 ft: 0.260879
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L10,0,0,,,1202.5,0,1.257,90.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71223 ft: 0.260879
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L9,0,0,,,605,0,1.257,90.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71223 ft: 0.260879
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L8,0,0,,,212.5,0,1.257,90.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71223 ft: 0.260879
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L7,0,0,,,20,0,1.257,90.239,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.71223 ft: 0.260879
+Source[3],,384LDV_DMSO,M4,Destination[8],,384PP_Dest,J17,0,0,,,2000,600,1.626,85.622,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74405 ft: 0.337452
+Source[3],,384LDV_DMSO,O4,Destination[8],,384PP_Dest,J23,0,0,,,2000,1500,1.542,82.848,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76159 ft: 0.33107
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A4,Destination[8],,384PP_Dest,I3,0,0,,,605,300,1.604,80.405,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77627 ft: 0.359009
+Source[3],,384LDV_DMSO,A4,Destination[8],,384PP_Dest,I2,0,0,,,212.5,0,1.604,80.405,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77627 ft: 0.359009
+Source[3],,384LDV_DMSO,A4,Destination[8],,384PP_Dest,I1,0,0,,,20,0,1.604,80.405,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77627 ft: 0.359009
+Source[3],,384LDV_DMSO,A2,Destination[8],,384PP_Dest,G5,0,0,,,2000,1200,1.656,80.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77398 ft: 0.368268
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G7,0,0,,,20,0,0.988,79.717,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78028 ft: 0.223584
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G8,0,0,,,212.5,0,0.988,79.717,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78028 ft: 0.223584
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G9,0,0,,,605,0,0.988,79.717,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78028 ft: 0.223584
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G10,0,0,,,1202.5,0,0.988,79.717,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78028 ft: 0.223584
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G11,0,0,,,2000,0,0.988,79.717,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78028 ft: 0.223584
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O2,Destination[8],,384PP_Dest,H21,0,0,,,605,300,1.552,81.211,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7715 ft: 0.342723
+Source[3],,384LDV_DMSO,O2,Destination[8],,384PP_Dest,H20,0,0,,,212.5,0,1.552,81.211,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7715 ft: 0.342723
+Source[3],,384LDV_DMSO,O2,Destination[8],,384PP_Dest,H19,0,0,,,20,0,1.552,81.211,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7715 ft: 0.342723
+Source[3],,384LDV_DMSO,M2,Destination[8],,384PP_Dest,H15,0,0,,,605,600,1.608,83.683,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75642 ft: 0.340113
+Source[3],,384LDV_DMSO,M2,Destination[8],,384PP_Dest,H14,0,0,,,212.5,0,1.608,83.683,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75642 ft: 0.340113
+Source[3],,384LDV_DMSO,M2,Destination[8],,384PP_Dest,H13,0,0,,,20,0,1.608,83.683,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75642 ft: 0.340113
+Source[3],,384LDV_DMSO,C17,Destination[8],,384PP_Dest,A9,0,0,,,605,600,1.623,84.353,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75221 ft: 0.33916
+Source[3],,384LDV_DMSO,C17,Destination[8],,384PP_Dest,A8,0,0,,,212.5,0,1.623,84.353,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75221 ft: 0.33916
+Source[3],,384LDV_DMSO,C17,Destination[8],,384PP_Dest,A7,0,0,,,20,0,1.623,84.353,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75221 ft: 0.33916
+Source[3],,384LDV_DMSO,A19,Destination[8],,384PP_Dest,C5,0,0,,,2000,1200,1.613,78.585,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78677 ft: 0.368923
+Source[3],,384LDV_DMSO,C19,Destination[8],,384PP_Dest,C11,0,0,,,2000,1500,1.26,72.043,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82209 ft: 0.313772
+Source[3],,384LDV_DMSO,O19,Destination[8],,384PP_Dest,D21,0,0,,,605,600,1.785,84.005,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7544 ft: 0.375422
+Source[3],,384LDV_DMSO,O19,Destination[8],,384PP_Dest,D20,0,0,,,212.5,0,1.785,84.005,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7544 ft: 0.375422
+Source[3],,384LDV_DMSO,O19,Destination[8],,384PP_Dest,D19,0,0,,,20,0,1.785,84.005,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7544 ft: 0.375422
+Source[3],,384LDV_DMSO,M21,Destination[8],,384PP_Dest,F17,0,0,,,2000,1800,1.653,83.591,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.757 ft: 0.350152
+Source[3],,384LDV_DMSO,O21,Destination[8],,384PP_Dest,F23,0,0,,,2000,1800,1.494,82.277,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76509 ft: 0.32398
+Source[3],,384LDV_DMSO,C21,Destination[8],,384PP_Dest,E9,0,0,,,605,600,1.518,79.289,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78275 ft: 0.344922
+Source[3],,384LDV_DMSO,C21,Destination[8],,384PP_Dest,E8,0,0,,,212.5,0,1.518,79.289,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78275 ft: 0.344922
+Source[3],,384LDV_DMSO,C21,Destination[8],,384PP_Dest,E7,0,0,,,20,0,1.518,79.289,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78275 ft: 0.344922
+Source[3],,384LDV_DMSO,A21,Destination[8],,384PP_Dest,E3,0,0,,,605,600,1.38,79.389,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78217 ft: 0.31319
+Source[3],,384LDV_DMSO,A21,Destination[8],,384PP_Dest,E2,0,0,,,212.5,0,1.38,79.389,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78217 ft: 0.31319
+Source[3],,384LDV_DMSO,A21,Destination[8],,384PP_Dest,E1,0,0,,,20,0,1.38,79.389,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78217 ft: 0.31319
+Source[3],,384LDV_DMSO,C12,Destination[9],,384PP_Dest,A11,0,0,,,2000,1200,1.559,85.134,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74721 ft: 0.323551
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A20,Destination[9],,384PP_Dest,I5,0,0,,,2000,1500,1.375,78.728,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78596 ft: 0.314235
+Source[3],,384LDV_DMSO,C20,Destination[9],,384PP_Dest,I11,0,0,,,2000,1200,1.573,80.871,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77352 ft: 0.349267
+Source[3],,384LDV_DMSO,M22,Destination[9],,384PP_Dest,L17,0,0,,,2000,1200,1.743,82.843,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76162 ft: 0.374282
+Source[3],,384LDV_DMSO,O22,Destination[9],,384PP_Dest,L23,0,0,,,2000,900,1.629,80.421,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77617 ft: 0.364381
+Source[3],,384LDV_DMSO,C22,Destination[9],,384PP_Dest,K9,0,0,,,605,600,1.418,79.294,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78272 ft: 0.322118
+Source[3],,384LDV_DMSO,C22,Destination[9],,384PP_Dest,K8,0,0,,,212.5,0,1.418,79.294,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78272 ft: 0.322118
+Source[3],,384LDV_DMSO,C22,Destination[9],,384PP_Dest,K7,0,0,,,20,0,1.418,79.294,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78272 ft: 0.322118
+Source[3],,384LDV_DMSO,A22,Destination[9],,384PP_Dest,K3,0,0,,,605,300,1.6,76.434,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79878 ft: 0.37377
+Source[3],,384LDV_DMSO,A22,Destination[9],,384PP_Dest,K2,0,0,,,212.5,0,1.6,76.434,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79878 ft: 0.37377
+Source[3],,384LDV_DMSO,A22,Destination[9],,384PP_Dest,K1,0,0,,,20,0,1.6,76.434,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.79878 ft: 0.37377
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N19,0,0,,,20,0,1.298,75.086,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8061 ft: 0.306838
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N20,0,0,,,212.5,0,1.298,75.086,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8061 ft: 0.306838
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N21,0,0,,,605,0,1.298,75.086,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8061 ft: 0.306838
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N22,0,0,,,1202.5,0,1.298,75.086,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8061 ft: 0.306838
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N23,0,0,,,2000,0,1.298,75.086,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.8061 ft: 0.306838
+Source[3],,384LDV_DMSO,D11,Destination[10],,384PP_Dest,G11,0,0,,,2000,1800,1.741,88.226,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.72656 ft: 0.361379
+Source[3],,384LDV_DMSO,D19,Destination[10],,384PP_Dest,O11,0,0,,,2000,1800,1.696,83.371,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75836 ft: 0.3607
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C1,0,0,,,20,0,1.347,83.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76043 ft: 0.287816
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C2,0,0,,,212.5,0,1.347,83.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76043 ft: 0.287816
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C3,0,0,,,605,0,1.347,83.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76043 ft: 0.287816
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C4,0,0,,,1202.5,0,1.347,83.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76043 ft: 0.287816
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C5,0,0,,,2000,0,1.347,83.038,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76043 ft: 0.287816
+Source[3],,384LDV_DMSO,N2,Destination[11],,384PP_Dest,D13,0,0,,,20,0,1.633,70.487,Percent,DMSO,MM0203001: DFA didn't converge.
+Source[3],,384LDV_DMSO,L2,Destination[11],,384PP_Dest,D9,0,0,,,605,600,1.769,84.593,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75068 ft: 0.367988
+Source[3],,384LDV_DMSO,L2,Destination[11],,384PP_Dest,D8,0,0,,,212.5,0,1.769,84.593,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75068 ft: 0.367988
+Source[3],,384LDV_DMSO,L2,Destination[11],,384PP_Dest,D7,0,0,,,20,0,1.769,84.593,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75068 ft: 0.367988
+Source[3],,384LDV_DMSO,D21,Destination[11],,384PP_Dest,A7,0,0,,,20,0,1.599,82.568,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.76332 ft: 0.344934
+Source[3],,384LDV_DMSO,B21,Destination[11],,384PP_Dest,A1,0,0,,,20,0,1.513,75.38,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80451 ft: 0.356881
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,M15,Destination[12],,384PP_Dest,P17,0,0,,,2000,900,5.088,84.939,Percent,DMSO,MM0203001: DFA didn't converge.
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B11,0,0,,,2000,300,1.634,83.721,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75619 ft: 0.345315
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B10,0,0,,,1202.5,0,1.634,83.721,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75619 ft: 0.345315
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B9,0,0,,,605,0,1.634,83.721,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75619 ft: 0.345315
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B8,0,0,,,212.5,0,1.634,83.721,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75619 ft: 0.345315
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B7,0,0,,,20,0,1.634,83.721,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75619 ft: 0.345315
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M17,0,0,,,2000,300,1.446,78.079,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78964 ft: 0.332408
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M16,0,0,,,1202.5,0,1.446,78.079,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78964 ft: 0.332408
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M15,0,0,,,605,0,1.446,78.079,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78964 ft: 0.332408
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M14,0,0,,,212.5,0,1.446,78.079,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78964 ft: 0.332408
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M13,0,0,,,20,0,1.446,78.079,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78964 ft: 0.332408
+Source[4],,384LDV_DMSO,N19,Destination[15],,384PP_Dest,P15,0,0,,,605,600,1.442,80.338,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77666 ft: 0.32306
+Source[4],,384LDV_DMSO,N19,Destination[15],,384PP_Dest,P14,0,0,,,212.5,0,1.442,80.338,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77666 ft: 0.32306
+Source[4],,384LDV_DMSO,N19,Destination[15],,384PP_Dest,P13,0,0,,,20,0,1.442,80.338,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77666 ft: 0.32306
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A23,0,0,,,2000,0,1.645,79.416,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78201 ft: 0.373081
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A22,0,0,,,1202.5,0,1.645,79.416,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78201 ft: 0.373081
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A21,0,0,,,605,0,1.645,79.416,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78201 ft: 0.373081
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A20,0,0,,,212.5,0,1.645,79.416,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78201 ft: 0.373081
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A19,0,0,,,20,0,1.645,79.416,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78201 ft: 0.373081
+
