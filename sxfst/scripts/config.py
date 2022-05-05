@@ -101,9 +101,9 @@ def main(args):
                 if len(plates) / NPLATES_PER_RUN == 2:
                     # assume control first
                     ctrl_keys = (a:=sorted(plates.keys()))[:NPLATES_PER_RUN]
-                    test_keys = a[:NPLATES_PER_RUN]
+                    test_keys = a[NPLATES_PER_RUN:]
                     cfg['platereader'] = {f'plate_{i}':{'test':plates[k],
-                                                        'control':plates[j]
+                                                        'control':plates[j],
                                                         }\
                         for i,(j,k) in enumerate(zip(ctrl_keys, test_keys), 1)}
                 elif len(plates) / NPLATES_PER_RUN == 3:
