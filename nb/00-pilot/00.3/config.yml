@@ -21,69 +21,69 @@ platereader:
                         - ./platereader/16032022,104721.CSV
                 control:
                         - ./platereader/12032022,161043.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 0..4 0"
         plate_2:
                 test:
                         - ./platereader/16032022,105554.CSV
                 control:
                         - ./platereader/12032022,161911.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 0..4 1"
         plate_3:
                 test:
                         - ./platereader/12032022,163556.CSV
                 control:
                         - ./platereader/12032022,162732.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 0..4 2"
         plate_4:
                 test:
                         - ./platereader/16032022,110421.CSV
                 control:
                         - ./platereader/12032022,164417.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 0..4 3"
         plate_5:
                 test:
                         - ./platereader/16032022,130729.CSV
                 control:
                         - ./platereader/12032022,165237.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 4..8 0"
         plate_6:
                 test:
                         - ./platereader/16032022,131613.CSV
                 control:
                         - ./platereader/12032022,170103.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 4..8 1"
         plate_7:
                 test:
                         - ./platereader/16032022,132435.CSV
                 control:
                         - ./platereader/12032022,170926.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 4..8 2"
         plate_8:
                 test:
                         - ./platereader/16032022,134319.CSV
                 control:
                         - ./platereader/12032022,171744.CSV
-                echo_map:
+                dest_plate:
         plate_9:
                 test:
                         - ./platereader/12032022,172606.CSV
                 control:
                         - ./platereader/16032022,135135.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 4..8 3"
         plate_10:
                 test:
                         - ./platereader/16032022,135950.CSV
                 control:
                         - ./platereader/12032022,173428.CSV
-                echo_map:
+                dest_plate:
                         - "dest racks 8..12 0"
                         
 

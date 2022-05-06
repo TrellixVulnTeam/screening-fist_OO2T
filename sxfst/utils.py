@@ -328,7 +328,7 @@ def plot_report(*,
             p.plot(traces.loc[well_,:], 
                    c=plt.cm.cool(conc_/max(x.values())))
         p.set_xlim(280,800)
-        p.set_ylim(-0.1,0.5)
+        p.set_ylim(-0.1,0.25)
         p.set_title(name)
         p.set_xlabel('Wavelength (nm)')
         #p.axis('off')
@@ -341,7 +341,8 @@ def plot_report(*,
                    c=plt.cm.cool(conc_/max(x.values())),
                    label=f"{conc_} uM")
         p.legend()
-        p.set_xlim(280,800)
+        p.set_xlim(280,max(diff.columns))
+        p.set_ylim(-0.1,0.2)
         p.set_title(name)
         p.set_xlabel('Wavelength (nm)')
         #p.axis('off')

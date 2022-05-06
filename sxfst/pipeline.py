@@ -178,22 +178,63 @@ class Screen:
         # else concat
         else:
             raise Warning('time to make a concat picklists thing')
-        cpd_map = {}
+        cpd_map = {}                       # becomes self.cpd_map, keys: cpd names
+                                           # values: Cpd data object
         for cpd in set(picklist['Cpd']):
             o = {}
             chunk = picklist.loc[picklist['Cpd']==cpd, :]
             o['df'] = chunk
-            echo_name_ = list(set(chunk['Destination Plate Name']))
-            assert len(echo_name_) == 1
-            echo_name = echo_name_[0]
+            dest_plate_ = list(set(chunk['Destination Plate Name']))
+            assert len(dest_plate_) == 1
+            dest_plate = dest_plate_[0]
             wells = list(chunk['DestWell'])
-            m = map_echo_name_2path(echo_name, 
+            # returns dict with keys:
+            # 'test'     : path to test plate
+            # 'control'  : path to ctrl plate
+            # 'echo_map' :
+            m = map_echo_name_2path(dest_plate, 
                                     self.config,
                                     self.root,
                                    )
             if m is not None:
-               ctrl = read_plate_csv(m['ctrl'])[wells] if 'ctrl' in m.keys() else None
-               test = read_plate_csv(m['test'])[wells] if 'test' in m.keys() else None
+               if 'ctrl' in m.keys():
+                   ctrl_plate = read_plate_csv(m['ctrl'])
+               elif 'control' in m.keys():
+                   ctrl_plate = read_plate_csv(m['control'])
+               else:
+                   ctrl_plate = None
+
+               # lru_cache fn, return: utils.Plate objects
+               test_plate = read_plate_csv(m['test']) if 'test' in m.keys() else None
+
+               # traces for ctrl and test wells
+               ctrl = ctrl_plate[wells] if ctrl_plate is not None else None
+               test = test_plate[wells] if test_plate is not None else None
+
+               # get no compound wells from same row for test and ctrl plates
+               # same row because of multichannel pipetting direction
+               _picklist = picklist.loc[picklist['Destination Plate Name'] == dest_plate,:]
+
+               if ctrl is not None: 
+                   ctrl_no_cpd_wells = list(set(ctrl_plate.df.index).difference(\
+                                                set(_picklist['DestWell'])))
+                   baselines = {i:list(filter(lambda s : s[0] == i[0],
+                                              ctrl_no_cpd_wells))
+                                        for i,j in zip(ctrl.index, 
+                                                       ctrl_no_cpd_wells)}
+                   ctrl_baseline = {i:ctrl_plate[baselines[i]] for i in ctrl.index}
+               else:
+                    ctrl_baseline = None
+
+               if test is not None:
+                   test_no_cpd_wells = list(set(test_plate.df.index).difference(\
+                                                set(_picklist['DestWell'])))
+                   baselines = {i:list(filter(lambda s : s[0] == i[0],
+                                              test_no_cpd_wells))
+                                        for i,j in zip(test.index, 
+                                                       test_no_cpd_wells)}
+                   test_baseline = {i:test_plate[baselines[i]] for i in test.index}
+               # v 
                echo_map = m['echo_map'] if 'echo_map' in m.keys() else None
                smiles = self.lib.loc[cpd, 'SMILES'] # use case-specific
                cpd_map[cpd] = Cpd(name=cpd,
@@ -201,10 +242,17 @@ class Screen:
                                   test_path=m['test'] if 'test' in m.keys() else None,
                                   ctrl=ctrl,
                                   ctrl_path=m['ctrl'] if 'ctrl' in m.keys() else None,
+                                  ctrl_baseline=ctrl_baseline,
+                                  test_baseline=test_baseline,
                                   echo_map=chunk,
                                   smiles=smiles,
                                   )
         self.cpd_map = cpd_map
+
+    def map_baseline_wells(self):
+        ''' find wells with no compounds, for baselines
+        '''
+        pass
 
 
 @lru_cache(128)
@@ -227,7 +275,7 @@ def proc_picklist(path):
     return picklist
 
 @lru_cache(128)
-def map_echo_name_2path(echo_name, config, root):
+def map_echo_name_2path(dest_plate, config, root):
     ''' map echo plate name to platereader data
         from config
     '''
@@ -236,12 +284,12 @@ def map_echo_name_2path(echo_name, config, root):
     o = {}
     for i,j in zip(platereader_files.keys(),
                    platereader_files.values()):
-        item = j['echo_map']
+        item = j['dest_plate']
         if item is not None:
-            if echo_name == item[0]:
+            if dest_plate == item[0]:
                 o['test'] = add_root(j['test'][0])
                 o['control'] = add_root(j['control'][0])
-                o['echo_map'] = add_root(j['echo_map'][0])
+                o['dest_plate'] = j['dest_plate'][0]
                 return o
 
 def norm_traces(test, 
@@ -278,11 +326,12 @@ def is_anomaly(norm):
     '''
     return False
 
-def diff(norm, baseline):
+def diff(norm, baseline, axis=0):
     ''' norm - baseline (axis=0)
     '''
-    return norm.subtract(baseline,
-                         axis=0)
+    return norm.subtract(baseline.reset_index(drop=True),
+                         axis=axis,
+                         ).fillna(0)
 
 def response(_diff):
     ''' changes in absorbance at key wavelengths
@@ -295,7 +344,6 @@ def response(_diff):
 def michaelis_menten(x, km, vmax):
     return ((x * vmax) / (km + x)) 
 
-
 def r_squared(yi,yj):
     residuals = yi - yj
     sum_sq_residual = sum(residuals ** 2)
@@ -304,13 +352,13 @@ def r_squared(yi,yj):
 
 def fit_michaelis_menten(x,y):
     if isinstance(x,dict):
-        x_ = np.array(list(x.values()))
+        x_ = np.nan_to_num(np.array(list(x.values())), nan=0)
     if isinstance(y,dict):
-        y_ = np.array(list(y.values()))
+        y_ = np.nan_to_num(np.array(list(y.values())), nan=0)
     try:
         (km, vmax), covariance = curve_fit(michaelis_menten, x_, y_, 
                 bounds=((0, 0),
-                        (1e4, max(x.values())*1.5),
+                        (1e4, 0.1),
                         ))
     except RuntimeError:
         km, vmax = np.inf, np.inf
@@ -330,6 +378,8 @@ def proc(cpd, # Cpd()
     name = cpd.name
     test = cpd.test
     ctrl = cpd.ctrl
+    ctrl_baseline = cpd.ctrl_baseline
+    test_baseline = cpd.test_baseline
     smiles = cpd.smiles
     echo_map = cpd.echo_map
     vol_well_map = dict(zip(echo_map['DestWell'],
@@ -352,17 +402,23 @@ def proc(cpd, # Cpd()
     o['smiles'] = smiles
     norm = norm_traces(test, ctrl)
     smth = smooth(norm, sigma)
-    
+
+    # get protein baseline, might break
+    _test_baseline = pd.concat(test_baseline.values()).drop_duplicates()
+    _normbt = norm_traces(_test_baseline) # protein only wells
+    _smthbt = smooth(_normbt, sigma) # smooth protein only traces
+    prot_baseline = _smthbt.mean(axis=0)
+
     if not is_anomaly(smth):
         change = diff(smth, 
-                      smth[list(smth.keys())[0]])
+                      prot_baseline)
         y = dict(response(change))
         mm = fit_michaelis_menten(x,y) # {'km':km, 'vmax':vmax, 'rsq':rsq}
         o['y'] = y
         o['michaelis_menten'] = mm
         if plot:
             utils.plot_report(traces=smth,
-                              #diff=change,
+                              diff=change,
                               name=name,
                               x=x,
                               y=y,
@@ -379,14 +435,14 @@ def main(args):
         #from multiprocessing.pool import ThreadPool
         #def helper(cpd):
         #    return proc(cpd, plot=True)
-        #with ThreadPool(32) as pool:
+        #with ThreadPool(16) as pool: # pyplot 20 open warning
         #    pool.map(helper, 
         #             screen)
         #    pool.join()
-        for cpd in screen:
-        #for cpd in tqdm(screen):
-            data = proc(cpd, plot=False)
-            pprint(data)
+        #for cpd in screen:
+        for cpd in tqdm(screen):
+            data = proc(cpd, plot=True)
+        #pprint(data)
 
 if __name__ == '__main__':
     main(sys.argv[1:])
