@@ -199,12 +199,19 @@ def parse(path):
         df=df.replace('overflow', 3.5)
         df.columns = list(map(int, df.columns)) # wavelengths
         return df
-    try:
-        df = pd.read_csv(path, skiprows=6)
-        return _proc(df)
-    except:
-        df = pd.read_csv(path, skiprows=7)
-        return _proc(df)
+    df = None
+    for i in [6,5,4]: # most common first (?)
+        try:
+            _df = pd.read_csv(path, skiprows=i)
+            df = _proc(_df)
+            break
+        except:
+            pass
+    if df is None:
+        raise Warning(f'issue parsing plate {path}')
+    else:
+        return df
+
 
 def timestamp(s):
     timestamp_i = lambda s : datetime.datetime.strptime(s.replace('.CSV',''),
