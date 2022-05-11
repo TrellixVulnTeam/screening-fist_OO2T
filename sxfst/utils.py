@@ -3,6 +3,7 @@ import re
 import datetime
 from ast import literal_eval
 from string import ascii_lowercase, ascii_uppercase
+import yaml
 from tqdm import tqdm
 #from tqdm.notebook import tqdm
 
@@ -13,6 +14,23 @@ import pandas as pd
 import matplotlib.pyplot as plt
 plt.style.use('dark_background')
 import seaborn as sns
+
+def find(path):
+    return [i for i in os.popen(f'find {path}').read().split('\n')
+            if os.path.exists(i)]
+
+def grep(l, regex):
+    return [i for i in l if re.search(regex, i) is not None]
+
+class Config:
+    def __init__(self, path=None, data=None):
+        if path is not None:
+            with open(path) as f:
+                data = yaml.full_load(f)
+        assert data is not None
+        self.__dict__ = {**self.__dict__, **data}
+    def __repr__(self):
+        return yaml.dump(self.__dict__)
 
 class PlateData:
     def __init__(self,
@@ -35,7 +53,7 @@ class PlateData:
         return f'{self.path}\n{self.metadata}\n{cols}\n{p}'
     def __getitem__(self, idx):
         if isinstance(idx, str):
-            assert idx in self.df.index
+            assert idx in self.df.index, f'{idx} {self.df.index}'
             return self.df.loc[idx, :]
         elif isinstance(idx, list):
             return pd.concat([self[i] for i in idx],
@@ -198,9 +216,11 @@ def parse(path):
         df.dropna(axis=1, inplace=True)
         df=df.replace('overflow', 3.5)
         df.columns = list(map(int, df.columns)) # wavelengths
+        assert len(df.columns) > 0
+        assert 'A1' in df.columns
         return df
     df = None
-    for i in [6,5,4]: # most common first (?)
+    for i in [6,5,4,7]: # most common first (?)
         try:
             _df = pd.read_csv(path, skiprows=i)
             df = _proc(_df)

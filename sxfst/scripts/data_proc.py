@@ -201,7 +201,7 @@ def main(config_path):
     if not os.path.exists('tmp'):
         os.mkdir('tmp')
 
-    sigma = 1/32
+    sigma = 8
 
     for i in plates.keys():
         plate_i = plates[i]
