@@ -1,6 +1,8 @@
 import os
 import random
 from unittest import TestCase
+from tqdm import tqdm
+
 from sxfst import PlateData, Cpd, Screen
 from sxfst import utils
 
@@ -10,10 +12,14 @@ from sxfst import utils
 #picklist = '../nb/00-pilot/00.3/echo/picklists/2022-03-12-00.3-picklist.csv'
 
 FIND = utils.find('../lab')
-plate_data = utils.grep(FIND, 'CSV')
-configs = [utils.Config(i) for i in utils.grep(FIND, 'config.yml$')]
+plate_data = utils.grep('CSV', FIND)
+configs = [utils.Config(i) for i in utils.grep('config.yml$', FIND)]
 
-
+class TestParse(TestCase):
+    def testParse(self):
+        for path_ in plate_data:
+            data = utils.parse(path_)
+            assert 'A1' in data.index
 
 class TestPlateData(TestCase):
     def testInit(self):

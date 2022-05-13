@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 import os
+import re
 import yaml
 from pprint import pprint
 import copy
@@ -12,6 +13,7 @@ import matplotlib.pyplot as plt
 plt.style.use('dark_background')
 
 from sxfst.utils import PlateData
+from sxfst.data import smooth, is_anomaly, diff, c2
 
 
 class Config:
@@ -66,18 +68,17 @@ def plot_set(*data,
                                                                                
     for plot_num, (wells, ax_, title) in enumerate(zip(data, ax.flatten(), titles)):                                  
         if vols is None:
-            vols = range(len(wells))
+            vols = [i*2000 for i in range(len(wells))]
         for row_, vol in zip(wells.index, vols):                                 
             ax_.plot(wells.loc[row_,:], 
                      c=plt.cm.cool(vol/2000),
                      label=vol)
                                                                                
         ax_.set_xlim(280,800)                                                  
-        ax_.set_ylim(-0.02,0.25)                                                  
+        ax_.set_ylim(-0.1,0.25)                                                  
         ax_.set_title(title)                                                     
-        ax_.set_xticks(wells.columns[::50])
+        ax_.set_xticks(range(300, 801, 50))
         ax_.set_xlabel('Wavelength (nm)')                                      
-        #ax_.axis('off')                                                        
         ax_.legend()
     if len(axs) > 0:
         for i,j in enumerate(axs, plot_num):
@@ -105,32 +106,6 @@ def norm_traces(test,
         return norm
     else:
         return test
-
-def smooth(df,
-           sigma=3,
-           axis=-1,
-           ):
-    cols = df.columns
-    idx = df.index
-    smth = pd.DataFrame(gaussian_filter1d(df, sigma, axis=axis),
-                        index=idx,
-                        columns=cols)
-    return df
-
-def is_anomaly(norm):
-    return False
-
-def diff(norm, baseline):
-    return norm.subtract(baseline,
-                         axis=0)
-
-def response(_diff):
-    a420 = _diff.loc[:,420]
-    a390 = _diff.loc[:,390]
-    return a420.abs().add(a390.abs())
-
-def c2(v1, c1, v2):
-    return (v1 * c1) / v2
 
 def proc(cpd, # Cpd()
          sigma=3,
@@ -177,7 +152,11 @@ def main(config_path):
                                ))
 
     exceptions['src_plate'] = [src_plate_names[i] for i in exceptions['Source Plate Name']]
-    exceptions['dest_plate'] = [dest_plate_names[i] for i in exceptions['Destination Plate Name']]
+    #print(set(exceptions['Destination Plate Name']))
+    #print(dest_plate_names)
+    exceptions['dest_plate'] = [dest_plate_names[i] if i in dest_plate_names \
+            else re.search('Destination\[[0-9]+\]', i).group()
+            for i in exceptions['Destination Plate Name']]
     print(f'number of exceptions: {len(exceptions)}')
     a = [get_actual_vol(src_plate_name=i, 
                         dest_plate_name=j, 
@@ -195,18 +174,19 @@ def main(config_path):
     for i in plates:
         plates[i]['picklist'] = picklist.loc[picklist['dest_plate'] == i, :]
         plates[i]['test']['data'] = PlateData(plates[i]['test']['path'])
-        plates[i]['control']['data'] = PlateData(plates[i]['control']['path'])
+        if plates[i]['control'] is not None:
+            plates[i]['control']['data'] = PlateData(plates[i]['control']['path'])
         
 
-    if not os.path.exists('tmp'):
-        os.mkdir('tmp')
+    if not os.path.exists('img'):
+        os.mkdir('img')
 
-    sigma = 8
+    sigma = 32
 
     for i in plates.keys():
         plate_i = plates[i]
         pck_i = plate_i['picklist']
-        if 'control' in plate_i:
+        if plates[i]['control'] is not None:
             #pprint(plate_i['control']['data'].__dict__)
             no_cpd = [i for i in plate_i['control']['data'].df.index \
                          if i not in pck_i['DestWell'].to_list()]
@@ -218,64 +198,72 @@ def main(config_path):
         for j in tqdm(pck_i['Cpd'].unique()):
             pck_chunk = pck_i.loc[pck_i['Cpd'] == j, :]
             cpd_name = pck_chunk['Cpd'].unique()[0]
+            vols = [0] + list(pck_chunk['actual_vol']) # match up logs
             
-            ctrl_wells_raw = plate_i['control']['data'][pck_chunk['DestWell'].to_list()]
             test_wells_raw = plate_i['test']['data'][pck_chunk['DestWell'].to_list()]
-            
+            test_wells_clipped = test_wells_raw.loc[:,300:800]
+            test_wells_smooth = smooth(test_wells_clipped, sigma=sigma)
+            test_wells_norm = norm_traces(test_wells_clipped)
+
             #test_wells_clipped = test_wells_raw.where(test_wells_raw < 1).dropna(axis=1)
             #ctrl_wells_clipped = ctrl_wells_raw.where(ctrl_wells_raw < 1).dropna(axis=1)
-            
-            test_wells_clipped = test_wells_raw.loc[:,300:800]
-            ctrl_wells_clipped = ctrl_wells_raw.loc[:,300:800]
-            
-            test_wells_smooth = smooth(test_wells_clipped, sigma=sigma)
-            ctrl_wells_smooth = smooth(ctrl_wells_clipped, sigma=sigma)
-            
-            test_wells_norm = norm_traces(test_wells_clipped)
-            ctrl_wells_norm = norm_traces(ctrl_wells_clipped)
-            
             #ctrl_wells = norm_traces(smooth(ctrl_wells_clipped, sigma=sigma))
             #test_wells = test_wells.where(test_wells < 1).dropna(axis=1)
             #ctrl_wells = ctrl_wells.where(ctrl_wells < 1).dropna(axis=1)
             
-            ctrl_plate_row = set([i[0] for i in 
-                        ctrl_wells_raw.index.to_list() + ctrl_wells_raw.index.to_list()])
-            assert len(ctrl_plate_row) == 1
-            ctrl_plate_row = list(ctrl_plate_row)[0]
-            _blanks =  [i for i in no_cpd if ctrl_plate_row in i]
-            blanks_raw = norm_traces(smooth(plate_i['control']['data'][_blanks], 
-                                            sigma=sigma))
-            blanks_clipped = blanks_raw.where(blanks_raw < 1).dropna(axis=1)
-            blanks_mean =  blanks_clipped.mean(axis=0)
-            
-            test_plate_row = set([i[0] for i in 
-                        test_wells_raw.index.to_list() + ctrl_wells_raw.index.to_list()])
+            test_plate_row = set([i[0] for i in test_wells_raw.index.to_list()])
+            # + ctrl_wells_raw.index.to_list()])
             assert len(test_plate_row) == 1
             test_plate_row = list(test_plate_row)[0]
             _prots =  [i for i in no_cpd if test_plate_row in i]
-            prots_raw = norm_traces(smooth(plate_i['test']['data'][_prots], 
-                                           sigma=sigma))
+            prots_raw = norm_traces(smooth(plate_i['test']['data'][_prots], sigma=sigma))
             prots_clipped = prots_raw.where(prots_raw < 1).dropna(axis=1)
             prots_mean = prots_clipped.mean(axis=0)
-            
-            test_minus_ctrl_norm = test_wells_norm - ctrl_wells_norm
             test_traces_with_zero =  pd.concat([prots_mean, test_wells_norm.T], axis=1).T
-            ctrl_traces_with_zero =  pd.concat([blanks_mean, ctrl_wells_norm.T], axis=1).T
-            
-            vols = [0] + list(pck_chunk['actual_vol']) # match up logs
             test_traces_with_zero.index = vols
-            ctrl_traces_with_zero.index = vols
-            plot_set(test_traces_with_zero, 
-                     (a:=test_traces_with_zero - blanks_mean),
-                     (b:=a - a.iloc[0,:]),
-                     smooth(a.div(a.loc[:,390], axis=0), sigma=2) / 16,
-                     vols=vols,
-                     titles=['test_traces_with_zero', 
-                             'minus mean blank',
-                             'diff',
-                             '?',
-                            ],
-                     save=os.path.join('tmp',f'{cpd_name}-specs.png')
+            
+            if plates[i]['control'] is not None:
+                ctrl_wells_raw = plate_i['control']['data'][pck_chunk['DestWell'].to_list()]
+                ctrl_wells_clipped = ctrl_wells_raw.loc[:,300:800]
+                ctrl_wells_smooth = smooth(ctrl_wells_clipped, sigma=sigma)
+                ctrl_wells_norm = norm_traces(ctrl_wells_clipped)
+                ctrl_plate_row = set([i[0] for i in ctrl_wells_raw.index.to_list() + \
+                                     ctrl_wells_raw.index.to_list()])
+                assert len(ctrl_plate_row) == 1
+                ctrl_plate_row = list(ctrl_plate_row)[0]
+                _blanks =  [i for i in no_cpd if ctrl_plate_row in i]
+                blanks_raw = norm_traces(smooth(plate_i['control']['data'][_blanks], 
+                                                sigma=sigma))
+                blanks_clipped = blanks_raw.where(blanks_raw < 1).dropna(axis=1)
+                blanks_mean =  blanks_clipped.mean(axis=0)
+
+                ctrl_traces_with_zero =  pd.concat([blanks_mean, ctrl_wells_norm.T], axis=1).T
+                ctrl_traces_with_zero.index = vols
+            
+                test_minus_ctrl_norm = smooth(test_traces_with_zero - ctrl_traces_with_zero, 
+                                              sigma=sigma)
+                difference = test_minus_ctrl_norm - test_minus_ctrl_norm.iloc[0,:]
+            
+                plot_set(ctrl_traces_with_zero,
+                         test_traces_with_zero, 
+                         test_minus_ctrl_norm,
+                         difference,
+                         vols=vols,
+                         titles=['ctrl_traces_with_zero',
+                                 'test_traces_with_zero', 
+                                 'test_minus_ctrl_norm',
+                                 'diff',
+                                ],
+                         save=os.path.join('img',f'{cpd_name}-specs.png')
+                         )
+            else:
+                plot_set(test_traces_with_zero, 
+                         smooth(test_traces_with_zero , sigma=sigma),
+                         vols=vols,
+                         titles=['test_traces_with_zero', 
+                                 'smoothed',
+                                ],
+                         save=os.path.join('img',f'{cpd_name}-specs.png')
                      )
 
 if __name__ == '__main__':

@@ -19,7 +19,7 @@ def find(path):
     return [i for i in os.popen(f'find {path}').read().split('\n')
             if os.path.exists(i)]
 
-def grep(l, regex):
+def grep(regex, l):
     return [i for i in l if re.search(regex, i) is not None]
 
 class Config:
@@ -80,15 +80,16 @@ class PlateData:
             return ''.join(f.readlines(9))
     @property
     def timestamp(self):
-        timestamp_i = lambda s : datetime.datetime.strptime(s.replace('.CSV',''),
-                                                            '%d%m%Y,%H%M%S')
-        timestamp_j = lambda s : datetime.datetime.strptime(s.split('_')[0].replace('.CSV',''),
-                                                            '%d%m%Y,%H%M%S')
-        s = os.path.basename(self.path)
-        if '_' in s:
-            return timestamp_j(s)
-        else:
-            return timestamp_i(s)
+        return get_timestamp(self.path)
+        #timestamp_i = lambda s : datetime.datetime.strptime(s.replace('.CSV',''),
+        #                                                    '%d%m%Y,%H%M%S')
+        #timestamp_j = lambda s : datetime.datetime.strptime(s.split('_')[0].replace('.CSV',''),
+        #                                                    '%d%m%Y,%H%M%S')
+        #s = os.path.basename(self.path)
+        #if '_' in s:
+        #    return timestamp_j(s)
+        #else:
+        #    return timestamp_i(s)
 
 class Cpd:
     ''' Compound : well mapping from picklist
@@ -201,36 +202,71 @@ class Screen:
         #        'vols'     : vols}
 
 
+def get_timestamp(path):
+    with open(path) as f:
+        data = '\n'.join(f.readlines()[:4])
+    dates = list(set(re.findall('[0-9]+/[0-9]+/[0-9]+', data)))
+    date = dates[0]
+    times = list(set(re.findall('[0-9]+:[0-9]+:[0-9]+', data)))
+    if len(times) > 1: # the second instance is usually an ID
+        time = times[0]
+    return dates[0], times[0]
+
 def parse(path):
-    def _proc(df):
-        if 'Unnamed: 0' in df.columns or 'Unnamed: 1' in df.columns:
-            wells = [f'{i}{j}' for i,j in zip(df['Unnamed: 0'], 
-                                              df['Unnamed: 1'])]
-            df.index =  wells
-            for i in ['Unnamed: 0',
-                      'Unnamed: 1',
-                      'Wavelength [nm]',
-                      'Content']:
-                if i in df.columns:
-                    df.drop(i,axis=1, inplace=True)
-        df.dropna(axis=1, inplace=True)
-        df=df.replace('overflow', 3.5)
-        df.columns = list(map(int, df.columns)) # wavelengths
-        assert len(df.columns) > 0
-        assert 'A1' in df.columns
-        return df
-    df = None
-    for i in [6,5,4,7]: # most common first (?)
-        try:
-            _df = pd.read_csv(path, skiprows=i)
-            df = _proc(_df)
+    # find start of table
+    with open(path) as f:
+        data = f.read().splitlines()
+    for i,j in enumerate(data):
+        if j.count(',') > 16:
+            #del data # free up mem
             break
-        except:
-            pass
-    if df is None:
-        raise Warning(f'issue parsing plate {path}')
+    df = pd.read_csv(path, skiprows=i+1)
+    if 'Unnamed: 0' in df.columns and 'Unnamed: 1' in df.columns:
+        wells = [f'{i}{j}' for i, j in zip(df['Unnamed: 0'],
+                                           df['Unnamed: 1'])]
+    elif 'Unnamed: 0' in df.columns and 'Unnamed: 1' not in df.columns:
+        wells = [f'{i[0]}{int(i[1:])}' for i in df['Unnamed: 0'].to_list()]
     else:
-        return df
+        raise Warning(":'(")
+        
+    for i in df.columns:
+        if 'Unnamed' in i or 'Wavelength' in i:
+            df = df.drop(i, axis=1)
+    df.index = wells
+    df.columns = df.columns.astype(int)
+    return df
+
+#def parse(path):
+#    def _proc(df):
+#        if 'Unnamed: 0' in df.columns or 'Unnamed: 1' in df.columns:
+#            wells = [f'{i}{j}' for i,j in zip(df['Unnamed: 0'], 
+#                                              df['Unnamed: 1'])]
+#            df.index =  wells
+#            for i in ['Unnamed: 0',
+#                      'Unnamed: 1',
+#                      'Wavelength [nm]',
+#                      'Content']:
+#                if i in df.columns:
+#                    df.drop(i,axis=1, inplace=True)
+#        df.dropna(axis=1, inplace=True)
+#        df=df.replace('overflow', 3.5)
+#        df.columns = list(map(int, df.columns)) # wavelengths
+#        assert len(df.columns) > 0
+#        assert 'A1' in df.columns
+#        return df
+#    df = None
+#    for i in [6,5,4,7]: # most common first (?)
+#        try:
+#            _df = pd.read_csv(path, skiprows=i)
+#            df = _proc(_df)
+#            break
+#        except:
+#            pass
+#    if df is None:
+#        
+#        raise Warning(f'issue parsing plate {path}')
+#    else:
+#        return df
 
 
 def timestamp(s):

@@ -4,6 +4,7 @@ import os
 import re
 import yaml
 from pprint import pprint
+import argparse
 
 NPLATES_PER_RUN = 15
 
@@ -59,70 +60,87 @@ def get_plate_metadata(path):
 
 
 def main(args):
-    for arg in args:
-        files = find(arg)
-        #cfg_paths = [i for i in files if 'config.yml' in i]
-        #if len(cfg_paths) >= 1:
-        #    assert len(cfg_paths) == 1
-        #    cfg_path = cfg_paths[0]
+    files = find(args.input)
+    cfg = {}
 
-        #    with open(cfg_path) as f:
-        #        _cfg = yaml.full_load(f)
-        #else:
-        #    cfg = {}
-        cfg = {}
-
-        echo_files = [i for i in grep('echo', files) if os.path.isfile(i)]
-        cfg['echo'] = {'picklist':grep('picklist', echo_files),
-                       'protocol':grep('.*epr$', echo_files),
-                       'surveys':grep('Survey', echo_files),
-                       'transfers':grep('Transfer', echo_files)}
-        uv_files = [i for i in grep('uv-vis', files) if os.path.isfile(i)]
-        cfg['uv-vis'] = {'pre-dilution spec':grep('pre',uv_files),
-                         'post-dilution spec':grep('post',uv_files),
-                         }
-        cfg['nb'] = [i for i in grep('ipynb', files) if os.path.isfile(i)]
+    echo_files = [i for i in grep('echo', files) if os.path.isfile(i)]
+    cfg['echo'] = {'picklist':grep('picklist', echo_files),
+                   'protocol':grep('.*epr$', echo_files),
+                   'surveys':grep('Survey', echo_files),
+                   'transfers':grep('Transfer', echo_files)}
+    uv_files = [i for i in grep('uv-vis', files) if os.path.isfile(i)]
+    cfg['uv-vis'] = {'pre-dilution spec':grep('pre',uv_files),
+                     'post-dilution spec':grep('post',uv_files),
+                     }
+    cfg['nb'] = [i for i in grep('ipynb', files) if os.path.isfile(i)]
 
 
-        platereader_files = [i for i in grep('platereader', files) \
-                            if os.path.isfile(i)]
-        plates_ = {(a:=get_plate_metadata(i))['test_run_no']:a \
-                for i in platereader_files}
-        plates = {i:plates_[i] for i in sorted(plates_)} # run order
-        if len(plates) == NPLATES_PER_RUN:
-            # no controls
-            # assumes read order was plate order
-            # should be ok for my experiments
-            cfg['platereader'] = {f'plate_{i}':{'test':plates[j],
-                            'control':None,} for i,j in enumerate(plates, 1)}
-        elif len(plates) > NPLATES_PER_RUN:
-            if len(plates) % NPLATES_PER_RUN == 0:
-                # control or extra set
-                if len(plates) / NPLATES_PER_RUN == 2:
-                    # assume control first
-                    ctrl_keys = (a:=sorted(plates.keys()))[:NPLATES_PER_RUN]
-                    test_keys = a[NPLATES_PER_RUN:]
-                    cfg['platereader'] = {f'plate_{i}':{'test':plates[k],
-                                                        'control':plates[j],
-                                                        }\
-                        for i,(j,k) in enumerate(zip(ctrl_keys, test_keys), 1)}
-                elif len(plates) / NPLATES_PER_RUN == 3:
-                    # assume control -> unclassified protein -> good protein
-                    ctrl_keys = (a:=sorted(plates.keys()))[:NPLATES_PER_RUN]
-                    unclassified_keys = a[NPLATES_PER_RUN:NPLATES_PER_RUN*2]
-                    test_keys = a[NPLATES_PER_RUN*2:]
-                    cfg['platereader'] = {f'plate_{i}':{'test':plates[k],
-                                                        'control':plates[j],
-                                                        'unclassified':plates[l],
-                                                        }\
-                        for i,(j,k,l) in enumerate(zip(ctrl_keys, 
-                                                       test_keys, 
-                                                       unclassified_keys), 
-                                        1)}
-                else:
-                    raise Warning(f'Not impelented for {len(plates)}, sorry')
+    platereader_files = [i for i in grep('platereader', files) \
+                        if os.path.isfile(i)]
+    plates_ = {(a:=get_plate_metadata(i))['test_run_no']:a \
+            for i in platereader_files}
+    plates = {i:plates_[i] for i in sorted(plates_)} # run order
+    if args.controls is not None:
+        assert os.path.exists(args.controls)
+        if os.path.isdir(args.controls):
+            ctrl_files = find(args.controls)
+            ctrl_config_path = grep('config.yml', ctrl_files)
+        elif os.path.isfile(args.controls):
+            ctrl_config_path = args.controls
+        with open(ctrl_config_path) as f:
+            ctrl_config = yaml.full_load(f)
+        if 'platereader' not in cfg.keys():
+            cfg['platereader'] = {}
+        for i, j in enumerate(plates, 1):
+            plate_name = f'plate_{i}'
+            test_plate_info = plates[j]
+            ctrl_plate_info = ctrl_config['platereader'][plate_name]['control']
+            ctrl_plate_rel_path = os.path.join(os.path.dirname(args.controls), 
+                                               ctrl_plate_info['path'])
+            ctrl_plate_info['path'] = ctrl_plate_rel_path
+            cfg['platereader'][plate_name] = {'test':plates[j],
+                                                'control':ctrl_plate_info}
+    elif len(plates) == NPLATES_PER_RUN:
+        # no controls
+        # assumes read order was plate order
+        # should be ok for my experiments
+        cfg['platereader'] = {f'plate_{i}':{'test':plates[j],
+                        'control':None,} for i,j in enumerate(plates, 1)}
+    elif len(plates) > NPLATES_PER_RUN:
+        if len(plates) % NPLATES_PER_RUN == 0:
+            # control or extra set
+            if len(plates) / NPLATES_PER_RUN == 2:
+                # assume control first
+                ctrl_keys = (a:=sorted(plates.keys()))[:NPLATES_PER_RUN]
+                test_keys = a[NPLATES_PER_RUN:]
+                cfg['platereader'] = {f'plate_{i}':{'test':plates[k],
+                                                    'control':plates[j],
+                                                    }\
+                    for i,(j,k) in enumerate(zip(ctrl_keys, test_keys), 1)}
+            elif len(plates) / NPLATES_PER_RUN == 3:
+                # assume control -> unclassified protein -> good protein
+                ctrl_keys = (a:=sorted(plates.keys()))[:NPLATES_PER_RUN]
+                unclassified_keys = a[NPLATES_PER_RUN:NPLATES_PER_RUN*2]
+                test_keys = a[NPLATES_PER_RUN*2:]
+                cfg['platereader'] = {f'plate_{i}':{'test':plates[k],
+                                                    'control':plates[j],
+                                                    'unclassified':plates[l],
+                                                    }\
+                    for i,(j,k,l) in enumerate(zip(ctrl_keys, 
+                                                   test_keys, 
+                                                   unclassified_keys), 
+                                    1)}
+            else:
+                raise Warning(f'Not impelented for {len(plates)}, sorry')
 
-        print(yaml.dump(cfg))
+    print(yaml.dump(cfg))
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-i','--input', 
+                        help='directory path of experiment')
+    parser.add_argument('-c', '--controls',
+                        help='the config that contains the controls')
+    args = parser.parse_args()
+    main(args)
+    #main(sys.argv[1:])

@@ -1,22 +1,22 @@
 echo:
   picklist:
-  - ./echo/picklist/01-picklist.csv
+  - ../../lab/01.0/echo/picklist/01-picklist.csv
   protocol:
-  - ./echo/2022-04-21-exp01-test.epr
+  - ../../lab/01.0/echo/2022-04-21-exp01-test.epr
   surveys:
-  - ./echo/2022-04-21/E5XX-1564_Survey_Source[4](UnknownBarCode).csv
-  - ./echo/2022-04-21/E5XX-1564_Survey_Source[3](UnknownBarCode).csv
-  - ./echo/2022-04-21/E5XX-1564_Survey_Source[2](UnknownBarCode).csv
+  - ../../lab/01.0/echo/2022-04-21/E5XX-1564_Survey_Source[4](UnknownBarCode).csv
+  - ../../lab/01.0/echo/2022-04-21/E5XX-1564_Survey_Source[3](UnknownBarCode).csv
+  - ../../lab/01.0/echo/2022-04-21/E5XX-1564_Survey_Source[2](UnknownBarCode).csv
   transfers:
-  - ./echo/2022-04-21/E5XX-1564_Transfer_0.csv
-  - ./echo/2022-04-21/E5XX-1564_Transfer_1650538543_Exceptions.csv
-  - ./echo/2022-04-21/E5XX-1564_Transfer_1650538543.csv
+  - ../../lab/01.0/echo/2022-04-21/E5XX-1564_Transfer_0.csv
+  - ../../lab/01.0/echo/2022-04-21/E5XX-1564_Transfer_1650538543_Exceptions.csv
+  - ../../lab/01.0/echo/2022-04-21/E5XX-1564_Transfer_1650538543.csv
 nb:
-- ./nb/data-proc.ipynb
-- ./nb/design-01.ipynb
-- ./nb/.ipynb_checkpoints/data-proc-checkpoint.ipynb
-- ./nb/.ipynb_checkpoints/lab-checkpoint.ipynb
-- ./nb/lab.ipynb
+- ../../lab/01.0/nb/data-proc.ipynb
+- ../../lab/01.0/nb/design-01.ipynb
+- ../../lab/01.0/nb/.ipynb_checkpoints/data-proc-checkpoint.ipynb
+- ../../lab/01.0/nb/.ipynb_checkpoints/lab-checkpoint.ipynb
+- ../../lab/01.0/nb/lab.ipynb
 platereader:
   plate_1:
     control:
@@ -24,7 +24,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,131152_220425103858.CSV
+      path: ../../lab/01.0/platereader/22042022,131152_220425103858.CSV
       test_run_no: '2870'
       time: '13:11:56'
       user: USER
@@ -33,7 +33,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,153445.CSV
+      path: ../../lab/01.0/platereader/22042022,153445.CSV
       test_run_no: '2885'
       time: '15:34:45'
       user: USER
@@ -43,7 +43,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,143647.CSV
+      path: ../../lab/01.0/platereader/22042022,143647.CSV
       test_run_no: '2879'
       time: '14:36:47'
       user: USER
@@ -52,7 +52,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,183109.CSV
+      path: ../../lab/01.0/platereader/22042022,183109.CSV
       test_run_no: '2894'
       time: '18:31:09'
       user: USER
@@ -62,7 +62,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,144613.CSV
+      path: ../../lab/01.0/platereader/22042022,144613.CSV
       test_run_no: '2880'
       time: '14:46:13'
       user: USER
@@ -71,7 +71,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,184048.CSV
+      path: ../../lab/01.0/platereader/22042022,184048.CSV
       test_run_no: '2895'
       time: '18:40:48'
       user: USER
@@ -81,7 +81,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,145554.CSV
+      path: ../../lab/01.0/platereader/22042022,145554.CSV
       test_run_no: '2881'
       time: '14:55:54'
       user: USER
@@ -90,7 +90,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,185031.CSV
+      path: ../../lab/01.0/platereader/22042022,185031.CSV
       test_run_no: '2896'
       time: '18:50:31'
       user: USER
@@ -100,7 +100,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,150536.CSV
+      path: ../../lab/01.0/platereader/22042022,150536.CSV
       test_run_no: '2882'
       time: '15:05:36'
       user: USER
@@ -109,7 +109,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,190012.CSV
+      path: ../../lab/01.0/platereader/22042022,190012.CSV
       test_run_no: '2897'
       time: '19:00:12'
       user: USER
@@ -119,7 +119,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,151520.CSV
+      path: ../../lab/01.0/platereader/22042022,151520.CSV
       test_run_no: '2883'
       time: '15:15:20'
       user: USER
@@ -128,7 +128,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,190956.CSV
+      path: ../../lab/01.0/platereader/22042022,190956.CSV
       test_run_no: '2898'
       time: '19:09:56'
       user: USER
@@ -138,7 +138,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,152501.CSV
+      path: ../../lab/01.0/platereader/22042022,152501.CSV
       test_run_no: '2884'
       time: '15:25:01'
       user: USER
@@ -147,7 +147,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,191940.CSV
+      path: ../../lab/01.0/platereader/22042022,191940.CSV
       test_run_no: '2899'
       time: '19:19:40'
       user: USER
@@ -157,7 +157,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,132125.CSV
+      path: ../../lab/01.0/platereader/22042022,132125.CSV
       test_run_no: '2871'
       time: '13:21:25'
       user: USER
@@ -166,7 +166,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,154429.CSV
+      path: ../../lab/01.0/platereader/22042022,154429.CSV
       test_run_no: '2886'
       time: '15:44:29'
       user: USER
@@ -176,7 +176,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,133051.CSV
+      path: ../../lab/01.0/platereader/22042022,133051.CSV
       test_run_no: '2872'
       time: '13:30:51'
       user: USER
@@ -185,7 +185,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,155409.CSV
+      path: ../../lab/01.0/platereader/22042022,155409.CSV
       test_run_no: '2887'
       time: '15:54:09'
       user: USER
@@ -195,7 +195,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,134015.CSV
+      path: ../../lab/01.0/platereader/22042022,134015.CSV
       test_run_no: '2873'
       time: '13:40:15'
       user: USER
@@ -204,7 +204,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,160354.CSV
+      path: ../../lab/01.0/platereader/22042022,160354.CSV
       test_run_no: '2888'
       time: '16:03:54'
       user: USER
@@ -214,7 +214,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,134939.CSV
+      path: ../../lab/01.0/platereader/22042022,134939.CSV
       test_run_no: '2874'
       time: '13:49:39'
       user: USER
@@ -223,7 +223,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,161337.CSV
+      path: ../../lab/01.0/platereader/22042022,161337.CSV
       test_run_no: '2889'
       time: '16:13:37'
       user: USER
@@ -233,7 +233,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,135905.CSV
+      path: ../../lab/01.0/platereader/22042022,135905.CSV
       test_run_no: '2875'
       time: '13:59:05'
       user: USER
@@ -242,7 +242,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,162316.CSV
+      path: ../../lab/01.0/platereader/22042022,162316.CSV
       test_run_no: '2890'
       time: '16:23:16'
       user: USER
@@ -252,7 +252,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,140831.CSV
+      path: ../../lab/01.0/platereader/22042022,140831.CSV
       test_run_no: '2876'
       time: '14:08:31'
       user: USER
@@ -261,7 +261,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,180155.CSV
+      path: ../../lab/01.0/platereader/22042022,180155.CSV
       test_run_no: '2891'
       time: '18:01:55'
       user: USER
@@ -271,7 +271,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,141757.CSV
+      path: ../../lab/01.0/platereader/22042022,141757.CSV
       test_run_no: '2877'
       time: '14:17:57'
       user: USER
@@ -280,7 +280,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,181142.CSV
+      path: ../../lab/01.0/platereader/22042022,181142.CSV
       test_run_no: '2892'
       time: '18:11:42'
       user: USER
@@ -290,7 +290,7 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,142723.CSV
+      path: ../../lab/01.0/platereader/22042022,142723.CSV
       test_run_no: '2878'
       time: '14:27:23'
       user: USER
@@ -299,13 +299,13 @@ platereader:
       id1: null
       id2: null
       machine: BMG CLARIOstar
-      path: ./platereader/22042022,182124.CSV
+      path: ../../lab/01.0/platereader/22042022,182124.CSV
       test_run_no: '2893'
       time: '18:21:24'
       user: USER
 uv-vis:
   post-dilution spec:
-  - ./uv-vis/20220422-conccheck-post.csv
+  - ../../lab/01.0/uv-vis/20220422-conccheck-post.csv
   pre-dilution spec:
-  - ./uv-vis/20220422-predilconccheck.csv
+  - ../../lab/01.0/uv-vis/20220422-predilconccheck.csv
 
