@@ -1,0 +1,367 @@
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Destination Plate Name,Destination Plate Barcode,Destination Plate Type,Destination Well,Destination Well X Offset,Destination Well Y Offset,Sample ID,Sample Name,Transfer Volume,Actual Volume,Current Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Transfer Status
+Source[2],,384LDV_DMSO,O3,Destination[2],,384PP_Dest,D22,0,0,,,1202.5,300,1.473,71.942,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82261 ft: 0.367446
+Source[2],,384LDV_DMSO,O3,Destination[2],,384PP_Dest,D23,0,0,,,2000,0,1.473,71.942,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.82261 ft: 0.367446
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C17,0,0,,,2000,600,1.269,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.324887
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C16,0,0,,,1202.5,0,1.269,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.324887
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C15,0,0,,,605,0,1.269,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.324887
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C14,0,0,,,212.5,0,1.269,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.324887
+Source[2],,384LDV_DMSO,E3,Destination[2],,384PP_Dest,C13,0,0,,,20,0,1.269,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.324887
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C3,Destination[2],,384PP_Dest,C7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A3,Destination[2],,384PP_Dest,C1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O5,Destination[2],,384PP_Dest,F19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I5,Destination[2],,384PP_Dest,F1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I7,Destination[2],,384PP_Dest,H5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K7,Destination[2],,384PP_Dest,H11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G17,0,0,,,2000,1200,1.434,78.769,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78572 ft: 0.327407
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G16,0,0,,,1202.5,0,1.434,78.769,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78572 ft: 0.327407
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G15,0,0,,,605,0,1.434,78.769,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78572 ft: 0.327407
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G14,0,0,,,212.5,0,1.434,78.769,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78572 ft: 0.327407
+Source[2],,384LDV_DMSO,E7,Destination[2],,384PP_Dest,G13,0,0,,,20,0,1.434,78.769,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78572 ft: 0.327407
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A9,Destination[2],,384PP_Dest,I5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G9,Destination[2],,384PP_Dest,I23,0,0,,,2000,600,1.718,85.45,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74517 ft: 0.356646
+Source[2],,384LDV_DMSO,M9,Destination[2],,384PP_Dest,J15,0,0,,,605,300,1.76,84.568,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75084 ft: 0.366264
+Source[2],,384LDV_DMSO,M9,Destination[2],,384PP_Dest,J14,0,0,,,212.5,0,1.76,84.568,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75084 ft: 0.366264
+Source[2],,384LDV_DMSO,M9,Destination[2],,384PP_Dest,J13,0,0,,,20,0,1.76,84.568,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.75084 ft: 0.366264
+Source[2],,384LDV_DMSO,K11,Destination[2],,384PP_Dest,L7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K11,Destination[2],,384PP_Dest,L8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K11,Destination[2],,384PP_Dest,L9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K11,Destination[2],,384PP_Dest,L10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K11,Destination[2],,384PP_Dest,L11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O11,Destination[2],,384PP_Dest,L23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,E11,Destination[2],,384PP_Dest,K13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A11,Destination[2],,384PP_Dest,K1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M13,Destination[2],,384PP_Dest,N16,0,0,,,1202.5,600,1.653,84.868,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74892 ft: 0.343197
+Source[2],,384LDV_DMSO,M13,Destination[2],,384PP_Dest,N15,0,0,,,605,0,1.653,84.868,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74892 ft: 0.343197
+Source[2],,384LDV_DMSO,M13,Destination[2],,384PP_Dest,N14,0,0,,,212.5,0,1.653,84.868,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74892 ft: 0.343197
+Source[2],,384LDV_DMSO,M13,Destination[2],,384PP_Dest,N13,0,0,,,20,0,1.653,84.868,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.74892 ft: 0.343197
+Source[2],,384LDV_DMSO,I15,Destination[2],,384PP_Dest,P1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I15,Destination[2],,384PP_Dest,P2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I15,Destination[2],,384PP_Dest,P3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I15,Destination[2],,384PP_Dest,P4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I15,Destination[2],,384PP_Dest,P5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K15,Destination[2],,384PP_Dest,P11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M15,Destination[2],,384PP_Dest,P17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O15,Destination[2],,384PP_Dest,P23,0,0,,,2000,600,1.622,78.169,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.78913 ft: 0.372494
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A15,Destination[2],,384PP_Dest,O1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O8,Destination[3],,384PP_Dest,N19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O8,Destination[3],,384PP_Dest,N20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O8,Destination[3],,384PP_Dest,N21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O8,Destination[3],,384PP_Dest,N22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O8,Destination[3],,384PP_Dest,N23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K6,Destination[3],,384PP_Dest,L7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I6,Destination[3],,384PP_Dest,L1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C4,Destination[3],,384PP_Dest,I9,0,0,,,605,300,6.693,77.117,Percent,DMSO,MM0203001: DFA didn't converge.
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I17,Destination[3],,384PP_Dest,B5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C19,Destination[3],,384PP_Dest,C11,0,0,,,2000,300,1.326,72.613,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.81914 ft: 0.326584
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O19,Destination[3],,384PP_Dest,D19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I21,Destination[3],,384PP_Dest,F1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I21,Destination[3],,384PP_Dest,F2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I21,Destination[3],,384PP_Dest,F3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I21,Destination[3],,384PP_Dest,F4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,I21,Destination[3],,384PP_Dest,F5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K21,Destination[3],,384PP_Dest,F11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M21,Destination[3],,384PP_Dest,F13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M21,Destination[3],,384PP_Dest,F14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M21,Destination[3],,384PP_Dest,F15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M21,Destination[3],,384PP_Dest,F16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M21,Destination[3],,384PP_Dest,F17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,O21,Destination[3],,384PP_Dest,F22,0,0,,,1202.5,300,1.501,74.869,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80726 ft: 0.355768
+Source[2],,384LDV_DMSO,O21,Destination[3],,384PP_Dest,F23,0,0,,,2000,0,1.501,74.869,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80726 ft: 0.355768
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,G21,Destination[3],,384PP_Dest,E19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,C21,Destination[3],,384PP_Dest,E7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,A21,Destination[3],,384PP_Dest,E1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,K18,Destination[4],,384PP_Dest,H11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,M22,Destination[4],,384PP_Dest,L17,0,0,,,2000,1500,1.554,79.958,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.77888 ft: 0.350339
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L19,0,0,,,20,0,1.366,75.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80229 ft: 0.320809
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L20,0,0,,,212.5,0,1.366,75.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80229 ft: 0.320809
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L21,0,0,,,605,0,1.366,75.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80229 ft: 0.320809
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L22,0,0,,,1202.5,0,1.366,75.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80229 ft: 0.320809
+Source[2],,384LDV_DMSO,O22,Destination[4],,384PP_Dest,L23,0,0,,,2000,0,1.366,75.792,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80229 ft: 0.320809
+Source[2],,384LDV_DMSO,D3,Destination[4],,384PP_Dest,O9,0,0,,,605,0,1.589,75.838,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80204 ft: 0.373298
+Source[2],,384LDV_DMSO,D3,Destination[4],,384PP_Dest,O10,0,0,,,1202.5,0,1.589,75.838,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80204 ft: 0.373298
+Source[2],,384LDV_DMSO,D3,Destination[4],,384PP_Dest,O11,0,0,,,2000,0,1.589,75.838,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.80204 ft: 0.373298
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D1,Destination[4],,384PP_Dest,M7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,B19,Destination[5],,384PP_Dest,O1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,B19,Destination[5],,384PP_Dest,O2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,B19,Destination[5],,384PP_Dest,O3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,B19,Destination[5],,384PP_Dest,O4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,B19,Destination[5],,384PP_Dest,O5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D23,0,0,,,2000,600,1.36,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.348391
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D22,0,0,,,1202.5,0,1.36,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.348391
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D21,0,0,,,605,0,1.36,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.348391
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D20,0,0,,,212.5,0,1.36,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.348391
+Source[2],,384LDV_DMSO,P2,Destination[6],,384PP_Dest,D19,0,0,,,20,0,1.36,70.487,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.83 ft: 0.348391
+Source[2],,384LDV_DMSO,D4,Destination[6],,384PP_Dest,E7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D4,Destination[6],,384PP_Dest,E8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D4,Destination[6],,384PP_Dest,E9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D4,Destination[6],,384PP_Dest,E10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[2],,384LDV_DMSO,D4,Destination[6],,384PP_Dest,E11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I3,Destination[7],,384PP_Dest,D5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G5,Destination[7],,384PP_Dest,E23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K8,Destination[8],,384PP_Dest,N11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G8,Destination[8],,384PP_Dest,M23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G8,Destination[8],,384PP_Dest,M22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G8,Destination[8],,384PP_Dest,M21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G8,Destination[8],,384PP_Dest,M20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G8,Destination[8],,384PP_Dest,M19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A6,Destination[8],,384PP_Dest,K1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A6,Destination[8],,384PP_Dest,K2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A6,Destination[8],,384PP_Dest,K3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A6,Destination[8],,384PP_Dest,K4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A6,Destination[8],,384PP_Dest,K5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C6,Destination[8],,384PP_Dest,K11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K6,Destination[8],,384PP_Dest,L7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K4,Destination[8],,384PP_Dest,J7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K4,Destination[8],,384PP_Dest,J8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K4,Destination[8],,384PP_Dest,J9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K4,Destination[8],,384PP_Dest,J10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K4,Destination[8],,384PP_Dest,J11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C4,Destination[8],,384PP_Dest,I7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A2,Destination[8],,384PP_Dest,G1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A2,Destination[8],,384PP_Dest,G2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A2,Destination[8],,384PP_Dest,G3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A2,Destination[8],,384PP_Dest,G4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,A2,Destination[8],,384PP_Dest,G5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,C2,Destination[8],,384PP_Dest,G11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,G2,Destination[8],,384PP_Dest,G23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,M12,Destination[9],,384PP_Dest,B13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,O16,Destination[9],,384PP_Dest,F19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,I16,Destination[9],,384PP_Dest,F1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K18,Destination[9],,384PP_Dest,H7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K18,Destination[9],,384PP_Dest,H8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K18,Destination[9],,384PP_Dest,H9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K18,Destination[9],,384PP_Dest,H10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,K18,Destination[9],,384PP_Dest,H11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,P1,Destination[9],,384PP_Dest,N23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[3],,384LDV_DMSO,B2,Destination[11],,384PP_Dest,C5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,I3,Destination[12],,384PP_Dest,D5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,K12,Destination[14],,384PP_Dest,B7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F1,Destination[14],,384PP_Dest,M13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N13,Destination[15],,384PP_Dest,J17,0,0,,,2000,600,1.688,90.352,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.7114 ft: 0.35033
+Source[4],,384LDV_DMSO,F13,Destination[15],,384PP_Dest,I17,0,0,,,2000,1800,1.829,87.98,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.72826 ft: 0.379602
+Source[4],,384LDV_DMSO,F13,Destination[15],,384PP_Dest,I16,0,0,,,1202.5,0,1.829,87.98,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.72826 ft: 0.379602
+Source[4],,384LDV_DMSO,F13,Destination[15],,384PP_Dest,I15,0,0,,,605,0,1.829,87.98,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.72826 ft: 0.379602
+Source[4],,384LDV_DMSO,F13,Destination[15],,384PP_Dest,I14,0,0,,,212.5,0,1.829,87.98,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.72826 ft: 0.379602
+Source[4],,384LDV_DMSO,F13,Destination[15],,384PP_Dest,I13,0,0,,,20,0,1.829,87.98,Percent,DMSO,MM0202006: Problem calc. eo fc: 1.72826 ft: 0.379602
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L19,Destination[15],,384PP_Dest,P7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B2,Destination[16],,384PP_Dest,C5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D2,Destination[16],,384PP_Dest,C11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F2,Destination[16],,384PP_Dest,C17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H2,Destination[16],,384PP_Dest,C23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,P2,Destination[16],,384PP_Dest,D19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,N2,Destination[16],,384PP_Dest,D13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,L2,Destination[16],,384PP_Dest,D7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,J2,Destination[16],,384PP_Dest,D1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E1,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E2,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E3,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E4,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,B4,Destination[16],,384PP_Dest,E5,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E7,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E8,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E9,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E10,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,D4,Destination[16],,384PP_Dest,E11,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A23,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A22,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A21,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A20,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,H21,Destination[16],,384PP_Dest,A19,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F21,Destination[16],,384PP_Dest,A17,0,0,,,2000,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F21,Destination[16],,384PP_Dest,A16,0,0,,,1202.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F21,Destination[16],,384PP_Dest,A15,0,0,,,605,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F21,Destination[16],,384PP_Dest,A14,0,0,,,212.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[4],,384LDV_DMSO,F21,Destination[16],,384PP_Dest,A13,0,0,,,20,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+

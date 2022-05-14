@@ -1,0 +1,11 @@
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Destination Plate Name,Destination Plate Barcode,Destination Plate Type,Destination Well,Destination Well X Offset,Destination Well Y Offset,Sample ID,Sample Name,Transfer Volume,Actual Volume,Current Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Transfer Status
+Source[1],,384LDV_DMSO,C3,Destination[1],,384PP_Dest,B24,0,0,,,667.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,C3,Destination[1],,384PP_Dest,B23,0,0,,,167.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,C3,Destination[1],,384PP_Dest,C1,0,0,,,1500,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,M15,Destination[1],,384PP_Dest,M24,0,0,,,167.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,M15,Destination[1],,384PP_Dest,N1,0,0,,,667.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,M15,Destination[1],,384PP_Dest,N2,0,0,,,1500,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,I17,Destination[1],,384PP_Dest,O8,0,0,,,1500,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,I17,Destination[1],,384PP_Dest,O7,0,0,,,667.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+Source[1],,384LDV_DMSO,I17,Destination[1],,384PP_Dest,O6,0,0,,,167.5,0,0,0,Percent,DMSO,MM0202007: Problem calc. well fluid volume fc: 0 ft: 0
+

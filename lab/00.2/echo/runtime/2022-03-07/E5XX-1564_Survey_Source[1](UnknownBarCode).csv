@@ -1,0 +1,335 @@
+Run ID,1646643391
+Run Date/Time,2022-03-07 08:55:40
+Application Name,Labcyte Echo Plate Reformat
+Application Version,1.6.4
+Protocol Name,2022-03-07-00.2-echo-protocol-ctrl.epr
+User Name,Lab
+
+[DETAILS]
+Source Plate Name,Source Plate Barcode,Source Plate Type,Source Well,Survey Fluid Height,Survey Fluid Volume,Fluid Composition,Fluid Units,Fluid Type,Survey Status
+Source[1],UnknownBarCode,384LDV_DMSO,A1,2.007,9.123,70.487,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A2,0,0,0,Percent,DMSO,"Data missing for well (1th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A3,1.986,9.037,71.103,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A4,0,0,0,Percent,DMSO,"Data missing for well (1th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A5,2.014,9.155,70.487,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A6,0,0,0,Percent,DMSO,"Data missing for well (1th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A7,2.011,9.558,84.44,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A8,0,0,0,Percent,DMSO,"Data missing for well (1th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A9,2.171,10.441,91.756,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A10,0,0,0,Percent,DMSO,"Data missing for well (1th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A11,2.056,9.502,75.743,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A12,0,0,0,Percent,DMSO,"Data missing for well (1th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A13,2.012,9.61,87.978,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A14,0,0,0,Percent,DMSO,"Data missing for well (1th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A15,1.907,8.951,80.455,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A16,0,0,0,Percent,DMSO,"Data missing for well (1th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A17,2.093,10.107,92.917,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A18,0,0,0,Percent,DMSO,"Data missing for well (1th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,A19,1.947,8.974,75.399,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,B1,0,0,0,Percent,DMSO,"Data missing for well (2th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B2,0,0,0,Percent,DMSO,"Data missing for well (2th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B3,0,0,0,Percent,DMSO,"Data missing for well (2th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B4,0,0,0,Percent,DMSO,"Data missing for well (2th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B5,0,0,0,Percent,DMSO,"Data missing for well (2th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B6,0,0,0,Percent,DMSO,"Data missing for well (2th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B7,0,0,0,Percent,DMSO,"Data missing for well (2th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B8,0,0,0,Percent,DMSO,"Data missing for well (2th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B9,0,0,0,Percent,DMSO,"Data missing for well (2th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B10,0,0,0,Percent,DMSO,"Data missing for well (2th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B11,0,0,0,Percent,DMSO,"Data missing for well (2th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B12,0,0,0,Percent,DMSO,"Data missing for well (2th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B13,0,0,0,Percent,DMSO,"Data missing for well (2th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B14,0,0,0,Percent,DMSO,"Data missing for well (2th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B15,0,0,0,Percent,DMSO,"Data missing for well (2th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B16,0,0,0,Percent,DMSO,"Data missing for well (2th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B17,0,0,0,Percent,DMSO,"Data missing for well (2th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B18,0,0,0,Percent,DMSO,"Data missing for well (2th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B19,0,0,0,Percent,DMSO,"Data missing for well (2th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C1,2.007,9.732,93.744,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C2,0,0,0,Percent,DMSO,"Data missing for well (3th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C3,0,0,0,Percent,DMSO,"Data missing for well (3th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C4,0,0,0,Percent,DMSO,"Data missing for well (3th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C5,2.073,9.566,75.31,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C6,0,0,0,Percent,DMSO,"Data missing for well (3th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C7,2.162,10.055,77.223,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C8,0,0,0,Percent,DMSO,"Data missing for well (3th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C9,2.172,10.498,93.268,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C10,0,0,0,Percent,DMSO,"Data missing for well (3th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C11,2.031,9.609,82.963,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C12,0,0,0,Percent,DMSO,"Data missing for well (3th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C13,2.047,9.719,84.148,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C14,0,0,0,Percent,DMSO,"Data missing for well (3th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C15,2.2,10.316,79.522,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C16,0,0,0,Percent,DMSO,"Data missing for well (3th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C17,1.991,9.298,78.861,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,C18,0,0,0,Percent,DMSO,"Data missing for well (3th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C19,1.972,9.063,74.525,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,D1,0,0,0,Percent,DMSO,"Data missing for well (4th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D2,0,0,0,Percent,DMSO,"Data missing for well (4th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D3,0,0,0,Percent,DMSO,"Data missing for well (4th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D4,0,0,0,Percent,DMSO,"Data missing for well (4th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D5,0,0,0,Percent,DMSO,"Data missing for well (4th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D6,0,0,0,Percent,DMSO,"Data missing for well (4th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D7,0,0,0,Percent,DMSO,"Data missing for well (4th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D8,0,0,0,Percent,DMSO,"Data missing for well (4th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D9,0,0,0,Percent,DMSO,"Data missing for well (4th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D10,0,0,0,Percent,DMSO,"Data missing for well (4th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D11,0,0,0,Percent,DMSO,"Data missing for well (4th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D12,0,0,0,Percent,DMSO,"Data missing for well (4th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D13,0,0,0,Percent,DMSO,"Data missing for well (4th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D14,0,0,0,Percent,DMSO,"Data missing for well (4th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D15,0,0,0,Percent,DMSO,"Data missing for well (4th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D16,0,0,0,Percent,DMSO,"Data missing for well (4th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D17,0,0,0,Percent,DMSO,"Data missing for well (4th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D18,0,0,0,Percent,DMSO,"Data missing for well (4th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D19,0,0,0,Percent,DMSO,"Data missing for well (4th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E1,2.103,10.134,92.273,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E2,0,0,0,Percent,DMSO,"Data missing for well (5th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E3,2.202,10.582,91.579,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E4,0,0,0,Percent,DMSO,"Data missing for well (5th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E5,2.239,10.829,93.654,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E6,0,0,0,Percent,DMSO,"Data missing for well (5th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E7,2.274,10.984,93.398,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E8,0,0,0,Percent,DMSO,"Data missing for well (5th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E9,2.274,11.032,94.825,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E10,0,0,0,Percent,DMSO,"Data missing for well (5th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E11,2.041,9.746,87.918,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E12,0,0,0,Percent,DMSO,"Data missing for well (5th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E13,2.312,11.151,92.964,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E14,0,0,0,Percent,DMSO,"Data missing for well (5th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E15,2.287,11.113,95.365,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E16,0,0,0,Percent,DMSO,"Data missing for well (5th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E17,2.247,10.91,94.872,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,E18,0,0,0,Percent,DMSO,"Data missing for well (5th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E19,2.171,10.526,94.265,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,F1,0,0,0,Percent,DMSO,"Data missing for well (6th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F2,0,0,0,Percent,DMSO,"Data missing for well (6th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F3,0,0,0,Percent,DMSO,"Data missing for well (6th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F4,0,0,0,Percent,DMSO,"Data missing for well (6th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F5,0,0,0,Percent,DMSO,"Data missing for well (6th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F6,0,0,0,Percent,DMSO,"Data missing for well (6th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F7,0,0,0,Percent,DMSO,"Data missing for well (6th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F8,0,0,0,Percent,DMSO,"Data missing for well (6th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F9,0,0,0,Percent,DMSO,"Data missing for well (6th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F10,0,0,0,Percent,DMSO,"Data missing for well (6th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F11,0,0,0,Percent,DMSO,"Data missing for well (6th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F12,0,0,0,Percent,DMSO,"Data missing for well (6th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F13,0,0,0,Percent,DMSO,"Data missing for well (6th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F14,0,0,0,Percent,DMSO,"Data missing for well (6th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F15,0,0,0,Percent,DMSO,"Data missing for well (6th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F16,0,0,0,Percent,DMSO,"Data missing for well (6th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F17,0,0,0,Percent,DMSO,"Data missing for well (6th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F18,0,0,0,Percent,DMSO,"Data missing for well (6th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F19,0,0,0,Percent,DMSO,"Data missing for well (6th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G1,2.101,10.139,92.671,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G2,0,0,0,Percent,DMSO,"Data missing for well (7th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G3,2.21,10.685,93.472,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G4,0,0,0,Percent,DMSO,"Data missing for well (7th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G5,2.237,10.838,94.171,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G6,0,0,0,Percent,DMSO,"Data missing for well (7th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G7,2.316,11.172,93.013,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G8,0,0,0,Percent,DMSO,"Data missing for well (7th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G9,2.266,10.912,92.233,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G10,0,0,0,Percent,DMSO,"Data missing for well (7th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G11,2.3,11.118,93.712,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G12,0,0,0,Percent,DMSO,"Data missing for well (7th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G13,2.283,11.044,93.86,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G14,0,0,0,Percent,DMSO,"Data missing for well (7th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G15,2.309,11.151,93.44,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G16,0,0,0,Percent,DMSO,"Data missing for well (7th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G17,2.25,10.924,94.903,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,G18,0,0,0,Percent,DMSO,"Data missing for well (7th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G19,2.221,10.825,95.893,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,H1,0,0,0,Percent,DMSO,"Data missing for well (8th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H2,0,0,0,Percent,DMSO,"Data missing for well (8th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H3,0,0,0,Percent,DMSO,"Data missing for well (8th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H4,0,0,0,Percent,DMSO,"Data missing for well (8th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H5,0,0,0,Percent,DMSO,"Data missing for well (8th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H6,0,0,0,Percent,DMSO,"Data missing for well (8th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H7,0,0,0,Percent,DMSO,"Data missing for well (8th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H8,0,0,0,Percent,DMSO,"Data missing for well (8th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H9,0,0,0,Percent,DMSO,"Data missing for well (8th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H10,0,0,0,Percent,DMSO,"Data missing for well (8th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H11,0,0,0,Percent,DMSO,"Data missing for well (8th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H12,0,0,0,Percent,DMSO,"Data missing for well (8th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H13,0,0,0,Percent,DMSO,"Data missing for well (8th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H14,0,0,0,Percent,DMSO,"Data missing for well (8th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H15,0,0,0,Percent,DMSO,"Data missing for well (8th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H16,0,0,0,Percent,DMSO,"Data missing for well (8th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H17,0,0,0,Percent,DMSO,"Data missing for well (8th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H18,0,0,0,Percent,DMSO,"Data missing for well (8th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H19,0,0,0,Percent,DMSO,"Data missing for well (8th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I1,2.153,10.415,93.572,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I2,0,0,0,Percent,DMSO,"Data missing for well (9th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I3,2.104,10.124,91.807,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I4,0,0,0,Percent,DMSO,"Data missing for well (9th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I5,2.339,11.184,89,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I6,0,0,0,Percent,DMSO,"Data missing for well (9th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I7,2.224,10.283,75.349,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I8,0,0,0,Percent,DMSO,"Data missing for well (9th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I9,2.282,11.058,94.47,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I10,0,0,0,Percent,DMSO,"Data missing for well (9th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I11,2.247,10.87,93.813,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I12,0,0,0,Percent,DMSO,"Data missing for well (9th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I13,2.28,10.874,86.921,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I14,0,0,0,Percent,DMSO,"Data missing for well (9th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I15,2.156,10.363,91.442,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,I16,0,0,0,Percent,DMSO,"Data missing for well (9th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I17,0,0,0,Percent,DMSO,"Data missing for well (9th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I18,0,0,0,Percent,DMSO,"Data missing for well (9th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I19,2.311,11.13,92.372,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,J1,0,0,0,Percent,DMSO,"Data missing for well (10th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J2,0,0,0,Percent,DMSO,"Data missing for well (10th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J3,0,0,0,Percent,DMSO,"Data missing for well (10th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J4,0,0,0,Percent,DMSO,"Data missing for well (10th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J5,0,0,0,Percent,DMSO,"Data missing for well (10th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J6,0,0,0,Percent,DMSO,"Data missing for well (10th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J7,0,0,0,Percent,DMSO,"Data missing for well (10th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J8,0,0,0,Percent,DMSO,"Data missing for well (10th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J9,0,0,0,Percent,DMSO,"Data missing for well (10th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J10,0,0,0,Percent,DMSO,"Data missing for well (10th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J11,0,0,0,Percent,DMSO,"Data missing for well (10th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J12,0,0,0,Percent,DMSO,"Data missing for well (10th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J13,0,0,0,Percent,DMSO,"Data missing for well (10th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J14,0,0,0,Percent,DMSO,"Data missing for well (10th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J15,0,0,0,Percent,DMSO,"Data missing for well (10th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J16,0,0,0,Percent,DMSO,"Data missing for well (10th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J17,0,0,0,Percent,DMSO,"Data missing for well (10th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J18,0,0,0,Percent,DMSO,"Data missing for well (10th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J19,0,0,0,Percent,DMSO,"Data missing for well (10th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K1,2.152,10.299,89.727,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K2,0,0,0,Percent,DMSO,"Data missing for well (11th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K3,2.15,10.367,92.486,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K4,0,0,0,Percent,DMSO,"Data missing for well (11th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K5,2.246,10.848,93.277,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K6,0,0,0,Percent,DMSO,"Data missing for well (11th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K7,2.267,10.807,86.655,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K8,0,0,0,Percent,DMSO,"Data missing for well (11th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K9,2.267,10.929,92.62,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K10,0,0,0,Percent,DMSO,"Data missing for well (11th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K11,2.162,10.341,89.04,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K12,0,0,0,Percent,DMSO,"Data missing for well (11th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K13,2.135,10.329,93.49,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K14,0,0,0,Percent,DMSO,"Data missing for well (11th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K15,2.152,10.28,88.292,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K16,0,0,0,Percent,DMSO,"Data missing for well (11th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K17,2.203,10.649,93.45,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,K18,0,0,0,Percent,DMSO,"Data missing for well (11th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K19,2.235,10.478,79.386,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,L1,0,0,0,Percent,DMSO,"Data missing for well (12th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L2,0,0,0,Percent,DMSO,"Data missing for well (12th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L3,0,0,0,Percent,DMSO,"Data missing for well (12th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L4,0,0,0,Percent,DMSO,"Data missing for well (12th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L5,0,0,0,Percent,DMSO,"Data missing for well (12th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L6,0,0,0,Percent,DMSO,"Data missing for well (12th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L7,0,0,0,Percent,DMSO,"Data missing for well (12th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L8,0,0,0,Percent,DMSO,"Data missing for well (12th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L9,0,0,0,Percent,DMSO,"Data missing for well (12th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L10,0,0,0,Percent,DMSO,"Data missing for well (12th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L11,0,0,0,Percent,DMSO,"Data missing for well (12th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L12,0,0,0,Percent,DMSO,"Data missing for well (12th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L13,0,0,0,Percent,DMSO,"Data missing for well (12th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L14,0,0,0,Percent,DMSO,"Data missing for well (12th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L15,0,0,0,Percent,DMSO,"Data missing for well (12th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L16,0,0,0,Percent,DMSO,"Data missing for well (12th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L17,0,0,0,Percent,DMSO,"Data missing for well (12th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L18,0,0,0,Percent,DMSO,"Data missing for well (12th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L19,0,0,0,Percent,DMSO,"Data missing for well (12th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M1,2.194,10.304,79.958,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M2,0,0,0,Percent,DMSO,"Data missing for well (13th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M3,2.024,9.534,81.379,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M4,0,0,0,Percent,DMSO,"Data missing for well (13th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M5,2.111,10.054,85.722,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M6,0,0,0,Percent,DMSO,"Data missing for well (13th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M7,2.18,10.513,92.568,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M8,0,0,0,Percent,DMSO,"Data missing for well (13th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M9,2.227,10.696,91.36,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M10,0,0,0,Percent,DMSO,"Data missing for well (13th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M11,2.244,10.883,94.614,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M12,0,0,0,Percent,DMSO,"Data missing for well (13th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M13,2.174,10.5,93.059,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M14,0,0,0,Percent,DMSO,"Data missing for well (13th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M15,0,0,0,Percent,DMSO,"Data missing for well (13th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M16,0,0,0,Percent,DMSO,"Data missing for well (13th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M17,1.68,8.178,93.769,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,M18,0,0,0,Percent,DMSO,"Data missing for well (13th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M19,2.271,10.628,78.842,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,N1,0,0,0,Percent,DMSO,"Data missing for well (14th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N2,0,0,0,Percent,DMSO,"Data missing for well (14th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N3,0,0,0,Percent,DMSO,"Data missing for well (14th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N4,0,0,0,Percent,DMSO,"Data missing for well (14th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N5,0,0,0,Percent,DMSO,"Data missing for well (14th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N6,0,0,0,Percent,DMSO,"Data missing for well (14th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N7,0,0,0,Percent,DMSO,"Data missing for well (14th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N8,0,0,0,Percent,DMSO,"Data missing for well (14th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N9,0,0,0,Percent,DMSO,"Data missing for well (14th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N10,0,0,0,Percent,DMSO,"Data missing for well (14th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N11,0,0,0,Percent,DMSO,"Data missing for well (14th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N12,0,0,0,Percent,DMSO,"Data missing for well (14th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N13,0,0,0,Percent,DMSO,"Data missing for well (14th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N14,0,0,0,Percent,DMSO,"Data missing for well (14th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N15,0,0,0,Percent,DMSO,"Data missing for well (14th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N16,0,0,0,Percent,DMSO,"Data missing for well (14th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N17,0,0,0,Percent,DMSO,"Data missing for well (14th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N18,0,0,0,Percent,DMSO,"Data missing for well (14th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N19,0,0,0,Percent,DMSO,"Data missing for well (14th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O1,2.011,9.139,70.487,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O2,0,0,0,Percent,DMSO,"Data missing for well (15th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O3,2.037,9.801,91.705,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O4,0,0,0,Percent,DMSO,"Data missing for well (15th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O5,1.88,8.516,70.487,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O6,0,0,0,Percent,DMSO,"Data missing for well (15th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O7,2.013,9.447,80.134,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O8,0,0,0,Percent,DMSO,"Data missing for well (15th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O9,1.988,9.398,82.756,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O10,0,0,0,Percent,DMSO,"Data missing for well (15th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O11,2.089,9.9,83.464,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O12,0,0,0,Percent,DMSO,"Data missing for well (15th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O13,2.236,10.765,92.245,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O14,0,0,0,Percent,DMSO,"Data missing for well (15th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O15,1.895,9.072,89.457,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O16,0,0,0,Percent,DMSO,"Data missing for well (15th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O17,2.2,10.658,94.05,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,O18,0,0,0,Percent,DMSO,"Data missing for well (15th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O19,2.244,10.809,92.308,Percent,DMSO,
+Source[1],UnknownBarCode,384LDV_DMSO,A20,0,0,0,Percent,DMSO,"Data missing on PADDED well (1th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,B20,0,0,0,Percent,DMSO,"Data missing on PADDED well (2th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,C20,0,0,0,Percent,DMSO,"Data missing on PADDED well (3th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,D20,0,0,0,Percent,DMSO,"Data missing on PADDED well (4th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,E20,0,0,0,Percent,DMSO,"Data missing on PADDED well (5th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,F20,0,0,0,Percent,DMSO,"Data missing on PADDED well (6th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,G20,0,0,0,Percent,DMSO,"Data missing on PADDED well (7th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,H20,0,0,0,Percent,DMSO,"Data missing on PADDED well (8th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,I20,0,0,0,Percent,DMSO,"Data missing on PADDED well (9th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,J20,0,0,0,Percent,DMSO,"Data missing on PADDED well (10th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,K20,0,0,0,Percent,DMSO,"Data missing on PADDED well (11th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,L20,0,0,0,Percent,DMSO,"Data missing on PADDED well (12th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,M20,0,0,0,Percent,DMSO,"Data missing on PADDED well (13th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,N20,0,0,0,Percent,DMSO,"Data missing on PADDED well (14th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,O20,0,0,0,Percent,DMSO,"Data missing on PADDED well (15th row, 20th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P1,0,0,0,Percent,DMSO,"Data missing for well (16th row, 1th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P2,0,0,0,Percent,DMSO,"Data missing for well (16th row, 2th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P3,0,0,0,Percent,DMSO,"Data missing for well (16th row, 3th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P4,0,0,0,Percent,DMSO,"Data missing for well (16th row, 4th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P5,0,0,0,Percent,DMSO,"Data missing for well (16th row, 5th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P6,0,0,0,Percent,DMSO,"Data missing for well (16th row, 6th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P7,0,0,0,Percent,DMSO,"Data missing for well (16th row, 7th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P8,0,0,0,Percent,DMSO,"Data missing for well (16th row, 8th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P9,0,0,0,Percent,DMSO,"Data missing for well (16th row, 9th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P10,0,0,0,Percent,DMSO,"Data missing for well (16th row, 10th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P11,0,0,0,Percent,DMSO,"Data missing for well (16th row, 11th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P12,0,0,0,Percent,DMSO,"Data missing for well (16th row, 12th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P13,0,0,0,Percent,DMSO,"Data missing for well (16th row, 13th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P14,0,0,0,Percent,DMSO,"Data missing for well (16th row, 14th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P15,0,0,0,Percent,DMSO,"Data missing for well (16th row, 15th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P16,0,0,0,Percent,DMSO,"Data missing for well (16th row, 16th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P17,0,0,0,Percent,DMSO,"Data missing for well (16th row, 17th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P18,0,0,0,Percent,DMSO,"Data missing for well (16th row, 18th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P19,0,0,0,Percent,DMSO,"Data missing for well (16th row, 19th column), defaulting to 0.0 percent DMSO"
+Source[1],UnknownBarCode,384LDV_DMSO,P20,0,0,0,Percent,DMSO,"Data missing on PADDED well (16th row, 20th column), defaulting to 0.0 percent DMSO"
+
+Instrument Name,E5XX-1564
+Instrument Model,Echo 550
+Instrument Serial Number,E5XX-1564
+Instrument Software Version,2.5.15
+

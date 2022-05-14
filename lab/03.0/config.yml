@@ -1,0 +1,306 @@
+echo:
+  picklist:
+  - ../../lab/03.0/echo/picklist/01-picklist.csv
+  protocol:
+  - ../../lab/03.0/echo/2022-04-23-exp02.epr
+  surveys:
+  - ../../lab/03.0/echo/2022-04-23/E5XX-1564_Survey_Source[4](UnknownBarCode).csv
+  - ../../lab/03.0/echo/2022-04-23/E5XX-1564_Survey_Source[3](UnknownBarCode).csv
+  - ../../lab/03.0/echo/2022-04-23/E5XX-1564_Survey_Source[2](UnknownBarCode).csv
+  transfers:
+  - ../../lab/03.0/echo/2022-04-23/E5XX-1564_Transfer_1650719684.csv
+  - ../../lab/03.0/echo/2022-04-23/E5XX-1564_Transfer_1650719684_Exceptions.csv
+nb:
+- ../../lab/03.0/nb/lab.ipynb
+platereader:
+  plate_1:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,131152_220425103858.CSV
+      test_run_no: '2870'
+      time: '13:11:56'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1551431551.CSV
+      test_run_no: '2960'
+      time: '15:51:46'
+      user: USER
+  plate_10:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,143647.CSV
+      test_run_no: '2879'
+      time: '14:36:47'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1720331720.CSV
+      test_run_no: '2969'
+      time: '17:20:33'
+      user: USER
+  plate_11:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,144613.CSV
+      test_run_no: '2880'
+      time: '14:46:13'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1730261730.CSV
+      test_run_no: '2970'
+      time: '17:30:26'
+      user: USER
+  plate_12:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,145554.CSV
+      test_run_no: '2881'
+      time: '14:55:54'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1741051741.CSV
+      test_run_no: '2971'
+      time: '17:41:05'
+      user: USER
+  plate_13:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,150536.CSV
+      test_run_no: '2882'
+      time: '15:05:36'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1751521751.CSV
+      test_run_no: '2972'
+      time: '17:51:52'
+      user: USER
+  plate_14:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,151520.CSV
+      test_run_no: '2883'
+      time: '15:15:20'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1803181803.CSV
+      test_run_no: '2973'
+      time: '18:03:18'
+      user: USER
+  plate_15:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,152501.CSV
+      test_run_no: '2884'
+      time: '15:25:01'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1814101814_220427103838.CSV
+      test_run_no: '2974'
+      time: '18:14:10'
+      user: USER
+  plate_2:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,132125.CSV
+      test_run_no: '2871'
+      time: '13:21:25'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1602021602.CSV
+      test_run_no: '2961'
+      time: '16:02:02'
+      user: USER
+  plate_3:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,133051.CSV
+      test_run_no: '2872'
+      time: '13:30:51'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1611491611.CSV
+      test_run_no: '2962'
+      time: '16:11:49'
+      user: USER
+  plate_4:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,134015.CSV
+      test_run_no: '2873'
+      time: '13:40:15'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1621391621.CSV
+      test_run_no: '2963'
+      time: '16:21:39'
+      user: USER
+  plate_5:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,134939.CSV
+      test_run_no: '2874'
+      time: '13:49:39'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1631251631.CSV
+      test_run_no: '2964'
+      time: '16:31:25'
+      user: USER
+  plate_6:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,135905.CSV
+      test_run_no: '2875'
+      time: '13:59:05'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1641281641.CSV
+      test_run_no: '2965'
+      time: '16:41:28'
+      user: USER
+  plate_7:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,140831.CSV
+      test_run_no: '2876'
+      time: '14:08:31'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1651111651.CSV
+      test_run_no: '2966'
+      time: '16:51:11'
+      user: USER
+  plate_8:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,141757.CSV
+      test_run_no: '2877'
+      time: '14:17:57'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1701011701.CSV
+      test_run_no: '2967'
+      time: '17:01:01'
+      user: USER
+  plate_9:
+    control:
+      date: 22/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/01.0/../../lab/01.0/platereader/22042022,142723.CSV
+      test_run_no: '2878'
+      time: '14:27:23'
+      user: USER
+    test:
+      date: 25/04/2022
+      id1: null
+      id2: null
+      machine: BMG CLARIOstar
+      path: ../../lab/03.0/platereader/25042022,1710481710.CSV
+      test_run_no: '2968'
+      time: '17:10:48'
+      user: USER
+uv-vis:
+  post-dilution spec:
+  - ../../lab/03.0/uv-vis/03-post-dilution-a82f.csv
+  pre-dilution spec:
+  - ../../lab/03.0/uv-vis/03-pre-dilution-a82f.csv
+
