@@ -8,9 +8,6 @@
 
 The aim of the operation is to provide a dataset of BM3 mutants, binding partners and their $K_d$ affinity values. The data is to be used by a pre-trained machine learning model to learn to predict binding affinity for a given BM3 mutant and a given compound. That model can then be used to virtually screen BM3 mutants for binding to a given compound by way of design.
 
-## Protocol
-
-The protocol is detailed in [protocols](docs/docs/protocol.md). Old work on assay development and pilot runs are in [.old](.old). 
 
 #### Assay Overview
 
@@ -26,8 +23,6 @@ Since some compounds absorb in the 250-800nm range, each compound concentration 
 
 In this work, the plate assay is 384 wells and is designed flexibly accordinng to the experimental requirements (e.g. het/miss screening with one high compound concentration or incramenting concentrations for determining a binding coefficient ($K_d$).
 
-Data is processed with the package [`plates`](https://github.com/jamesengleback/plates) which contains tools for general (BMG) platereader data, and tools specific to this data.
-
 For more information on the assay, look at [`protocols`](docs/docs/protocol.md).
 
 ## Screening Set
@@ -36,10 +31,13 @@ For more information on the assay, look at [`protocols`](docs/docs/protocol.md).
 
 BM3 mutants used in this work are selected from [1](wong) based on mutants with altered substrate scope. The advantage of this approach is that the screen is likely to have some hits and the disadvantage is that it is not an even distribution of sequences so care will have to be taken in training the model.
 
-| ID | Mutations |
-|----|-----------|
-| wt |           |
-| dm | A82F/F87V |
+| ID   | Mutations |
+|------|-----------|
+| wt   |           |
+| dm   | A82F/F87V |
+| A82F | A82F      |
+| 1YQP | A82F/F87V |
+| 1YQO | A82F/F87V |
 
 ### Compounds 
 
