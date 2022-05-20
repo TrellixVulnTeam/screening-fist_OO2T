@@ -1,3 +1,5 @@
+protein:
+        BM3 Heme A82F/F87V
 echo:
   picklist:
   - ../../lab/02.0/echo/picklist/01-picklist.csv

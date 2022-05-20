@@ -54,4 +54,17 @@ def proc(cpd, # Cpd()
         print(y)
 
 
+def norm_traces(test, 
+                ctrl=None):
+    '''
+    '''
+    test = test.subtract(test.loc[:,800],
+                         axis=0)
+    if ctrl is not None:
+        ctrl = ctrl.subtract(ctrl.loc[:,800],
+                             axis=0)
+        norm = test - ctrl
+        return norm
+    else:
+        return test
 

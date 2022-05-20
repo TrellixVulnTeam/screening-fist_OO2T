@@ -1,3 +1,5 @@
+protein:
+        BM3 Heme 1YQP
 echo:
   picklist:
   - ../../lab/04.0/echo/picklist/01-picklist.csv

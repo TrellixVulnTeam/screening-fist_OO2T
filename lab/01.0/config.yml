@@ -1,3 +1,5 @@
+protein:
+        BM3 Heme WT
 echo:
   picklist:
   - ../../lab/01.0/echo/picklist/01-picklist.csv
