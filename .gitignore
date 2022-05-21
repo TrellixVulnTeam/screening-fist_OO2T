@@ -2,3 +2,5 @@
 *ipynb_checkpoints*
 *egg-info*
 *tmp*
+data/proc*/*png
+data/proc*tar.gz
