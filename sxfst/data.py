@@ -8,12 +8,17 @@ def smooth(df,
            sigma=3,
            axis=-1,
            ):
-    cols = df.columns
     idx = df.index
-    smth = pd.DataFrame(gaussian_filter1d(df, sigma, axis=axis),
-                        index=idx,
-                        columns=cols)
-    return df
+    if isinstance(df, pd.DataFrame):
+        cols = df.columns
+        smth = pd.DataFrame(gaussian_filter1d(df, sigma, axis=axis),
+                            index=idx,
+                            columns=cols)
+    elif isinstance(df, pd.Series):
+        smth = pd.DataFrame(gaussian_filter1d(df, sigma),
+                         index=idx,
+                         )
+    return smth
 
 def is_anomaly(norm):
     return False
@@ -64,6 +69,8 @@ def norm_traces(test,
         ctrl = ctrl.subtract(ctrl.loc[:,800],
                              axis=0)
         norm = test - ctrl
+        norm = test.subtract(norm.loc[:,800],
+                             axis=0)
         return norm
     else:
         return test

@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+from scipy.ndimage import convolve1d
 
 import sxfst
 
@@ -30,16 +31,17 @@ def get_blank_wells(df, sample):
     prot = sample['protein'].unique()
     assert len(prot) == 1, f'{prot}'
     prot = prot[0]
-    
-    well_row = sample['Well'].str.extract('([A-Z])')[0].unique()
-    assert len(well_row) == 1, f'{well_row}'
-    well_row = well_row[0]
-    
-    test_run_no = sample['test_run_no'].unique()
-    test_run_no = test_run_no[0]
-    x = df.loc[df['test_run_no'] == test_run_no, :]
+    if isinstance(prot, float):
+        x = df.loc[df['protein'].isna(), :]
+    elif isinstance(prot, str):
+        x = df.loc[df['protein'] == prot, :]
     x = x.loc[x['Cpd'].isna(), :]
-    x = x.loc[x['Well'].str.contains(well_row), ]
+    #well_row = sample['Well'].str.extract('([A-Z])')[0].unique()
+    #assert len(well_row) == 1, f'{well_row}'
+    #well_row = well_row[0]
+    #test_run_no = sample['test_run_no'].unique()
+    #test_run_no = test_run_no[0]
+    #x = x.loc[x['Well'].str.contains(well_row), ]
     return x
 
 
@@ -50,7 +52,7 @@ def plotTraces(x,     # df
                concs=None,  #
                save=False,
                size=(12,8),
-               ylim=(-0.1,0.5),
+               ylim=None,#(-0.1,0.5),
                **kwargs,
                ):
     if concs is not None:
@@ -65,7 +67,8 @@ def plotTraces(x,     # df
                      **kwargs,
                      )
     ax.set_xlim(280,800)
-    ax.set_ylim(*ylim)
+    if ylim is not None:
+        ax.set_ylim(*ylim)
     if title is not None:
         ax.set_title(title)
     ax.set_xlabel('Wavelength (nm)')
@@ -83,22 +86,41 @@ def r_squared(yi,yj):
     sum_sq_total = sum((yi - yi.mean()) ** 2) # check this!!!
     return 1 - (sum_sq_residual / sum_sq_total)
 
+def scale(x_, return_min_max=False):
+    x = x_.copy()
+    x -= min(x)
+    x /= max(x)
+    if return_min_max:
+        return x, min(x_), max(x_)
+    else:
+        return x
+
+
 def get_mm(x,y):
     x = np.nan_to_num(x, nan=1e-9)
     y = np.nan_to_num(y, nan=1e-9)
+    #xs, xmin, xmax = scale(x, return_min_max=True)
+    #ys, ymin, ymax = scale(y, return_min_max=True)
     try:
         (km, vmax), covariance = curve_fit(mm, x, y,
-                                           bounds=((0, 0),  # min div/0
-                                                   (max(x)*2, max(y)*2)),
-                                           p0=(max(y)/5, max(y)/5),
-                                           check_finite=False,
+                                           bounds=((32, 0), 
+                                                   (1e3, max(y)*1.2)),
+                                           p0=(1e3, max(y)/2),
+                                           #method='dogbox',
+                                           sigma=[1e-5]*len(x),
                                            )
+        #(km_, vmax_), covariance = curve_fit(mm, xs, ys,
+        #                                   bounds=((min(xs), min(ys)), 
+        #                                           (max(xs), max(ys))),
+        #                                   )
+        #km = (km_ * ymax) + ymin
+        #vmax = (vmax_ * xmax) + xmin
     except RuntimeError:
         km, vmax = np.inf, np.inf
 
-    yh = mm(x, km, vmax)
+    yh = mm(x, km=km, vmax=vmax)
     rsq = r_squared(y, yh)
-    return {'km':round(km,2), 'vmax':round(vmax,2), 'rsq':round(rsq,2)}
+    return {'km':km, 'vmax':vmax, 'rsq':rsq}
 
 def get_extra_metrics(test_traces, ctrl_traces):
     def has420peak(traces):
@@ -111,6 +133,7 @@ def plot_mm(ax,
             y,
             km,
             vmax,
+            rsq,
             title,
            ):
     ax.scatter(x,y)
@@ -120,8 +143,40 @@ def plot_mm(ax,
     ax.set_xlabel('Concenctration uM')
     ax.set_ylabel('Response')
     ax.set_title(title)
+    #ax.set_ylim(-1e-3, max([1e-3, max(y)*1.1]))
+    ax.text(x=0.75*max(x),
+            y=max(y)*0.1,
+            s=f'kd: {round(km, 5)}\nvmax: {round(vmax, 5)}\nrsq: {round(rsq,3)}',
+            fontsize=14,
+            )
+    ax.hlines(y=vmax, 
+              xmin=0,
+              xmax=max(x),
+              linestyle='--',
+              lw=1,
+              color='gray',
+              )
+    ax.vlines(x=km, 
+              ymin=0,
+              ymax=mm(km, vmax, km),
+              linestyle='--',
+              lw=1,
+              color='gray',
+              )
+    ax.hlines(y=0, 
+              xmin=0,
+              xmax=max(x),
+              linestyle='--',
+              lw=1,
+              color='gray',
+              )
 
 
+def trace_similarity(a, b):
+    similarity = sorted(range(len(protein_blanks_traces)),
+                        key=lambda idx : abs(protein_blanks_traces.iloc[idx, 400].mean() - \
+                                        test_traces.iloc[:,400].mean()))
+    pass
 
 
 def main(args):
@@ -136,6 +191,7 @@ def main(args):
         img_paths = [i for i in sxfst.find(img_root) if 'png' in i]  ###
 
     header_done = False # True if csv header already written
+    sigma = 2
     for i in df['protein'].dropna().unique():
         for j in tqdm(df['Cpd'].dropna().unique(), disable=args.stdout):
             test, ctrl = get_experiment(df, i, j)
@@ -152,47 +208,64 @@ def main(args):
                 similarity = sorted(range(len(protein_blanks_traces)),
                                     key=lambda idx : abs(protein_blanks_traces.iloc[idx, 400].mean() - \
                                                     test_traces.iloc[:,400].mean()))
-                protein_blanks_trace = protein_blanks_traces.iloc[[similarity[0]],:]
+                protein_blanks_trace = sxfst.data.smooth(protein_blanks_traces.iloc[[similarity[0]],:], 
+                                                         sigma=sigma)
                 
                 test_traces = pd.concat([protein_blanks_trace,
-                                         test_traces],
-                                       axis=0)
-                
+                                          test_traces],
+                                        axis=0)
                 
                 control_blanks = get_blank_wells(df, ctrl)
                 control_blanks_traces = get_traces(control_blanks)
                 similarity = sorted(range(len(control_blanks_traces)),
                                     key=lambda idx : abs(control_blanks_traces.iloc[idx, 300].mean() - \
                                                     test_traces.iloc[:,300].mean()))
-                control_blanks_trace = control_blanks_traces.iloc[similarity[0],:] # Series
+                control_blanks_trace = sxfst.data.smooth(control_blanks_traces.iloc[similarity[0],:],
+                                                         sigma=sigma)#Series
                 ctrl_traces = get_traces(ctrl)
                 ctrl_traces = pd.concat([pd.DataFrame(control_blanks_trace).T,
-                                         get_traces(ctrl)],
-                                         axis=0)
-                ctrl_traces_norm_ = sxfst.data.norm_traces(ctrl_traces)
-                ctrl_traces_norm = ctrl_traces_norm_.sub(control_blanks_trace, 
-                                                         axis=1)
-                ctrl_traces_smooth = sxfst.data.smooth(ctrl_traces_norm)
+                                          get_traces(ctrl)],
+                                          axis=0)
+                ctrl_traces_norm = sxfst.data.norm_traces(ctrl_traces)
+                assert sum(ctrl_traces_norm.loc[:,800]) == 0 , f'{ctrl_traces_norm}'
+                ctrl_traces_norm_sub = ctrl_traces_norm.sub(control_blanks_trace[0], axis=1)
+                #.sub(control_blanks_trace.values, axis=1)
+                #ctrl_traces_norm_ = sxfst.data.norm_traces(ctrl_traces)
+                #ctrl_traces_norm = ctrl_traces_norm_.sub(control_blanks_trace, 
+                #                                         axis=1)
+                ctrl_traces_smooth = sxfst.data.smooth(ctrl_traces_norm, sigma=sigma)
+                #print(ctrl_traces_norm)
+                #print(ctrl_traces_smooth)
 
+                #vols = test['actual_vol'].to_list()
                 vols = [0] + test['actual_vol'].to_list()
                 concs = np.array([sxfst.data.c2(v1=i,      # vol
                                                 c1=10_000, # stock conc - uM
                                                 v2=38_000 + i, # total vol nm
                                                 ) for i in vols])
 
-                test_traces_norm_ = sxfst.data.norm_traces(test_traces)
-                test_traces_norm = test_traces_norm_.sub(control_blanks_trace, 
-                                                         axis=1)
-                test_traces_smooth = sxfst.data.smooth(test_traces_norm)
-                diff = test_traces_smooth - test_traces_smooth.iloc[0,:]
+                test_traces_norm = sxfst.data.norm_traces(test_traces)
+                #test_traces_norm_ = sxfst.data.norm_traces(test_traces)
+                #test_traces_norm = test_traces_norm_.sub(control_blanks_trace, 
+                #                                         axis=1)
+                test_traces_smooth = sxfst.data.smooth(test_traces_norm, 
+                                                        sigma=sigma, 
+                                                        axis=1).sub(control_blanks_trace.iloc[:,0], 
+                                                                    axis=1)
+                def gradient(df):
+                    x = convolve1d(test_traces_smooth, [-1,0,1])
+                    return pd.DataFrame(x, columns=df.columns, index=df.index)
+
+                grad = gradient(test_traces_smooth)
+                diff = grad - grad.iloc[0,:]
+                #diff = test_traces_smooth - test_traces_smooth.iloc[0,:]
                 
-                response = sxfst.data.response(diff)
+                response = sxfst.data.response(grad.sub(grad.iloc[0,:].values))
                 
                 mm_fit = get_mm(concs, response.values) # dict
                 
                 extra_metrics = get_extra_metrics(test_traces_smooth, ctrl_traces) # dict
 
-                
                 output_data = {'cpd': j,
                                'protein' : i,
                                **mm_fit,
@@ -212,39 +285,54 @@ def main(args):
                     fig, ax = plt.subplots(3,2, figsize=(16, 16))
                     plotTraces(test_traces_smooth,
                                concs=concs,
-                               ylim=(-0.15, 0.25),
+                               #ylim=(-0.05, round(max(test_traces_smooth[420]*1.2), 2)),
                                size=(8,3),
                                ax=ax[0,0],
                                title=f'{i} : {j} - Test Traces',
                                )
-                    plotTraces(ctrl_traces_smooth,
-                               concs=concs,
-                               ylim=(-0.15,0.25),
-                               size=(8,3),
-                               ax=ax[0,1],
-                               title=f'{i} : {j} - Control Traces',
-                               )
-                    plotTraces(diff,
-                               concs=concs,
-                               ylim=(-0.1,0.25),
-                               size=(8,3),
-                               ax=ax[1,0],
-                               title=f'{i} : {j} - Difference Traces',
-                               )
-                    ax[1,0].vlines([390, 420], 
-                                   [diff[390].min(), diff[420].min()], 
-                                   [diff[390].max(), diff[420].max()], 
+                    ax[0,0].vlines([390, 420], 
+                                   [0, 0], 
+                                   [test_traces_smooth[410].min(), test_traces_smooth[430].max()], 
                                    linestyle='--',
                                    lw=1,
                                    color='gray',
                                    )
-                    
+                    plotTraces(ctrl_traces_smooth,
+                               concs=concs,
+                               ylim=(-0.05,0.3),
+                               size=(8,3),
+                               ax=ax[0,1],
+                               title=f'{i} : {j} - Control Traces',
+                               )
+                    plotTraces(grad,
+                               concs=concs,
+                               #ylim=(-0.01, 0.01),
+                               size=(8,3),
+                               ax=ax[1,0],
+                               title=f'{i} : {j} - Trace Gradients',
+                               )
+                    ax[1,0].hlines(y=0, 
+                                   xmin=0, 
+                                   xmax=max(concs), 
+                                   linestyle='--',
+                                   lw=1,
+                                   color='gray',
+                                   )
+                    ax[1,0].vlines([410, 430], 
+                                   [0, 0], 
+                                   [grad[410].min(), grad[430].max()], 
+                                   linestyle='--',
+                                   lw=1,
+                                   color='gray',
+                                   )
+
                     plot_mm(ax[1,1],
                             x=concs,
                             y=response,
                             km=mm_fit['km'],
                             vmax=mm_fit['vmax'],
-                            title=f"{i} : {j} - Michaelis Menten - Kd:{mm_fit['km']} Vmax:{mm_fit['vmax']} R^2:{mm_fit['rsq']}",
+                            rsq=mm_fit['rsq'],
+                            title=f"{i} : {j} - Michaelis Menten Fit",
                            )
 
                     if img_root is not None:

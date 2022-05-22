@@ -13,7 +13,6 @@ import pandas as pd
 
 import matplotlib.pyplot as plt
 plt.style.use('dark_background')
-import seaborn as sns
 
 def find(path):
     return [i for i in os.popen(f'find {path}').read().split('\n')
