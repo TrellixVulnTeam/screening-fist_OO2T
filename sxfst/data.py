@@ -27,9 +27,10 @@ def diff(norm, baseline):
     return norm.subtract(baseline,
                          axis=0)
 
-def response(_diff):
-    a420 = _diff.loc[:,420]
-    a390 = _diff.loc[:,390]
+
+def response(_diff, a=420, b=390):
+    a420 = _diff.loc[:,a]
+    a390 = _diff.loc[:,b]
     return a420.abs().add(a390.abs())
 
 def c2(v1, c1, v2):

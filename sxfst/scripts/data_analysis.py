@@ -222,11 +222,13 @@ def main(args):
                                                     test_traces.iloc[:,300].mean()))
                 control_blanks_trace = sxfst.data.smooth(control_blanks_traces.iloc[similarity[0],:],
                                                          sigma=sigma)#Series
+                control_blanks_trace = control_blanks_trace.sub(control_blanks_trace.iloc[-1].values, axis=1)
                 ctrl_traces = get_traces(ctrl)
                 ctrl_traces = pd.concat([pd.DataFrame(control_blanks_trace).T,
                                           get_traces(ctrl)],
                                           axis=0)
                 ctrl_traces_norm = sxfst.data.norm_traces(ctrl_traces)
+                ctrl_traces_norm = ctrl_traces_norm.sub(ctrl_traces_norm.iloc[0,:].values)
                 assert sum(ctrl_traces_norm.loc[:,800]) == 0 , f'{ctrl_traces_norm}'
                 ctrl_traces_norm_sub = ctrl_traces_norm.sub(control_blanks_trace[0], axis=1)
                 #.sub(control_blanks_trace.values, axis=1)
@@ -260,7 +262,7 @@ def main(args):
                 diff = grad - grad.iloc[0,:]
                 #diff = test_traces_smooth - test_traces_smooth.iloc[0,:]
                 
-                response = sxfst.data.response(grad.sub(grad.iloc[0,:].values))
+                response = sxfst.data.response(grad.sub(grad.iloc[0,:].values), a=410, b=439)
                 
                 mm_fit = get_mm(concs, response.values) # dict
                 
@@ -285,28 +287,42 @@ def main(args):
                     fig, ax = plt.subplots(3,2, figsize=(16, 16))
                     plotTraces(test_traces_smooth,
                                concs=concs,
-                               #ylim=(-0.05, round(max(test_traces_smooth[420]*1.2), 2)),
+                               ylim=(-0.05, 0.25),
                                size=(8,3),
                                ax=ax[0,0],
                                title=f'{i} : {j} - Test Traces',
                                )
+                    ax[0,0].hlines(y=0, 
+                                   xmin=0, 
+                                   xmax=800, 
+                                   linestyle='--',
+                                   lw=1,
+                                   color='gray',
+                                   )
                     ax[0,0].vlines([390, 420], 
                                    [0, 0], 
-                                   [test_traces_smooth[410].min(), test_traces_smooth[430].max()], 
+                                   [test_traces_smooth[390].max(), test_traces_smooth[420].max()], 
                                    linestyle='--',
                                    lw=1,
                                    color='gray',
                                    )
                     plotTraces(ctrl_traces_smooth,
                                concs=concs,
-                               ylim=(-0.05,0.3),
+                               ylim=(-0.05,0.25),
                                size=(8,3),
                                ax=ax[0,1],
                                title=f'{i} : {j} - Control Traces',
                                )
+                    ax[0,1].hlines(y=0, 
+                                   xmin=0, 
+                                   xmax=800, 
+                                   linestyle='--',
+                                   lw=1,
+                                   color='gray',
+                                   )
                     plotTraces(grad,
                                concs=concs,
-                               #ylim=(-0.01, 0.01),
+                               ylim=(-0.02, 0.03),
                                size=(8,3),
                                ax=ax[1,0],
                                title=f'{i} : {j} - Trace Gradients',
@@ -334,6 +350,7 @@ def main(args):
                             rsq=mm_fit['rsq'],
                             title=f"{i} : {j} - Michaelis Menten Fit",
                            )
+                    ax[1,1].set_ylim=(-1e-3, 1e-3)
 
                     if img_root is not None:
                         cpd_img = Image.open(next(filter(lambda s : j in s, img_paths)))
