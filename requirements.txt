@@ -1,0 +1,7 @@
+Pillow
+numpy
+pandas
+matplotlib
+scipy
+tqdm
+pyyaml
