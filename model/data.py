@@ -29,7 +29,7 @@ class Data(Dataset):
             df = pd.read_csv(self.path)
         self.seq = list(df['seq'])
         self.smiles = list(df['smiles'])
-        self.hit = list(df['hit'])
+        self.hit = list(df['hit'].astype(int))
         assert len(self.seq) == len(self.smiles)
 
 @lru_cache(128)

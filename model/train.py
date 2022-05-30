@@ -6,6 +6,8 @@ from tqdm import tqdm
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, random_split
+from einops import rearrange
+
 from data import Data
 from model import Model
 
@@ -28,7 +30,9 @@ def train(model,
         with tqdm(data_loader) as bar:
             for seq, smiles, hit in bar:
                 yh = model(seq, smiles)
-                loss = loss_fn(yh, hit)
+                print(hit)
+                print(yh)
+                loss = loss_fn(rearrange(yh,'b n -> (b n)'), hit.float())
                 loss.backward()
                 opt.step()
                 opt.zero_grad()
@@ -43,12 +47,12 @@ def main(args):
     a = len(data) // 4
     train_data, test_data = random_split(data, (len(data)-a, a))
     train_loader = DataLoader(train_data,
-                              batch_size=32,
+                              batch_size=2,
                               shuffle=True,
                               num_workers=1,
                               )
     test_loader = DataLoader(test_data,
-                             batch_size=32,
+                             batch_size=2,
                              shuffle=True,
                              num_workers=1,
                              )

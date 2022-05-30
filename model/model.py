@@ -8,6 +8,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, random_split
 from torch import cat, relu, sigmoid, Tensor, FloatTensor, LongTensor
 from einops import rearrange
+from einops.layers.torch import Rearrange
 
 import esm
 from data import Data
@@ -35,10 +36,47 @@ class Esm(nn.Module):
             ids, seqs, x = self.batch_converter(batch)
         else:
             raise Warning(f"input types: str, list, tuple.\n{type(seq)}")
-        z = self.model(x)
         return self.forward(x)
     def forward(self, x):
-        return self.model(x)
+        return self.model(x)['logits'] # size : b l d=35
+
+class SeqPool(nn.Module):
+    def __init__(self,
+                 conv_channels=35,
+                 num_conv_layers=4,
+                 kernel_size=9,
+                 stride=3,
+                 num_lstm_layers=2,
+                 lstm_hs=32,
+                 ):
+        super().__init__()
+        self.conv_channels = conv_channels
+        self.num_conv_layers = num_conv_layers
+        self.kernel_size = kernel_size
+        self.stride = stride
+        self.num_lstm_layers = num_lstm_layers
+        self.lstm_hs = lstm_hs
+
+        self.nn = nn.Sequential(\
+                *[nn.Sequential(nn.Conv1d(in_channels=conv_channels,
+                                          out_channels=conv_channels,
+                                          kernel_size=kernel_size,
+                                          stride=stride),
+                                nn.ReLU(),)
+                                for i in range(num_conv_layers)],
+                Rearrange('b d l -> b l d'),
+                nn.LSTM(input_size=conv_channels,
+                    hidden_size=lstm_hs,
+                    num_layers=num_lstm_layers,
+                    batch_first=True,
+                    ),
+                )
+    def __call__(self, seqz):
+        output, (hn, cn) = self.forward(seqz)
+        return hn
+    def forward(self, z):
+        z = rearrange(z, 'b l d -> b d l')
+        return self.nn(z)
 
 class Fpnn(nn.Module):
     def __init__(self,
@@ -59,32 +97,36 @@ class Fpnn(nn.Module):
             fpt = cat([fp(i) for i in smiles], dim=0)
         else:
             raise Warning(f"smiles input types: str, list, tuple.\n{type(smiles)}")
-        print(fpt.shape)
-        #return self.nn(fpt)
+        return self.nn(fpt)
 
 class Head(nn.Module):
     def __init__(self,
                  *,
-                 emb_size=32,
+                 emb_size=96,
                  ):
         super().__init__()
         self.nn = nn.Sequential(nn.Linear(emb_size, 1),
                                 nn.ReLU(),
                                 )
-    def __call__(self, emb):
-        yh = None
-        return yh
+    def __call__(self, seqz, fpz):
+        seqzz = rearrange(seqz, 'b l d -> b (l d)')
+        z = cat([seqzz, fpz], dim=1)
+        return self.forward(z)
+    def forward(self, z):
+        return self.nn(z)
 
 class Model(nn.Module):
     def __init__(self,
                  *,
-                 fpnn=Fpnn(),
-                 head=Head(),
                  esm=Esm(),
+                 seqpool=SeqPool(),
+                 fpnn=Fpnn(),
+                 head=Head(emb_size=96),
                  ):
         super().__init__()
-        self.fpnn = fpnn
         self.esm = esm.eval()
+        self.seqpool = seqpool
+        self.fpnn = fpnn
         self.head = head
     def __call__(self, seq, smiles):
         if isinstance(smiles, str):
@@ -92,21 +134,22 @@ class Model(nn.Module):
         if isinstance(seq, str):
             pass
         fpz = self.fpnn(smiles)
-        #seqz = self.esm(seq) # big, job killed
-        #yh = self.head(seqz, fpz)
-        #return yh
+        seqz = self.esm(seq) # big, job killed
+        seqzz = self.seqpool(seqz)
+        yh = self.head(seqzz, fpz)
+        return yh
 
 def main(arg='o.csv'):
     data = Data(arg, test=False)
     a = len(data) // 4
     train, test = random_split(data, (len(data)-a, a))
     train_loader = DataLoader(train,
-                              batch_size=32,
+                              batch_size=8,
                               shuffle=True,
                               num_workers=1,
                               )
     test_loader = DataLoader(test,
-                             batch_size=32,
+                             batch_size=8,
                              shuffle=True,
                              num_workers=1,
                              )
