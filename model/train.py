@@ -24,7 +24,7 @@ def train(model,
     #assert loss_fn in {'cross_entropy'}
     weight=Tensor([1.]*data_loader.batch_size \
                          + [0.]*data_loader.batch_size * n_non_binders)
-    loss_fn = nn.BCELoss(weight=weight)
+    loss_fn = nn.BCELoss()#weight=weight)
 
     opt = torch.optim.Adam(model.parameters(), 
                            lr=lr,
@@ -32,13 +32,17 @@ def train(model,
     for epoch in range(epochs):
         # todo - data_loader sampler: importance sampling
         with tqdm(data_loader) as bar:
-            for seq, smiles, hit in bar:
-                print(seq.shape, smiles.shape, hit.shape)
-                yh = model(seq, smiles)
+            for seq_, fingerprints_, hit_ in bar:
+                seq = rearrange(seq_, 'b1 b2 l -> (b1 b2) l')
+                fingerprints = rearrange(fingerprints_, 'b1 b2 l -> (b1 b2) l')
+                hit = rearrange(hit_, 'b1 b2 -> (b1 b2)')
+                yh = model(seq, fingerprints)
                 if len(hit.shape) == 1:
                     y = rearrange(hit.float(), '(b c) -> b c', c=1)
                 else:
                     y = hit.float()
+                print({'seq':seq.shape, 'fingerprints':fingerprints.shape, 'hit':hit.shape,
+                    'yh':yh.shape, 'y':y.shape})
                 loss = loss_fn(yh, y)
                 loss.backward()
                 opt.step()

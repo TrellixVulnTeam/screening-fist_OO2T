@@ -107,27 +107,28 @@ class DataTensors(Data):
     def __len__(self):
         return len(self.seq)
     def __getitem__(self, idx):
-        seqx = Tensor(self.abc.encode(self.seq[idx]))
-        seqx = cat([seqx, zeros(self.max_seq_len - len(seqx))])
+        pad = lambda x, l : cat([x, zeros(l-len(x))])
+        seqx = pad(Tensor(self.abc.encode(self.seq[idx])), 
+                   self.max_seq_len).unsqueeze(0)
+        #seqx = cat([seqx, zeros(self.max_seq_len - len(seqx))])
         fpx = smiles_fp(self.smiles[idx])
         if isinstance(self.hit[idx], (bool, str, int)):
             hitx = FloatTensor([self.hit[idx]])
         else:
             pass 
-        if self.n_non_binders != 0:
-            seqfs = []
-            fpfs = []
-            for i in range(self.n_non_binders):
-                i, j = random.randint(0, self.__len__()), \
-                        random.randint(0, self.__len__()), 
-                seqf = Tensor(self.abc.encode(self.seq[i]))
-                seqfs.append(cat([seqf, 
-                                  zeros(self.max_seq_len - len(seqf))],
-                                  dim=0))
-                fpfs.append(smiles_fp(self.smiles[j]).unsqueeze(0))
-            seqx = cat([seqx, *seqfs], dim=0)
-            fpx = cat([fpx.unsqueeze(0), *fpfs], dim=0)
-            hitx = cat([hitx, zeros(len(seqfs))], dim=0)
+        seqfs = []
+        fpfs = []
+        for i in range(self.n_non_binders):
+            i, j = random.randint(0, self.__len__()), \
+                    random.randint(0, self.__len__()), 
+            seqf = pad(Tensor(self.abc.encode(self.seq[i])), 
+                       self.max_seq_len).unsqueeze(0)
+            seqfs.append(seqf)
+            fpfs.append(smiles_fp(self.smiles[j]).unsqueeze(0))
+        seqx = cat([seqx, *seqfs], dim=0)
+        fpx = cat([fpx.unsqueeze(0), *fpfs], dim=0)
+        hitx = cat([hitx, zeros(len(seqfs))], dim=0)
+        print({'seqx':seqx.shape, 'fpx':fpx.shape, 'hitx':hitx.shape})
         return seqx, fpx, hitx
     def __repr__(self):
         return f"Dataset, {self.__len__()}"

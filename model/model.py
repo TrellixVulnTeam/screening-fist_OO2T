@@ -74,11 +74,17 @@ class SeqPool(nn.Module):
                     ),
                 )
     def __call__(self, seqz):
-        output, (hn, cn) = self.forward(seqz)
-        return hn
+        zh = self.forward(seqz)
+        return zh
     def forward(self, z):
         z = rearrange(z, 'b l d -> b d l')
-        return self.nn(z)
+        output, (hn, cn) = self.nn(z)
+
+        # hn shape: 
+        print(hn.shape)
+        zh = rearrange(hn, 'l b d -> b (l d)')
+        print({'hn':hn.shape, 'zh':zh.shape})
+        return zh
 
 class Fpnn(nn.Module):
     def __init__(self,
@@ -116,8 +122,9 @@ class Head(nn.Module):
                 nn.Sigmoid(),
                                 )
     def __call__(self, seqz, fpz):
-        seqzz = rearrange(seqz, 'b l d -> b (l d)')
-        z = cat([seqzz, fpz], dim=1)
+        print({'seqz':seqz.shape, 'fpz':fpz.shape})
+        #seqzz = rearrange(seqz, 'b l d -> b (l d)')
+        z = cat([seqz, fpz], dim=1)
         return self.forward(z)
     def forward(self, z):
         return self.nn(z)
@@ -141,8 +148,9 @@ class Model(nn.Module):
         if isinstance(seq, str):
             pass
         fpz = self.fpnn(smiles)
-        seqz = self.esm(seq) # big, job killed
+        seqz = self.esm(seq) 
         seqzz = self.seqpool(seqz)
+        print({'seqz':seqz.shape,'seqzz':seqzz.shape, 'fpz':fpz.shape})
         yh = self.head(seqzz, fpz)
         return yh
 
