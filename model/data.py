@@ -119,8 +119,8 @@ class DataTensors(Data):
         seqfs = []
         fpfs = []
         for i in range(self.n_non_binders):
-            i, j = random.randint(0, self.__len__()), \
-                    random.randint(0, self.__len__()), 
+            i, j = random.randint(0, self.__len__()-1), \
+                    random.randint(0, self.__len__()-1), 
             #seqf = pad(Tensor(self.abc.encode(self.seq[i])), 
             #           self.max_seq_len).unsqueeze(0)
             #seqfs.append(seqf)

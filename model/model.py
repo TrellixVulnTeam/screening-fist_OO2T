@@ -19,6 +19,20 @@ def fp(smiles):
             Chem.RDKFingerprint(Chem.MolFromSmiles(smiles))\
             ).float().unsqueeze(0) # 0, 2048
 
+class Skip(nn.Module):
+    def __init__(self, 
+                 size,
+                 *args):
+        super().__init__()
+        self.nn = nn.Sequential(nn.Linear(size,size),
+                                nn.Dropout(0.2),
+                                nn.ReLU(),
+                                nn.BatchNorm1d(size),
+                                )
+        self.bn = nn.BatchNorm1d(size)
+    def forward(self, x):
+        return self.bn(self.nn(x) + x)
+
 class Esm(nn.Module):
     def __init__(self,
                  *,
@@ -46,6 +60,7 @@ class Esm(nn.Module):
 
 class SeqPool(nn.Module):
     def __init__(self,
+                 input_channels=35,
                  conv_channels=35,
                  num_conv_layers=3,
                  kernel_size=9,
@@ -61,7 +76,11 @@ class SeqPool(nn.Module):
         self.num_lstm_layers = num_lstm_layers
         self.lstm_hs = lstm_hs
 
-        self.nn = nn.Sequential(\
+        self.nn = nn.Sequential(nn.Conv1d(in_channels=input_channels,
+                                          out_channels=conv_channels,
+                                          kernel_size=1,
+                                          stride=1),
+                                nn.ReLU(),
                 *[nn.Sequential(nn.Conv1d(in_channels=conv_channels,
                                           out_channels=conv_channels,
                                           kernel_size=kernel_size,
@@ -92,10 +111,14 @@ class Fpnn(nn.Module):
                  *,
                  fp_size=2048,
                  emb_size=32,
+                 n_layers=3,
                  ):
         super().__init__()
         self.nn = nn.Sequential(nn.Linear(fp_size, emb_size),
+                                nn.Dropout(0.2),
                                 nn.ReLU(),
+                                nn.BatchNorm1d(emb_size),
+                                *[Skip(emb_size) for _ in range(n_layers)],
                                 )
     def __call__(self, smiles):
         if isinstance(smiles, str):
@@ -116,9 +139,10 @@ class Head(nn.Module):
                  ):
         super().__init__()
         self.nn = nn.Sequential(\
-                *[nn.Sequential(nn.Linear(emb_size, emb_size),
-                                nn.ReLU()) 
-                        for _ in range(n_layers)],
+                *[Skip(emb_size) for _ in range(n_layers)],
+                #*[nn.Sequential(nn.Linear(emb_size, emb_size),
+                #                nn.ReLU()) 
+                #        for _ in range(n_layers)],
                 nn.Linear(emb_size, 1),
                 nn.Sigmoid(),
                                 )
@@ -133,10 +157,21 @@ class Head(nn.Module):
 class Model(nn.Module):
     def __init__(self,
                  *,
-                 esm=Esm(),
-                 seqpool=SeqPool(),
-                 fpnn=Fpnn(),
-                 head=Head(emb_size=96),
+                 esm=Esm(model='esm1_t6_43M_UR50S'),
+                 seqpool=SeqPool(input_channels=35,
+                                 conv_channels=35,  
+                                 num_conv_layers=3,
+                                 kernel_size=9,
+                                 stride=3,
+                                 num_lstm_layers=2,
+                                 lstm_hs=32,
+                                 ),
+                 fpnn=Fpnn(fp_size=2048,
+                           emb_size=32,
+                           ),
+                 head=Head(emb_size=96,
+                           n_layers=3,
+                           ),
                  ):
         super().__init__()
         self.esm = esm.eval()
