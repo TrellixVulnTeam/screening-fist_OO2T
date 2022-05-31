@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 import os
+from functools import lru_cache
 
 from rdkit import Chem
 import torch
@@ -28,6 +29,7 @@ class Esm(nn.Module):
         assert model in pretrained.keys()
         self.model, self.alphabet = pretrained[model]()
         self.batch_converter = self.alphabet.get_batch_converter()
+
     def __call__(self, seq):
         if isinstance(seq, str): # single prediction
             x = LongTensor(self.alphabet.encode(seq))
@@ -81,9 +83,8 @@ class SeqPool(nn.Module):
         output, (hn, cn) = self.nn(z)
 
         # hn shape: 
-        print(hn.shape)
         zh = rearrange(hn, 'l b d -> b (l d)')
-        print({'hn':hn.shape, 'zh':zh.shape})
+        #print({'hn':hn.shape, 'zh':zh.shape})
         return zh
 
 class Fpnn(nn.Module):
@@ -122,7 +123,7 @@ class Head(nn.Module):
                 nn.Sigmoid(),
                                 )
     def __call__(self, seqz, fpz):
-        print({'seqz':seqz.shape, 'fpz':fpz.shape})
+        #print({'seqz':seqz.shape, 'fpz':fpz.shape})
         #seqzz = rearrange(seqz, 'b l d -> b (l d)')
         z = cat([seqz, fpz], dim=1)
         return self.forward(z)
@@ -150,7 +151,7 @@ class Model(nn.Module):
         fpz = self.fpnn(smiles)
         seqz = self.esm(seq) 
         seqzz = self.seqpool(seqz)
-        print({'seqz':seqz.shape,'seqzz':seqzz.shape, 'fpz':fpz.shape})
+        #print({'seqz':seqz.shape,'seqzz':seqzz.shape, 'fpz':fpz.shape})
         yh = self.head(seqzz, fpz)
         return yh
 

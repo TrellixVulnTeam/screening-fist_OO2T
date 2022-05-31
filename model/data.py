@@ -121,14 +121,15 @@ class DataTensors(Data):
         for i in range(self.n_non_binders):
             i, j = random.randint(0, self.__len__()), \
                     random.randint(0, self.__len__()), 
-            seqf = pad(Tensor(self.abc.encode(self.seq[i])), 
-                       self.max_seq_len).unsqueeze(0)
-            seqfs.append(seqf)
+            #seqf = pad(Tensor(self.abc.encode(self.seq[i])), 
+            #           self.max_seq_len).unsqueeze(0)
+            #seqfs.append(seqf)
+            seqfs.append(seqx) # new - duplicating, lru_cache work?
             fpfs.append(smiles_fp(self.smiles[j]).unsqueeze(0))
         seqx = cat([seqx, *seqfs], dim=0)
         fpx = cat([fpx.unsqueeze(0), *fpfs], dim=0)
         hitx = cat([hitx, zeros(len(seqfs))], dim=0)
-        print({'seqx':seqx.shape, 'fpx':fpx.shape, 'hitx':hitx.shape})
+        #print({'seqx':seqx.shape, 'fpx':fpx.shape, 'hitx':hitx.shape})
         return seqx, fpx, hitx
     def __repr__(self):
         return f"Dataset, {self.__len__()}"

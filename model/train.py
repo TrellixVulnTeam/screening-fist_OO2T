@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, random_split
 from torch import Tensor
-from einops import rearrange
+from einops import rearrange, repeat
 
 from data import Data, DataTensors
 from model import Model
@@ -36,13 +36,13 @@ def train(model,
                 seq = rearrange(seq_, 'b1 b2 l -> (b1 b2) l')
                 fingerprints = rearrange(fingerprints_, 'b1 b2 l -> (b1 b2) l')
                 hit = rearrange(hit_, 'b1 b2 -> (b1 b2)')
-                yh = model(seq, fingerprints)
+                yh = model(seq, fingerprints) # seq should be repeats, does it cache?
                 if len(hit.shape) == 1:
                     y = rearrange(hit.float(), '(b c) -> b c', c=1)
                 else:
                     y = hit.float()
-                print({'seq':seq.shape, 'fingerprints':fingerprints.shape, 'hit':hit.shape,
-                    'yh':yh.shape, 'y':y.shape})
+                #print({'seq':seq.shape, 'fingerprints':fingerprints.shape, 'hit':hit.shape,
+                #    'yh':yh.shape, 'y':y.shape})
                 loss = loss_fn(yh, y)
                 loss.backward()
                 opt.step()
