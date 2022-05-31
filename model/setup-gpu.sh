@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 mkdir src
 cd src/
 
@@ -20,9 +20,15 @@ cd dotfiles
 ./setup-config.sh
 ./install-miniconda.sh
 source ~/.bashrc
+source ~/miniconda3/etc/profile.d/conda.sh
+conda update -n base -c defaults conda
 
 echo 'PS1="\[\033[01;93m\] [gpu] \w \[\033[01;93m\]\$ \[\033[00m\]"' >> ~/.bashrc
 cd ~/
 git clone https://github.com/jamesengleback/screening-fist
 cd screening-fist/model
-conda env create -f rdk-tch
+#conda env create -f rdk-tch.yml
+conda create -n tch -y
+conda activate tch
+conda install cuda pytorch rdkit -c nvidia -c pytorch -c rdkit -y
+pip install wandb einops fair-esm tqdm
