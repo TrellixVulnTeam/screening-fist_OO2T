@@ -11,7 +11,7 @@ from einops import rearrange
 from einops.layers.torch import Rearrange
 
 import esm
-from data import Data
+from data import Data, DataTensors
 
 def fp(smiles):
     return torch.FloatTensor(\
@@ -34,6 +34,8 @@ class Esm(nn.Module):
         elif isinstance(seq, (list, tuple)): # batch, flat list
             batch = [(i,j) for i,j in zip(range(len(seq)), seq)] # (id, seq), ...
             ids, seqs, x = self.batch_converter(batch)
+        elif isinstance(seq, (Tensor, FloatTensor, LongTensor)):
+            x = seq.int()
         else:
             raise Warning(f"input types: str, list, tuple.\n{type(seq)}")
         return self.forward(x)
@@ -43,7 +45,7 @@ class Esm(nn.Module):
 class SeqPool(nn.Module):
     def __init__(self,
                  conv_channels=35,
-                 num_conv_layers=4,
+                 num_conv_layers=3,
                  kernel_size=9,
                  stride=3,
                  num_lstm_layers=2,
@@ -103,10 +105,15 @@ class Head(nn.Module):
     def __init__(self,
                  *,
                  emb_size=96,
+                 n_layers=3,
                  ):
         super().__init__()
-        self.nn = nn.Sequential(nn.Linear(emb_size, 1),
-                                nn.ReLU(),
+        self.nn = nn.Sequential(\
+                *[nn.Sequential(nn.Linear(emb_size, emb_size),
+                                nn.ReLU()) 
+                        for _ in range(n_layers)],
+                nn.Linear(emb_size, 1),
+                nn.Sigmoid(),
                                 )
     def __call__(self, seqz, fpz):
         seqzz = rearrange(seqz, 'b l d -> b (l d)')
@@ -140,7 +147,7 @@ class Model(nn.Module):
         return yh
 
 def main(arg='o.csv'):
-    data = Data(arg, test=False)
+    data = DataTensors(arg, test=False)
     a = len(data) // 4
     train, test = random_split(data, (len(data)-a, a))
     train_loader = DataLoader(train,
