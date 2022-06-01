@@ -1,8 +1,9 @@
 #!/bin/bash
+cd ~
 mkdir src
 cd src/
 
-sudo apt update && sudo apt upgrade -y && sudo apt install git neovim -y
+sudo apt update && sudo apt upgrade -y && sudo apt install git neovim gcc nvidia-cuda-toolkit linux-headers-$(uname -r)
 
 # cuda
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -13,10 +14,13 @@ sudo apt-key add /var/cuda-repo-ubuntu2004-11-3-local/7fa2af80.pub
 sudo apt-get update
 sudo apt-get -y install cuda
 
+sudo apt install nvtop
+
+## reboot here
 
 git clone https://github.com/jamesengleback/dotfiles
 cd dotfiles
-#./install-debian.sh
+./install-debian.sh
 ./setup-config.sh
 ./install-miniconda.sh
 source ~/.bashrc
@@ -28,7 +32,7 @@ cd ~/
 git clone https://github.com/jamesengleback/screening-fist
 cd screening-fist/model
 #conda env create -f rdk-tch.yml
-conda create -n tch -y
-conda activate tch
-conda install cuda pytorch rdkit -c nvidia -c pytorch -c rdkit -y
-pip install wandb einops fair-esm tqdm
+conda create -n nn -y
+conda activate nn
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 rdkit -c pytorch -c rdkit -y
+pip install wandb einops fair-esm tqdm ipython
