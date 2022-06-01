@@ -62,7 +62,7 @@ def train(model,
             if save_path is not None:
                 torch.save(model.state_dict(), 
                            os.path.join(save_path, 
-   f"{save_path.split('/')[-1]}_e{epoch}l{round(loss.cpu().deatach().item(), 4)}.pt"
+   f"{save_path.split('/')[-1]}_e{epoch}l{round(loss.cpu().detach().item(), 4)}.pt"
                                        )
                            )
 
@@ -73,19 +73,21 @@ def main(args):
     if not os.path.exists(save_path):
         os.makedirs(save_path)
                
-    data = DataTensors(args.input, test=True, n_non_binders=3)
+    data = DataTensors(args.input, 
+                       test=args.test, 
+                       n_non_binders=3)
     #data = Data(args.input, test=True)
     a = len(data) // 4
     train_data, test_data = random_split(data, (len(data)-a, a))
     train_loader = DataLoader(train_data,
                               batch_size=args.batch_size,
                               shuffle=True,
-                              num_workers=0,
+                              num_workers=1,
                               )
     test_loader = DataLoader(test_data,
                              batch_size=args.batch_size,
                              shuffle=True,
-                             num_workers=0,
+                             num_workers=1,
                              )
 
     model = Model(esm=Esm(model=args.esm),
@@ -127,6 +129,7 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--lr', default=1e-6, type=float)
     parser.add_argument('--esm', default='esm1_t6_43M_UR50S')
     parser.add_argument('--cuda', action='store_true')
+    parser.add_argument('--test', action='store_true')
     # Head
     parser.add_argument('--emb_size_head', default=192, type=int)
     parser.add_argument('--n_layers_head', default=4, type=int)
