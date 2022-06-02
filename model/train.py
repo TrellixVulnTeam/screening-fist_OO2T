@@ -78,14 +78,15 @@ def train(model,
                      save_path=save_path,
                      )
 
-def test(data_loader,
-         model,
+def test(model,
+         data_loader,
          cuda=False,
          n_non_binders=1,
          save_path=None,
          ):
+    loss_fn = nn.BCELoss()#weight=weight)
     losses, ys, yhs = [], [], []
-    with model.eval():
+    with torch.no_grad():
         for seq_, fingerprints_, hit_ in tqdm(data_loader):
             if cuda:
                 seq_, fingerprints_, hit_ = seq_.cuda(), fingerprints_.cuda(), hit_.cuda()
@@ -102,29 +103,42 @@ def test(data_loader,
             ys.append(y.reshape(-1).detach())
             yhs.append(yh.reshape(-1).detach())
     losses = cat(losses)
-    mean_loss = mean(losses).to_numpy()
-    yhs = cat(yhs).to_numpy()
-    ys = cat(ys).to_numpy()
+    mean_loss = mean(losses).cpu().numpy()
+    ys = cat(ys)
+    yhs = cat(yhs)
+    yhs_ = (yhs > 0.5).cpu().numpy()
+    ys = ys.cpu().numpy()
+    yhs = yhs.cpu().numpy()
 
-    cfz = confusion_matrix(ys, yhs)
-    tn, fp, fn, tp = cfz
+
+    cfz = confusion_matrix(ys, yhs_)
+    (tp, fn), (fp, tn) = cfz
     precision, recall, pr_thresholds = precision_recall_curve(ys, yhs)
     fpr, tpr, roc_thresholds = roc_curve(ys, yhs)
-    det = det_curve(ys, yhs)
-    d = {'mean_loss':mean_loss,
-         'average_precision_score':avpr,
-         'confusion_matrix':{'true_pos':tp,
-                             'true_neg':tn
-                             'false_pos':fp,
-                             'false_neg':fn,
+    fprd, fnrd, thresholdsd = det_curve(ys, yhs)
+    avpr = average_precision_score(ys, yhs_)
+    d = {'mean_loss':mean_loss.tolist(),
+         'average_precision_score':avpr.tolist(),
+         'confusion_matrix':{'true_pos':tp.tolist(),
+                             'true_neg':tn.tolist(),
+                             'false_pos':fp.tolist(),
+                             'false_neg':fn.tolist(),
                              },
-         'roc':{'false_pos':fpr,
-                'true_pos':tpr,
-                'roc_thresholds':roc_thresholds,
-                }
-         'det':det,
+         'roc':{'false_pos':fpr.tolist(),
+                'true_pos':tpr.tolist(),
+                'roc_thresholds':roc_thresholds.tolist(),
+                },
+         'precision_recall_curve':{'precision':precision.tolist(),
+                                   'recall':recall.tolist(),
+                                   'pr_thresholds':pr_thresholds.tolist(),
+                                   },
+         'det':{'fpr':fprd.tolist(),
+                'fnr':fnrd.tolist(),
+                'thresholds':thresholdsd.tolist()},
          }
-    with open(os.path.join(save_path, 'test.json')) as f:
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
+    with open(os.path.join(save_path, 'test.json'), 'w') as f:
         json.dump(d, f)
 
 def main(args):
@@ -181,8 +195,8 @@ def main(args):
           cuda=args.cuda,
           )
 
-    test(model,
-         test_loader,
+    test(model=model,
+         data_loader=test_loader,
          n_non_binders=1,
          cuda=args.cuda,
          save_path=save_path,
