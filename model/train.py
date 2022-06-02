@@ -25,6 +25,7 @@ def train(model,
           n_non_binders=0,
           save_path=None,
           cuda=False,
+          test=False,
           test_loader=None,
           **kwargs,
           ):
@@ -60,23 +61,31 @@ def train(model,
                 bar.set_postfix({'epoch':epoch,
                                  'loss':loss.detach().item(),
                                  })
+                if not args.test:
+                    wandb.log({'loss':loss.detach().cpu().item(), })
                 wandb.log({'epoch':epoch,
                           'loss':loss.detach().cpu().item(),
                            })
-                if i % 128 == 0:
+                if i % 2048 == 0:
                     if save_path is not None:
                         torch.save(model.state_dict(), 
                                    os.path.join(save_path, 
-           f"{save_path.split('/')[-1]}_e{epoch}l{round(loss.cpu().detach().item(), 4)}.pt"
+           f"{save_path.split('/')[-1]}_e{epoch}i{int(i/2048)}l{round(loss.cpu().detach().item(), 4)}.pt"
+            if save_path is not None:
+                torch.save(model.state_dict(), 
+                           os.path.join(save_path, 
+   f"{save_path.split('/')[-1]}_e{epoch}l{round(loss.cpu().detach().item(), 4)}.pt"
+                                       )
+                               )
                                                )
                                    )
-        if test_loader is not None:
-            if epoch % 2 == 0:
-                test(test_loader,
-                     model,
-                     cuda=cuda,
-                     save_path=save_path,
-                     )
+        #if test_loader is not None:
+        #    if epoch % 2 == 0:
+        #        test(test_loader,
+        #             model,
+        #             cuda=cuda,
+        #             save_path=save_path,
+        #             )
 
 def test(model,
          data_loader,
@@ -142,10 +151,6 @@ def test(model,
         json.dump(d, f)
 
 def main(args):
-    run = wandb.init(project='sxfst', config=args)
-    save_path = os.path.join('weights', run.name)
-    if not os.path.exists(save_path):
-        os.makedirs(save_path)
                
     data = DataTensors(args.input, 
                        test=args.test, 
@@ -183,7 +188,15 @@ def main(args):
     if args.cuda:
         model = model.cuda()
 
-    wandb.watch(model)
+    if not args.test:
+        run = wandb.init(project='sxfst', config=args)
+        run_name = run.name
+        wandb.watch(model)
+    else:
+        run_name = 'test'
+    save_path = os.path.join('weights', run_name)
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
 
     train(model,
           train_loader,
@@ -193,6 +206,7 @@ def main(args):
           epochs=args.epochs,
           save_path=save_path,
           cuda=args.cuda,
+          test=args.test,
           )
 
     test(model=model,
@@ -210,6 +224,7 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--lr', default=1e-6, type=float)
     parser.add_argument('--esm', default='esm1_t6_43M_UR50S')
     parser.add_argument('--cuda', action='store_true')
+    parser.add_argument('--wandb', action='store_true')
     parser.add_argument('--test', action='store_true')
     # Head
     parser.add_argument('--emb_size_head', default=192, type=int)
