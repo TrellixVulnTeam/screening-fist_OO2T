@@ -21,6 +21,7 @@ nav:
   - protocol.md 
   - screen-design.md  
   - data.md  
+  - data-mining.md
   - nn.md
   - al.md
 
@@ -48,7 +49,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-          #format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 plugins:
   - mermaid2:
