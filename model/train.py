@@ -70,22 +70,11 @@ def train(model,
                     if save_path is not None:
                         torch.save(model.state_dict(), 
                                    os.path.join(save_path, 
-           f"{save_path.split('/')[-1]}_e{epoch}i{int(i/2048)}l{round(loss.cpu().detach().item(), 4)}.pt"
+                               f"{save_path.split('/')[-1]}_e{epoch}.pt"))
             if save_path is not None:
                 torch.save(model.state_dict(), 
                            os.path.join(save_path, 
-   f"{save_path.split('/')[-1]}_e{epoch}l{round(loss.cpu().detach().item(), 4)}.pt"
-                                       )
-                               )
-                                               )
-                                   )
-        #if test_loader is not None:
-        #    if epoch % 2 == 0:
-        #        test(test_loader,
-        #             model,
-        #             cuda=cuda,
-        #             save_path=save_path,
-        #             )
+                               f"{save_path.split('/')[-1]}_e{epoch}.pt"))
 
 def test(model,
          data_loader,
