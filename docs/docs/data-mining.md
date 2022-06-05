@@ -79,4 +79,7 @@ A diversity filter that aims to return a subset of a compound set by maximizing 
 Unfortunately, MaxMin is $O(n^2)$ complexity, so is only feasible with relatively small batches.
 64 compounds are selected this way from each batch of 512 from the filtered set, yielding `o3.csv` (1359834 data points and 908M uncompressed size).
 
-`o3.csv` was compressed with `gzip` and loaded to an area of *Linode* object storage in Frankfurt, allowing it to be easily accessible from anywhere with internet connection.
+`o3.csv` was compressed with `gzip` and loaded to an area of *Linode* object storage in Frankfurt, making it accessible to the *Linode* instances that would be used for model training.
+
+`o3.csv` contained at least on invalid SMILES or sequences which had the costly effect of crashing the first model training run.
+A filter for troublesome inputs was built and yeilded `o3f.csv` (x xMB).
