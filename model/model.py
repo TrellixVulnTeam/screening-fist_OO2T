@@ -33,6 +33,17 @@ class Skip(nn.Module):
     def forward(self, x):
         return self.bn(self.nn(x) + x)
 
+class Transformer(nn.Module):
+    def __init__(self,
+                 nheads=8,
+                 **kwargs,
+                 ):
+        super().__init__()
+        self.nn = nn.TransformerEncoderLayer(**kwargs)
+    def forward(self, x):
+        o = self.nn(x)
+        return cat([i.unsqueeze(0) for i in o])
+
 class Esm(nn.Module):
     def __init__(self,
                  *,
@@ -139,13 +150,11 @@ class Head(nn.Module):
                  ):
         super().__init__()
         self.nn = nn.Sequential(\
-                *[Skip(emb_size) for _ in range(n_layers)],
-                #*[nn.Sequential(nn.Linear(emb_size, emb_size),
-                #                nn.ReLU()) 
-                #        for _ in range(n_layers)],
+                [Skip(emb_size) for _ in range(n_layers)],
+                #*[Transformer(d_model=emb_size, nhead=8) for _ in range(n_layers)],
                 nn.Linear(emb_size, 1),
                 nn.Sigmoid(),
-                                )
+                )
     def __call__(self, seqz, fpz):
         #print({'seqz':seqz.shape, 'fpz':fpz.shape})
         #seqzz = rearrange(seqz, 'b l d -> b (l d)')
