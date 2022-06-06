@@ -140,10 +140,8 @@ class Head(nn.Module):
         super().__init__()
         self.nn = nn.Sequential(\
                 *[Skip(emb_size) for _ in range(n_layers)],
-                #*[nn.Sequential(nn.Linear(emb_size, emb_size),
-                #                nn.ReLU()) 
-                #        for _ in range(n_layers)],
                 nn.Linear(emb_size, 1),
+                nn.BatchNorm1d(1),
                 nn.Sigmoid(),
                                 )
     def __call__(self, seqz, fpz):
