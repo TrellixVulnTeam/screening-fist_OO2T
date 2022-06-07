@@ -63,9 +63,6 @@ def train(model,
                                  })
                 if not args.test:
                     wandb.log({'loss':loss.detach().cpu().item(), })
-                wandb.log({'epoch':epoch,
-                          'loss':loss.detach().cpu().item(),
-                           })
                 if i % 2048 == 0:
                     if save_path is not None:
                         torch.save(model.state_dict(), 
@@ -172,6 +169,7 @@ def main(args):
                             ),
                   head=Head(emb_size=args.emb_size_head,
                             n_layers=args.n_layers_head,
+                            layer={True:'transformer', False:'linear'}[args.transformer],
                             )
                   )
     if args.cuda:
@@ -215,6 +213,7 @@ if __name__ == '__main__':
     parser.add_argument('--cuda', action='store_true')
     parser.add_argument('--wandb', action='store_true')
     parser.add_argument('--test', action='store_true')
+    parser.add_argument('--transformer', action='store_true')
     # Head
     parser.add_argument('--emb_size_head', default=192, type=int)
     parser.add_argument('--n_layers_head', default=4, type=int)

@@ -33,6 +33,20 @@ class Skip(nn.Module):
     def forward(self, x):
         return self.bn(self.nn(x) + x)
 
+class Transformer(nn.Module):
+    def __init__(self,
+                 d_model,
+                 nhead=8,
+                 **kwargs,
+                 ):
+        super().__init__()
+        self.nn = nn.TransformerEncoderLayer(d_model=d_model,
+                                             nhead=nhead,
+                                             **kwargs)
+    def forward(self, x):
+        o = self.nn(x)
+        return cat([i.unsqueeze(0) for i in o])
+
 class Esm(nn.Module):
     def __init__(self,
                  *,
@@ -138,10 +152,17 @@ class Head(nn.Module):
                  *,
                  emb_size=96,
                  n_layers=3,
+                 layer='linear',
+                 nhead=8,
                  ):
         super().__init__()
+        mklayer = {'linear':lambda emb_size : Skip(emb_size),
+                   'transformer': lambda emb_size : Transformer(d_model=emb_size,
+                                                                nhead=nhead),
+                   }[layer]
+
         self.nn = nn.Sequential(\
-                *[Skip(emb_size) for _ in range(n_layers)],
+                *[mklayer(emb_size) for _ in range(n_layers)],
                 nn.Linear(emb_size, 1),
                 nn.BatchNorm1d(1),
                 nn.Sigmoid(),
