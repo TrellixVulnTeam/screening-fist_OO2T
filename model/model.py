@@ -45,6 +45,7 @@ class Esm(nn.Module):
         self.batch_converter = self.alphabet.get_batch_converter()
 
     def __call__(self, seq):
+        device = next(self.model.parameters()).device
         if isinstance(seq, str): # single prediction
             x = LongTensor(self.alphabet.encode(seq))
         elif isinstance(seq, (list, tuple)): # batch, flat list
@@ -54,6 +55,7 @@ class Esm(nn.Module):
             x = seq.int()
         else:
             raise Warning(f"input types: str, list, tuple.\n{type(seq)}")
+        x = x.to(device)
         return self.forward(x)
     def forward(self, x):
         return self.model(x)['logits'] # size : b l d=35
