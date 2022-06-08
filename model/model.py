@@ -42,10 +42,12 @@ class Transformer(nn.Module):
         super().__init__()
         self.nn = nn.TransformerEncoderLayer(d_model=d_model,
                                              nhead=nhead,
+                                             batch_first=True,
                                              **kwargs)
+        self.bn = nn.BatchNorm1d(d_model)
     def forward(self, x):
         o = self.nn(x)
-        return cat([i.unsqueeze(0) for i in o])
+        return self.bn(cat([i.unsqueeze(0) for i in o]))
 
 class Esm(nn.Module):
     def __init__(self,

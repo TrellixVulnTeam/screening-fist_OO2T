@@ -63,11 +63,6 @@ def train(model,
                                  })
                 if not args.test:
                     wandb.log({'loss':loss.detach().cpu().item(), })
-                if i % 2048 == 0:
-                    if save_path is not None:
-                        torch.save(model.state_dict(), 
-                                   os.path.join(save_path, 
-                               f"{save_path.split('/')[-1]}_e{epoch}.pt"))
             if save_path is not None:
                 torch.save(model.state_dict(), 
                            os.path.join(save_path, 
@@ -172,6 +167,10 @@ def main(args):
                             layer={True:'transformer', False:'linear'}[args.transformer],
                             )
                   )
+
+    if args.load is not None:
+        model.load_state_dict(torch.load(args.load))
+
     if args.cuda:
         model = model.cuda()
 
@@ -226,6 +225,7 @@ if __name__ == '__main__':
     parser.add_argument('--kernel_size_pool', default=9, type=int)
     parser.add_argument('--stride_pool', default=3, type=int)
     parser.add_argument('--lstm_hs_pool', default=32, type=int)
+    parser.add_argument('--load')
     args = parser.parse_args()
     assert args.input is not None
     assert os.path.isfile(args.input)
