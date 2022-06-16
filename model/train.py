@@ -13,8 +13,8 @@ from einops import rearrange, repeat
 import wandb
 from sklearn.metrics import confusion_matrix, precision_recall_curve, roc_curve, det_curve, average_precision_score
 
-from data import Data, DataTensors
-from model import Model, Esm, Head, Fpnn, SeqPool
+from data import Data, DataTensors, DataEmbeddings2
+from model import Model, Model2, Esm, Head, Fpnn, SeqPool
 
 def train(model, 
           data_loader, 
@@ -43,7 +43,9 @@ def train(model,
             for i, (seq_, fingerprints_, hit_) in enumerate(bar):
                 if cuda:
                     seq_, fingerprints_, hit_ = seq_.cuda(), fingerprints_.cuda(), hit_.cuda()
-                seq = rearrange(seq_, 'b1 b2 l -> (b1 b2) l')
+                #seq = rearrange(seq_, 'b1 b2 l -> (b1 b2) l') # raw tensors
+                seq = rearrange(seq_, 'b1 b2 l d -> (b1 b2) l d') # embeddings
+                seq = seq_
                 fingerprints = rearrange(fingerprints_, 'b1 b2 l -> (b1 b2) l')
                 hit = rearrange(hit_, 'b1 b2 -> (b1 b2)')
                 yh = model(seq, fingerprints) # seq should be repeats, does it cache?
@@ -133,25 +135,31 @@ def test(model,
 
 def main(args):
                
-    data = DataTensors(args.input, 
-                       test=args.test, 
-                       n_non_binders=3)
+    #data = DataTensors(args.input, 
+    #                   test=args.test, 
+    #                   n_non_binders=3)
     #data = Data(args.input, test=True)
+    data = DataEmbeddings2(args.input, 
+                           embeddings_dir='embeddings', 
+                           max_seq_len=800,
+                           test=args.test, 
+                           n_non_binders=3,
+                           cuda=args.cuda,
+                           )
     a = len(data) // 4
     train_data, test_data = random_split(data, (len(data)-a, a))
     train_loader = DataLoader(train_data,
                               batch_size=args.batch_size,
                               shuffle=True,
-                              num_workers=1,
+                              num_workers=8,
                               )
     test_loader = DataLoader(test_data,
                              batch_size=args.batch_size,
                              shuffle=True,
-                             num_workers=1,
+                             num_workers=8,
                              )
 
-    model = Model(esm=Esm(model=args.esm),
-                  seqpool=SeqPool(conv_channels=35,
+    model = Model2(seqpool=SeqPool(conv_channels=35,
                                   num_conv_layers=args.num_conv_layers_pool,
                                   kernel_size=args.kernel_size_pool,
                                   stride=args.stride_pool,
@@ -167,6 +175,23 @@ def main(args):
                             layer={True:'transformer', False:'linear'}[args.transformer],
                             )
                   )
+    #model = Model(esm=Esm(model=args.esm),
+    #              seqpool=SeqPool(conv_channels=35,
+    #                              num_conv_layers=args.num_conv_layers_pool,
+    #                              kernel_size=args.kernel_size_pool,
+    #                              stride=args.stride_pool,
+    #                              num_lstm_layers=args.num_lstm_layers_pool,
+    #                              lstm_hs=args.lstm_hs_pool,
+    #                              ),
+    #              fpnn=Fpnn(fp_size=2048,
+    #                        emb_size=args.emb_size_fp,
+    #                        n_layers=args.n_layers_fp,
+    #                        ),
+    #              head=Head(emb_size=args.emb_size_head,
+    #                        n_layers=args.n_layers_head,
+    #                        layer={True:'transformer', False:'linear'}[args.transformer],
+    #                        )
+    #              )
 
     if args.load is not None:
         model.load_state_dict(torch.load(args.load))

@@ -119,7 +119,10 @@ class SeqPool(nn.Module):
         zh = self.forward(seqz)
         return zh
     def forward(self, z):
-        z = rearrange(z, 'b l d -> b d l')
+        if len(z.shape) == 3:
+            z = rearrange(z, 'b l d -> b d l')
+        elif len(z.shape) == 4:
+            z = rearrange(z, 'b1 b2 l d -> (b1 b2) d l')
         output, (hn, cn) = self.nn(z)
 
         # hn shape: 
@@ -167,12 +170,9 @@ class Head(nn.Module):
                    }[layer]
 
         self.nn = nn.Sequential(\
-<<<<<<< HEAD
-                [Skip(emb_size) for _ in range(n_layers)],
+                *[Skip(emb_size) for _ in range(n_layers)],
                 #*[Transformer(d_model=emb_size, nhead=8) for _ in range(n_layers)],
-=======
                 *[mklayer(emb_size) for _ in range(n_layers)],
->>>>>>> acc1da3e185f216fb831c0e0766ba965ef3dff96
                 nn.Linear(emb_size, 1),
                 nn.BatchNorm1d(1),
                 nn.Sigmoid(),
@@ -218,6 +218,37 @@ class Model(nn.Module):
         seqz = self.esm(seq) 
         seqzz = self.seqpool(seqz)
         #print({'seqz':seqz.shape,'seqzz':seqzz.shape, 'fpz':fpz.shape})
+        yh = self.head(seqzz, fpz)
+        return yh
+
+class Model2(nn.Module):
+    '''
+    no esm - just takes in precomputed embeddings
+    '''
+    def __init__(self,
+                 *,
+                 seqpool=SeqPool(input_channels=35,
+                                 conv_channels=35,  
+                                 num_conv_layers=3,
+                                 kernel_size=9,
+                                 stride=3,
+                                 num_lstm_layers=2,
+                                 lstm_hs=32,
+                                 ),
+                 fpnn=Fpnn(fp_size=2048,
+                           emb_size=32,
+                           ),
+                 head=Head(emb_size=96,
+                           n_layers=3,
+                           ),
+                 ):
+        super().__init__()
+        self.seqpool = seqpool
+        self.fpnn = fpnn
+        self.head = head
+    def __call__(self, seqz, fp):
+        fpz = self.fpnn(fp)
+        seqzz = self.seqpool(seqz)
         yh = self.head(seqzz, fpz)
         return yh
 

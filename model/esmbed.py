@@ -41,14 +41,15 @@ def main(args):
     esm.cuda()
     for arg in args:
         df = pd.read_csv(arg)
+        # 800 is about all i can get away with on an RTX6000
         seq = [i for i in df['seq'].unique() if len(i) <= 800]
         data = Data(seq)
-        loader = DataLoader(data, batch_size=16)
+        loader = DataLoader(data, batch_size=16, num_workers=3)
         for batch in tqdm(loader):
             hashes = [hashfn(i) for i in batch]
             labels, sequences, tensors = bc(list(zip(hashes, batch)))
             tensors_ = cat([i.unsqueeze(0) for i in tensors])
-            emb = esm(sequences)
+            emb = esm(sequences).detach().cpu()
             for i,j in zip(emb, hashes):
                 torch.save(i, os.path.join(odir, j +'.pt'))
 

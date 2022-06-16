@@ -66,7 +66,8 @@ class Data(Dataset):
         self.path = path
         self.test = test
         self.n_non_binders = n_non_binders
-        self.proc(max_seq_len=max_seq_len)
+        self.max_seq_len = max_seq_len
+        self.proc()
     def __len__(self):
         return len(self.seq)
     def __getitem__(self, idx):
@@ -84,14 +85,12 @@ class Data(Dataset):
             return self.seq[idx], self.smiles[idx], self.hit[idx]
     def __repr__(self):
         return f"Dataset, {self.__len__()}"
-    def proc(self, max_seq_len=None):
+    def proc(self):
         if self.test:
             df = pd.read_csv(self.path, nrows=2048)
         else:
             df = pd.read_csv(self.path)
-        if max_seq_len is not None:
-            assert isinstance(max_seq_len, int)
-            df = df.loc[df['seq'].str.len() <= max_seq_len, :]
+        df = df.loc[df['seq'].str.len() <= self.max_seq_len, :]
         self.seq = list(df['seq'].str.upper())
         self.smiles = list(df['smiles'])
         self.hit = list(df['hit'].fillna(False).astype(int))
@@ -114,8 +113,7 @@ class DataTensors(Data):
         super().__init__(path=path, test=test, max_seq_len=max_seq_len, **kwargs)
         self.path = path
         self.test = test
-        self.max_seq_len = max_seq_len
-        self.proc(max_seq_len=max_seq_len)
+        self.proc()
         self.abc = Alphabet(TOKS)
     def __len__(self):
         return len(self.seq)
@@ -225,7 +223,6 @@ class DataEmbeddings2(Data):
         super().__init__(path=path, test=test, max_seq_len=max_seq_len, **kwargs)
         self.cuda = cuda
         self.quiet = quiet
-        self.max_seq_len = max_seq_len
         self.embeddings_dir = embeddings_dir
         self.embeddings = {i.split('.')[0]:os.path.join(embeddings_dir, i) 
                             for i in os.listdir(self.embeddings_dir)}
@@ -237,12 +234,7 @@ class DataEmbeddings2(Data):
     def __getitem__(self, idx):
         seq_hash = self.hashfn(self.seq[idx])
         embed_path = self.embeddings[seq_hash]
-        if self.cuda:
-            embedding = torch.load(embed_path)
-            embedding = self.padfnc(embedding)
-        else:
-            embedding = torch.load(embed_path, map_location=torch.device('cpu'))
-            embedding = self.padfn(embedding)
+        embedding = self.padfn(torch.load(embed_path).detach()).unsqueeze(0)
         fpx = smiles_fp(self.smiles[idx])
         hitx = FloatTensor([self.hit[idx]])
         seqfs = []
@@ -265,14 +257,17 @@ def test(args):
     from torch.utils.data import DataLoader
     for arg in args:
         data = DataEmbeddings2(arg, 
-                               embeddings_dir='seq-smiles-embeds', 
+                               embeddings_dir='embeddings', 
                                test=False,
                                cuda=False,
                                quiet=True,
+                               max_seq_len=800,
                                )
         print(len(data))
+        print(max(map(len, data.seq)))
         data_loader = DataLoader(data,
                                  batch_size=32,
+                                 num_workers=4,
                                  )
         #data = DataTensors(arg, test=True)
         for seq, smiles, hit in tqdm(data_loader):
