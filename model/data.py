@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 import sys
+import os
+from hashlib import md5
 import random
 from functools import lru_cache
 from tqdm import tqdm
@@ -147,14 +149,83 @@ class DataTensors(Data):
     #    assert len(self.seq) == len(self.smiles)
 
 
+class DataEmbeddings(Data):
+    def __init__(self,
+                 path,
+                 embeddings_dir,
+                 test=False,
+                 cuda=True,
+                 max_seq_len=512,
+                 quiet=False,
+                 **kwargs,
+                 ):
+        super().__init__(path=path, test=test, max_seq_len=max_seq_len, **kwargs)
+        if cuda:
+            self.embeds = {i.split('.')[0]:torch.load(os.path.join(embeddings_dir, i)) \
+                            for i in os.listdir(embeddings_dir)}
+        else:
+            self.embeds = {i.split('.')[0]:torch.load(os.path.join(embeddings_dir, i),
+                                                      map_location=torch.device('cpu')) \
+                            for i in os.listdir(embeddings_dir)}
+        self.max_seq_len = max_seq_len
+        self.cuda = cuda
+        self.hashfn = lambda s : md5(s.encode()).hexdigest()
+
+        fails = []
+        for i in set(self.seq):
+            seq_hash = self.hashfn(i)
+            if seq_hash not in self.embeds.keys():
+                fails.append(i)
+        if not quiet:
+            if len(fails) > 0:
+                raise Warning(f"Not all sequences embedded:\n{fails}")
+        else:
+            for i,j,k in zip(self.seq, self.smiles, self.hit):
+                if i in fails:
+                    self.seq.remove(i)
+                    self.smiles.remove(j)
+                    self.hit.remove(k)
+    def __len__(self):
+        return len(self.seq)
+    def __getitem__(self, idx):
+        pad = lambda x, l : cat([x, zeros(self.max_seq_len+1-x.shape[0], x.shape[1])])
+        seq_hash = self.hashfn(self.seq[idx])
+        seqemb = self.embeds[seq_hash]
+        seqx = pad(seqemb, self.max_seq_len)
+        fpx = smiles_fp(self.smiles[idx])
+        if isinstance(self.hit[idx], (bool, str, int)):
+            hitx = FloatTensor([self.hit[idx]])
+        else:
+            pass 
+        seqfs = []
+        fpfs = []
+        for i in range(self.n_non_binders):
+            i, j = random.randint(0, self.__len__()-1), \
+                    random.randint(0, self.__len__()-1), 
+            #seqf = pad(Tensor(self.abc.encode(self.seq[i])), 
+            #           self.max_seq_len).unsqueeze(0)
+            #seqfs.append(seqf)
+            seqfs.append(seqx) # new - duplicating, lru_cache work?
+            fpfs.append(smiles_fp(self.smiles[j]).unsqueeze(0))
+        seqx = cat([seqx, *seqfs], dim=0)
+        fpx = cat([fpx.unsqueeze(0), *fpfs], dim=0)
+        hitx = cat([hitx, zeros(len(seqfs))], dim=0)
+        return seqx, fpx, hitx
+
 @lru_cache(128)
 def smiles_fp(smiles):
     return torch.Tensor(Chem.RDKFingerprint(Chem.MolFromSmiles(smiles))).float()
 
-def main(args):
+def test(args):
     from torch.utils.data import DataLoader
     for arg in args:
-        data = DataTensors(arg, test=False)
+        data = DataEmbeddings(arg, 
+                              embeddings_dir='seq-smiles-embeds', 
+                              test=False,
+                              cuda=False,
+                              quiet=True,
+                              )
+        print(len(data))
         data_loader = DataLoader(data,
                                  batch_size=32,
                                  )
@@ -162,7 +233,8 @@ def main(args):
         for seq, smiles, hit in tqdm(data_loader):
             #fp = smiles_fp(smiles)
             #print(seq, smiles, hit)
+            #print(seq.shape, smiles.shape, hit.shape)
             pass
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    test(sys.argv[1:])

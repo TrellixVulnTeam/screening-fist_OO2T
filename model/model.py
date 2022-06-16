@@ -39,10 +39,18 @@ class Transformer(nn.Module):
                  **kwargs,
                  ):
         super().__init__()
-        self.nn = nn.TransformerEncoderLayer(**kwargs)
+        #self.nn = nn.TransformerEncoderLayer(**kwargs)
+        self.nn = nn.TransformerEncoderLayer(d_model=d_model,
+                                             nhead=nhead,
+                                             batch_first=True,
+                                             **kwargs)
+        self.bn = nn.BatchNorm1d(d_model)
+    #def forward(self, x):
+    #    o = self.nn(x)
+    #    return cat([i.unsqueeze(0) for i in o])
     def forward(self, x):
         o = self.nn(x)
-        return cat([i.unsqueeze(0) for i in o])
+        return self.bn(cat([i.unsqueeze(0) for i in o]))
 
 class Esm(nn.Module):
     def __init__(self,
@@ -149,12 +157,24 @@ class Head(nn.Module):
                  *,
                  emb_size=96,
                  n_layers=3,
+                 layer='linear',
+                 nhead=8,
                  ):
         super().__init__()
+        mklayer = {'linear':lambda emb_size : Skip(emb_size),
+                   'transformer': lambda emb_size : Transformer(d_model=emb_size,
+                                                                nhead=nhead),
+                   }[layer]
+
         self.nn = nn.Sequential(\
+<<<<<<< HEAD
                 [Skip(emb_size) for _ in range(n_layers)],
                 #*[Transformer(d_model=emb_size, nhead=8) for _ in range(n_layers)],
+=======
+                *[mklayer(emb_size) for _ in range(n_layers)],
+>>>>>>> acc1da3e185f216fb831c0e0766ba965ef3dff96
                 nn.Linear(emb_size, 1),
+                nn.BatchNorm1d(1),
                 nn.Sigmoid(),
                 )
     def __call__(self, seqz, fpz):
