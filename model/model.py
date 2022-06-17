@@ -35,7 +35,8 @@ class Skip(nn.Module):
 
 class Transformer(nn.Module):
     def __init__(self,
-                 nheads=8,
+                 d_model,
+                 nhead=8,
                  **kwargs,
                  ):
         super().__init__()
@@ -164,13 +165,13 @@ class Head(nn.Module):
                  nhead=8,
                  ):
         super().__init__()
-        mklayer = {'linear':lambda emb_size : Skip(emb_size),
-                   'transformer': lambda emb_size : Transformer(d_model=emb_size,
-                                                                nhead=nhead),
+        mklayer = {\
+           'linear':lambda emb_size : Skip(emb_size),
+           'transformer': lambda emb_size : Transformer(d_model=emb_size, nhead=nhead),
                    }[layer]
 
         self.nn = nn.Sequential(\
-                *[Skip(emb_size) for _ in range(n_layers)],
+                #*[Skip(emb_size) for _ in range(n_layers)],
                 #*[Transformer(d_model=emb_size, nhead=8) for _ in range(n_layers)],
                 *[mklayer(emb_size) for _ in range(n_layers)],
                 nn.Linear(emb_size, 1),

@@ -11,7 +11,7 @@ dependencies:
   - brotlipy=0.7.0=py37h27cfd23_1003
   - bzip2=1.0.8=h7b6447c_0
   - ca-certificates=2022.4.26=h06a4308_0
-  - cairo=1.16.0=hf32fb01_1
+  - cairo=1.16.0=h19f5f5c_2
   - certifi=2022.5.18.1=py37h06a4308_0
   - cffi=1.15.0=py37hd667e15_1
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
@@ -56,8 +56,8 @@ dependencies:
   - ncurses=6.3=h7f8727e_2
   - nettle=3.7.3=hbbd107a_1
   - numexpr=2.8.1=py37h6abb31d_0
-  - numpy=1.21.5=py37he7a7128_2
-  - numpy-base=1.21.5=py37hf524024_2
+  - numpy=1.21.5=py37h6c91a56_3
+  - numpy-base=1.21.5=py37ha15fc14_3
   - openh264=2.1.1=h4ff587b_0
   - openssl=1.1.1o=h7f8727e_0
   - packaging=21.3=pyhd3eb1b0_0
@@ -75,14 +75,14 @@ dependencies:
   - python-dateutil=2.8.2=pyhd3eb1b0_0
   - pytorch=1.11.0=py3.7_cuda11.3_cudnn8.2.0_0
   - pytorch-mutex=1.0=cuda
-  - pytz=2021.3=pyhd3eb1b0_0
+  - pytz=2022.1=py37h06a4308_0
   - rdkit=2020.09.1.0=py37hd50e099_1
   - readline=8.1.2=h7f8727e_1
   - requests=2.27.1=pyhd3eb1b0_0
   - setuptools=61.2.0=py37h06a4308_0
   - six=1.16.0=pyhd3eb1b0_1
   - sqlite=3.38.3=hc218d9a_0
-  - tk=8.6.11=h1ccaba5_1
+  - tk=8.6.12=h1ccaba5_0
   - torchaudio=0.11.0=py37_cu113
   - torchvision=0.12.0=py37_cu113
   - typing_extensions=4.1.1=pyh06a4308_0
@@ -126,7 +126,7 @@ dependencies:
     - threadpoolctl==3.1.0
     - tqdm==4.64.0
     - traitlets==5.2.2.post1
-    - wandb==0.12.17
+    - wandb==0.12.18
     - wcwidth==0.2.5
     - zipp==3.8.0
-prefix: /home/u0/miniconda3/envs/nn
+prefix: /home/user/miniconda3/envs/nn

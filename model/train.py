@@ -82,7 +82,8 @@ def test(model,
         for seq_, fingerprints_, hit_ in tqdm(data_loader):
             if cuda:
                 seq_, fingerprints_, hit_ = seq_.cuda(), fingerprints_.cuda(), hit_.cuda()
-            seq = rearrange(seq_, 'b1 b2 l -> (b1 b2) l')
+            #seq = rearrange(seq_, 'b1 b2 l -> (b1 b2) l')
+            seq = rearrange(seq_, 'b1 b2 l d -> (b1 b2) l d') # embeddings
             fingerprints = rearrange(fingerprints_, 'b1 b2 l -> (b1 b2) l')
             hit = rearrange(hit_, 'b1 b2 -> (b1 b2)')
             yh = model(seq, fingerprints)
