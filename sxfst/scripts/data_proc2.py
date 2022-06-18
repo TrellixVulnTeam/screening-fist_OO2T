@@ -15,6 +15,11 @@ plt.style.use('dark_background')
 from sxfst.utils import PlateData, find, grep
 from sxfst.data import smooth, is_anomaly, diff, c2
 
+'''
+Data processing script,
+reads experminet run config, picks out experiments and plots,
+also outputs combined traces to a single csv in stdout for analysis
+'''
 
 class Config:
     def __init__(self, path=None, data=None):

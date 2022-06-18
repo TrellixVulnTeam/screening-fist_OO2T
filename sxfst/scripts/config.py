@@ -6,6 +6,11 @@ import yaml
 from pprint import pprint
 import argparse
 
+'''
+generates a config.yml for an experiment, limited reliability because of
+my incosnsistent filing methods.
+'''
+
 NPLATES_PER_RUN = 15
 
 def contains(regex, string, **kwargs):
