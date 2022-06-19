@@ -14,6 +14,14 @@ from scipy.ndimage import convolve1d
 
 import sxfst
 
+'''
+Data analysis script;
+takes an input --root (directory) containing preprocessed traces
+in csv(s) a la data_proc2.py.
+
+outputs metrics and optionally plots too.
+'''
+
 def get_experiment(df, 
                    protein, 
                    compound):
@@ -274,9 +282,14 @@ def main(args):
                                **extra_metrics,
                                }
                 odf = pd.DataFrame({0:output_data}).T
+                odf = odf.loc[:,['cpd','protein','km','vmax','rsq']]
 
                 if args.stdout:
-                    odf.to_csv(sys.stdout)
+                    if not header_done:
+                        odf.to_csv(sys.stdout, index=False)
+                        header_done = True
+                    else:
+                        odf.to_csv(sys.stdout, index=False, header=False)
                 elif args.file_out:
                     if not header_done:
                         odf.to_csv(os.path.join(args.out, args.file_out), index=False)

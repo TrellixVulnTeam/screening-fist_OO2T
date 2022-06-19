@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# prototype script to analyse experimental results
+# Inconsistent directory structure so theres some stuff to deal with that
+# runs data_proc.py - which only extracts traces and matches them up to compounds
+# 
+
+
 ./config.py -i ../../lab/01.0/ > ../../lab/01.0/config.yml
 ./config.py -i ../../lab/02.0/ > ../../lab/02.0/config.yml
 

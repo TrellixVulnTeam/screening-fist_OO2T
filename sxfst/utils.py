@@ -339,7 +339,8 @@ def plot_set(wells, title=''):
                                1, 
                                figsize=(6,16))
     else:
-        fig, ax = plt.subplots(len(wells)//(nRows:=8), 
+        nRows=8
+        fig, ax = plt.subplots(len(wells)//nRows, 
                                nRows, 
                                figsize=(16,128*(len(wells) / len(wells))))
 
