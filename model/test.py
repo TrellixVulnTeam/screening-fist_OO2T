@@ -77,7 +77,7 @@ def test(model,
          }
     if not os.path.exists(output):
         os.makedirs(output)
-    with open(os.path.join(output, 'test.json'), 'w') as f:
+    with open(os.path.join(output, 'val.json'), 'w') as f:
         json.dump(d, f)
 
 def main(args):

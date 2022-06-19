@@ -144,7 +144,7 @@ def main(args):
                            embeddings_dir='embeddings', 
                            max_seq_len=800,
                            test=args.test, 
-                           n_non_binders=3,
+                           n_non_binders=args.n_non_binders,
                            cuda=args.cuda,
                            )
     a = len(data) // 4
@@ -233,6 +233,7 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input')
     parser.add_argument('-b', '--batch_size', default=2, type=int)
     parser.add_argument('-e', '--epochs', default=8, type=int)
+    parser.add_argument('-n', '--n_non_binders', default=2, type=int)
     parser.add_argument('-l', '--lr', default=1e-6, type=float)
     parser.add_argument('--esm', default='esm1_t6_43M_UR50S')
     parser.add_argument('--cuda', action='store_true')
