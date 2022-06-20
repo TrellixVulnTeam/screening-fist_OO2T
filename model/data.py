@@ -86,10 +86,14 @@ class Data(Dataset):
     def __repr__(self):
         return f"Dataset, {self.__len__()}"
     def proc(self):
+        if 'csv' in self.path:
+            delim = ','
+        elif 'tsv' in self.path:
+            delim = '\t'
         if self.test:
-            df = pd.read_csv(self.path, nrows=2048)
+            df = pd.read_csv(self.path, nrows=2048, delimiter=delim)
         else:
-            df = pd.read_csv(self.path)
+            df = pd.read_csv(self.path, delimiter=delim)
         df = df.loc[df['seq'].str.len() <= self.max_seq_len, :]
         self.seq = list(df['seq'].str.upper())
         self.smiles = list(df['smiles'])
