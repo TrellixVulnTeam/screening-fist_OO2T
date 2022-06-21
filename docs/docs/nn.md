@@ -92,6 +92,31 @@ It currently contains five tasks:
 4. **Flourescent Protein Landscape Prediction:**
 5. **Protein Stability Landscape Prediction:**
 
+Tasks 4 and 5 are most applicable to protein eningeering, since they involve metric prediction from a set of largely similar protein sequences.
+The leaderboards for performance on these two tasks as of 5 Jun 2022 are:
+
+##### Fluorescence
+
+| Ranking | Model | Spearman's rho |
+|:-:|:-:|:-:|
+| 1. | Transformer | 0.68 |
+| 2. | LSTM | 0.67 |
+| 2. | Unirep | 0.67 |
+| 4. | Bepler | 0.33 |
+| 5. | ResNet | 0.21 |
+| 6. | One Hot | 0.14 |
+
+##### Stability
+
+| Ranking | Model | Spearman's rho |
+|:-:|:-:|:-:|
+| 1. | Transformer | 0.73 |
+| 1. | Unirep | 0.73 |
+| 1. | ResNet | 0.73 |
+| 4. | LSTM | 0.69 |
+| 5. | Bepler | 0.64 |
+| 6. | One Hot | 0.19 |
+
 #### Facebook AI Research - Evolutionary-Scale Modelling
 [@rives2021biological]
 
@@ -143,10 +168,65 @@ h1 --> o1(Output Prediction) ;
 ```
 
 ### Sequence Embedding
+
+Sequences were embedded using the pre-trained `esm1_t6_43M_UR50S` model [@rives2021biological], which receives an input of a tokenized protein sequence and outputs a tensor of size $b l d$ where $b$ is batch size, $l$ is sequence length and $d$ is 35.
+
+Although this model is the smallest of the ESM collection, on the single *NVIDIA Quadro RTX 6000* used it still occupied most of the 24 GB of available memory and most of the processing capability, which lead to long training times and difficulty in training more than one model in parallel on the same machine.
+
+This could be remedied, however since in the complete `o3f.csv` dataset and the screening dataset there are 2947 unique sequences, so it was economical to pre-compute the embeddings and save them to disk.
+This resulted in a roughly 4$x$ speedup in training time and massively reduced the memory requirements, allowing several models to be trained in parallel on a single GPU.
+This also saved costs significantly.
+
 ### Chemical Embedding
+
+As mentioned, chemical SMILES were hashed into chemical fingerprints using the `rdkit` `RDKFingerprint` method as a means of representation, yielding a 2048-bit vector for each compound.
+The vectors were converted to tensors and served as an input to a residual neural network that output an embedding that would later be used to form a combined representation of both compound and sequence for binding likelihood prediction.
+
 ### Prediction Head
 
-## Training
+The combined sequence and compound embeddings served as input to the prediction head, which output a single number that indicated a binding likelihood prediction for the two inputs.
+
+Both residual neural networks and transformers were compared as prediction head architectures.
+Each consisted of 2-6 stacked layers of either residual or transformer layers with a fixed hidden layer size for convenience of automated assembly.
+The final layer in both cases was a single linear layer with a single output and a sigmoid function to output a number between 0 and 1 representing binding probability.
+
+## Pre-Training, Training and Evaluation
+
+Training was done in two stages, each with a performance evaluation, during which several models with varying architectures and hyper-parameters were trained and compared.
+All training was done on a *Linode* `g1-gpu-rtx6000-1` which cost \$1.50 per hour and was equipped with the following hardware specifications:
+
+| Item | Specifications | Number | Size | 
+|------|----------------|--------|------|
+| CPU  | Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz | 8 |
+| RAM  | ?  | N/A | 30 GB |
+| Disk | ?  | 1   | 630 GB |
+| GPU  | NVIDIA Quadro RTX 6000 | 1 | 20 GB VRAM | 
+
+1. **Pre-Training:** This was done with the larger, more general `o3f` dataset, which was randomly split into training and validation partitions, the latter of which was used sparingly to avoid model bias.
+Pre-training lasted up to 64 epochs with a batch size up to 64.
+For each sample, a random sequence and SMILES pair were sampled as a presumed negative sample.
+The loss function used was binary cross entropy used with an Adam (Adaptive momentum) optimizer.
+Loss was tracked live using the *Weights and Biases* API which was useful to evaluate models as they trained and terminate them where necessary.
+Model weights were saved in each epoch and after training the model was evaluated for precision and accuracy on a subset of the training data.
+The metrics gathered were: 
+
+	- Mean binary cross entropy loss over evaluation.
+	- Mean precision
+	- A confusion matrix
+	- A receiver operator curve (ROC)
+	- A precision recall curve
+	- A detection error trade-off (DET) curve
+
+2. **Training:** This was done with the manually annotated screening dataset.
+An issue with the data was the class imbalance in that there were very few positive examples relative to negative.
+This was addressed by using *Synthetic Minority Oversampling* (SMOTE) whereby the rarer positive data were re-sampled until they number that of the negative data.
+The total size of the re-sampled data was 6666 points, which were then split 3:1 into training and validation sets of size 4999 and 1667 respectively.
+A model pre-trained on the larger `o3f` dataset was re-trained on this set and evaluated for performance in the same manner as with the `o3f` data, visualised in the following section.
+
+
+### Evaluation
+
+## Sequence Optimization
 
 ## Active Learning
 

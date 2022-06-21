@@ -117,7 +117,7 @@ For this work, a set of large `csv` files is ok.
 	2. Smooth each trace using a Gaussian filter ($\sigma = 2$). 
 	   At low protein concentrations, the signal-noise ratio can be high, but can be adjsuted for.
 4. Quantify the enzyme response in relation to compound concentration. 
-   Traditionally, this is done by sbtracting the absorbance trace of protein with no compound from the traces with compound, which eccentuates the response - $\Delta \abs{A_{390}} + \abs{A_{420}}$, though this is not strictly necessary.
+   Traditionally, this is done by sbtracting the absorbance trace of protein with no compound from the traces with compound, which eccentuates the response - $\Delta |A_{390}| + |A_{420}|$, though this is not strictly necessary.
    This approach was problematic for this dataset due to the scattering effect that was common across wells. 
    The scattering effect increases the overall absorbance of the trace, particularly at the short wavelengths.
    The scattering effect can be described with:
@@ -132,14 +132,21 @@ For this work, a set of large `csv` files is ok.
    The new approach involves approximating the gradient of the traces at each point using a convolution of the matrix
    $[-1, 0, 1]$ across the trace.
    The gradient of each trace is invariant to absolute absorbance whilst showing changes in absorbance in the region of interest.
-   The trace gradients can be used to quantitatify the P450 response using the $\Delta \frac{\delta y}{\delta x}$ at 405 nm, between the two peaks of interest.
-5. The compound-enzyme concentration-response data can be quantified by fitting a Michaelis-Menten steady-state kinetics curve to the data points, which yields the binding metrics $K_d$ which indicates the strength of the protein-compound interaction, and $V_{max}$ which indicates the response magnitude of the enzyme to the compound. 
-For each experiment, curves were fit using `scipy.optimize.curve_fit`, which itself uses `trf?`.
+   The trace gradients can be used to quantify the P450 response using the $\Delta \frac{\delta y}{\delta x}$ at 405 nm, between the two peaks of interest.
+
+The compound-enzyme concentration-response data can be quantified by fitting a Michaelis-Menten steady-state kinetics curve to the data points, which yields the binding metrics $K_d$ which indicates the strength of the protein-compound interaction, and $V_{max}$ which indicates the response magnitude of the enzyme to the compound. 
+For each experiment, curves were fit using `scipy.optimize.curve_fit`, which itself uses `trf?` as a default optimization algorithm.
 For each curve fit, $R^2$ served as a fit quality metric.
 
-These steps were applied to each experiment, yeilding a little over 4000 data points.
+These steps were applied to each experiment using the script `sxfst/scripts/data_analysis.py`, yielding a 4110 data points, or 822 compounds screened against five BM3 mutants.
 
-That's tight
+Extracting an accurate response and fitting a Michaelis-Menten curve to each experiment was not successful with the script in its current state, though with some extra development it probably could work.
 
+## Manual Annotation
 
-### Response Qualification and Quantification 
+In lieu of accurate $K_d$ and $V_{max}$ metrics for each experiment, traces were plotted and manually annotated for hits and also for experiments where data was noisy and unusable.
+The annotations were generated using the command `sxiv -to data/out/*png > hits.txt` which allowed relatively fast processing and several passes over the data to mitigate human error as far as possible.
+
+The annotation files are in `lab/*.txt`, from which 149 hits were identified and the script `sxfst/scripts/manual-annotations.py` was used to process these results into `data/manual-annot.tsv` which contains the SMILES, the full sequence and whether or not the two appeared to bind on manual annotation.
+
+This file was used to re-train a pre-trained deep learning model for the project.
