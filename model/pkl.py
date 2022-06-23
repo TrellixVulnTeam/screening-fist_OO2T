@@ -37,8 +37,6 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--lr', default=1e-6, type=float)
     parser.add_argument('--esm', default='esm1_t6_43M_UR50S')
     parser.add_argument('--cuda', action='store_true')
-    parser.add_argument('--wandb', action='store_true')
-    parser.add_argument('--test', action='store_true')
     parser.add_argument('--transformer', action='store_true')
     # Head
     parser.add_argument('--emb_size_head', default=192, type=int)

@@ -81,5 +81,7 @@ Unfortunately, MaxMin is $O(n^2)$ complexity, so is only feasible with relativel
 
 `o3.csv` was compressed with `gzip` and loaded to an area of *Linode* object storage in Frankfurt, making it accessible to the *Linode* instances that would be used for model training.
 
-`o3.csv` contained at least on invalid SMILES or sequences which had the costly effect of crashing the first model training run.
+`o3.csv` contained at least one invalid SMILES or sequences which had the costly effect of crashing the first model training run.
 A filter for troublesome inputs was built and yeilded `o3f.csv` (x xMB).
+and
+For the purposes of model training and evaluation, the `o3f.csv` dataset was split 3:1 into a training and test datasets  `o3f.train.csv` and `o3f.test.csv` of sizes 907214 and 226804 respectively.

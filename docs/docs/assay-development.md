@@ -20,7 +20,6 @@ The technique consists of the purified Cytochrome P450 heme domain in question i
 Since only the heme-containing domain of the P450 is used, no chemical reactions are expected to take place which removes time-sensitivity from the assay.
 
 
-
 The UV-visible light absorbance of the sample is typically measured for all wavelengths between 200 and 800 nm, which for a P450 without a ligand bound in the active site should show a large and defined absorbance peak at around 420 nm.
 
 After an initial absorbance measurement of the ligind-free P450, the compound of interest can be titrated into the sample.
@@ -50,18 +49,20 @@ This yields the formula:
 
 $$\Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
 
+or
+
+$$ Response = V_{max} \frac{[S]}{[S] + K_d} $$
+
+
 
 !!! todo
-	- reference this
+	- reference 
 	- figure
-	- apply to example?
 
-## Early Iterations
+This style of assay was miniaturized into a 384-well format for the purpose of this project.
+The 384-well format permits high throughput screening of compounds for binding with a given P450 provided it is sufficiently stable to last the duration of the experiment without degrading and interfering with measurement.
 
-- compound dispensing
-- buffer conditions
-- echo
-- `echo`
+## 384-Well Assay
 
-## Refinement
-
+!!! warning
+	risk re-hashing protocol

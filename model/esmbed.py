@@ -40,7 +40,10 @@ def main(args):
     esm = Esm()
     esm.cuda()
     for arg in args:
-        df = pd.read_csv(arg)
+        if 'csv' in arg:
+            df = pd.read_csv(arg)
+        elif 'tsv' in arg:
+            df = pd.read_csv(arg, delimiter='\t')
         # 800 is about all i can get away with on an RTX6000
         seq = [i for i in df['seq'].unique() if len(i) <= 800]
         data = Data(seq)

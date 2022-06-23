@@ -4,6 +4,7 @@ import argparse
 from tqdm import tqdm
 import json
 from pprint import pprint
+import pickle as pkl
 
 import torch
 import torch.nn as nn
@@ -160,42 +161,26 @@ def main(args):
                              num_workers=8,
                              )
 
-    model = Model2(seqpool=SeqPool(conv_channels=35,
-                                  num_conv_layers=args.num_conv_layers_pool,
-                                  kernel_size=args.kernel_size_pool,
-                                  stride=args.stride_pool,
-                                  num_lstm_layers=args.num_lstm_layers_pool,
-                                  lstm_hs=args.lstm_hs_pool,
-                                  ),
-                  fpnn=Fpnn(fp_size=2048,
-                            emb_size=args.emb_size_fp,
-                            n_layers=args.n_layers_fp,
-                            ),
-                  head=Head(emb_size=args.emb_size_head,
-                            n_layers=args.n_layers_head,
-                            layer={True:'transformer', False:'linear'}[args.transformer],
-                            )
-                  )
-    #model = Model(esm=Esm(model=args.esm),
-    #              seqpool=SeqPool(conv_channels=35,
-    #                              num_conv_layers=args.num_conv_layers_pool,
-    #                              kernel_size=args.kernel_size_pool,
-    #                              stride=args.stride_pool,
-    #                              num_lstm_layers=args.num_lstm_layers_pool,
-    #                              lstm_hs=args.lstm_hs_pool,
-    #                              ),
-    #              fpnn=Fpnn(fp_size=2048,
-    #                        emb_size=args.emb_size_fp,
-    #                        n_layers=args.n_layers_fp,
-    #                        ),
-    #              head=Head(emb_size=args.emb_size_head,
-    #                        n_layers=args.n_layers_head,
-    #                        layer={True:'transformer', False:'linear'}[args.transformer],
-    #                        )
-    #              )
-
     if args.load is not None:
-        model.load_state_dict(torch.load(args.load))
+        with open(args.load, 'rb') as f:
+            model = pkl.load(f)
+    else:
+        model = Model2(seqpool=SeqPool(conv_channels=35,
+                                      num_conv_layers=args.num_conv_layers_pool,
+                                      kernel_size=args.kernel_size_pool,
+                                      stride=args.stride_pool,
+                                      num_lstm_layers=args.num_lstm_layers_pool,
+                                      lstm_hs=args.lstm_hs_pool,
+                                      ),
+                      fpnn=Fpnn(fp_size=2048,
+                                emb_size=args.emb_size_fp,
+                                n_layers=args.n_layers_fp,
+                                ),
+                      head=Head(emb_size=args.emb_size_head,
+                                n_layers=args.n_layers_head,
+                                layer={True:'transformer', False:'linear'}[args.transformer],
+                                )
+                      )
 
     if args.cuda:
         model = model.cuda()
@@ -233,8 +218,8 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input')
     parser.add_argument('-b', '--batch_size', default=2, type=int)
     parser.add_argument('-e', '--epochs', default=8, type=int)
-    parser.add_argument('-n', '--n_non_binders', default=2, type=int)
-    parser.add_argument('-l', '--lr', default=1e-6, type=float)
+    parser.add_argument('-n', '--n_non_binders', default=1, type=int)
+    parser.add_argument('-l', '--lr', default=1e-5, type=float)
     parser.add_argument('--esm', default='esm1_t6_43M_UR50S')
     parser.add_argument('--cuda', action='store_true')
     parser.add_argument('--wandb', action='store_true')

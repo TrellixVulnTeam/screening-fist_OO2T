@@ -10,7 +10,10 @@
 ## About
 
 Screening Fist is an enzyme:compound screening program focussed on mutants of the P450 BM3 and pharamceutical compounds.
-Binding data generated here is used to train a predictive binding model which itself is used to design subsequent screening rounds based on expected information gain.
+Binding data generated here is used to train a predictive binding model which itself is used to: 
+
+1. Predict binding likelihood between a protein sequence and a small molecule.
+2. Design subsequent screening rounds based on expected information gain.
 
 ## Contents
 
@@ -24,76 +27,3 @@ Binding data generated here is used to train a predictive binding model which it
 - [Model and Training](nn.md)
 - [Model-based Experimental Design](al.md)
 
-## Todo
-
-```mermaid
-gantt
-        title Schedule
-        %dateFormat YYYY-MM-DD
-        %%axisFormat %Y/%m/%d
-        %%axisFormat  %Y-%m-%d
-
-
-        Deadline                                : milestone deadline, 2022-06-30, 1d
-
-        section Model
-        Train Prototype                      : sxfst0, 3d
-        Dropout Inference                    : sxfst1, 3d
-	Re-Train on Screening data 		: sxfst3, after sxfst12, 2d
-	Evaluate 			: sxfst4, after sxfst3, 2d
-	Design Next Experiment 		: sxfst5, after sxfst4, 2d
-	Methods 				: sxfst2, 14d
-
-	section Screening Data
-	Michaelis Menten Metrics 	     : sxfst10, after sxfst1, 2d
-	Hit/Miss detection 	     : sxfst11, after sxfst1, 2d
-	Make Dataset    	     : sxfst12, after sxfst11, 2d
-	Methods 			:  sxfst12, 7d
-
-	section Results
-	Pre-Training Data Analysis 			:  sxfst20, 7d
-	Screening Data Analysis 			:  sxfst21, after sxfst12, 7d
-	Model Analysis 			: sxfst21, after sxfst4, 7d
-	Experiment Design Analysis 	: sxfst22, after sxfst5, 7d
-
-
-
-```
-
-## Commits
-
-``` git
-*   commit ca7fa815d9cd948179b9631a4fa6bb187a02b163
-|\  Merge: a3f124c 723f9b9
-| | Author: jamesengleback <jamesengleback@hotmail.co.uk>
-| | Date:   Sat Jun 4 09:10:38 2022 +0100
-| | 
-| |     Merge branch 'master' of https://github.com/jamesengleback/screening-fist
-| |     merging model changes with docs changes
-| | 
-| * commit 723f9b97cf6e3413b4b80f2d91b6f2b9928a50cf
-| | Author: jamesengleback <jamesengleback@hotmail.co.uk>
-| | Date:   Sat Jun 4 07:21:31 2022 +0000
-| | 
-| |     train.py: fewer saves - disk space. syntax error fix
-| | 
-* | commit a3f124c553931e32a02d2cdbdc2d690370d044b3
-|/  Author: jamesengleback <jamesengleback@hotmail.co.uk>
-|   Date:   Sat Jun 4 09:09:42 2022 +0100
-|   
-|       docs/ : nn.md - recomender systems start, index.md - gantt chart start, data-mining.md - small mod
-|   
-*   commit bc66710ccc01de1ef00f5a027a82ee641816e1de
-|\  Merge: b5f5a4d 9dbf983
-| | Author: jamesengleback <jamesengleback@hotmail.co.uk>
-| | Date:   Thu Jun 2 17:55:49 2022 +0000
-| | 
-| |     Merge branch 'master' of https://github.com/jamesengleback/screening-fist
-| |     merging onto gpu2
-| |   
-| *   commit 9dbf983e4f293e6d21758502a87cd6760e030f74
-| |\  Merge: b4d49c7 32e1b8f
-| | | Author: jamesengleback <james@engleback>
-| | | Date:   Thu Jun 2 14:34:33 2022 +0000
-...
-```

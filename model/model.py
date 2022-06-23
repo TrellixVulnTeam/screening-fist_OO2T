@@ -2,6 +2,7 @@
 import sys
 import os
 from functools import lru_cache
+import pickle as pkl
 
 from rdkit import Chem
 import torch
@@ -14,6 +15,7 @@ from einops.layers.torch import Rearrange
 import esm
 from data import Data, DataTensors
 
+@lru_cache(128)
 def fp(smiles):
     return torch.FloatTensor(\
             Chem.RDKFingerprint(Chem.MolFromSmiles(smiles))\
@@ -102,11 +104,13 @@ class SeqPool(nn.Module):
                                           out_channels=conv_channels,
                                           kernel_size=1,
                                           stride=1),
+                                nn.Dropout(0.2),
                                 nn.ReLU(),
                 *[nn.Sequential(nn.Conv1d(in_channels=conv_channels,
                                           out_channels=conv_channels,
                                           kernel_size=kernel_size,
                                           stride=stride),
+                                nn.Dropout(0.2),
                                 nn.ReLU(),)
                                 for i in range(num_conv_layers)],
                 Rearrange('b d l -> b l d'),
@@ -114,6 +118,7 @@ class SeqPool(nn.Module):
                     hidden_size=lstm_hs,
                     num_layers=num_lstm_layers,
                     batch_first=True,
+                    #dropout=0.2,
                     ),
                 )
     def __call__(self, seqz):
@@ -171,16 +176,12 @@ class Head(nn.Module):
                    }[layer]
 
         self.nn = nn.Sequential(\
-                #*[Skip(emb_size) for _ in range(n_layers)],
-                #*[Transformer(d_model=emb_size, nhead=8) for _ in range(n_layers)],
                 *[mklayer(emb_size) for _ in range(n_layers)],
                 nn.Linear(emb_size, 1),
                 nn.BatchNorm1d(1),
                 nn.Sigmoid(),
                 )
     def __call__(self, seqz, fpz):
-        #print({'seqz':seqz.shape, 'fpz':fpz.shape})
-        #seqzz = rearrange(seqz, 'b l d -> b (l d)')
         z = cat([seqz, fpz], dim=1)
         return self.forward(z)
     def forward(self, z):
@@ -251,6 +252,25 @@ class Model2(nn.Module):
         fpz = self.fpnn(fp)
         seqzz = self.seqpool(seqz)
         yh = self.head(seqzz, fpz)
+        return yh
+
+class PredModel(nn.Module):
+    '''
+    has an Esm and a pretrained model loaded from a pickle file
+
+    ---
+    args: pickle_path : path to pickled Model2
+    '''
+    def __init__(self,
+                 pickle_path,
+                 ):
+        super().__init__()
+        self.esm = Esm()
+        with open(pickle_path, 'rb') as f:
+            self.model = pkl.load(f)
+    def __call__(self, seq_tensor, fp_tensor):
+        seqz = self.esm(seq_tensor)
+        yh = self.model(seqz, fp_tensor)
         return yh
 
 def main(arg='o.csv'):

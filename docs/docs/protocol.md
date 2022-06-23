@@ -57,14 +57,21 @@ by measuring changes in the UV-Visible light absorbance profile of the P450:liga
 - **Consumables:**
 	- **BSA:** in assay buffer may have a stabilizing effect on the enzyme - which would improve time stability and reduce errors.
 	Time stability is important for scalability.
-	- **384 well *Labcyte Echo* DMSO Trays:** for control for DMSO concentration in assay wells by topping up each assay plate to a fixed concentration. 
+	- **384 well Labcyte Echo DMSO Trays:** for control for DMSO concentration in assay wells by topping up each assay plate to a fixed concentration. 
 	Around 5% is ok with BM3.
 
 ## Procedure
 
-``` mermaid
-flowchart
-````
+```mermaid
+graph TD;
+
+p1(Thaw test enzyme) --ice--> p2(measure concentration) ;
+p2 --> p3(Assay Stock Protein); 
+p4(100 mM KPi pH 7) --> p3;
+p3 --> a1(Test Plate)
+p4 --> a2(Control Plate)
+```
+
 
 ### Summary 
 
@@ -201,7 +208,7 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 		   With a set of concentration-response data points, the binding dissosciation constant $K_d$ can be calculated using the Michaelis-Menten equation for enzyme kinetics:
 
 		   $$ Response = \frac{V_{max} \times [S]}{K_{d} + [S]}$$
-		   $$ Response = |\Delta A{390}| - |\Delta A_{420}| $$
+		   $$ Response = |\Delta A_{390}| - |\Delta A_{420}| $$
 
 		   Where $[S]$ is a given substrate concentration and $V_{max}$ is the maximum response magnitude possible from the P450 being tested from this compound.
 		   The metrics $K_d$ and $V_{max}$ can be derived by fitting $|\Delta A{390}| - |\Delta A_{420}|= \frac{V_{max} \times [S]}{K_{d} + [S]}$ can be fit to the P450 substrate concentration-response  data points using a curve fit algorithm like `scipy.optimize.curve_fit`.
