@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'sxfst.blg'
+[42] biber:340> INFO - === Thu Jun 23, 2022, 16:45:04
+[50] Biber.pm:418> INFO - Reading 'sxfst.bcf'
+[87] Biber.pm:972> INFO - Found 1 citekeys in bib section 0
+[95] Biber.pm:4383> INFO - Processing section 0
+[102] Biber.pm:4574> INFO - Looking for bibtex file 'sxfst.bib' for section 0
+[103] bibtex.pm:1713> INFO - LaTeX decoding ...
+[118] bibtex.pm:1518> INFO - Found BibTeX data source 'sxfst.bib'
+[146] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[146] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[146] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[146] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[147] bbl.pm:654> INFO - Writing 'sxfst.bbl' with encoding 'UTF-8'
+[148] bbl.pm:757> INFO - Output to sxfst.bbl

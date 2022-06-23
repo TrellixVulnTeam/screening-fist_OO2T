@@ -65,7 +65,7 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 	\begin{center}
 		\caption{Fluorescence TAPE benchmark leader boards \label{tapefluor}}
 		\begin{tabular}{l|p{3cm}|l}
-			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\textbf{Size}\\
+			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\\
 		\hline 
 			 1. & Transformer & 0.68 \\
 			 2. & LSTM & 0.67 \\
@@ -80,13 +80,11 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 
 \textbf{Stability:}
 
-| Ranking | Model | Spearman's rho |
-|:-:|:-:|:-:|
 \begin{table}
 	\begin{center}
 		\caption{Stability TAPE benchmark leader boards \label{tapestab}}
 		\begin{tabular}{l|p{3cm}|l}
-			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\textbf{Size}\\
+			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\\
 		\hline 
 			 1. & Transformer & 0.73 \\
 			 1. & Unirep & 0.73 \\
@@ -122,7 +120,7 @@ The initial aims of this development work were:
 \subsubsection{Basis: UV-Visible Spectroscopy for Monitoring Cytochrome P450-Ligand Binding}
 
 The assay is based on a technique for quantifying P450-ligand interactions based on UV-visible photospectroscopy.
-The technique consists of the purified Cytochrome P450 heme domain in question in a neutral buffer at around 5-10 $\mu$ M in a optically clear cuvette.
+The technique consists of the purified Cytochrome P450 heme domain in question in a neutral buffer at around 5-10 µM in a optically clear cuvette.
 Since only the heme-containing domain of the P450 is used, no chemical reactions are expected to take place which removes time-sensitivity from the assay.
 \par
 
@@ -151,22 +149,54 @@ Important assumptions in the Michaelis-Menten model of kinetics are:
 	\item The interaction is reversible
 \end{enumerate}
 
-A variant of this model is applied to Cytochrome P450 photospectroscopy assays.
-$v$ is substituted for $\Delta A_{390} - \Delta A_{420}$ - the magnitude of the P450 response and $K_M$ is substituted for $K_d$ - the dissociation constant between the enzyme and ligand.
+A variant of this model is applied to Cytochrome P450 photospectroscopy assays, where the response to a ligand is detectable in the 390-420 nm region.
+Ligand binding to a P450 alters the electron environment in the heme, which changes the UV-Visible light absorbance profile.
+Specifically, absorbance at 420 nm is reduced and absorbance at 390 nm increases.
+
+In this case, $v$ is substituted for $\Delta A_{390} - \Delta A_{420}$ - the magnitude of the P450 response and $K_M$ is substituted for $K_d$ - the dissociation constant between the enzyme and ligand.
 This yields the formula:
 
-$$\Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
+$$ Response = \Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
 
-or
+An example of this is shown in figure \ref{arachadionictitration}, where the fatty acid arachadionic acid was titrated into a sample of P450 BM3 wild-type.
 
-$$ Response = V_{max} \frac{[S]}{[S] + K_d} $$
+\begin{figure}\label{arachadionictitration}
+	\caption{Response of P450 BM3 to Arachadionic Acid from a titration experiment, from which steady-state Michaelis-Menten kinetics can be derived.}
+	\includegraphics[width = \textwidth]{img/ArachadionicAcid.png}
+\end{figure}
 
+% -----------------
 
+\subsubsection{Development}
 
 This style of assay was miniaturized into a 384-well format for the purpose of this project.
 The 384-well format permits high throughput screening of compounds for binding with a given P450 provided it is sufficiently stable to last the duration of the experiment without degrading and interfering with measurement.
 
-\subsection{Assay Protocol}
+% echo.py
+At micro-scales, precision dispensing of both compound and protein is critical for overall assay precision.
+To achieve sufficient precision, compounds were dispensed using an \textit{Echo 550} acoustic liquid handling device, which uses ultrasound to move liquid from a source plate to a destination plate.
+In order to achieve the desired dispensing pattern, a custom python package, \texttt{echo}, was developed.
+\texttt{echo} facilitates dispensing of compounds in the gradients required by output of a picklist \texttt{csv} file that can be used directly in the \textit{Echo}.
+A critical function of this package is that it tracks the volume of compounds in the source plate, which is important in the common case that one compound must be spread over multiple wells.
+The package was indispensable in this work.
+
+
+% ThermodropMulti
+During early stages of development, an automated bulk liquid dispensing device - a \textit{ThermodropMulti} was available.
+The device uses precise peristaltic pumps to dispense a single liquid into a plate at a single volume very quickly.
+Precision in the bulk fluid volume in the plate is helpful in downstream analysis due to the consistent path lengths and concentrations in each well, something that was found to be less consistent when using a multichannel pipette to achieve the same task.
+Figure \ref{assaydevarachadionic} shows an example of both the \textit{ThermodropMulti} and \textit{Echo} being used to capture $K_d$ and $V_{max}$ for the binding interaction between P450 BM3 wild-type and arachadionic acid.
+
+\begin{figure}\label{assaydevarachadionic}
+	\caption{Michaelis-Menten steady-state kinetics of arachadionic acid and wild-type P450 BM3 captured during assay development.
+		 Notably, in this experiment both an \textit{Echo} and \textit{ThermodropMulti} were used in dispensing compound and protein respectively,
+		 which accounts for the neatness.
+		 The traces were smoothed using a Gaussian kernel to account for noise.}
+	\includegraphics[width = \textwidth]{img/assay-dev-arachadionic.png}
+\end{figure}
+
+%%%%% -----------------------
+\subsection{Assay Protocol} \label{protocol}
 
 This is a assay protocol for detecting binding interactions between a Cytochrome P450 and multiple small molecule compounds.
 The assay has demonstrated scale to a library of 980 compounds and five P450 mutants and with some small adjustments could be improved in scale and precision.
@@ -205,7 +235,7 @@ It requires purified P450 protein which limits the rate of data generation, thou
 			Used here: \textit{ThermoFisher Nunc 384 Well Plates}
 			- \textbf{384 well \textit{Labcyte Echo} source plates:} for dispensing compounds to assay plates. 
 			Used here were the \textit{Low Dead Volume (LDV)} variety, which have a working volumne of 2.5-12.5 µl, 
-			which limits compound waste compared to the standard \textit{Echo} plates (12-65 µl i think?).
+			which limits compound waste compared to the standard \textit{Echo} plates (12-65 µl).
 	\end{itemize}
 \end{itemize}
 
@@ -215,7 +245,7 @@ It requires purified P450 protein which limits the rate of data generation, thou
 		\begin{itemize}
 			\item \textbf{Bulk liquid dispensing:} can be far more accurate than a multichannel pipette when dispensing protein or buffer into wells.
 			During development, both a \textit{ThermodropMulti} peristaltic dispenser and a \textit{Hamilton Star} liquid handling robot. 
-			Both work well.
+			Both work well, though use of a bulk liquid dispensing machine is recommended given their speed, lower unit cost and lack of requirement for pipette tips.
 			\item \textbf{Microplate reader plate loader:} Autoloading plates into the reader increases throughput capacity significantly.
 			I used a \textbf{BMG ClarioStar} plate reader with a stacker module.
 		\end{itemize}
@@ -232,16 +262,16 @@ It requires purified P450 protein which limits the rate of data generation, thou
 
 
 \textbf{Summary:}
-\begin{enumerate}
-	\item \textbf{Design \textit{Echo} picklists}
-	\item \textbf{Dispense compounds into \textit{Echo} source plates}
-	\item \textbf{Dispense compounds from \textit{Echo} source plates to empty assay plates}
-	\item \textbf{Stopping point}
-	\item \textbf{Thaw purified P450 and make stock of ~ 10 $\mu$M in a neutral buffer, enough for 15.36+ ml per plate (40 $\mu$l per well)}
-	\item \textbf{Dispense the diluted protein into the assay plates, centrifuge etc}
-	\item \textbf{Capture UV-Visible light absorbance data between 220 and 800 nm from plates in a microplate reader at room temperature within 3 hours}
-	\item \textbf{Data analysis}
-\end{enumerate}
+%\begin{enumerate}
+%	\item \textbf{Design \textit{Echo} picklists}
+%	\item \textbf{Dispense compounds into \textit{Echo} source plates}
+%	\item \textbf{Dispense compounds from \textit{Echo} source plates to empty assay plates}
+%	\item \textbf{Stopping point}
+%	\item \textbf{Thaw purified P450 and make stock of ~ 10 µM in a neutral buffer, enough for 15.36+ ml per plate (40 µl per well)}
+%	\item \textbf{Dispense the diluted protein into the assay plates, centrifuge etc}
+%	\item \textbf{Capture UV-Visible light absorbance data between 220 and 800 nm from plates in a microplate reader at room temperature within 3 hours}
+%	\item \textbf{Data analysis}
+%\end{enumerate}
 
 
 
@@ -258,9 +288,9 @@ It requires purified P450 protein which limits the rate of data generation, thou
 % --- 2---- 
 \item \textbf{Dispense compounds into \textit{Echo} source plates}
 	This can be done with a multichannel pipette, and requires one tip per compound. 
-		If the total volume of each compound required is greater than 60 $\mu$l then a standard polypropylene \textit{Echo} plate should be used, otherwise a low dead volume plate may be economical
+		If the total volume of each compound required is greater than 60 µl then a standard polypropylene \textit{Echo} plate should be used, otherwise a low dead volume plate may be economical
 		If not, or for valuable compounds, Low Dead Volume \textit{Echo} may plates should be used.
-		These have a working volume of 2.5-12.5 $\mu$l, outside of which the \textit{Echo} will refuse to dispense.
+		These have a working volume of 2.5-12.5 µl, outside of which the \textit{Echo} will refuse to dispense.
 	You may need to dispense the same compounds into multiple source wells and the picklists must be designed accordingly.
 
 % --- 3---- 
@@ -282,7 +312,7 @@ It requires purified P450 protein which limits the rate of data generation, thou
 Up to 24 hours seems ok.
 % --- 5---- 
 
-\item \textbf{Thaw purified P450, make stock of ~ 10 $\mu$ M in a neutral buffer, enough for 15.36+ ml per plate (40 $\mu$l per well)}
+\item \textbf{Thaw purified P450, make stock of ~ 10 µM in a neutral buffer, enough for 15.36+ ml per plate (40 µl per well)}
 I heard that thawing fast limits ice crystal formation, which could destroy some protein.
 Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rpm and carefully transferr to fresh tubes to remove unfolded protein.
 	\begin{enumerate}
@@ -290,16 +320,17 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 	\item Measure the stock concentration of the protein in a UV-Vis spectrometer by taking an absorbance trace from 200-800 nm, diluted in the destination buffer.
 	There should be a peak at 420 nm, the height of which can be used to calculate the protein concentration with the following equation:
 
-	$$ [P450]  = a e  $$
+	$$ [P450]  = a e l  $$
 
        where $a$ is absorbance and $e$ is the extiction coefficient - 95 for P450 BM3 heme domain.
-       Use the measured stock concentration of P450 to create a working stock of around 10 $\mu$ M.
-       10$\mu$ M was chosen because it yeilds a reasonably strong signal when in plates.
+       $l$ is the path length in cm and for the cuvettes used was 1.
+       Use the measured stock concentration of P450 to create a working stock of around 10 µM.
+       10µM was chosen because it yeilds a reasonably strong signal when in plates.
        Varying the protein concentration doesn't have a big effect on measurements, so err towards using more.
 
 
 	\item Dilute in neutral buffer to the target working concentration.
-	Filtration through a 22 um syringe filter can remove some precipitates.
+	Filtration through a 22 µm syringe filter can remove some precipitates.
 	Vacuum filtration can work too but in practice, the protein can pick up binding partners from the filtration equipment contaminants, which can ruin downstream measurements.
 	\end{enumerate}
 
@@ -322,8 +353,8 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 \item \textbf{Dispense the diluted protein into the assay plates, centrifuge}
 
 	An electric multichannel pipette works but accuracy is more limited than with automated dispensing. 
-	38 $\mu$l of protein working stock needs to be dispensed into each well, which brings the total well volume to 40 $\mu$l in cases where the volume of compounds in DMSO in each well is 2 ul.
-	If the volume of DMSO in destination wells is not a constant 2 ul, then default to 38 $\mu$l of the protein stock.
+	38 µl of protein working stock needs to be dispensed into each well, which brings the total well volume to 40 µl in cases where the volume of compounds in DMSO in each well is 2 ul.
+	If the volume of DMSO in destination wells is not a constant 2 ul, then default to 38 µl of the protein stock.
 	The variation in total volume can be corrected for in compound concentration calculations, though the path lenght will vary which affects precision.
 
 	Better than that is a precise bulk liquid handling device.
@@ -354,10 +385,10 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 \item \textbf{Data analysis overview}
    More info [here](data.md).
    \begin{enumerate}
-	\item Export the plate measurement data to a workable format, like `.csv`. 
+	   \item Export the plate measurement data to a workable format, like \texttt{.csv}. 
 	   In the BMG Mars software, the operation is simple but on all host machines I've tried it on have been unreasonably slow to open the data files prior to export.
    \item Index the files to their experiments. 
-	   I used a `config.yml` file to track this.
+	   I used a \texttt{config.yml} file to track this.
    \item \textbf{Analysis}
 		\begin{enumerate}
 		\item Match compounds to plate well data.
@@ -409,13 +440,12 @@ The enzymes are variants of the Cytochrome P450 BM3:
 		\begin{tabular}{l|p{3cm}|l}
 		\textbf{ID} & \textbf{Mutations} & \textbf{PDB} \\
 		\hline 
-		 WT &           & 1BU7 \\
-		A82F&   A82F    & 4KEW \\
-		 DM & A82F/F87V & 4KEY \\
-		1YQO&   T268A   & 1YQO \\
-		1YQP&   T268N   & 1YQP \\
-
-	\end{tabular}
+		WT   &           & 1BU7 \\
+		A82F &   A82F    & 4KEW \\
+		DM   & A82F/F87V & 4KEY \\
+		1YQO &   T268A   & 1YQO \\
+		1YQP &   T268N   & 1YQP \\
+		\end{tabular}
 	\end{center}
 \end{table}
 
@@ -506,8 +536,25 @@ Having been sequenced and confirmed to carry the target mutations, the mutant pl
 \subsubsection{Purification}
 
 \subsection{Screening}
+
+Throughput the screening process, the protocol described in section \ref{protocol} was employed.
+Six concentrations of each target compound were dispensed with the aim of determination of the $V_{max}$ and $K_d$: 0.0, 5.26, 55.61, 156.72, 306.74 and 500 µM.
+These values were generated from six linearly spaced values between 0 and 1 squared, then scaled to the starting concentration and final volume.
+This method saved some compound compared to a straightforward linear spacing of values between 0 and 500 µM - the maximum concentration possible given a 10 mM starting stock in DMSO without exceeding a total of 5\% v/v solvent.
+\par
+During the first run, control experiments where compounds were present in buffer only were included for downstream correction of the compounds inherent UV-Visible light absorbance, though it was thought to be unnecessary to repeat this for each subsequent screen, since it is wasteful of resources, particularly the compounds themselves.
+
+Each of the five enzymes was screened against all 980 compounds over the course of a day each.
+
+
+
+% -------------------------------
+
 \subsection{Model Design and Construction}
 
+The model aims to predict the binding likelihood between a given protein sequence and chemical structure, illustrated in equation \ref{pbinding}.
+
+\label{pbinding}
 $$
 P_{binding} = fn(sequence, smiles)
 $$
@@ -529,9 +576,9 @@ $
 \begin{matrix} 
 	 & compound_i & compound_{i+1} & ... & compound_{i+n} \\
 	sequence_i  & P_{binding_{i,j}} &  &  & \\  
-	sequence_{i+1} &  & \ddots &  &  \\
+	sequence_{i+1} &  &  &  &  \\
 	 \vdots &  &  & \ddots &  \\
-	sequence_{i+m} &  &  &  &  \ddots \\
+	sequence_{i+m} &  &  &  &   \\
 \end{matrix}
 $
 \end{center}
@@ -548,9 +595,6 @@ To overcome the lack of negative data points, presumed negative data can be gene
 In this work, a machine learning model classifies pairs of protein sequence and small molecules as binding or not.
 Negative samples are generated by randomly sampling a sequence and small molecule, which given the vastness of sequence and chemical space may be reasonable in a large number of cases, though this assumption is treated with caution.
 A Binary Cross Entropy loss function is employed here where true positives and synthesized negatives are weighted evenly.
-
-
-
 
 \subsubsection{Data}
 
@@ -589,12 +633,12 @@ The network can be split into three parts:
 
 \subsubsection{Sequence Embedding}
 
-%Sequences were embedded using the pre-trained \texttt{esm1_t6_43M_UR50S} model \textcite{rives2021biological}, which receives an input of a tokenized protein sequence and outputs a tensor of size $b l d$ where $b$ is batch size, $l$ is sequence length and $d$ is 35.
+%Sequences were embedded using the pre-trained \texttt{esm1_t6_4equation 3M_UR50S} model \textcite{rives2021biological}, which receives an input of a tokenized protein sequence and outputs a tensor of size $b l d$ where $b$ is batch size, $l$ is sequence length and $d$ is 35.
 
 Although this model is the smallest of the ESM collection, on the single \textit{NVIDIA Quadro RTX 6000} used it still occupied most of the 24 GB of available memory and most of the processing capability, which lead to long training times and difficulty in training more than one model in parallel on the same machine.
 
 This could be remedied, however since in the complete \texttt{o3f.csv} dataset and the screening dataset there are 2947 unique sequences, so it was economical to pre-compute the embeddings and save them to disk.
-This resulted in a roughly 4$x$ speedup in training time and massively reduced the memory requirements, allowing several models to be trained in parallel on a single GPU.
+This resulted in a roughly 4$\times$ speedup in training time and massively reduced the memory requirements, allowing several models to be trained in parallel on a single GPU.
 This also saved costs significantly.
 
 \subsubsection{Chemical Embedding}
@@ -631,7 +675,7 @@ All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost 
 \end{table}
 
 \begin{enumerate}
-	\item \textbf{Pre-Training:} This was done with the larger, more general `o3f` dataset, which was randomly split into training and validation partitions, the latter of which was used sparingly to avoid model bias.
+	\item \textbf{Pre-Training:} This was done with the larger, more general \texttt{o3f} dataset, which was randomly split into training and validation partitions, the latter of which was used sparingly to avoid model bias.
 	Pre-training lasted up to 64 epochs with a batch size up to 64.
 	For each sample, a random sequence and SMILES pair were sampled as a presumed negative sample.
 	The loss function used was binary cross entropy used with an Adam (Adaptive momentum) optimizer.
@@ -664,7 +708,41 @@ All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost 
 
 % ----------
 \section{Results}
-\subsection{Data Analysis}
+\subsection{Screening Data Analysis}
+
+The data gathered for the screening experiments was saved in the \texttt{git} repository  \texttt{https://github.com/jamesengleback/screening-fist} in the \texttt{lab} directory.
+Within the \texttt{lab} directory are directories for each screening experiment.
+These include a \texttt{config.yml} file which maps data files to experiments for analysis.
+\par
+The script \texttt{sxfst/scripts/data\_proc2.py} was used to process the data into a large \texttt{csv} file containing each raw trace and its metadata.
+By consolidating the data into a single file, fewer time-consuming operating system calls are made in downstream analysis which decreases the time cost of those tasks.
+
+The script attempted to use the \textit{Echo} logs from each run to calculate the actual volume of each compound dispensed, since towards the end of the screening program shortages of compound made it impossible to fully dispense some experiments.
+In retrospective this function did not perform properly, since all experiments are later annotated as having the target volumes of each compound.
+This cannot be the case since it was casually observed that some compounds were completely depleted by the end of the screening program.
+This issue is significant, leading to false negatives where a lack of response cannot be attributed to either a lack of compound or a true negative response.
+This coding issue can be solved, but was not due to time constraints.
+
+The downstream analysis in question was done using the script \texttt{sxfst/scripts/data\_analysis.py} which normalizes the traces, subtracts the control traces from them and calculates the P450 response to each compound, creating a plot in the process.
+An example of one such plot is in figure \ref{screeninghit}.
+
+The traditional response calculation method using $\Delta A_{390} - \Delta A_{420}$ proved ineffective for analysis of this data due to the noise, which would often result in scattering that increased the absorbance at the short wavelengths in ways that were occasionally unpredictable.
+
+Instead, the gradient of each trace was taken by convolution of the kernel $\begin{bmatrix} -1 & 0 & 1 \end{bmatrix}$ across the smoothed and normalized traces.
+The gradients were invariant to total absorbance, which was often perturbed by what appeared to be light scattering, but achieved a similar effect to calculation of $\Delta A_{390} - \Delta A_{420}$.
+From the gradients, response was calculated as $|{\frac{\delta y}{\delta x_{390}}}| + |{\frac{\delta y}{\delta x_{420}}}|$.
+
+Although this proved successful, the automated curve fitting to the response was not, outputting a constant value of 32 µM for each experiment - the lower $K_d$ bound.
+With extra development this issue can likely be solved, but in order to keep within time constraints, an alternative solution was implemented.
+
+The alternative solution was manual annotation of the plots output by the script.
+Though crude, this method did yield a list of ostensible \textit{hits} as well as a list of anomalous results that were to be ignored.
+
+\begin{figure}\label{screeninghit}
+	\caption{A good example of a positive result or \textit{hit} between BM3 A82F and \textit{Gestodene}. $K_d$ was calculated as 32 µM, which reflects an issue in the curve fitting rather than the actual $K_d$.}
+	\includegraphics[width = \textwidth]{img/BM3-Heme-A82F:S1376.png}
+\end{figure}
+
 \subsection{Model Training}
 \subsection{Model Application}
 % ----------
