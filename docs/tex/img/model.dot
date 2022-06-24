@@ -1,0 +1,27 @@
+digraph model{
+	graph [dpi = 300]
+	node [shape = box fontname="Noto Sans"]
+	{rank = same "Ligand SMILES" "Sequence"}
+	{rank = same "RDKFingerprint" "Tokens"}
+	{rank = same "Sequence" "Ligand SMILES"}
+	{rank = same "Chemical Embedding" "Fixed Size Vector"}
+	"Ligand SMILES" -> "RDKFingerprint"
+
+	"RDKFingerprint" -> "Residual Layers"
+	"Residual Layers" -> "Chemical Embedding"
+	"Chemical Embedding" -> "Concatenate"
+
+
+	"Sequence" -> "Tokens"
+	"Tokens" -> "ESM Model"
+	"ESM Model" -> "Sequence Embedding"
+
+	"Sequence Embedding" -> "Convolutional Downsampling"
+	"Convolutional Downsampling" -> "LSTM"
+	"LSTM" -> "Fixed Size Vector"
+	"Fixed Size Vector" -> "Concatenate"
+	"Concatenate" -> "Transformer Layers"
+	"Transformer Layers" -> "Linear Layer"
+	"Linear Layer" -> "Binding Likelihood Prediction"
+
+	}

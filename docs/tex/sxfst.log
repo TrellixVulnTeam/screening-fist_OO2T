@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.6.22)  23 JUN 2022 17:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.6.22)  24 JUN 2022 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,7 +612,7 @@ Package biblatex Info: ... file 'sxfst.bbl' found.
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
  (./sxfst.toc
-Overfull \hbox (19.85672pt too wide) in paragraph at lines 12--12
+Overfull \hbox (19.85672pt too wide) in paragraph at lines 13--13
  [][] []\TU/NotoSans(0)/m/n/10 Basis: UV-Visible Spectroscopy for Monitoring Cy
 tochrome 
  []
@@ -624,178 +624,202 @@ tochrome
 \openout4 = `sxfst.toc'.
 
 
-Overfull \hbox (6.73114pt too wide) in paragraph at lines 38--41
+Overfull \hbox (6.73114pt too wide) in paragraph at lines 37--40
 \TU/NotoSans(0)/m/n/10 pared to an untrained model. For example an object detec
 tion model trained
  []
 
 [2] [3]
-Overfull \hbox (3.13005pt too wide) in paragraph at lines 106--109
+Overfull \hbox (3.13005pt too wide) in paragraph at lines 105--108
 \TU/NotoSans(0)/m/n/10 be re-trained to make binding likelihood predictions on 
 drug-like molecules,
  []
 
 [4]
-Overfull \hbox (2.26004pt too wide) in paragraph at lines 120--120
+Overfull \hbox (2.26004pt too wide) in paragraph at lines 119--119
 []\TU/NotoSans(0)/b/n/10 Basis: UV-Visible Spectroscopy for Monitoring Cytochro
 me P450-
  []
 
 [5]
-
-Package caption Warning: \label without proper reference on input line 163.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `arachadionictitration' on page 6 undefined on input l
-ine 161.
-
 File: img/ArachadionicAcid.png Graphic file (type bmp)
 <img/ArachadionicAcid.png>
-
-Package caption Warning: \label without proper reference on input line 190.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `assaydevarachadionic' on page 6 undefined on input li
-ne 188.
-
 File: img/assay-dev-arachadionic.png Graphic file (type bmp)
 <img/assay-dev-arachadionic.png>
-[6] [7] [8]
-Overfull \hbox (2.54001pt too wide) in paragraph at lines 220--221
+ [6] [7] [8]
+Overfull \hbox (2.54001pt too wide) in paragraph at lines 219--220
 []\TU/NotoSans(0)/b/n/10 Labcyte Echo [500 550]: \TU/NotoSans(0)/m/n/10 Acousti
 c liquid handlers for precise com-
  []
 
 [9]
-Overfull \hbox (7.31335pt too wide) in paragraph at lines 246--249
+Overfull \hbox (7.31335pt too wide) in paragraph at lines 245--248
 \TU/NotoSans(0)/m/n/10 During development, both a \TU/NotoSans(0)/m/it/10 Therm
 odropMulti \TU/NotoSans(0)/m/n/10 peristaltic dispenser
  []
 
 
-Overfull \hbox (1.68115pt too wide) in paragraph at lines 246--249
+Overfull \hbox (1.68115pt too wide) in paragraph at lines 245--248
 \TU/NotoSans(0)/m/n/10 and a \TU/NotoSans(0)/m/it/10 Hamilton Star \TU/NotoSans
 (0)/m/n/10 liquid handling robot. Both work well, though
  []
 
 [10]
-Overfull \hbox (9.91003pt too wide) in paragraph at lines 297--298
+Overfull \hbox (9.91003pt too wide) in paragraph at lines 296--297
 []\TU/NotoSans(0)/b/n/10 Dispense compounds from \TU/NotoSans(0)/b/it/10 Echo \
 TU/NotoSans(0)/b/n/10 source plates to empty assay plates 
  []
 
 [11]
-Overfull \hbox (1.42783pt too wide) in paragraph at lines 355--359
+Overfull \hbox (1.42783pt too wide) in paragraph at lines 354--358
 \TU/NotoSans(0)/m/n/10 than with automated dispensing. 38 µl of protein working
  stock needs
  []
 
 
-Overfull \hbox (4.4334pt too wide) in paragraph at lines 374--375
+Overfull \hbox (4.4334pt too wide) in paragraph at lines 373--374
 \TU/NotoSans(0)/b/n/10 nm from plates in a microplate reader at room temperatur
 e within
  []
 
 [12]
-Overfull \hbox (2.07585pt too wide) in paragraph at lines 376--381
+Overfull \hbox (2.07585pt too wide) in paragraph at lines 375--380
 \TU/NotoSans(0)/m/n/10 mated plate loader is recommended, for example a BMG Sta
 cker mod-
  []
 
 
-Overfull \hbox (145.72662pt too wide) in paragraph at lines 401--403
+Overfull \hbox (145.72662pt too wide) in paragraph at lines 400--402
 []\TU/NotoSans(0)/m/n/10 Curves can be smoothed with Gaussian smoothing using \
 TU/lmtt/m/n/10 scipy.ndimage.gaussian_filter1d
  []
 
 [13]
-Overfull \hbox (2.01242pt too wide) in paragraph at lines 425--426
+Overfull \hbox (2.01242pt too wide) in paragraph at lines 424--425
 []\TU/NotoSans(0)/m/n/10 Documentation on how I implemented this is [here](data
 .md) 
  []
 
 [14]
-Overfull \hbox (15.40005pt too wide) in paragraph at lines 469--474
+Overfull \hbox (15.40005pt too wide) in paragraph at lines 468--473
 \TU/NotoSans(0)/m/n/10 An heirloom BM3 Wild-type (heme domain) expression plasm
 id, [bm3-wt.gb](),
  []
 
 
-Overfull \hbox (0.50008pt too wide) in paragraph at lines 478--481
+Overfull \hbox (0.50008pt too wide) in paragraph at lines 477--480
 \TU/NotoSans(0)/m/n/10 Mutations were introduced to the wild-type sequence via 
 Polymerase Chain
  []
 
 [15]
-Overfull \hbox (1.53587pt too wide) in paragraph at lines 489--492
+Overfull \hbox (1.53587pt too wide) in paragraph at lines 488--491
 \TU/NotoSans(0)/m/n/10 cloning method produces circular DNA carrying the target
 ed changes.
  []
 
 [16]
-Overfull \hbox (5.23451pt too wide) in paragraph at lines 540--544
+Overfull \hbox (5.23451pt too wide) in paragraph at lines 539--543
 \TU/NotoSans(0)/m/n/10 was employed. Six concentrations of each target compound
  were dispensed
  []
 
-[17] [18] [19]
-Overfull \hbox (22.63118pt too wide) in paragraph at lines 659--661
+[17] [18]
+File: img/model.png Graphic file (type bmp)
+<img/model.png>
+ [19] [20]
+Overfull \hbox (22.63118pt too wide) in paragraph at lines 663--665
 \TU/NotoSans(0)/m/n/10 were trained and compared. All training was done on a \T
 U/NotoSans(0)/m/it/10 Linode \TU/lmtt/m/n/10 g1-gpu-rtx6000-1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 672--672
 []|\TU/NotoSans(0)/m/n/10 Intel(R) Xeon(R)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 671--671
+Underfull \hbox (badness 10000) in paragraph at lines 675--675
 []|\TU/NotoSans(0)/m/n/10 NVIDIA Quadro
  []
 
 
-Overfull \hbox (2.66672pt too wide) in paragraph at lines 678--685
+Overfull \hbox (2.66672pt too wide) in paragraph at lines 682--689
 []\TU/NotoSans(0)/b/n/10 Pre-Training: \TU/NotoSans(0)/m/n/10 This was done wit
 h the larger, more general \TU/lmtt/m/n/10 o3f \TU/NotoSans(0)/m/n/10 dataset,
  []
 
-[20]
-Overfull \hbox (13.46004pt too wide) in paragraph at lines 695--700
+[21]
+Overfull \hbox (13.46004pt too wide) in paragraph at lines 699--704
 []\TU/NotoSans(0)/b/n/10 Training: \TU/NotoSans(0)/m/n/10 This was done with th
 e manually annotated screening dataset.
  []
 
 
-Overfull \hbox (1.90335pt too wide) in paragraph at lines 713--716
+Overfull \hbox (1.90335pt too wide) in paragraph at lines 717--720
 \TU/NotoSans(0)/m/n/10 repository \TU/lmtt/m/n/10 https://github.com/jamesengle
 back/screening-fist \TU/NotoSans(0)/m/n/10 in the \TU/lmtt/m/n/10 lab
  []
 
-[21]
-
-Package caption Warning: \label without proper reference on input line 740.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `screeninghit' on page 22 undefined on input line 727.
-
-
-
-Overfull \hbox (103.0134pt too wide) in paragraph at lines 726--728
+[22]
+Overfull \hbox (103.0134pt too wide) in paragraph at lines 730--732
 []\TU/NotoSans(0)/m/n/10 The downstream analysis in question was done using the
  script \TU/lmtt/m/n/10 sxfst/scripts/data_analysis.py
  []
 
-[22]
+[23]
 File: img/BM3-Heme-A82F:S1376.png Graphic file (type bmp)
 <img/BM3-Heme-A82F:S1376.png>
- [23] [24] (./sxfst.aux)
 
-LaTeX Warning: There were undefined references.
+Overfull \hbox (15.26004pt too wide) in paragraph at lines 768--772
+\TU/NotoSans(0)/m/n/10 Given constraints on money towards computing resources, 
+a hyper-parameter
+ []
 
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 768--772
+\TU/lmtt/m/n/10 data/o3f.train.csv --transformer --cuda --emb_size_head 2560 --
+n_layers_head
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 768--772
+\TU/lmtt/m/n/10 3 --emb_size_fp 512 --n_layers_fp 4 --num_conv_layers_pool 3 --
+kernel_size_pool
+ []
+
+
+Overfull \hbox (1.5pt too wide) in paragraph at lines 768--772
+\TU/lmtt/m/n/10 9 --stride_pool 3 --lstm_hs_pool 1024 --lr 1e-5 --batch_size 64
+ -e
+ []
+
+File: img/frosty-breeze-83-eval.png Graphic file (type bmp)
+<img/frosty-breeze-83-eval.png>
+
+Underfull \hbox (badness 1303) in paragraph at lines 816--816
+[]\TU/NotoSans(0)/m/n/10 Figure 6: |[] Model evaluation for another instance of
+ \TU/NotoSans(0)/m/it/10 frosty-breeze-81\TU/NotoSans(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 816--816
+\TU/NotoSans(0)/m/n/10 this time designated \TU/NotoSans(0)/m/it/10 devout-thun
+der-90\TU/NotoSans(0)/m/n/10 , again retrained on the lab-
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 816--816
+\TU/NotoSans(0)/m/n/10 based screening dataset \TU/lmtt/m/n/10 screening-data.t
+rain.csv \TU/NotoSans(0)/m/n/10 and evaluated on
+ []
+
+File: img/frosty-breeze-83-vivid-breeze-91-devout-thunder-90-eval.png Graphic f
+ile (type bmp)
+<img/frosty-breeze-83-vivid-breeze-91-devout-thunder-90-eval.png>
+File: img/frosty-breeze-83-vivid-breeze-91-eval.png Graphic file (type bmp)
+<img/frosty-breeze-83-vivid-breeze-91-eval.png>
+[24] [25] [26] [27] [28] [29] (./sxfst.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -804,12 +828,12 @@ Package logreq Info: Writing requests to 'sxfst.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13693 strings out of 478190
- 302878 string characters out of 5854827
- 1067247 words of memory out of 5000000
- 34160 multiletter control sequences out of 15000+600000
+ 13730 strings out of 478190
+ 304275 string characters out of 5854827
+ 1067173 words of memory out of 5000000
+ 34193 multiletter control sequences out of 15000+600000
  473339 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  73i,10n,85p,1130b,4847s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sxfst.pdf (24 pages).
+Output written on sxfst.pdf (29 pages).

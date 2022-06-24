@@ -30,9 +30,8 @@ It can also be used to design subsequent rounds of screening based on the expect
 \section{Introduction}
 
 \subsection{Engineering Problem and Context}
-\subsection{Similar Work}
 \subsection{Technologies Used}
-
+\subsubsection{Machine Learning}
 \subsubsection{Transfer Learning}
 
 Transfer learning is a phenomenon where a model trained on one task, can be re-trained on a different domain-related task  sample-efficiently compared to an untrained model.
@@ -82,7 +81,7 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 
 \begin{table}
 	\begin{center}
-		\caption{Stability TAPE benchmark leader boards \label{tapestab}}
+		\caption{\label{tapestab} Stability TAPE benchmark leader boards }
 		\begin{tabular}{l|p{3cm}|l}
 			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\\
 		\hline 
@@ -97,7 +96,7 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 \end{table}
 
 \textbf{Facebook AI Research - Evolutionary-Scale Modelling}
-
+\subsection{Related Work}
 \subsection{Overview of This Work}
 % ----------
 \section{Methods and Development}
@@ -158,10 +157,10 @@ This yields the formula:
 
 $$ Response = \Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
 
-An example of this is shown in figure \ref{arachadionictitration}, where the fatty acid arachadionic acid was titrated into a sample of P450 BM3 wild-type.
+An example of this is shown in \textbf{figure \ref{arachadionictitration}}, where the fatty acid arachadionic acid was titrated into a sample of P450 BM3 wild-type.
 
-\begin{figure}\label{arachadionictitration}
-	\caption{Response of P450 BM3 to Arachadionic Acid from a titration experiment, from which steady-state Michaelis-Menten kinetics can be derived.}
+\begin{figure}
+	\caption{\label{arachadionictitration} Response of P450 BM3 to Arachadionic Acid from a titration experiment, from which steady-state Michaelis-Menten kinetics can be derived.}
 	\includegraphics[width = \textwidth]{img/ArachadionicAcid.png}
 \end{figure}
 
@@ -185,10 +184,10 @@ The package was indispensable in this work.
 During early stages of development, an automated bulk liquid dispensing device - a \textit{ThermodropMulti} was available.
 The device uses precise peristaltic pumps to dispense a single liquid into a plate at a single volume very quickly.
 Precision in the bulk fluid volume in the plate is helpful in downstream analysis due to the consistent path lengths and concentrations in each well, something that was found to be less consistent when using a multichannel pipette to achieve the same task.
-Figure \ref{assaydevarachadionic} shows an example of both the \textit{ThermodropMulti} and \textit{Echo} being used to capture $K_d$ and $V_{max}$ for the binding interaction between P450 BM3 wild-type and arachadionic acid.
+\textbf{Figure \ref{assaydevarachadionic}} shows an example of both the \textit{ThermodropMulti} and \textit{Echo} being used to capture $K_d$ and $V_{max}$ for the binding interaction between P450 BM3 wild-type and arachadionic acid.
 
-\begin{figure}\label{assaydevarachadionic}
-	\caption{Michaelis-Menten steady-state kinetics of arachadionic acid and wild-type P450 BM3 captured during assay development.
+\begin{figure}
+	\caption{\label{assaydevarachadionic} Michaelis-Menten steady-state kinetics of arachadionic acid and wild-type P450 BM3 captured during assay development.
 		 Notably, in this experiment both an \textit{Echo} and \textit{ThermodropMulti} were used in dispensing compound and protein respectively,
 		 which accounts for the neatness.
 		 The traces were smoothed using a Gaussian kernel to account for noise.}
@@ -436,7 +435,7 @@ The enzymes are variants of the Cytochrome P450 BM3:
 
 \begin{table}
 	\begin{center}
-		\caption{BM3 mutants used in screening\label{bm3_table}}
+		\caption{\label{bm3_table} BM3 mutants used in screening}
 		\begin{tabular}{l|p{3cm}|l}
 		\textbf{ID} & \textbf{Mutations} & \textbf{PDB} \\
 		\hline 
@@ -554,8 +553,8 @@ Each of the five enzymes was screened against all 980 compounds over the course 
 
 The model aims to predict the binding likelihood between a given protein sequence and chemical structure, illustrated in equation \ref{pbinding}.
 
-\label{pbinding}
 $$
+\label{pbinding}
 P_{binding} = fn(sequence, smiles)
 $$
 
@@ -614,15 +613,13 @@ Roughly, characters are encoded as tensors of the integers that index their posi
 
 \subsubsection{Model Architecture}
 
-The model aims to predict:
+Given the model aims to predict:
 $$
 P_{binding} = fn(sequence, smiles)
 $$
-Where $fn$ is a model that takes an input of a protein $sequence$ and a prospective ligands' SMILES code - $smiles$ and outputs $P_{binding}$ - an estimate of the probability that the given $sequence$ and $smiles$ bind to one another.
 
-Given their prior success in chemical and protein sequence learning, a neural network model was chosen to build  $fn$.
+A neural network was devised to generate a prediction of $P_{binding}$ from an input of a protein sequence and a chemical SMILES code.
 The network can be split into three parts:
-
 
 \begin{itemize}
 	\item \textbf{Sequence Embedding:} For a given protein $sequence$, output a tensor encoding a neural embedding $z_{sequence}$.
@@ -630,6 +627,14 @@ The network can be split into three parts:
 	\item \textbf{Prediction Head:} For the embeddings $z_{smiles}$ and $z_{sequence}$, output a prediction $P_{binding}$.
 \end{itemize}
 
+The architecture is illustrated in \ref{modelarch}.
+
+\begin{figure}
+	\begin{center}
+	\caption{\label{modelarch} Architecture of the model constructed for this project}
+	\includegraphics[height=0.8\textheight]{img/model.png}
+	\end{center}
+\end{figure}
 
 \subsubsection{Sequence Embedding}
 
@@ -643,8 +648,7 @@ This also saved costs significantly.
 
 \subsubsection{Chemical Embedding}
 
-As mentioned, chemical SMILES were hashed into chemical fingerprints using the \texttt{rdkit} \texttt{RDKFingerprint} method as a means of representation, yielding a 2048-bit vector for each compound.
-The vectors were converted to tensors and served as an input to a residual neural network that output an embedding that would later be used to form a combined representation of both compound and sequence for binding likelihood prediction.
+As mentioned, chemical SMILES were hashed into chemical fingerprints using the \texttt{rdkit} \texttt{RDKFingerprint} method as a means of representation, yielding a 2048-bit vector for each compoundagainThe vectors were converted to tensors and served as an input to a residual neural network that output an embedding that would later be used to form a combined representation of both compound and sequence for binding likelihood prediction.
 
 \subsubsection{Prediction Head}
 
@@ -661,7 +665,7 @@ All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost 
 
 \begin{table}
 	\begin{center}
-		\caption{BM3 mutants used in screening\label{bm3_table}}
+		\caption{\label{bm3_table} BM3 mutants used in screening}
 		\begin{tabular}{l|p{3cm}|l|l}
 			\textbf{Item} & \textbf{Specifications} & \textbf{Number}  & \textbf{Size}\\
 		\hline 
@@ -724,7 +728,7 @@ This issue is significant, leading to false negatives where a lack of response c
 This coding issue can be solved, but was not due to time constraints.
 
 The downstream analysis in question was done using the script \texttt{sxfst/scripts/data\_analysis.py} which normalizes the traces, subtracts the control traces from them and calculates the P450 response to each compound, creating a plot in the process.
-An example of one such plot is in figure \ref{screeninghit}.
+An example of one such plot is in \textbf{figure \ref{screeninghit}}.
 
 The traditional response calculation method using $\Delta A_{390} - \Delta A_{420}$ proved ineffective for analysis of this data due to the noise, which would often result in scattering that increased the absorbance at the short wavelengths in ways that were occasionally unpredictable.
 
@@ -735,15 +739,87 @@ From the gradients, response was calculated as $|{\frac{\delta y}{\delta x_{390}
 Although this proved successful, the automated curve fitting to the response was not, outputting a constant value of 32 µM for each experiment - the lower $K_d$ bound.
 With extra development this issue can likely be solved, but in order to keep within time constraints, an alternative solution was implemented.
 
+%% manual annotation
+
 The alternative solution was manual annotation of the plots output by the script.
 Though crude, this method did yield a list of ostensible \textit{hits} as well as a list of anomalous results that were to be ignored.
 
-\begin{figure}\label{screeninghit}
-	\caption{A good example of a positive result or \textit{hit} between BM3 A82F and \textit{Gestodene}. $K_d$ was calculated as 32 µM, which reflects an issue in the curve fitting rather than the actual $K_d$.}
+Using this approach, 149 hits of the total 4900 compounds were identified, listed in the file \texttt{lab/hits.txt} in the repository.
+These were used to create a \texttt{csv} file containing the full sequence and SMILES code for each enzyme compound pair and a boolean value that was true if that experiment was annotated as a \textit{hit}.
+There are several drawbacks to this that should be noted:
+
+\begin{itemize}
+	\item \textbf{Human Error:} Although several passes over the data were done, the order was never randomized and there was only one annotator. 
+		Since there are 4900 experiments, even if the annotator averages 1 second per annotation the runtime of an annotation run is 81 minutes, which will likely cause fatigue and subsequent errors.
+		Since the order was not randomized, fatigue-induced error is more likely to occur in the same regions of the dataset in each pass.
+	\item \textbf{False Negatives} due to a lack of properly functional compound concentration calculation, which would yield results that appear negative due to a lack of compound without being properly labelled as such.
+		Another source of false negatives is the obfuscation of hits by noise in the traces due to scattering or compound absorbance that in some cases proved hard to correct for.
+\end{itemize}
+
+\begin{figure}
+	\caption{\label{screeninghit} A good example of a positive result or \textit{hit} between BM3 A82F and \textit{Gestodene}. $K_d$ was calculated as 32 µM, which reflects an issue in the curve fitting rather than the actual $K_d$.}
 	\includegraphics[width = \textwidth]{img/BM3-Heme-A82F:S1376.png}
 \end{figure}
 
 \subsection{Model Training}
+
+\subsubsection{Pre-training}
+
+Given constraints on money towards computing resources, a hyper-parameter sweep was not viable.
+Instead, a small selection of models were trained and evaluated and the best of those was retrained on the screening data.
+Model architecture and hyper-parameters were directly configurable by supply of arguments to the training script \texttt{model/train.py}, from which the best performing model was obtained using the command \texttt{./train.py -i data/o3f.train.csv --transformer --cuda --emb\_size\_head 2560 --n\_layers\_head 3 --emb\_size\_fp 512 --n\_layers\_fp 4 --num\_conv\_layers\_pool 3 --kernel\_size\_pool 9 --stride\_pool 3 --lstm\_hs\_pool 1024 --lr 1e-5 --batch\_size 64 -e 32
+}, which is consolidated in \textbf{table \ref{frostybreezeparams}}.
+
+\begin{table}
+	\caption{\label{frostybreezeparams} Parameters for the best performing model in pre-training, designated the identifier \textit{frosty-breeze-83} by the \textit{Weights and Biases} API.}
+	\begin{center}
+	\begin{tabular}{ll}
+		\textbf{Parameter} &     \textbf{Value} \\
+		\hline
+		lr                   &             $10^{-5}$ \\
+		esm                  &   esm1\_t6\_43M\_UR50S \\
+		cuda                 &                True \\
+		load                 &                None \\
+		test                 &               False \\
+		input                &  data/o3f.train.csv \\
+		epochs               &                320 \\
+		batch\_size           &                640 \\
+		emb\_size\_fp          &               512 \\
+		n\_layers\_fp          &                 4 \\
+		stride\_pool          &                 3 \\
+		transformer          &                True \\
+		lstm\_hs\_pool         &              1024 \\
+		emb\_size\_head        &              25 \\
+		n\_layers\_head        &                 3 \\
+		kernel\_size\_pool     &                 9 \\
+		num\_conv\_layers\_pool &                 3 \\
+		num\_lstm\_layers\_pool &                 2 \\
+	\end{tabular}
+	\end{center}
+\end{table}
+
+%img/frosty-breeze-83-eval.png
+%img/frosty-breeze-83-vivid-breeze-91-devout-thunder-90-eval.png
+%img/frosty-breeze-83-vivid-breeze-91-eval.png
+\begin{figure}
+	\caption{\label{frostybreeze} Model evaluation report after pre-training for the model designated \textit{frosty-breeze-83}. Evaluation was on \texttt{o3f.test.csv} - a held-back partition of the pre-training dataset. Depicted are:
+	mean binary cross entropy loss the course of training on \texttt{o3f.train.csv},  
+	a confusion matrix, 
+	a receiver operator curve (ROC), 
+	a precision recall curve,
+	a detection error trade-off (DET) curve and 
+	mean precision and mean binary cross-entropy loss over evaluation.}
+	\includegraphics[width = \textwidth]{img/frosty-breeze-83-eval.png}
+\end{figure}
+
+\begin{figure}
+	\caption{\label{devoutthunder} Model evaluation for another instance of \textit{frosty-breeze-81}, this time designated \textit{devout-thunder-90}, again retrained on the lab-based screening dataset \texttt{screening-data.train.csv} and evaluated on \texttt{screening-data.test.csv}. The report uses the same methods as in figure \ref{frostybreeze}}
+	\includegraphics[width = \textwidth]{img/frosty-breeze-83-vivid-breeze-91-devout-thunder-90-eval.png}
+\end{figure}
+\begin{figure}
+	\caption{\label{vividbreeze} Model evaluation report after pre-training for the model designated \textit{vivid-breeze-91}. }
+	\includegraphics[width = \textwidth]{img/frosty-breeze-83-vivid-breeze-91-eval.png}
+\end{figure}
 \subsection{Model Application}
 % ----------
 \section{Discussion and Future Work}
