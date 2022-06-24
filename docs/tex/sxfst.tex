@@ -7,6 +7,7 @@
 \usepackage{tabularx}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{geometry}
 \usepackage[backend=biber, citestyle=numeric, sorting=none]{biblatex}
 \addbibresource{sxfst.bib}
 
@@ -30,13 +31,64 @@ It can also be used to design subsequent rounds of screening based on the expect
 \section{Introduction}
 
 \subsection{Engineering Problem and Context}
+
+Herbicide-resistant crops are important for global agriculture because they mitigate yield losses due to weeds and give farmers extra flexibility in their herbicide application programs, which is important to suppress emergence of herbicide-resistant weeds. % value statement
+\par
+Herbicides kill plants by inhibiting key metabolic processes and their species-specificity is determined by susceptibility of herbicide target and their ability to  metabolize the herbicide. % herbicide overview
+HPPD inhibitors are a key herbicide class that cause leaf bleaching and death in susceptible plants. 
+HPPD inhibition  disrupts tyrosine catabolism which disrupts UV-protection via carotenoid production and photosynthetic electron shuttling via plastoquinone, leading to death by UV damage and radical toxicity. % HPPDs
+\par
+Engineering HPPD-inhibitor resistance into plants have used the HPPD and metabolic enzymes from naturally resistant species like \textit{Avena fatua}. 
+\textbf{note: ref this.}
+CYP72A1 is a cytochrome P450 that initiates metabolism of HPPD herbicides by ring hydroxylation at $C_5$ and has been explored as a means of engineering HPPD herbicide metabolism into soybean.
+\textbf{Figure \ref{mesotrione}} shows the chemical structure of mesotrione and its primary metabolite 5-hydroxy mesotrione. % cyp 72a1 & engineering attempts
+
+\begin{figure}
+	\begin{center}
+	\caption{\label{mesotrione} The HPPD-inhibiting herbicide mesotrione and its primary metabolite 5-hydroxy mesotrione - hydroxylated at the $C_5$ position naturally in some plants by indigenous Cytochrome P450s, priming it for subsequent stages of detoxification.}
+	\includegraphics[width = \textwidth]{img/mesotrione+metabolite.png}
+	\end{center}
+\end{figure}
+
+\par
+
+Cytochrome P450s are a ubiquitous class of heme-dependent oxidoreductases that are frequently involved in xenobiotic metabolism. % p450s overview
+Bacterial P450s have been engineered to catalyse a range of xenobiotic biotransformations. The bacterial P450 BM3 from \textit{Bacillus megaterium} is one such bacterial P450 whose structure has been studied extensively \cite{munro2002p450}. 
+
+
+Notably, BM3 is a popular target for enzyme engineering studies, owing in part to its extensive documentation, ease of expression and \textit{evolvability} \cite{bloom2006protein}.
+Some examples of BM3 mutants with altered substrate scope are shown in \textbf{Table \ref{bm3_table}} \cite{wong}.
+\par
+
+\begin{table}
+	\begin{center}
+		\caption{\label{bm3_table}Examples of engineered BM3 Mutants with altered substrate scope \cite{wong}}
+		\begin{tabular}{l|p{3cm}|l}
+		\textbf{Mutant} & \textbf{Substrate scope} & \textbf{Structure} \\
+		\hline 
+		F87A/I263A/(A328I) & Nootkatone & \includegraphics[width = 2cm, height= 2cm, keepaspectratio=true]{img/nookatone.png} \\
+		A328F & Limonene & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/limonene.png} \\
+		R47L/Y51F & Alkylbenzenes (no heteroatoms) & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/alkyl-benzene.png} \\
+			R47L/F87V/L188Q (LVQ) & Coumarins & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/coumarin.png} \\ % this pic sucks
+			A74G/F87V/L188Q (GVQ) & Indole, Lovastatinn, beta-ionine, organophosphates, polyaromatic hydrocarbons, chlorinated dioxins & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/indole.png} \\
+	\end{tabular}
+	\end{center}
+\end{table}
+
+The BM3 A82F/F87V mutant has a broad substrate specificity \cite{butler2013key}, and represents an attractive starting point for engineering altered substrate scope, however it has no binding activity towards the HPPD herbicide mesotrione. % bacterial p450 engineering
+%%%%%%% find that spec
+
 \subsection{Technologies Used}
 \subsubsection{Machine Learning}
 \subsubsection{Transfer Learning}
 
-Transfer learning is a phenomenon where a model trained on one task, can be re-trained on a different domain-related task  sample-efficiently compared to an untrained model.
-For example an object detection model trained from from images of vehicles can transfer efficiently to identification of cell phenotypes from microscopy images.
-This is because some learned features generalize well enough to be useful in other tasks, reducing the number is samples required to reach a baseline performance level.
+%Transfer learning is a phenomenon where a model trained on one task, can be re-trained on a different domain-related task  sample-efficiently compared to an untrained model.
+%For example an object detection model trained from from images of vehicles can transfer efficiently to identification of cell phenotypes from microscopy images.
+%This is because some learned features generalize well enough to be useful in other tasks, reducing the number is samples required to reach a baseline performance level.
+
+Transfer learning is a popular approach to enhancing model accuracy and involves pretraining the model on a large, general dataset before transferring to a new task. 
+The effect is a reduction in the number of samples required to train the model. 
+Pre-training datasets do no necessarily need to be closely related to the target task, for example: models initially trained on the CIFAR 100 dataset (containing cars, animals etc. has been successfully re-tasked on phenotype identification from microscopy images \cite{ng2016nuts}. % xfer learning justification
 
 In the domain of protein sequence-based machine learning, thoroughly pre-trained models are available for generating a neural embedding of a given protein that can improve sample efficiency in downstream learning tasks.
 Generally, these models are large attention-based models trained \textit{unsupervised} on a large corpus of protein sequences, like the \textit{TrEMBL} collection of \textit{Uniprot}.
@@ -44,7 +96,9 @@ In this case, unsupervised training often entails reconstruction of a distorted 
 
 \subsubsection{The TAPE Benchmark}
 
-Tasks Assessing Protein Embeddings \textcite{tape2019} is a benchmark for comparing numerical representations of protein sequence (learned or otherwise) on a set of biological learning tasks from different domains of protein science. 
+\textbf{note: explain relevance, flesh out}
+
+Tasks Assessing Protein Embeddings \cite{tape2019} is a benchmark for comparing numerical representations of protein sequence (learned or otherwise) on a set of biological learning tasks from different domains of protein science. 
 It currently contains five tasks:
 
 \begin{enumerate}
@@ -96,8 +150,30 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 \end{table}
 
 \textbf{Facebook AI Research - Evolutionary-Scale Modelling}
+\textbf{note: explain model architecture and purpose, set of pretrained models and availability}
+
 \subsection{Related Work}
+
+\textbf{note - do:}
+\begin{itemize}
+	\item \textbf{biswas}
+\end{itemize}
+
 \subsection{Overview of This Work}
+
+This project is a proof of concept for a new approach towards enzyme engineering using machine learning.
+Broadly speaking, it involves screening a number of enzyme mutants for activity towards a large number of compounds of interest.
+This data is then used to train a machine learning model to predict the likelihood of activity between a given protein sequence and small molecule structure.
+The trained model has two applications:
+\begin{enumerate}
+	\item Virtually screen a large number of potential protein and small molecule candidates for potential activity. 
+		These screens can be used to explore potential substrate scope of a given protein, or as a virtual fitness function for use in virtual directed evolution - where a sequence optimization algorithm evaluates sequences against a fitness function.
+	\item Optimal design of subsequent screening rounds based on the expected information gain ($EIG$) of a candidate experimental design.
+\end{enumerate}
+
+The specific approach in this project is to screen a local area of sequence space surrounding the wild-type P450 BM3 against a library of 980 FDA-approved drug compounds.
+Drugs share chemical properties with herbicides so are suitable for a proof of concept study.
+
 % ----------
 \section{Methods and Development}
 \subsection{Assay Development}
@@ -160,7 +236,7 @@ $$ Response = \Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
 An example of this is shown in \textbf{figure \ref{arachadionictitration}}, where the fatty acid arachadionic acid was titrated into a sample of P450 BM3 wild-type.
 
 \begin{figure}
-	\caption{\label{arachadionictitration} Response of P450 BM3 to Arachadionic Acid from a titration experiment, from which steady-state Michaelis-Menten kinetics can be derived.}
+	\caption{\label{arachadionictitration} Response of P450 BM3 to Arachadionic Acid from a titration experiment, from which steady-state Michaelis-Menten kinetics can be derived. The legend shows the concentration of arachadionic acid in µM.}
 	\includegraphics[width = \textwidth]{img/ArachadionicAcid.png}
 \end{figure}
 
@@ -382,7 +458,6 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 	It is advisable to un-stack and re-stack the plates using the stacker to check for this kind of issue prior to measurement.
 
 \item \textbf{Data analysis overview}
-   More info [here](data.md).
    \begin{enumerate}
 	   \item Export the plate measurement data to a workable format, like \texttt{.csv}. 
 	   In the BMG Mars software, the operation is simple but on all host machines I've tried it on have been unreasonably slow to open the data files prior to export.
@@ -421,7 +496,6 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 
 		   An ideal end output of this analysis as a table of compounds, P450s and a qualification or quantification of their binding interactions.
 
-		   Documentation on how I implemented this is [here](data.md)
 		\end{enumerate}
    \end{enumerate}
 \end{enumerate}
@@ -465,11 +539,11 @@ expression of the mutants in \textit{E. coli} and their purification.
 
 \subsubsection{Starting Material}
 
-An heirloom BM3 Wild-type (heme domain) expression plasmid, [bm3-wt.gb](), 
+An heirloom BM3 Wild-type (heme domain) expression plasmid, \texttt{bm3-wt.gb}, 
 was inherited and used as the basis for DNA work in this project.
-The plasmid is a \textbf{?} pET15(?) expression vector where the BM3 gene has a 6xHis purification tag at the N-terminus,
+The plasmid is a pET14 expression vector where the BM3 gene has a 6xHis purification tag at the N-terminus,
 flanked by a T7 promoter and terminator which leads to high yields in strains of \textit{E. coli} containing the T7 RNA polymerase.
-The plasmid also encodes ampicillin resistance and a ? replication origin which leads to a low copy number.
+The plasmid also encodes ampicillin resistance and a \textit{ColE1} replication origin which leads to a low copy number.
 
 
 \subsubsection{Primer design and Acquisition}
@@ -496,7 +570,7 @@ Two important considerations based on the template sequence are:
 	\item Adenine-Thymine (AT) richness of the template sequence. Compared to cytosine and guanine (C and G), A and T bind to their complimentary bases weakly.
 		This results in weak primer binding to the template sequence, measurable by a low primer \textit{melting temperature} $T_m$.
 	To compensate, primers must be longer than they otherwise would be for a sequence richer in CG, which increases their cost and their chance of self-binding.
-	The template sequence used here is AT-rich - at $x\%$
+	The template sequence used here is AT-rich - at 42\%.
 	\item Repetitions and palindromic regions of the template sequence. 
 		If the sequence surrounding a mutation target area contains these features, then the likelihood of \textit{mis-priming} by binding to an off-target sequence area is high, so too is the likelihood of a non-functional, self-binding primer.
 \end{enumerate}
@@ -512,10 +586,14 @@ Two important considerations based on the template sequence are:
 Purified plasmid DNA ostensibly conataining the target mutations, having been harvested and purified from DH5a \textit{E. coli} cells, was shipped to \textit{Eurofins Genomics} for sequencing using their \textit{TubeSeq} service, which uses a variant of Sanger Sequencing.
 Sequencing primers for this matched the T7 promoter and terminator and provided coverage of the targetted region.
 
+\textbf{note: include sequencing, flesh out}
 
-\subsection{Expression}
+
+\subsection{Protein Expression}
 
 Having been sequenced and confirmed to carry the target mutations, the mutant plasmids were used to produce the mutant protein \textit{en masse} via a \textit{BL21 DE3 E. coli} strain, which contains a T7 RNA polymerase under the control of a \textit{lac} promoter.
+\par
+BM3 mutants were expressed in \textit{NEB} BL21 (DE3) \textit{E. coli} cells grown in \textit{Formedium} auto-induction TB media at 25°C for 24 hours with shaking at 180 rpm. Cells were harvested by centrifugation in a \textit{Beckman} JA16 rotor at 6000 rpm for 10 minutes and stored at -20 °C. Variants were purified from the cells by nickel-affinity chromatography, dialysis into buffer 1, concentration to 500-1000 µM and storage at -80 °C. % protein prep
 
 \subsubsection{Materials}
 
@@ -603,7 +681,9 @@ The fingerprints are represented as a $b \times 2048$ tensor where $b$ is batch 
 
 Sequences are represented in the dataset as strings where each character $c_i$ is a single letter amino acid code:
 
-$$c_i \subset{ACDEFGHIKLMNPQRSTVWY}$$
+$$
+c_i \subset{ACDEFGHIKLMNPQRSTVWY}
+$$
 
 Roughly, characters are encoded as tensors of the integers that index their position in the list $\begin{matrix} ACDEFGHIKLMNPQRSTVWY\end{matrix}$, with extra positions to represent null values, start of frame and end of frame characters.
 
@@ -638,7 +718,7 @@ The architecture is illustrated in \ref{modelarch}.
 
 \subsubsection{Sequence Embedding}
 
-%Sequences were embedded using the pre-trained \texttt{esm1_t6_4equation 3M_UR50S} model \textcite{rives2021biological}, which receives an input of a tokenized protein sequence and outputs a tensor of size $b l d$ where $b$ is batch size, $l$ is sequence length and $d$ is 35.
+%Sequences were embedded using the pre-trained \texttt{esm1_t6_4equation 3M_UR50S} model \cite{rives2021biological}, which receives an input of a tokenized protein sequence and outputs a tensor of size $b l d$ where $b$ is batch size, $l$ is sequence length and $d$ is 35.
 
 Although this model is the smallest of the ESM collection, on the single \textit{NVIDIA Quadro RTX 6000} used it still occupied most of the 24 GB of available memory and most of the processing capability, which lead to long training times and difficulty in training more than one model in parallel on the same machine.
 
@@ -661,11 +741,11 @@ The final layer in both cases was a single linear layer with a single output and
 \subsubsection{Pre-Training, Training and Evaluation}
 
 Training was done in two stages, each with a performance evaluation, during which several models with varying architectures and hyper-parameters were trained and compared.
-All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost \$1.50 per hour and was equipped with the following hardware specifications:
+All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost \$1.50 per hour and was equipped with hardware specifications described in \textbf{table \ref{hardwaretable}}.
 
 \begin{table}
 	\begin{center}
-		\caption{\label{bm3_table} BM3 mutants used in screening}
+		\caption{\label{hardwaretable} Hardware specifications for machine used in model training.}
 		\begin{tabular}{l|p{3cm}|l|l}
 			\textbf{Item} & \textbf{Specifications} & \textbf{Number}  & \textbf{Size}\\
 		\hline 
@@ -757,7 +837,7 @@ There are several drawbacks to this that should be noted:
 \end{itemize}
 
 \begin{figure}
-	\caption{\label{screeninghit} A good example of a positive result or \textit{hit} between BM3 A82F and \textit{Gestodene}. $K_d$ was calculated as 32 µM, which reflects an issue in the curve fitting rather than the actual $K_d$.}
+	\caption{\label{screeninghit} A good example of a positive result or \textit{hit} between BM3 A82F and \textit{Gestodene}. $K_d$ was calculated as 32 µM, which reflects an issue in the curve fitting rather than the actual $K_d$. \textbf{note - rescale axes, move kd text, legend title}}
 	\includegraphics[width = \textwidth]{img/BM3-Heme-A82F:S1376.png}
 \end{figure}
 
@@ -817,12 +897,22 @@ Model architecture and hyper-parameters were directly configurable by supply of 
 	\includegraphics[width = \textwidth]{img/frosty-breeze-83-vivid-breeze-91-devout-thunder-90-eval.png}
 \end{figure}
 \begin{figure}
-	\caption{\label{vividbreeze} Model evaluation report after pre-training for the model designated \textit{vivid-breeze-91}. }
+	\caption{\label{vividbreeze} Model evaluation report after pre-training for the model designated \textit{vivid-breeze-91}.}
 	\includegraphics[width = \textwidth]{img/frosty-breeze-83-vivid-breeze-91-eval.png}
 \end{figure}
 \subsection{Model Application}
 % ----------
 \section{Discussion and Future Work}
+
+\begin{itemize}
+	\item \textbf{Improvements (Issues):}
+	\begin{itemize}
+		\item \textbf{Issues with screening library}
+		\item \textbf{Improvements to data processing}
+		\item \textbf{Improvements to screening dataset partitioning}
+		\item \textbf{Improvements to model application}
+	\end{itemize}
+\end{itemize}
 
 \printbibliography
 

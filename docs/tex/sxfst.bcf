@@ -2344,9 +2344,20 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">sxfst.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">tape2019</bcf:citekey>
-    <bcf:citekey order="2">tape2019</bcf:citekey>
-    <bcf:citekey order="3">tape2019</bcf:citekey>
+    <bcf:citekey order="1">munro2002p450</bcf:citekey>
+    <bcf:citekey order="2">bloom2006protein</bcf:citekey>
+    <bcf:citekey order="3">wong</bcf:citekey>
+    <bcf:citekey order="4">wong</bcf:citekey>
+    <bcf:citekey order="5">wong</bcf:citekey>
+    <bcf:citekey order="6">butler2013key</bcf:citekey>
+    <bcf:citekey order="7">ng2016nuts</bcf:citekey>
+    <bcf:citekey order="8">tape2019</bcf:citekey>
+    <bcf:citekey order="9">munro2002p450</bcf:citekey>
+    <bcf:citekey order="10">bloom2006protein</bcf:citekey>
+    <bcf:citekey order="11">wong</bcf:citekey>
+    <bcf:citekey order="12">butler2013key</bcf:citekey>
+    <bcf:citekey order="13">ng2016nuts</bcf:citekey>
+    <bcf:citekey order="14">tape2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
