@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{fontspec}
+\usepackage{hyperref}
 \usepackage{parskip}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -11,6 +12,8 @@
 \usepackage[backend=biber, citestyle=numeric, sorting=none]{biblatex}
 \addbibresource{sxfst.bib}
 
+\hypersetup{urlcolor=blue, linkcolor=black, citecolor=black, colorlinks=true}
+\DeclareCaptionType{equ}[][]
 \setmainfont{Noto Sans}
 
 \begin{document}
@@ -51,6 +54,14 @@ CYP72A1 is a cytochrome P450 that initiates metabolism of HPPD herbicides by rin
 \end{figure}
 
 \par
+\begin{figure}
+         \begin{center}
+         \caption{\label{mesotrione} The HPPD-inhibiting herbicide mesotrione and its primary metabolite 5-hydroxy mesotrione - hydroxylated at the $C_5$ position naturally in some plants by indigenous Cytochrome P450s, priming it for subsequent stages of detoxification.}
+         \includegraphics[width = \textwidth]{img/mesotrione+metabolite.png}
+         \end{center}
+ \end{figure}
+
+ \par
 
 Cytochrome P450s are a ubiquitous class of heme-dependent oxidoreductases that are frequently involved in xenobiotic metabolism. % p450s overview
 Bacterial P450s have been engineered to catalyse a range of xenobiotic biotransformations. The bacterial P450 BM3 from \textit{Bacillus megaterium} is one such bacterial P450 whose structure has been studied extensively \cite{munro2002p450}. 
@@ -88,7 +99,7 @@ The BM3 A82F/F87V mutant has a broad substrate specificity \cite{butler2013key},
 
 Transfer learning is a popular approach to enhancing model accuracy and involves pretraining the model on a large, general dataset before transferring to a new task. 
 The effect is a reduction in the number of samples required to train the model. 
-Pre-training datasets do no necessarily need to be closely related to the target task, for example: models initially trained on the CIFAR 100 dataset (containing cars, animals etc. has been successfully re-tasked on phenotype identification from microscopy images \cite{ng2016nuts}. % xfer learning justification
+Pre-training datasets do no necessarily need to be closely related to the target task, for example: models initially trained on the CIFAR 100 dataset (containing cars, animals etc) have been successfully re-tasked on phenotype identification from microscopy images \cite{ng2016nuts}. % xfer learning justification
 
 In the domain of protein sequence-based machine learning, thoroughly pre-trained models are available for generating a neural embedding of a given protein that can improve sample efficiency in downstream learning tasks.
 Generally, these models are large attention-based models trained \textit{unsupervised} on a large corpus of protein sequences, like the \textit{TrEMBL} collection of \textit{Uniprot}.
@@ -208,7 +219,9 @@ The change in $A_{420}$ and $A_{390}$ in response to change in ligand concentrat
 \par
 The original Michaelis-Menten model of enzyme kinetics states:
 
-$$ v = V_{max} \frac{[S]}{[S] + K_M} $$
+\begin{equation}
+	v = V_{max} \frac{[S]}{[S] + K_M} 
+\end{equation}
 
 where $v$ is the reaction velocity - the rate of an enzymatic reaction. 
 $V_{max}$ is the maximum possible $v$ for this particular enzyme-substrate pair, $[S]$ is the concentration of the substrate and $K_M$ is the $[S]$ at which $v = V_{max}$.
@@ -231,7 +244,9 @@ Specifically, absorbance at 420 nm is reduced and absorbance at 390 nm increases
 In this case, $v$ is substituted for $\Delta A_{390} - \Delta A_{420}$ - the magnitude of the P450 response and $K_M$ is substituted for $K_d$ - the dissociation constant between the enzyme and ligand.
 This yields the formula:
 
-$$ Response = \Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
+\begin{equation}
+	Response = \Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} 
+\end{equation}
 
 An example of this is shown in \textbf{figure \ref{arachadionictitration}}, where the fatty acid arachadionic acid was titrated into a sample of P450 BM3 wild-type.
 
@@ -307,10 +322,10 @@ It requires purified P450 protein which limits the rate of data generation, thou
 	Assay plates with at least 30 µl working volume. 
 	Some treated surfaces may be more suitable for unstable proteins.
 	Ideally have minimal absorbance in the 390-420 nm region, but this can be corrected for with controls.
-			Used here: \textit{ThermoFisher Nunc 384 Well Plates}
-			- \textbf{384 well \textit{Labcyte Echo} source plates:} for dispensing compounds to assay plates. 
-			Used here were the \textit{Low Dead Volume (LDV)} variety, which have a working volumne of 2.5-12.5 µl, 
-			which limits compound waste compared to the standard \textit{Echo} plates (12-65 µl).
+	Used here: \textit{ThermoFisher Nunc 384 Well Plates}
+	\item \textbf{384 well \textit{Labcyte Echo} source plates:} for dispensing compounds to assay plates. 
+	Used here were the \textit{Low Dead Volume (LDV)} variety, which have a working volumne of 2.5-12.5 µl, 
+	which limits compound waste compared to the standard \textit{Echo} plates (12-65 µl).
 	\end{itemize}
 \end{itemize}
 
@@ -395,7 +410,9 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 	\item Measure the stock concentration of the protein in a UV-Vis spectrometer by taking an absorbance trace from 200-800 nm, diluted in the destination buffer.
 	There should be a peak at 420 nm, the height of which can be used to calculate the protein concentration with the following equation:
 
-	$$ [P450]  = a e l  $$
+			\begin{equation}
+				[P450]  = a e l  
+			\end{equation}
 
        where $a$ is absorbance and $e$ is the extiction coefficient - 95 for P450 BM3 heme domain.
        $l$ is the path length in cm and for the cuvettes used was 1.
@@ -486,8 +503,12 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 		   \item For clean traces with a peak shift from 420 to 390 or 424 nm, biding response can be calculated using the $|\Delta A{390}| - |\Delta A_{420}|$ or $|\Delta A{420}| - |\Delta A_{420}|$  for each compound concentration.
 		   With a set of concentration-response data points, the binding dissociation constant $K_d$ can be calculated using the Michaelis-Menten equation for enzyme kinetics:
 
-		   $$ Response = \frac{V_{max} \times [S]}{K_{d} + [S]}$$
-		   $$ Response = |\Delta A_{390}| - |\Delta A_{420}| $$
+				\begin{equation}
+					Response = \frac{V_{max} \times [S]}{K_{d} + [S]}
+				\end{equation}
+				\begin{equation}
+					Response = |\Delta A_{390}| - |\Delta A_{420}| 
+				\end{equation}
 
 		   Where $[S]$ is a given substrate concentration and $V_{max}$ is the maximum response magnitude possible from the P450 being tested from this compound.
 				The metrics $K_d$ and $V_{max}$ can be derived by fitting $|\Delta A{390}| - |\Delta A_{420}|= \frac{V_{max} \times [S]}{K_{d} + [S]}$ can be fit to the P450 substrate concentration-response  data points using a curve fit algorithm like \texttt{scipy.optimize.curve\_fit}.
@@ -546,7 +567,7 @@ flanked by a T7 promoter and terminator which leads to high yields in strains of
 The plasmid also encodes ampicillin resistance and a \textit{ColE1} replication origin which leads to a low copy number.
 
 
-\subsubsection{Primer design and Acquisition}
+\subsubsection{Primer Design and Acquisition}
 
 Mutations were introduced to the wild-type sequence via Polymerase Chain Reaction (PCR)-based site-directed mutagenesis.
 Two methods were considered for this task based on commercially available kits, where each imposes different constraints on primer design.
@@ -575,6 +596,7 @@ Two important considerations based on the template sequence are:
 		If the sequence surrounding a mutation target area contains these features, then the likelihood of \textit{mis-priming} by binding to an off-target sequence area is high, so too is the likelihood of a non-functional, self-binding primer.
 \end{enumerate}
 
+\textbf{note: talk about \texttt{mxn}}
 
 \subsubsection{PCR and Work Up}
 
@@ -631,10 +653,12 @@ Each of the five enzymes was screened against all 980 compounds over the course 
 
 The model aims to predict the binding likelihood between a given protein sequence and chemical structure, illustrated in equation \ref{pbinding}.
 
-$$
+
 \label{pbinding}
+\begin{equation}
 P_{binding} = fn(sequence, smiles)
-$$
+\end{equation}
+
 
 This page describes the deep learning model constructed for this project.
 The model is designed to estimate the likelihood of a binding interaction between a given Cytochrome P450 sequence and a ligand SMILES code.
@@ -687,7 +711,73 @@ $$
 
 Roughly, characters are encoded as tensors of the integers that index their position in the list $\begin{matrix} ACDEFGHIKLMNPQRSTVWY\end{matrix}$, with extra positions to represent null values, start of frame and end of frame characters.
 
-	\subsubsection{Pre-Training Data}
+\subsubsection{Pre-Training Data}
+
+A dataset of around $10^6$ protein sequences and SMILES codes for their corresponding binding partners are gathered here from several sources.
+
+There are several sources of data containing protein sequences and information on their binding partners.
+
+\begin{itemize}
+	\item \href{https://www.uniprot.org/}{Uniprot} is a large, publicly available database containing protein sequences and a variety of functional annotations. 
+		\textit{Uniprot} comprises three databases:
+	\item \textit{UniProt Knowledgebase (UniprotKB)} contains protein sequences and their annotations.
+		\textit{UniprotKB} mainly comprises two collections:
+\item \textit{SProt:} - The SwissProt collection. Manually annotated and non-redundant protein sequences. 
+	Annotations can include \textit{Enzyme Comission (EC)} classification numbers, which can be linked to substrates and products. 
+		At the time of collection (2022) the \textit{SProt} collection contains 1,706,449 data points.
+	\item \textit{Trembl:} - The TrEMBL collection. Automatic annotations, N data points.
+	\item \textit{UniProt Archive (UniParc)} - an archive of sequences pooled from other public protein sequence databases.
+	This collection does not contain annotations.
+\item \textit{UniProt Reference Clusters (UniRef)} - Three collections of clustered sequences from \textit{UniprotKB} and \textit{UniParc}. 
+	Each collection is clustered with the CD-HIT algorithm and a different similarity cutoff: \textit{UniRef100}, \textit{UniRef90} and \textit{UniRef50} use 100, 90 and 50% respectively.
+	In the case of UniRef100, similarity measurements are made against sequence fragments.
+	The clusters do not contain annotations.
+		Importantly: *Uniprot* files can be freely downloaded via an \texttt{ftp} server at \href{https://ftp.uniprot.org/pub/databases/uniprot/current_release/uniref/}{fa}
+	\item \href{https://www.genome.jp/kegg/}{KEGG} is another large source of proteins and biological function annotations, though download of the full dataset is restricted to paying customers.
+		\textit{KEGG} does however have a \textit{REST API} which can be used to query the database, though requests are handled somewhat slowly.
+		Despite this limitation, it was useful to cross-reference \textit{EC} numbers against substrate and product identities.
+	\item \href{https://www.bindingdb.org/bind/index.jsp}{BindingDB} is a large collection of proteins and known small molecule binding partners mostly derived from high throughput drug screening datasets, which is reflected in the chemical diversity of the set.
+	\item \href{http://pdbbind.org.cn/}{PDBBind} contains protein sequences and structures and their binding ligands derived from the \textit{Protein DataBank (PDB)}.
+	\item \href{https://www.brenda-enzymes.org/}{BRENDA} contains manual curations from primary literature for enzymes.
+\end{itemize}
+
+
+
+For this work, the Uniprot SProt and BindingDB collections were selected because they met the necessary requirements of containing protein sequences that can be matched to a chemical binding partner.
+For data mining a cloud machine was hired (Linode \texttt{g6-dedicated-8}, 1TB Disk space, 8 \texttt{x86\_64} cpus, 16 GB RAM, Debian 10, London).
+Scripts used here are in \texttt{screening-fist/data/pretraining/scripts/}.
+
+Large files and files in large numbers can prove slow to search, a problem that databases address.
+For this work, a database was set up on the hired machine for storage and retrieval of the mined data.
+MongoDB, an unstructured database, was chosen. 
+
+MongoDB is unstructured in as far as it does not store tabular data, instead opting for a \texttt{json}-like schema which uses attribute:value arrays that themselves can contain more attribute:value arrays.
+This offers considerable flexibility in data input from heterogeneous sources with varying presence, absence and categories of annotation.
+
+SProt was gathered as a compressed \texttt{.dat} file using \texttt{screening-fist/data/pretraining/scripts/uniprot.sh}, which decompresses, parses entries and uploads them to the local MongoDB in a single UNIX pipe.
+Using a single pipe saves the need to store the decompressed file on disk, which becomes significant in the case of the \texttt{TrEMBL} collection which has an uncompressed size of around 700GB as opposed to the 3.5GB of \texttt{sprot}.
+
+BRENDA was used for its comprehensive list of EC numbers which would later be used for reference.
+BindingDB was downloaded in full as a \texttt{.tsv} file.
+Both the BRENDA and BindingDB sets were downloaded using \texttt{curl} commands and BindingDB was uploaded to the MongoDB instance.
+
+The EC numbers from BRENDA were used with the KEGG REST API to collection compound identification numbers, which in turn were used to retrieve SMILES codes from PubChem using the script \texttt{ec.py}
+\texttt{mkdataset1.py} was used to assemble a \texttt{csv} containing protein sequences and SMILES codes of their binding partners (1,587,674), which was further filtered to exclude SMILES codes and sequences that could not be parsed using RDKit and the tokenizer used in the sequence model.
+
+Finally, an attempt to improve the chemical diversity of the pre-training dataset was made.
+A diversity filter that aims to return a subset of a compound set by maximizing the pairwise Tanimoto similarity of the subset compound fingerprints was employed using the MaxMin algorithm.
+
+
+Unfortunately, MaxMin is $O(n^2)$ complexity, so is only feasible with relatively small batches.
+64 compounds are selected this way from each batch of 512 from the filtered set, yielding \texttt{o3.csv} (1359834 data points and 908M uncompressed size).
+
+\texttt{o3.csv} was compressed with \texttt{gzip} and loaded to an area of \textit{Linode} object storage in Frankfurt, making it accessible to the *Linode* instances that would be used for model training.
+
+\texttt{o3.csv} contained at least one invalid SMILES or sequences which had the costly effect of crashing the first model training run.
+A filter for troublesome inputs was built and yeilded \texttt{o3f.csv} (x xMB).
+and
+For the purposes of model training and evaluation, the \texttt{o3f.csv} dataset was split 3:1 into a training and test datasets  `o3f.train.csv` and `o3f.test.csv` of sizes 907214 and 226804 respectively.
+
 
 \subsubsection{Training Data}
 
@@ -908,7 +998,7 @@ Model architecture and hyper-parameters were directly configurable by supply of 
 	\item \textbf{Improvements (Issues):}
 	\begin{itemize}
 		\item \textbf{Issues with screening library}
-		\item \textbf{Improvements to data processing}
+		\item \textbf{Improvements to data processing - recover compound concentrations}
 		\item \textbf{Improvements to screening dataset partitioning}
 		\item \textbf{Improvements to model application}
 	\end{itemize}

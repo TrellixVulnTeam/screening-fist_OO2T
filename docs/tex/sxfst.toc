@@ -1,47 +1,47 @@
-\contentsline {section}{\numberline {1}Abstract}{2}{}%
-\contentsline {section}{\numberline {2}Introduction}{2}{}%
-\contentsline {subsection}{\numberline {2.1}Engineering Problem and Context}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Technologies Used}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Machine Learning}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Transfer Learning}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}The TAPE Benchmark}{5}{}%
-\contentsline {subsection}{\numberline {2.3}Related Work}{5}{}%
-\contentsline {subsection}{\numberline {2.4}Overview of This Work}{6}{}%
-\contentsline {section}{\numberline {3}Methods and Development}{7}{}%
-\contentsline {subsection}{\numberline {3.1}Assay Development}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Aim}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Basis: UV-Visible Spectroscopy for Monitoring Cytochrome P450-Ligand Binding}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Development}{8}{}%
-\contentsline {subsection}{\numberline {3.2}Assay Protocol}{10}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Requirements}{10}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Procedure}{12}{}%
-\contentsline {subsection}{\numberline {3.3}Enzyme Production}{16}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Summary}{16}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Aims}{16}{}%
-\contentsline {subsubsection}{\numberline {3.3.3}DNA}{16}{}%
-\contentsline {subsubsection}{\numberline {3.3.4}Starting Material}{16}{}%
-\contentsline {subsubsection}{\numberline {3.3.5}Primer design and Acquisition}{16}{}%
-\contentsline {subsubsection}{\numberline {3.3.6}PCR and Work Up}{17}{}%
-\contentsline {subsubsection}{\numberline {3.3.7}Sequencing}{17}{}%
-\contentsline {subsection}{\numberline {3.4}Protein Expression}{17}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Materials}{18}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Method}{18}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Purification}{18}{}%
-\contentsline {subsection}{\numberline {3.5}Screening}{18}{}%
-\contentsline {subsection}{\numberline {3.6}Model Design and Construction}{18}{}%
-\contentsline {subsubsection}{\numberline {3.6.1}Approach: Recommender Systems}{19}{}%
-\contentsline {subsubsection}{\numberline {3.6.2}Data}{19}{}%
-\contentsline {subsubsection}{\numberline {3.6.3}Pre-Training Data}{20}{}%
-\contentsline {subsubsection}{\numberline {3.6.4}Training Data}{20}{}%
-\contentsline {subsubsection}{\numberline {3.6.5}Model Architecture}{20}{}%
-\contentsline {subsubsection}{\numberline {3.6.6}Sequence Embedding}{20}{}%
-\contentsline {subsubsection}{\numberline {3.6.7}Chemical Embedding}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.8}Prediction Head}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.9}Pre-Training, Training and Evaluation}{22}{}%
-\contentsline {subsubsection}{\numberline {3.6.10}Evaluation}{23}{}%
-\contentsline {section}{\numberline {4}Results}{23}{}%
-\contentsline {subsection}{\numberline {4.1}Screening Data Analysis}{23}{}%
-\contentsline {subsection}{\numberline {4.2}Model Training}{24}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Pre-training}{24}{}%
-\contentsline {subsection}{\numberline {4.3}Model Application}{26}{}%
-\contentsline {section}{\numberline {5}Discussion and Future Work}{26}{}%
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Engineering Problem and Context}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Technologies Used}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Machine Learning}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Transfer Learning}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}The TAPE Benchmark}{5}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Related Work}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Overview of This Work}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Methods and Development}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Assay Development}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Aim}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Basis: UV-Visible Spectroscopy for Monitoring Cytochrome P450-Ligand Binding}{7}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Development}{8}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Assay Protocol}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Requirements}{10}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Procedure}{13}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Enzyme Production}{16}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Summary}{16}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Aims}{16}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}DNA}{17}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Starting Material}{17}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Primer Design and Acquisition}{17}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.6}PCR and Work Up}{18}{subsubsection.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.7}Sequencing}{18}{subsubsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.4}Protein Expression}{18}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Materials}{18}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Method}{19}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Purification}{19}{subsubsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.5}Screening}{19}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Model Design and Construction}{19}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Approach: Recommender Systems}{19}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Data}{20}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Pre-Training Data}{20}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Training Data}{21}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}Model Architecture}{21}{subsubsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.6}Sequence Embedding}{22}{subsubsection.3.6.6}%
+\contentsline {subsubsection}{\numberline {3.6.7}Chemical Embedding}{22}{subsubsection.3.6.7}%
+\contentsline {subsubsection}{\numberline {3.6.8}Prediction Head}{22}{subsubsection.3.6.8}%
+\contentsline {subsubsection}{\numberline {3.6.9}Pre-Training, Training and Evaluation}{22}{subsubsection.3.6.9}%
+\contentsline {subsubsection}{\numberline {3.6.10}Evaluation}{24}{subsubsection.3.6.10}%
+\contentsline {section}{\numberline {4}Results}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Screening Data Analysis}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Model Training}{26}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Pre-training}{26}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}Model Application}{31}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Discussion and Future Work}{31}{section.5}%
