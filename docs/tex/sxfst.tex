@@ -7,6 +7,7 @@
 \usepackage{tabularx}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{geometry}
 \usepackage[backend=biber, citestyle=numeric, sorting=none]{biblatex}
 \addbibresource{sxfst.bib}
 
@@ -30,14 +31,64 @@ It can also be used to design subsequent rounds of screening based on the expect
 \section{Introduction}
 
 \subsection{Engineering Problem and Context}
-\subsection{Similar Work}
-\subsection{Technologies Used}
 
+Herbicide-resistant crops are important for global agriculture because they mitigate yield losses due to weeds and give farmers extra flexibility in their herbicide application programs, which is important to suppress emergence of herbicide-resistant weeds. % value statement
+\par
+Herbicides kill plants by inhibiting key metabolic processes and their species-specificity is determined by susceptibility of herbicide target and their ability to  metabolize the herbicide. % herbicide overview
+HPPD inhibitors are a key herbicide class that cause leaf bleaching and death in susceptible plants. 
+HPPD inhibition  disrupts tyrosine catabolism which disrupts UV-protection via carotenoid production and photosynthetic electron shuttling via plastoquinone, leading to death by UV damage and radical toxicity. % HPPDs
+\par
+Engineering HPPD-inhibitor resistance into plants have used the HPPD and metabolic enzymes from naturally resistant species like \textit{Avena fatua}. 
+\textbf{note: ref this.}
+CYP72A1 is a cytochrome P450 that initiates metabolism of HPPD herbicides by ring hydroxylation at $C_5$ and has been explored as a means of engineering HPPD herbicide metabolism into soybean.
+\textbf{Figure \ref{mesotrione}} shows the chemical structure of mesotrione and its primary metabolite 5-hydroxy mesotrione. % cyp 72a1 & engineering attempts
+
+\begin{figure}
+	\begin{center}
+	\caption{\label{mesotrione} The HPPD-inhibiting herbicide mesotrione and its primary metabolite 5-hydroxy mesotrione - hydroxylated at the $C_5$ position naturally in some plants by indigenous Cytochrome P450s, priming it for subsequent stages of detoxification.}
+	\includegraphics[width = \textwidth]{img/mesotrione+metabolite.png}
+	\end{center}
+\end{figure}
+
+\par
+
+Cytochrome P450s are a ubiquitous class of heme-dependent oxidoreductases that are frequently involved in xenobiotic metabolism. % p450s overview
+Bacterial P450s have been engineered to catalyse a range of xenobiotic biotransformations. The bacterial P450 BM3 from \textit{Bacillus megaterium} is one such bacterial P450 whose structure has been studied extensively \cite{munro2002p450}. 
+
+
+Notably, BM3 is a popular target for enzyme engineering studies, owing in part to its extensive documentation, ease of expression and \textit{evolvability} \cite{bloom2006protein}.
+Some examples of BM3 mutants with altered substrate scope are shown in \textbf{Table \ref{bm3_table}} \cite{wong}.
+\par
+
+\begin{table}
+	\begin{center}
+		\caption{\label{bm3_table}Examples of engineered BM3 Mutants with altered substrate scope \cite{wong}}
+		\begin{tabular}{l|p{3cm}|l}
+		\textbf{Mutant} & \textbf{Substrate scope} & \textbf{Structure} \\
+		\hline 
+		F87A/I263A/(A328I) & Nootkatone & \includegraphics[width = 2cm, height= 2cm, keepaspectratio=true]{img/nookatone.png} \\
+		A328F & Limonene & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/limonene.png} \\
+		R47L/Y51F & Alkylbenzenes (no heteroatoms) & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/alkyl-benzene.png} \\
+			R47L/F87V/L188Q (LVQ) & Coumarins & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/coumarin.png} \\ % this pic sucks
+			A74G/F87V/L188Q (GVQ) & Indole, Lovastatinn, beta-ionine, organophosphates, polyaromatic hydrocarbons, chlorinated dioxins & \includegraphics[width=2cm, height= 2cm, keepaspectratio=true]{img/indole.png} \\
+	\end{tabular}
+	\end{center}
+\end{table}
+
+The BM3 A82F/F87V mutant has a broad substrate specificity \cite{butler2013key}, and represents an attractive starting point for engineering altered substrate scope, however it has no binding activity towards the HPPD herbicide mesotrione. % bacterial p450 engineering
+%%%%%%% find that spec
+
+\subsection{Technologies Used}
+\subsubsection{Machine Learning}
 \subsubsection{Transfer Learning}
 
-Transfer learning is a phenomenon where a model trained on one task, can be re-trained on a different domain-related task  sample-efficiently compared to an untrained model.
-For example an object detection model trained from from images of vehicles can transfer efficiently to identification of cell phenotypes from microscopy images.
-This is because some learned features generalize well enough to be useful in other tasks, reducing the number is samples required to reach a baseline performance level.
+%Transfer learning is a phenomenon where a model trained on one task, can be re-trained on a different domain-related task  sample-efficiently compared to an untrained model.
+%For example an object detection model trained from from images of vehicles can transfer efficiently to identification of cell phenotypes from microscopy images.
+%This is because some learned features generalize well enough to be useful in other tasks, reducing the number is samples required to reach a baseline performance level.
+
+Transfer learning is a popular approach to enhancing model accuracy and involves pretraining the model on a large, general dataset before transferring to a new task. 
+The effect is a reduction in the number of samples required to train the model. 
+Pre-training datasets do no necessarily need to be closely related to the target task, for example: models initially trained on the CIFAR 100 dataset (containing cars, animals etc. has been successfully re-tasked on phenotype identification from microscopy images \cite{ng2016nuts}. % xfer learning justification
 
 In the domain of protein sequence-based machine learning, thoroughly pre-trained models are available for generating a neural embedding of a given protein that can improve sample efficiency in downstream learning tasks.
 Generally, these models are large attention-based models trained \textit{unsupervised} on a large corpus of protein sequences, like the \textit{TrEMBL} collection of \textit{Uniprot}.
@@ -45,7 +96,9 @@ In this case, unsupervised training often entails reconstruction of a distorted 
 
 \subsubsection{The TAPE Benchmark}
 
-Tasks Assessing Protein Embeddings \textcite{tape2019} is a benchmark for comparing numerical representations of protein sequence (learned or otherwise) on a set of biological learning tasks from different domains of protein science. 
+\textbf{note: explain relevance, flesh out}
+
+Tasks Assessing Protein Embeddings \cite{tape2019} is a benchmark for comparing numerical representations of protein sequence (learned or otherwise) on a set of biological learning tasks from different domains of protein science. 
 It currently contains five tasks:
 
 \begin{enumerate}
@@ -65,7 +118,7 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 	\begin{center}
 		\caption{Fluorescence TAPE benchmark leader boards \label{tapefluor}}
 		\begin{tabular}{l|p{3cm}|l}
-			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\textbf{Size}\\
+			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\\
 		\hline 
 			 1. & Transformer & 0.68 \\
 			 2. & LSTM & 0.67 \\
@@ -80,13 +133,11 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 
 \textbf{Stability:}
 
-| Ranking | Model | Spearman's rho |
-|:-:|:-:|:-:|
 \begin{table}
 	\begin{center}
-		\caption{Stability TAPE benchmark leader boards \label{tapestab}}
+		\caption{\label{tapestab} Stability TAPE benchmark leader boards }
 		\begin{tabular}{l|p{3cm}|l}
-			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\textbf{Size}\\
+			\textbf{Ranking} & \textbf{Model} & \textbf{Spearman's rho}\\
 		\hline 
 			 1. & Transformer & 0.73 \\
 			 1. & Unirep & 0.73 \\
@@ -99,8 +150,30 @@ The leader boards for performance on these two tasks as of 5 Jun 2022 are:
 \end{table}
 
 \textbf{Facebook AI Research - Evolutionary-Scale Modelling}
+\textbf{note: explain model architecture and purpose, set of pretrained models and availability}
+
+\subsection{Related Work}
+
+\textbf{note - do:}
+\begin{itemize}
+	\item \textbf{biswas}
+\end{itemize}
 
 \subsection{Overview of This Work}
+
+This project is a proof of concept for a new approach towards enzyme engineering using machine learning.
+Broadly speaking, it involves screening a number of enzyme mutants for activity towards a large number of compounds of interest.
+This data is then used to train a machine learning model to predict the likelihood of activity between a given protein sequence and small molecule structure.
+The trained model has two applications:
+\begin{enumerate}
+	\item Virtually screen a large number of potential protein and small molecule candidates for potential activity. 
+		These screens can be used to explore potential substrate scope of a given protein, or as a virtual fitness function for use in virtual directed evolution - where a sequence optimization algorithm evaluates sequences against a fitness function.
+	\item Optimal design of subsequent screening rounds based on the expected information gain ($EIG$) of a candidate experimental design.
+\end{enumerate}
+
+The specific approach in this project is to screen a local area of sequence space surrounding the wild-type P450 BM3 against a library of 980 FDA-approved drug compounds.
+Drugs share chemical properties with herbicides so are suitable for a proof of concept study.
+
 % ----------
 \section{Methods and Development}
 \subsection{Assay Development}
@@ -122,7 +195,7 @@ The initial aims of this development work were:
 \subsubsection{Basis: UV-Visible Spectroscopy for Monitoring Cytochrome P450-Ligand Binding}
 
 The assay is based on a technique for quantifying P450-ligand interactions based on UV-visible photospectroscopy.
-The technique consists of the purified Cytochrome P450 heme domain in question in a neutral buffer at around 5-10 $\mu$ M in a optically clear cuvette.
+The technique consists of the purified Cytochrome P450 heme domain in question in a neutral buffer at around 5-10 µM in a optically clear cuvette.
 Since only the heme-containing domain of the P450 is used, no chemical reactions are expected to take place which removes time-sensitivity from the assay.
 \par
 
@@ -151,22 +224,54 @@ Important assumptions in the Michaelis-Menten model of kinetics are:
 	\item The interaction is reversible
 \end{enumerate}
 
-A variant of this model is applied to Cytochrome P450 photospectroscopy assays.
-$v$ is substituted for $\Delta A_{390} - \Delta A_{420}$ - the magnitude of the P450 response and $K_M$ is substituted for $K_d$ - the dissociation constant between the enzyme and ligand.
+A variant of this model is applied to Cytochrome P450 photospectroscopy assays, where the response to a ligand is detectable in the 390-420 nm region.
+Ligand binding to a P450 alters the electron environment in the heme, which changes the UV-Visible light absorbance profile.
+Specifically, absorbance at 420 nm is reduced and absorbance at 390 nm increases.
+
+In this case, $v$ is substituted for $\Delta A_{390} - \Delta A_{420}$ - the magnitude of the P450 response and $K_M$ is substituted for $K_d$ - the dissociation constant between the enzyme and ligand.
 This yields the formula:
 
-$$\Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
+$$ Response = \Delta A_{390} - \Delta A_{420} = V_{max} \frac{[S]}{[S] + K_d} $$
 
-or
+An example of this is shown in \textbf{figure \ref{arachadionictitration}}, where the fatty acid arachadionic acid was titrated into a sample of P450 BM3 wild-type.
 
-$$ Response = V_{max} \frac{[S]}{[S] + K_d} $$
+\begin{figure}
+	\caption{\label{arachadionictitration} Response of P450 BM3 to Arachadionic Acid from a titration experiment, from which steady-state Michaelis-Menten kinetics can be derived. The legend shows the concentration of arachadionic acid in µM.}
+	\includegraphics[width = \textwidth]{img/ArachadionicAcid.png}
+\end{figure}
 
+% -----------------
 
+\subsubsection{Development}
 
 This style of assay was miniaturized into a 384-well format for the purpose of this project.
 The 384-well format permits high throughput screening of compounds for binding with a given P450 provided it is sufficiently stable to last the duration of the experiment without degrading and interfering with measurement.
 
-\subsection{Assay Protocol}
+% echo.py
+At micro-scales, precision dispensing of both compound and protein is critical for overall assay precision.
+To achieve sufficient precision, compounds were dispensed using an \textit{Echo 550} acoustic liquid handling device, which uses ultrasound to move liquid from a source plate to a destination plate.
+In order to achieve the desired dispensing pattern, a custom python package, \texttt{echo}, was developed.
+\texttt{echo} facilitates dispensing of compounds in the gradients required by output of a picklist \texttt{csv} file that can be used directly in the \textit{Echo}.
+A critical function of this package is that it tracks the volume of compounds in the source plate, which is important in the common case that one compound must be spread over multiple wells.
+The package was indispensable in this work.
+
+
+% ThermodropMulti
+During early stages of development, an automated bulk liquid dispensing device - a \textit{ThermodropMulti} was available.
+The device uses precise peristaltic pumps to dispense a single liquid into a plate at a single volume very quickly.
+Precision in the bulk fluid volume in the plate is helpful in downstream analysis due to the consistent path lengths and concentrations in each well, something that was found to be less consistent when using a multichannel pipette to achieve the same task.
+\textbf{Figure \ref{assaydevarachadionic}} shows an example of both the \textit{ThermodropMulti} and \textit{Echo} being used to capture $K_d$ and $V_{max}$ for the binding interaction between P450 BM3 wild-type and arachadionic acid.
+
+\begin{figure}
+	\caption{\label{assaydevarachadionic} Michaelis-Menten steady-state kinetics of arachadionic acid and wild-type P450 BM3 captured during assay development.
+		 Notably, in this experiment both an \textit{Echo} and \textit{ThermodropMulti} were used in dispensing compound and protein respectively,
+		 which accounts for the neatness.
+		 The traces were smoothed using a Gaussian kernel to account for noise.}
+	\includegraphics[width = \textwidth]{img/assay-dev-arachadionic.png}
+\end{figure}
+
+%%%%% -----------------------
+\subsection{Assay Protocol} \label{protocol}
 
 This is a assay protocol for detecting binding interactions between a Cytochrome P450 and multiple small molecule compounds.
 The assay has demonstrated scale to a library of 980 compounds and five P450 mutants and with some small adjustments could be improved in scale and precision.
@@ -205,7 +310,7 @@ It requires purified P450 protein which limits the rate of data generation, thou
 			Used here: \textit{ThermoFisher Nunc 384 Well Plates}
 			- \textbf{384 well \textit{Labcyte Echo} source plates:} for dispensing compounds to assay plates. 
 			Used here were the \textit{Low Dead Volume (LDV)} variety, which have a working volumne of 2.5-12.5 µl, 
-			which limits compound waste compared to the standard \textit{Echo} plates (12-65 µl i think?).
+			which limits compound waste compared to the standard \textit{Echo} plates (12-65 µl).
 	\end{itemize}
 \end{itemize}
 
@@ -215,7 +320,7 @@ It requires purified P450 protein which limits the rate of data generation, thou
 		\begin{itemize}
 			\item \textbf{Bulk liquid dispensing:} can be far more accurate than a multichannel pipette when dispensing protein or buffer into wells.
 			During development, both a \textit{ThermodropMulti} peristaltic dispenser and a \textit{Hamilton Star} liquid handling robot. 
-			Both work well.
+			Both work well, though use of a bulk liquid dispensing machine is recommended given their speed, lower unit cost and lack of requirement for pipette tips.
 			\item \textbf{Microplate reader plate loader:} Autoloading plates into the reader increases throughput capacity significantly.
 			I used a \textbf{BMG ClarioStar} plate reader with a stacker module.
 		\end{itemize}
@@ -232,16 +337,16 @@ It requires purified P450 protein which limits the rate of data generation, thou
 
 
 \textbf{Summary:}
-\begin{enumerate}
-	\item \textbf{Design \textit{Echo} picklists}
-	\item \textbf{Dispense compounds into \textit{Echo} source plates}
-	\item \textbf{Dispense compounds from \textit{Echo} source plates to empty assay plates}
-	\item \textbf{Stopping point}
-	\item \textbf{Thaw purified P450 and make stock of ~ 10 $\mu$M in a neutral buffer, enough for 15.36+ ml per plate (40 $\mu$l per well)}
-	\item \textbf{Dispense the diluted protein into the assay plates, centrifuge etc}
-	\item \textbf{Capture UV-Visible light absorbance data between 220 and 800 nm from plates in a microplate reader at room temperature within 3 hours}
-	\item \textbf{Data analysis}
-\end{enumerate}
+%\begin{enumerate}
+%	\item \textbf{Design \textit{Echo} picklists}
+%	\item \textbf{Dispense compounds into \textit{Echo} source plates}
+%	\item \textbf{Dispense compounds from \textit{Echo} source plates to empty assay plates}
+%	\item \textbf{Stopping point}
+%	\item \textbf{Thaw purified P450 and make stock of ~ 10 µM in a neutral buffer, enough for 15.36+ ml per plate (40 µl per well)}
+%	\item \textbf{Dispense the diluted protein into the assay plates, centrifuge etc}
+%	\item \textbf{Capture UV-Visible light absorbance data between 220 and 800 nm from plates in a microplate reader at room temperature within 3 hours}
+%	\item \textbf{Data analysis}
+%\end{enumerate}
 
 
 
@@ -258,9 +363,9 @@ It requires purified P450 protein which limits the rate of data generation, thou
 % --- 2---- 
 \item \textbf{Dispense compounds into \textit{Echo} source plates}
 	This can be done with a multichannel pipette, and requires one tip per compound. 
-		If the total volume of each compound required is greater than 60 $\mu$l then a standard polypropylene \textit{Echo} plate should be used, otherwise a low dead volume plate may be economical
+		If the total volume of each compound required is greater than 60 µl then a standard polypropylene \textit{Echo} plate should be used, otherwise a low dead volume plate may be economical
 		If not, or for valuable compounds, Low Dead Volume \textit{Echo} may plates should be used.
-		These have a working volume of 2.5-12.5 $\mu$l, outside of which the \textit{Echo} will refuse to dispense.
+		These have a working volume of 2.5-12.5 µl, outside of which the \textit{Echo} will refuse to dispense.
 	You may need to dispense the same compounds into multiple source wells and the picklists must be designed accordingly.
 
 % --- 3---- 
@@ -282,7 +387,7 @@ It requires purified P450 protein which limits the rate of data generation, thou
 Up to 24 hours seems ok.
 % --- 5---- 
 
-\item \textbf{Thaw purified P450, make stock of ~ 10 $\mu$ M in a neutral buffer, enough for 15.36+ ml per plate (40 $\mu$l per well)}
+\item \textbf{Thaw purified P450, make stock of ~ 10 µM in a neutral buffer, enough for 15.36+ ml per plate (40 µl per well)}
 I heard that thawing fast limits ice crystal formation, which could destroy some protein.
 Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rpm and carefully transferr to fresh tubes to remove unfolded protein.
 	\begin{enumerate}
@@ -290,16 +395,17 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 	\item Measure the stock concentration of the protein in a UV-Vis spectrometer by taking an absorbance trace from 200-800 nm, diluted in the destination buffer.
 	There should be a peak at 420 nm, the height of which can be used to calculate the protein concentration with the following equation:
 
-	$$ [P450]  = a e  $$
+	$$ [P450]  = a e l  $$
 
        where $a$ is absorbance and $e$ is the extiction coefficient - 95 for P450 BM3 heme domain.
-       Use the measured stock concentration of P450 to create a working stock of around 10 $\mu$ M.
-       10$\mu$ M was chosen because it yeilds a reasonably strong signal when in plates.
+       $l$ is the path length in cm and for the cuvettes used was 1.
+       Use the measured stock concentration of P450 to create a working stock of around 10 µM.
+       10µM was chosen because it yeilds a reasonably strong signal when in plates.
        Varying the protein concentration doesn't have a big effect on measurements, so err towards using more.
 
 
 	\item Dilute in neutral buffer to the target working concentration.
-	Filtration through a 22 um syringe filter can remove some precipitates.
+	Filtration through a 22 µm syringe filter can remove some precipitates.
 	Vacuum filtration can work too but in practice, the protein can pick up binding partners from the filtration equipment contaminants, which can ruin downstream measurements.
 	\end{enumerate}
 
@@ -322,8 +428,8 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 \item \textbf{Dispense the diluted protein into the assay plates, centrifuge}
 
 	An electric multichannel pipette works but accuracy is more limited than with automated dispensing. 
-	38 $\mu$l of protein working stock needs to be dispensed into each well, which brings the total well volume to 40 $\mu$l in cases where the volume of compounds in DMSO in each well is 2 ul.
-	If the volume of DMSO in destination wells is not a constant 2 ul, then default to 38 $\mu$l of the protein stock.
+	38 µl of protein working stock needs to be dispensed into each well, which brings the total well volume to 40 µl in cases where the volume of compounds in DMSO in each well is 2 ul.
+	If the volume of DMSO in destination wells is not a constant 2 ul, then default to 38 µl of the protein stock.
 	The variation in total volume can be corrected for in compound concentration calculations, though the path lenght will vary which affects precision.
 
 	Better than that is a precise bulk liquid handling device.
@@ -352,12 +458,11 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 	It is advisable to un-stack and re-stack the plates using the stacker to check for this kind of issue prior to measurement.
 
 \item \textbf{Data analysis overview}
-   More info [here](data.md).
    \begin{enumerate}
-	\item Export the plate measurement data to a workable format, like `.csv`. 
+	   \item Export the plate measurement data to a workable format, like \texttt{.csv}. 
 	   In the BMG Mars software, the operation is simple but on all host machines I've tried it on have been unreasonably slow to open the data files prior to export.
    \item Index the files to their experiments. 
-	   I used a `config.yml` file to track this.
+	   I used a \texttt{config.yml} file to track this.
    \item \textbf{Analysis}
 		\begin{enumerate}
 		\item Match compounds to plate well data.
@@ -391,7 +496,6 @@ Optionally, in a microcetrifuge, pre-cooled to 4C, spin the protein at 14,000 rp
 
 		   An ideal end output of this analysis as a table of compounds, P450s and a qualification or quantification of their binding interactions.
 
-		   Documentation on how I implemented this is [here](data.md)
 		\end{enumerate}
    \end{enumerate}
 \end{enumerate}
@@ -405,17 +509,16 @@ The enzymes are variants of the Cytochrome P450 BM3:
 
 \begin{table}
 	\begin{center}
-		\caption{BM3 mutants used in screening\label{bm3_table}}
+		\caption{\label{bm3_table} BM3 mutants used in screening}
 		\begin{tabular}{l|p{3cm}|l}
 		\textbf{ID} & \textbf{Mutations} & \textbf{PDB} \\
 		\hline 
-		 WT &           & 1BU7 \\
-		A82F&   A82F    & 4KEW \\
-		 DM & A82F/F87V & 4KEY \\
-		1YQO&   T268A   & 1YQO \\
-		1YQP&   T268N   & 1YQP \\
-
-	\end{tabular}
+		WT   &           & 1BU7 \\
+		A82F &   A82F    & 4KEW \\
+		DM   & A82F/F87V & 4KEY \\
+		1YQO &   T268A   & 1YQO \\
+		1YQP &   T268N   & 1YQP \\
+		\end{tabular}
 	\end{center}
 \end{table}
 
@@ -436,11 +539,11 @@ expression of the mutants in \textit{E. coli} and their purification.
 
 \subsubsection{Starting Material}
 
-An heirloom BM3 Wild-type (heme domain) expression plasmid, [bm3-wt.gb](), 
+An heirloom BM3 Wild-type (heme domain) expression plasmid, \texttt{bm3-wt.gb}, 
 was inherited and used as the basis for DNA work in this project.
-The plasmid is a \textbf{?} pET15(?) expression vector where the BM3 gene has a 6xHis purification tag at the N-terminus,
+The plasmid is a pET14 expression vector where the BM3 gene has a 6xHis purification tag at the N-terminus,
 flanked by a T7 promoter and terminator which leads to high yields in strains of \textit{E. coli} containing the T7 RNA polymerase.
-The plasmid also encodes ampicillin resistance and a ? replication origin which leads to a low copy number.
+The plasmid also encodes ampicillin resistance and a \textit{ColE1} replication origin which leads to a low copy number.
 
 
 \subsubsection{Primer design and Acquisition}
@@ -467,7 +570,7 @@ Two important considerations based on the template sequence are:
 	\item Adenine-Thymine (AT) richness of the template sequence. Compared to cytosine and guanine (C and G), A and T bind to their complimentary bases weakly.
 		This results in weak primer binding to the template sequence, measurable by a low primer \textit{melting temperature} $T_m$.
 	To compensate, primers must be longer than they otherwise would be for a sequence richer in CG, which increases their cost and their chance of self-binding.
-	The template sequence used here is AT-rich - at $x\%$
+	The template sequence used here is AT-rich - at 42\%.
 	\item Repetitions and palindromic regions of the template sequence. 
 		If the sequence surrounding a mutation target area contains these features, then the likelihood of \textit{mis-priming} by binding to an off-target sequence area is high, so too is the likelihood of a non-functional, self-binding primer.
 \end{enumerate}
@@ -483,10 +586,14 @@ Two important considerations based on the template sequence are:
 Purified plasmid DNA ostensibly conataining the target mutations, having been harvested and purified from DH5a \textit{E. coli} cells, was shipped to \textit{Eurofins Genomics} for sequencing using their \textit{TubeSeq} service, which uses a variant of Sanger Sequencing.
 Sequencing primers for this matched the T7 promoter and terminator and provided coverage of the targetted region.
 
+\textbf{note: include sequencing, flesh out}
 
-\subsection{Expression}
+
+\subsection{Protein Expression}
 
 Having been sequenced and confirmed to carry the target mutations, the mutant plasmids were used to produce the mutant protein \textit{en masse} via a \textit{BL21 DE3 E. coli} strain, which contains a T7 RNA polymerase under the control of a \textit{lac} promoter.
+\par
+BM3 mutants were expressed in \textit{NEB} BL21 (DE3) \textit{E. coli} cells grown in \textit{Formedium} auto-induction TB media at 25°C for 24 hours with shaking at 180 rpm. Cells were harvested by centrifugation in a \textit{Beckman} JA16 rotor at 6000 rpm for 10 minutes and stored at -20 °C. Variants were purified from the cells by nickel-affinity chromatography, dialysis into buffer 1, concentration to 500-1000 µM and storage at -80 °C. % protein prep
 
 \subsubsection{Materials}
 
@@ -506,9 +613,26 @@ Having been sequenced and confirmed to carry the target mutations, the mutant pl
 \subsubsection{Purification}
 
 \subsection{Screening}
+
+Throughput the screening process, the protocol described in section \ref{protocol} was employed.
+Six concentrations of each target compound were dispensed with the aim of determination of the $V_{max}$ and $K_d$: 0.0, 5.26, 55.61, 156.72, 306.74 and 500 µM.
+These values were generated from six linearly spaced values between 0 and 1 squared, then scaled to the starting concentration and final volume.
+This method saved some compound compared to a straightforward linear spacing of values between 0 and 500 µM - the maximum concentration possible given a 10 mM starting stock in DMSO without exceeding a total of 5\% v/v solvent.
+\par
+During the first run, control experiments where compounds were present in buffer only were included for downstream correction of the compounds inherent UV-Visible light absorbance, though it was thought to be unnecessary to repeat this for each subsequent screen, since it is wasteful of resources, particularly the compounds themselves.
+
+Each of the five enzymes was screened against all 980 compounds over the course of a day each.
+
+
+
+% -------------------------------
+
 \subsection{Model Design and Construction}
 
+The model aims to predict the binding likelihood between a given protein sequence and chemical structure, illustrated in equation \ref{pbinding}.
+
 $$
+\label{pbinding}
 P_{binding} = fn(sequence, smiles)
 $$
 
@@ -529,9 +653,9 @@ $
 \begin{matrix} 
 	 & compound_i & compound_{i+1} & ... & compound_{i+n} \\
 	sequence_i  & P_{binding_{i,j}} &  &  & \\  
-	sequence_{i+1} &  & \ddots &  &  \\
+	sequence_{i+1} &  &  &  &  \\
 	 \vdots &  &  & \ddots &  \\
-	sequence_{i+m} &  &  &  &  \ddots \\
+	sequence_{i+m} &  &  &  &   \\
 \end{matrix}
 $
 \end{center}
@@ -549,9 +673,6 @@ In this work, a machine learning model classifies pairs of protein sequence and 
 Negative samples are generated by randomly sampling a sequence and small molecule, which given the vastness of sequence and chemical space may be reasonable in a large number of cases, though this assumption is treated with caution.
 A Binary Cross Entropy loss function is employed here where true positives and synthesized negatives are weighted evenly.
 
-
-
-
 \subsubsection{Data}
 
 Small molecules are represented as SMILES codes in the dataset, which are parsed using \texttt{rdkit} and then into 2048 bit fingerprint vectors using the \texttt{RdkitFingerprint}.
@@ -560,7 +681,9 @@ The fingerprints are represented as a $b \times 2048$ tensor where $b$ is batch 
 
 Sequences are represented in the dataset as strings where each character $c_i$ is a single letter amino acid code:
 
-$$c_i \subset{ACDEFGHIKLMNPQRSTVWY}$$
+$$
+c_i \subset{ACDEFGHIKLMNPQRSTVWY}
+$$
 
 Roughly, characters are encoded as tensors of the integers that index their position in the list $\begin{matrix} ACDEFGHIKLMNPQRSTVWY\end{matrix}$, with extra positions to represent null values, start of frame and end of frame characters.
 
@@ -570,15 +693,13 @@ Roughly, characters are encoded as tensors of the integers that index their posi
 
 \subsubsection{Model Architecture}
 
-The model aims to predict:
+Given the model aims to predict:
 $$
 P_{binding} = fn(sequence, smiles)
 $$
-Where $fn$ is a model that takes an input of a protein $sequence$ and a prospective ligands' SMILES code - $smiles$ and outputs $P_{binding}$ - an estimate of the probability that the given $sequence$ and $smiles$ bind to one another.
 
-Given their prior success in chemical and protein sequence learning, a neural network model was chosen to build  $fn$.
+A neural network was devised to generate a prediction of $P_{binding}$ from an input of a protein sequence and a chemical SMILES code.
 The network can be split into three parts:
-
 
 \begin{itemize}
 	\item \textbf{Sequence Embedding:} For a given protein $sequence$, output a tensor encoding a neural embedding $z_{sequence}$.
@@ -586,21 +707,28 @@ The network can be split into three parts:
 	\item \textbf{Prediction Head:} For the embeddings $z_{smiles}$ and $z_{sequence}$, output a prediction $P_{binding}$.
 \end{itemize}
 
+The architecture is illustrated in \ref{modelarch}.
+
+\begin{figure}
+	\begin{center}
+	\caption{\label{modelarch} Architecture of the model constructed for this project}
+	\includegraphics[height=0.8\textheight]{img/model.png}
+	\end{center}
+\end{figure}
 
 \subsubsection{Sequence Embedding}
 
-%Sequences were embedded using the pre-trained \texttt{esm1_t6_43M_UR50S} model \textcite{rives2021biological}, which receives an input of a tokenized protein sequence and outputs a tensor of size $b l d$ where $b$ is batch size, $l$ is sequence length and $d$ is 35.
+%Sequences were embedded using the pre-trained \texttt{esm1_t6_4equation 3M_UR50S} model \cite{rives2021biological}, which receives an input of a tokenized protein sequence and outputs a tensor of size $b l d$ where $b$ is batch size, $l$ is sequence length and $d$ is 35.
 
 Although this model is the smallest of the ESM collection, on the single \textit{NVIDIA Quadro RTX 6000} used it still occupied most of the 24 GB of available memory and most of the processing capability, which lead to long training times and difficulty in training more than one model in parallel on the same machine.
 
 This could be remedied, however since in the complete \texttt{o3f.csv} dataset and the screening dataset there are 2947 unique sequences, so it was economical to pre-compute the embeddings and save them to disk.
-This resulted in a roughly 4$x$ speedup in training time and massively reduced the memory requirements, allowing several models to be trained in parallel on a single GPU.
+This resulted in a roughly 4$\times$ speedup in training time and massively reduced the memory requirements, allowing several models to be trained in parallel on a single GPU.
 This also saved costs significantly.
 
 \subsubsection{Chemical Embedding}
 
-As mentioned, chemical SMILES were hashed into chemical fingerprints using the \texttt{rdkit} \texttt{RDKFingerprint} method as a means of representation, yielding a 2048-bit vector for each compound.
-The vectors were converted to tensors and served as an input to a residual neural network that output an embedding that would later be used to form a combined representation of both compound and sequence for binding likelihood prediction.
+As mentioned, chemical SMILES were hashed into chemical fingerprints using the \texttt{rdkit} \texttt{RDKFingerprint} method as a means of representation, yielding a 2048-bit vector for each compoundagainThe vectors were converted to tensors and served as an input to a residual neural network that output an embedding that would later be used to form a combined representation of both compound and sequence for binding likelihood prediction.
 
 \subsubsection{Prediction Head}
 
@@ -613,11 +741,11 @@ The final layer in both cases was a single linear layer with a single output and
 \subsubsection{Pre-Training, Training and Evaluation}
 
 Training was done in two stages, each with a performance evaluation, during which several models with varying architectures and hyper-parameters were trained and compared.
-All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost \$1.50 per hour and was equipped with the following hardware specifications:
+All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost \$1.50 per hour and was equipped with hardware specifications described in \textbf{table \ref{hardwaretable}}.
 
 \begin{table}
 	\begin{center}
-		\caption{BM3 mutants used in screening\label{bm3_table}}
+		\caption{\label{hardwaretable} Hardware specifications for machine used in model training.}
 		\begin{tabular}{l|p{3cm}|l|l}
 			\textbf{Item} & \textbf{Specifications} & \textbf{Number}  & \textbf{Size}\\
 		\hline 
@@ -631,7 +759,7 @@ All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost 
 \end{table}
 
 \begin{enumerate}
-	\item \textbf{Pre-Training:} This was done with the larger, more general `o3f` dataset, which was randomly split into training and validation partitions, the latter of which was used sparingly to avoid model bias.
+	\item \textbf{Pre-Training:} This was done with the larger, more general \texttt{o3f} dataset, which was randomly split into training and validation partitions, the latter of which was used sparingly to avoid model bias.
 	Pre-training lasted up to 64 epochs with a batch size up to 64.
 	For each sample, a random sequence and SMILES pair were sampled as a presumed negative sample.
 	The loss function used was binary cross entropy used with an Adam (Adaptive momentum) optimizer.
@@ -664,11 +792,127 @@ All training was done on a \textit{Linode} \texttt{g1-gpu-rtx6000-1} which cost 
 
 % ----------
 \section{Results}
-\subsection{Data Analysis}
+\subsection{Screening Data Analysis}
+
+The data gathered for the screening experiments was saved in the \texttt{git} repository  \texttt{https://github.com/jamesengleback/screening-fist} in the \texttt{lab} directory.
+Within the \texttt{lab} directory are directories for each screening experiment.
+These include a \texttt{config.yml} file which maps data files to experiments for analysis.
+\par
+The script \texttt{sxfst/scripts/data\_proc2.py} was used to process the data into a large \texttt{csv} file containing each raw trace and its metadata.
+By consolidating the data into a single file, fewer time-consuming operating system calls are made in downstream analysis which decreases the time cost of those tasks.
+
+The script attempted to use the \textit{Echo} logs from each run to calculate the actual volume of each compound dispensed, since towards the end of the screening program shortages of compound made it impossible to fully dispense some experiments.
+In retrospective this function did not perform properly, since all experiments are later annotated as having the target volumes of each compound.
+This cannot be the case since it was casually observed that some compounds were completely depleted by the end of the screening program.
+This issue is significant, leading to false negatives where a lack of response cannot be attributed to either a lack of compound or a true negative response.
+This coding issue can be solved, but was not due to time constraints.
+
+The downstream analysis in question was done using the script \texttt{sxfst/scripts/data\_analysis.py} which normalizes the traces, subtracts the control traces from them and calculates the P450 response to each compound, creating a plot in the process.
+An example of one such plot is in \textbf{figure \ref{screeninghit}}.
+
+The traditional response calculation method using $\Delta A_{390} - \Delta A_{420}$ proved ineffective for analysis of this data due to the noise, which would often result in scattering that increased the absorbance at the short wavelengths in ways that were occasionally unpredictable.
+
+Instead, the gradient of each trace was taken by convolution of the kernel $\begin{bmatrix} -1 & 0 & 1 \end{bmatrix}$ across the smoothed and normalized traces.
+The gradients were invariant to total absorbance, which was often perturbed by what appeared to be light scattering, but achieved a similar effect to calculation of $\Delta A_{390} - \Delta A_{420}$.
+From the gradients, response was calculated as $|{\frac{\delta y}{\delta x_{390}}}| + |{\frac{\delta y}{\delta x_{420}}}|$.
+
+Although this proved successful, the automated curve fitting to the response was not, outputting a constant value of 32 µM for each experiment - the lower $K_d$ bound.
+With extra development this issue can likely be solved, but in order to keep within time constraints, an alternative solution was implemented.
+
+%% manual annotation
+
+The alternative solution was manual annotation of the plots output by the script.
+Though crude, this method did yield a list of ostensible \textit{hits} as well as a list of anomalous results that were to be ignored.
+
+Using this approach, 149 hits of the total 4900 compounds were identified, listed in the file \texttt{lab/hits.txt} in the repository.
+These were used to create a \texttt{csv} file containing the full sequence and SMILES code for each enzyme compound pair and a boolean value that was true if that experiment was annotated as a \textit{hit}.
+There are several drawbacks to this that should be noted:
+
+\begin{itemize}
+	\item \textbf{Human Error:} Although several passes over the data were done, the order was never randomized and there was only one annotator. 
+		Since there are 4900 experiments, even if the annotator averages 1 second per annotation the runtime of an annotation run is 81 minutes, which will likely cause fatigue and subsequent errors.
+		Since the order was not randomized, fatigue-induced error is more likely to occur in the same regions of the dataset in each pass.
+	\item \textbf{False Negatives} due to a lack of properly functional compound concentration calculation, which would yield results that appear negative due to a lack of compound without being properly labelled as such.
+		Another source of false negatives is the obfuscation of hits by noise in the traces due to scattering or compound absorbance that in some cases proved hard to correct for.
+\end{itemize}
+
+\begin{figure}
+	\caption{\label{screeninghit} A good example of a positive result or \textit{hit} between BM3 A82F and \textit{Gestodene}. $K_d$ was calculated as 32 µM, which reflects an issue in the curve fitting rather than the actual $K_d$. \textbf{note - rescale axes, move kd text, legend title}}
+	\includegraphics[width = \textwidth]{img/BM3-Heme-A82F:S1376.png}
+\end{figure}
+
 \subsection{Model Training}
+
+\subsubsection{Pre-training}
+
+Given constraints on money towards computing resources, a hyper-parameter sweep was not viable.
+Instead, a small selection of models were trained and evaluated and the best of those was retrained on the screening data.
+Model architecture and hyper-parameters were directly configurable by supply of arguments to the training script \texttt{model/train.py}, from which the best performing model was obtained using the command \texttt{./train.py -i data/o3f.train.csv --transformer --cuda --emb\_size\_head 2560 --n\_layers\_head 3 --emb\_size\_fp 512 --n\_layers\_fp 4 --num\_conv\_layers\_pool 3 --kernel\_size\_pool 9 --stride\_pool 3 --lstm\_hs\_pool 1024 --lr 1e-5 --batch\_size 64 -e 32
+}, which is consolidated in \textbf{table \ref{frostybreezeparams}}.
+
+\begin{table}
+	\caption{\label{frostybreezeparams} Parameters for the best performing model in pre-training, designated the identifier \textit{frosty-breeze-83} by the \textit{Weights and Biases} API.}
+	\begin{center}
+	\begin{tabular}{ll}
+		\textbf{Parameter} &     \textbf{Value} \\
+		\hline
+		lr                   &             $10^{-5}$ \\
+		esm                  &   esm1\_t6\_43M\_UR50S \\
+		cuda                 &                True \\
+		load                 &                None \\
+		test                 &               False \\
+		input                &  data/o3f.train.csv \\
+		epochs               &                320 \\
+		batch\_size           &                640 \\
+		emb\_size\_fp          &               512 \\
+		n\_layers\_fp          &                 4 \\
+		stride\_pool          &                 3 \\
+		transformer          &                True \\
+		lstm\_hs\_pool         &              1024 \\
+		emb\_size\_head        &              25 \\
+		n\_layers\_head        &                 3 \\
+		kernel\_size\_pool     &                 9 \\
+		num\_conv\_layers\_pool &                 3 \\
+		num\_lstm\_layers\_pool &                 2 \\
+	\end{tabular}
+	\end{center}
+\end{table}
+
+%img/frosty-breeze-83-eval.png
+%img/frosty-breeze-83-vivid-breeze-91-devout-thunder-90-eval.png
+%img/frosty-breeze-83-vivid-breeze-91-eval.png
+\begin{figure}
+	\caption{\label{frostybreeze} Model evaluation report after pre-training for the model designated \textit{frosty-breeze-83}. Evaluation was on \texttt{o3f.test.csv} - a held-back partition of the pre-training dataset. Depicted are:
+	mean binary cross entropy loss the course of training on \texttt{o3f.train.csv},  
+	a confusion matrix, 
+	a receiver operator curve (ROC), 
+	a precision recall curve,
+	a detection error trade-off (DET) curve and 
+	mean precision and mean binary cross-entropy loss over evaluation.}
+	\includegraphics[width = \textwidth]{img/frosty-breeze-83-eval.png}
+\end{figure}
+
+\begin{figure}
+	\caption{\label{devoutthunder} Model evaluation for another instance of \textit{frosty-breeze-81}, this time designated \textit{devout-thunder-90}, again retrained on the lab-based screening dataset \texttt{screening-data.train.csv} and evaluated on \texttt{screening-data.test.csv}. The report uses the same methods as in figure \ref{frostybreeze}}
+	\includegraphics[width = \textwidth]{img/frosty-breeze-83-vivid-breeze-91-devout-thunder-90-eval.png}
+\end{figure}
+\begin{figure}
+	\caption{\label{vividbreeze} Model evaluation report after pre-training for the model designated \textit{vivid-breeze-91}.}
+	\includegraphics[width = \textwidth]{img/frosty-breeze-83-vivid-breeze-91-eval.png}
+\end{figure}
 \subsection{Model Application}
 % ----------
 \section{Discussion and Future Work}
+
+\begin{itemize}
+	\item \textbf{Improvements (Issues):}
+	\begin{itemize}
+		\item \textbf{Issues with screening library}
+		\item \textbf{Improvements to data processing}
+		\item \textbf{Improvements to screening dataset partitioning}
+		\item \textbf{Improvements to model application}
+	\end{itemize}
+\end{itemize}
 
 \printbibliography
 
