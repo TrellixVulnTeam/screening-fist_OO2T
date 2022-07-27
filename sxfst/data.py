@@ -31,7 +31,7 @@ def diff(norm, baseline):
 def response(_diff, a=420, b=390):
     a420 = _diff.loc[:,a]
     a390 = _diff.loc[:,b]
-    return a420.abs().add(a390.abs())
+    return a420.abs().add(a390.abs()) / 0.01 # scaling
 
 def c2(v1, c1, v2):
     return (v1 * c1) / v2

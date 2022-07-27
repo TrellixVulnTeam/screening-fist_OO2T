@@ -4,3 +4,12 @@
 *tmp*
 data/proc*/*png
 data/proc*tar.gz
+*tar.gz*
+data/pretraining/data/BindingDB_All.tsv*
+data/pretraining/data/*csv
+data/pretraining/nb/*csv
+model/seq-opt.csv
+data/pretraining/data/BindingDB_All_2022m4.tsv.zip
+model/wandb/
+model/seq-smiles-embeds/
+data/out-img-light/

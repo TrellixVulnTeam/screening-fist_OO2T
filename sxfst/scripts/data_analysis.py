@@ -66,7 +66,7 @@ def plotTraces(x,     # df
     if concs is not None:
         for row_, conc_ in zip(x.index, concs):
             ax.plot(x.loc[row_,:],
-                     c=plt.cm.cool(conc_/max(concs)),
+                     c=plt.cm.inferno(conc_/max(concs)),
                      label=f'{round(conc_,2)} uM')
     else:
         for row_ in x.index:
@@ -105,17 +105,17 @@ def scale(x_, return_min_max=False):
 
 
 def get_mm(x,y):
-    x = np.nan_to_num(x, nan=1e-9)
+    x = np.nan_to_num(x, nan=1e-9) / 500
     y = np.nan_to_num(y, nan=1e-9)
     #xs, xmin, xmax = scale(x, return_min_max=True)
     #ys, ymin, ymax = scale(y, return_min_max=True)
     try:
         (km, vmax), covariance = curve_fit(mm, x, y,
-                                           bounds=((32, 0), 
-                                                   (1e3, max(y)*1.2)),
-                                           p0=(1e3, max(y)/2),
-                                           #method='dogbox',
-                                           sigma=[1e-5]*len(x),
+                                           bounds=((1/32, max(y)*2), 
+                                                   (4, max(y)*4)),
+                                           p0=(1/8, max(y)*2),
+                                           method='dogbox',
+                                           #sigma=[1e-3]*len(x),
                                            )
         #(km_, vmax_), covariance = curve_fit(mm, xs, ys,
         #                                   bounds=((min(xs), min(ys)), 
@@ -123,6 +123,8 @@ def get_mm(x,y):
         #                                   )
         #km = (km_ * ymax) + ymin
         #vmax = (vmax_ * xmax) + xmin
+        km *= 500
+        x  *= 500
     except RuntimeError:
         km, vmax = np.inf, np.inf
 
@@ -151,29 +153,30 @@ def plot_mm(ax,
     ax.set_xlabel('Concenctration uM')
     ax.set_ylabel('Response')
     ax.set_title(title)
-    #ax.set_ylim(-1e-3, max([1e-3, max(y)*1.1]))
-    ax.text(x=0.75*max(x),
-            y=max(y)*0.1,
+    ax.set_ylim(-0.1, 1.2)
+    ax.set_xlim(-8, 512)
+    ax.text(x=350,
+            y=0.9,
             s=f'kd: {round(km, 5)}\nvmax: {round(vmax, 5)}\nrsq: {round(rsq,3)}',
             fontsize=14,
             )
     ax.hlines(y=vmax, 
-              xmin=0,
+              xmin=-8,
               xmax=max(x),
+              linestyle='--',
+              lw=1,
+              color='gray',
+              )
+    ax.hlines(y=vmax/2, 
+              xmin=-8,
+              xmax=km,
               linestyle='--',
               lw=1,
               color='gray',
               )
     ax.vlines(x=km, 
-              ymin=0,
+              ymin=-0.1,
               ymax=mm(km, vmax, km),
-              linestyle='--',
-              lw=1,
-              color='gray',
-              )
-    ax.hlines(y=0, 
-              xmin=0,
-              xmax=max(x),
               linestyle='--',
               lw=1,
               color='gray',
@@ -188,6 +191,7 @@ def trace_similarity(a, b):
 
 
 def main(args):
+    plt.style.use('default')
     root = args.data
     img_root = args.img
     if args.out != '':
