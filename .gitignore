@@ -13,3 +13,4 @@ data/pretraining/data/BindingDB_All_2022m4.tsv.zip
 model/wandb/
 model/seq-smiles-embeds/
 data/out-img-light/
+model/data/*
